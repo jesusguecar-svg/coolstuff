@@ -1,0 +1,10 @@
+{
+  "name": "LexMap Pro",
+  "short_name": "LexMap",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "description": "Comparative legal intelligence micro-lessons between Venezuelan/Latin American Civil Law and US Common Law.",
+  "icons": []
+}

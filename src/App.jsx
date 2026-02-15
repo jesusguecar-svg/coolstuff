@@ -21,6 +21,8 @@ const STARTER_MODULES = [
     id: 'self-defense',
     domain: 'Criminal Law',
     title: 'Self-Defense',
+    estimatedMinutes: 8,
+    difficulty: 'Beginner',
     relationType: 'Analogous',
     civilSide: {
       term: 'Legítima defensa',
@@ -42,6 +44,8 @@ const STARTER_MODULES = [
     id: 'negligence',
     domain: 'Torts',
     title: 'Negligence',
+    estimatedMinutes: 12,
+    difficulty: 'Intermediate',
     relationType: 'Direct Equivalent',
     civilSide: {
       term: 'Responsabilidad civil por culpa',
@@ -63,6 +67,8 @@ const STARTER_MODULES = [
     id: 'breach-of-contract',
     domain: 'Contracts',
     title: 'Breach of Contract',
+    estimatedMinutes: 10,
+    difficulty: 'Beginner',
     relationType: 'Direct Equivalent',
     civilSide: {
       term: 'Incumplimiento contractual',
@@ -124,6 +130,7 @@ export default function App() {
   const [modules] = useState(STARTER_MODULES);
   const [activeLesson, setActiveLesson] = useState(null);
   const [lessonStep, setLessonStep] = useState(0);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const firebaseSettings = useMemo(() => getFirebaseSettings(), []);
 
@@ -299,6 +306,23 @@ export default function App() {
     setLessonStep(0);
   };
 
+  const filteredModules = useMemo(() => {
+    const normalized = searchTerm.trim().toLowerCase();
+
+    if (!normalized) {
+      return modules;
+    }
+
+    return modules.filter((module) => {
+      const haystack = `${module.domain} ${module.title} ${module.relationType} ${module.mbeTip}`.toLowerCase();
+      return haystack.includes(normalized);
+    });
+  }, [modules, searchTerm]);
+
+  const completedCount = profile?.completedLessons?.length || 0;
+  const completionProgress = Math.round((completedCount / modules.length) * 100);
+  const nextSuggestedLesson = modules.find((module) => !profile?.completedLessons?.includes(module.id));
+
   if (!authReady || booting) {
     return (
       <main className={`${appTheme} flex items-center justify-center p-8`}>
@@ -319,8 +343,8 @@ export default function App() {
         <header className="rounded-2xl border border-slate-700 bg-slate-800/70 p-6 shadow-xl animate-in slide-in-from-top-2 duration-500">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-indigo-300">Premium Academic</p>
-              <h1 className="mt-1 text-3xl font-semibold text-white">Master Curriculum Dashboard</h1>
+              <p className="text-sm uppercase tracking-[0.2em] text-indigo-300">Built for bar exam migrants</p>
+              <h1 className="mt-1 text-3xl font-semibold text-white">Bridge Civil Law to U.S. MBE in 10 minutes a day</h1>
               {demoMode && (
                 <p className="mt-2 text-xs text-amber-300">
                   Demo mode is active (Firebase unavailable). Interactions are local-only.
@@ -332,10 +356,47 @@ export default function App() {
               <p className="text-2xl font-bold text-white">{profile?.xp ?? 0}</p>
             </div>
           </div>
+
+          <div className="mt-5 grid gap-4 rounded-xl border border-slate-600/70 bg-slate-900/40 p-4 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+              <p className="text-sm text-slate-200">Progress: {completedCount}/{modules.length} lessons completed ({completionProgress}%)</p>
+              <div className="mt-2 h-2 rounded-full bg-slate-700">
+                <div className="h-2 rounded-full bg-emerald-500 transition-all" style={{ width: `${completionProgress}%` }} />
+              </div>
+              <p className="mt-2 text-xs text-slate-400">
+                {nextSuggestedLesson
+                  ? `Recommended next lesson: ${nextSuggestedLesson.title}`
+                  : 'Great work — you completed the full starter track.'}
+              </p>
+            </div>
+            {nextSuggestedLesson && (
+              <button
+                type="button"
+                onClick={() => openLesson(nextSuggestedLesson)}
+                className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-500"
+              >
+                Continue learning <ArrowRight className="h-4 w-4" />
+              </button>
+            )}
+          </div>
         </header>
 
+        <section className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
+          <label className="text-sm text-slate-300">
+            Find a topic fast
+            <input
+              type="search"
+              placeholder="Search by concept, domain, or exam tip..."
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+              className="mt-2 w-full rounded-lg border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none"
+            />
+          </label>
+          <p className="text-xs text-slate-400">Each lesson has 3 steps and takes ~8-12 minutes.</p>
+        </section>
+
         <section className="grid gap-4 md:grid-cols-3">
-          {modules.map((module) => {
+          {filteredModules.map((module) => {
             const complete = profile?.completedLessons?.includes(module.id);
             return (
               <article
@@ -352,6 +413,9 @@ export default function App() {
                 </div>
                 <h2 className="mt-3 text-xl font-semibold text-white">{module.title}</h2>
                 <p className="mt-1 text-sm text-slate-300">Relation: {module.relationType}</p>
+                <p className="mt-1 text-xs text-slate-400">
+                  {module.difficulty} · {module.estimatedMinutes} min
+                </p>
                 <p className="mt-3 text-sm text-slate-300 line-clamp-2">MBE Tip: {module.mbeTip}</p>
                 <button
                   type="button"
@@ -363,6 +427,12 @@ export default function App() {
               </article>
             );
           })}
+
+          {filteredModules.length === 0 && (
+            <article className="rounded-2xl border border-dashed border-slate-600 bg-slate-800/40 p-6 text-sm text-slate-300 md:col-span-3">
+              No results for <strong>{searchTerm}</strong>. Try a broader keyword like "defense" or "contracts".
+            </article>
+          )}
         </section>
       </div>
 

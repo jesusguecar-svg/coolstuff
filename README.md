@@ -1,37 +1,99 @@
-# LexMap Pro
+# LexBridge
 
-LexMap Pro is a progressive web app for comparative legal study between Venezuelan/Latin American Civil Law traditions and US Common Law.
+LexBridge is a full-stack TypeScript web app for comparing legal concepts between U.S. common-law systems and Venezuela's civil-law framework.
+
+## Features
+
+- Concept Comparisons catalog with equivalence labels (Equivalent / Analogous / No direct equivalent).
+- Legal Phrases & Equivalents dictionary.
+- Jurisdiction-aware authority storage (US court/jurisdiction + Venezuela TSJ metadata fields).
+- Learning mode MVP with lesson exercises, XP, streak, mastery, and spaced repetition scheduling.
+- Admin panel for content CRUD and JSON import/export.
+- Safety/accuracy UX rules:
+  - Disclaimer banner: **Educational tool; not legal advice; consult licensed counsel.**
+  - Sources warnings when authority records are missing.
+  - "Not yet in catalog" behavior for missing concept lookups (catalog detail route returns not found state).
 
 ## Stack
 
-- React 18 (single-file app shell in `index.html`)
-- Tailwind CSS (CDN)
-- Lucide React icons
-- Firebase v9 modular SDK (Auth + Firestore)
+- Next.js 14 App Router
+- React + TypeScript
+- Tailwind CSS
+- Prisma ORM
+- SQLite (local dev)
+- Cookie sessions + bcrypt password auth
 
-## Key features
-
-- Auto-auth flow: `signInWithCustomToken` fallback to `signInAnonymously`
-- Firestore profile path: `/artifacts/{appId}/users/{uid}/profile/data`
-- Real-time profile sync with `onSnapshot`
-- Onboarding + dashboard + full-screen lesson modal wizard
-- Legal concept graph (`CONCEPT_DATA`) with EQUIVALENT/ANALOGOUS bridges
-- PWA setup via `manifest.webmanifest` and `sw.js`
-- Local fallback mode when Firebase config is not injected (progress stored in browser `localStorage`)
-
-## Local run
+## Run
 
 ```bash
-python3 -m http.server 4173
+npm install
+npm run prisma:generate
+npm run db:push
+npm run db:seed
+npm run dev
 ```
 
-Open: `http://localhost:4173`
+Open http://localhost:3000
 
-## Environment injection
+## Build + Start
 
-Set these globals before app boot in your hosting shell if available:
+```bash
+npm run build
+npm run start
+```
 
-- `window.__firebase_config` (JSON object or JSON string)
-- `window.__FIREBASE_CONFIG` (alternative config key)
-- `window.__initial_auth_token` (optional custom auth token)
-- `window.__app_id` (optional app namespace)
+## Admin setup
+
+1. Visit `/admin`.
+2. Register with email + password (min 8 chars).
+3. First registered user is a normal user by default. To grant admin role manually in SQLite:
+
+```bash
+npx prisma studio
+```
+
+Set `User.role` to `ADMIN`.
+
+## JSON import format
+
+`POST /api/admin/import` expects a JSON array in textarea payload. Example object:
+
+```json
+{
+  "globalId": "lexbridge-custom-1",
+  "slug": "consideration-vs-causa",
+  "subjectSlug": "contracts-obligations",
+  "tags": ["contracts", "comparison"],
+  "us": {
+    "title_en": "Consideration",
+    "definition_en": "Bargained-for exchange required in most US contract formation.",
+    "jurisdiction_scope": "state common law"
+  },
+  "ve": {
+    "title_es": "Causa",
+    "definition_es": "Elemento funcional de la obligación en doctrina civil."
+  },
+  "mapping": {
+    "equivalence_type": "ANALOGOUS",
+    "mapping_rationale": "Functional overlap but doctrinal differences.",
+    "key_differences": ["..."],
+    "pitfalls": ["..."]
+  },
+  "example": {
+    "scenario_text_en": "...",
+    "scenario_text_es": "..."
+  }
+}
+```
+
+## Spaced repetition (MVP)
+
+- Mastery increases on lesson completion (0→5 cap).
+- Next review date uses a simple SM-2-inspired interval ladder: 1, 2, 4, 7, 14, 30 days.
+- Lapses reduce interval via penalty in `lib/srs.ts`.
+- Daily streak increments when study occurs on consecutive days; resets otherwise.
+
+## Notes on legal sources
+
+- Seed data intentionally avoids fabricated legal citations.
+- Some seeded entries are marked **Sources needed** placeholders to prompt source curation.

@@ -1,0 +1,89 @@
+categories:
+  immigration_paralegal_dallas:
+    display_name: "Immigration Paralegal - Dallas"
+    keywords:
+      - "immigration"
+      - "visa"
+      - "I-130"
+      - "I-485"
+      - "N-400"
+      - "USCIS"
+      - "EOIR"
+      - "removal defense"
+      - "asylum"
+      - "deportation"
+      - "naturalization"
+      - "green card"
+      - "work permit"
+      - "VAWA"
+      - "U-visa"
+      - "T-visa"
+      - "consular processing"
+      - "PERM"
+      - "labor certification"
+      - "immigration court"
+
+  family_law_paralegal_dallas:
+    display_name: "Family Law Litigation Paralegal - Dallas"
+    keywords:
+      - "family law"
+      - "divorce"
+      - "custody"
+      - "child support"
+      - "protective order"
+      - "mediation"
+      - "family court"
+      - "Texas Family Code"
+      - "conservatorship"
+      - "adoption"
+      - "paternity"
+      - "spousal support"
+      - "alimony"
+      - "marital"
+      - "dissolution"
+      - "domestic relations"
+
+  remote:
+    display_name: "Remote Paralegal"
+    keywords:
+      - "remote"
+      - "work from home"
+      - "virtual"
+      - "telecommute"
+      - "anywhere"
+      - "distributed"
+      - "WFH"
+
+  premium:
+    display_name: "Premium Opportunities"
+    keywords: []
+
+premium_companies:
+  - "xAI"
+  - "Southwest Airlines"
+  - "Tesla"
+  - "SpaceX"
+  - "Google"
+  - "Apple"
+  - "Microsoft"
+  - "Amazon"
+  - "Meta"
+
+dallas_keywords:
+  - "Dallas"
+  - "DFW"
+  - "Plano"
+  - "Frisco"
+  - "Irving"
+  - "Arlington"
+  - "Fort Worth"
+  - "McKinney"
+  - "Richardson"
+  - "Garland"
+  - "Denton"
+  - "Lewisville"
+  - "Carrollton"
+
+daily_goal: 25
+
+data_dir: "./data"

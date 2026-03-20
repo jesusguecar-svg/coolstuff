@@ -1,0 +1,69 @@
+contact:
+  name: "[YOUR NAME]"
+  email: "[YOUR EMAIL]"
+  phone: "[YOUR PHONE]"
+  location: "Dallas, TX"
+  linkedin: "[YOUR LINKEDIN]"
+
+objective: "Dedicated immigration paralegal seeking the {position_title} position at {company_name}, bringing extensive experience in visa petitions, removal defense, and immigration court proceedings to support the firm's immigration practice."
+
+summary: "Detail-oriented Immigration Paralegal with comprehensive experience assisting attorneys in all phases of immigration law. Skilled in preparing and filing visa petitions, adjustment of status applications, naturalization cases, and removal defense matters. Proven ability to manage high-volume caseloads, communicate effectively with clients from diverse backgrounds, and ensure compliance with USCIS regulations and filing deadlines."
+
+skills:
+  - "Visa Petition Preparation (I-130, I-140, I-129)"
+  - "Adjustment of Status (I-485)"
+  - "Naturalization Applications (N-400)"
+  - "USCIS Filing & Case Tracking"
+  - "EOIR Immigration Court Filings"
+  - "Removal Defense & Deportation Proceedings"
+  - "Asylum Applications (I-589)"
+  - "VAWA Self-Petitions"
+  - "U-Visa & T-Visa Applications"
+  - "Consular Processing"
+  - "PERM Labor Certification"
+  - "Employment Authorization Documents (I-765)"
+  - "Client Intake & Interviews"
+  - "Case Management Software (INSZoom, Docketwise)"
+  - "Legal Research (Westlaw, LexisNexis)"
+  - "Bilingual Communication (English/Spanish)"
+  - "Document Review & Organization"
+  - "FOIA Requests"
+  - "Country Conditions Research"
+  - "Filing Deadline Management"
+
+experience:
+  - title: "Immigration Paralegal"
+    company: "[LAW FIRM NAME]"
+    dates: "[START DATE] - Present"
+    bullets:
+      - "Prepare and file over 200 visa petitions annually including I-130, I-140, I-485, and I-765 applications with USCIS"
+      - "Assist attorneys with removal defense cases in EOIR immigration court, preparing motions, briefs, and evidence packets"
+      - "Manage asylum case files including I-589 preparation, country conditions research, and supporting documentation"
+      - "Process VAWA self-petitions and U-visa/T-visa applications for victims of domestic violence and trafficking"
+      - "Coordinate consular processing cases, preparing DS-260 forms and managing National Visa Center communications"
+      - "Conduct client intake interviews in English and Spanish, gathering case details and explaining procedures"
+      - "Track case statuses and filing deadlines using case management software, maintaining 100% on-time filing rate"
+      - "Prepare PERM labor certification applications including prevailing wage requests and recruitment documentation"
+
+  - title: "Legal Assistant"
+    company: "[PREVIOUS FIRM NAME]"
+    dates: "[START DATE] - [END DATE]"
+    bullets:
+      - "Assisted with N-400 naturalization applications, preparing clients for citizenship interviews"
+      - "Organized and maintained immigration case files for a caseload of 150+ active matters"
+      - "Drafted correspondence to USCIS, NVC, and immigration courts"
+      - "Conducted legal research on immigration law updates and policy changes"
+      - "Filed FOIA requests and reviewed government records for case support"
+
+education:
+  - degree: "Bachelor of Arts in [FIELD]"
+    school: "[UNIVERSITY NAME]"
+    year: "[YEAR]"
+  - degree: "Paralegal Certificate"
+    school: "[SCHOOL NAME]"
+    year: "[YEAR]"
+
+certifications:
+  - "Paralegal Certificate - [ISSUING INSTITUTION]"
+  - "Notary Public - State of Texas"
+  - "AILA Member (American Immigration Lawyers Association - Paralegal)"

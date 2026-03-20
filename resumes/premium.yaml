@@ -1,0 +1,71 @@
+contact:
+  name: "[YOUR NAME]"
+  email: "[YOUR EMAIL]"
+  phone: "[YOUR PHONE]"
+  location: "Dallas, TX"
+  linkedin: "[YOUR LINKEDIN]"
+
+objective: "Accomplished corporate paralegal seeking the {position_title} position at {company_name}, bringing high-caliber experience in corporate governance, regulatory compliance, and contract management to support a world-class legal team."
+
+summary: "Polished and detail-oriented Corporate Paralegal with experience supporting legal departments at high-profile organizations. Skilled in corporate governance, SEC compliance, contract lifecycle management, and cross-functional legal operations. Proven ability to manage complex projects, maintain confidentiality at the highest levels, and deliver precise legal support in fast-paced corporate environments."
+
+skills:
+  - "Corporate Governance & Board Support"
+  - "SEC Filings & Regulatory Compliance"
+  - "Contract Lifecycle Management"
+  - "Mergers & Acquisitions Support"
+  - "Corporate Entity Management"
+  - "Intellectual Property Administration"
+  - "NDA & Vendor Agreement Review"
+  - "Policy & Procedure Development"
+  - "Cross-Functional Legal Operations"
+  - "Due Diligence Coordination"
+  - "Corporate Minutes & Resolutions"
+  - "Subsidiary & Entity Compliance"
+  - "Stock Option Plan Administration"
+  - "Legal Hold & Litigation Readiness"
+  - "Contract Database Management (Ironclad, Agiloft)"
+  - "Document Management (iManage, SharePoint)"
+  - "Legal Research (Westlaw, LexisNexis)"
+  - "Data Privacy & Compliance (GDPR, CCPA)"
+  - "Budget & Invoice Management"
+  - "Executive-Level Communication"
+
+experience:
+  - title: "Corporate Paralegal"
+    company: "[COMPANY NAME]"
+    dates: "[START DATE] - Present"
+    bullets:
+      - "Support General Counsel and legal team at a Fortune 500 company across corporate governance, compliance, and transactions"
+      - "Manage corporate entity portfolio of 50+ subsidiaries including annual filings, registered agent coordination, and good standing maintenance"
+      - "Prepare board of directors materials, corporate resolutions, and meeting minutes for quarterly board meetings"
+      - "Coordinate due diligence processes for M&A transactions, organizing data rooms and managing document review"
+      - "Draft, review, and manage 200+ contracts annually including NDAs, vendor agreements, and service contracts"
+      - "Assist with SEC filings including 10-K, 10-Q, 8-K, and proxy statements"
+      - "Maintain compliance calendars and ensure timely filing of corporate documents across all jurisdictions"
+      - "Collaborate with HR, Finance, and Business Development teams on legal matters and policy implementation"
+      - "Manage outside counsel relationships, budgets, and invoice review"
+
+  - title: "Paralegal"
+    company: "[PREVIOUS COMPANY NAME]"
+    dates: "[START DATE] - [END DATE]"
+    bullets:
+      - "Assisted corporate legal team with contract management and vendor negotiations"
+      - "Maintained corporate governance records and entity compliance across multiple states"
+      - "Supported intellectual property portfolio management including trademark filings"
+      - "Prepared legal memoranda and conducted research on regulatory compliance matters"
+      - "Coordinated with external counsel on litigation matters and managed legal holds"
+
+education:
+  - degree: "Bachelor of Arts in [FIELD]"
+    school: "[UNIVERSITY NAME]"
+    year: "[YEAR]"
+  - degree: "Paralegal Certificate"
+    school: "[SCHOOL NAME]"
+    year: "[YEAR]"
+
+certifications:
+  - "Paralegal Certificate - [ISSUING INSTITUTION]"
+  - "Notary Public - State of Texas"
+  - "Certified Paralegal (CP) - NALA"
+  - "Corporate Governance Certificate"

@@ -1,0 +1,70 @@
+contact:
+  name: "[YOUR NAME]"
+  email: "[YOUR EMAIL]"
+  phone: "[YOUR PHONE]"
+  location: "Dallas, TX (Remote)"
+  linkedin: "[YOUR LINKEDIN]"
+
+objective: "Tech-savvy and self-directed paralegal seeking the {position_title} remote position at {company_name}, bringing proven remote work capabilities, legal technology proficiency, and strong virtual collaboration skills to deliver high-quality legal support from any location."
+
+summary: "Highly organized and self-motivated Paralegal with demonstrated success working remotely in fast-paced legal environments. Proficient in cloud-based legal technology platforms, virtual collaboration tools, and electronic document management. Experienced in managing independent workloads, meeting deadlines across time zones, and maintaining clear communication with attorneys, clients, and courts through digital channels."
+
+skills:
+  - "Remote Work & Virtual Collaboration"
+  - "Cloud-Based Case Management (Clio, PracticePanther, MyCase)"
+  - "Video Conferencing (Zoom, Teams, Google Meet)"
+  - "Electronic Document Management (NetDocuments, iManage)"
+  - "E-Filing Systems (State & Federal Courts)"
+  - "Legal Research (Westlaw, LexisNexis, Fastcase)"
+  - "Document Review & Analysis"
+  - "Project Management (Asana, Trello, Monday.com)"
+  - "Digital Communication (Slack, Microsoft Teams)"
+  - "Contract Review & Drafting"
+  - "Litigation Support & Discovery"
+  - "Time Tracking & Billing (TimeSolv, LEDES)"
+  - "Adobe Acrobat Pro & PDF Management"
+  - "Microsoft Office 365 Suite"
+  - "Google Workspace"
+  - "Data Security & Confidentiality Protocols"
+  - "Self-Directed Task Management"
+  - "Multi-Jurisdictional Filing Procedures"
+  - "Client Intake via Virtual Platforms"
+  - "Deadline Management Across Time Zones"
+
+experience:
+  - title: "Remote Paralegal"
+    company: "[LAW FIRM / COMPANY NAME]"
+    dates: "[START DATE] - Present"
+    bullets:
+      - "Provide comprehensive paralegal support remotely for a team of attorneys across multiple practice areas"
+      - "Manage 50+ active case files using cloud-based case management software with zero missed deadlines"
+      - "Conduct legal research and prepare memoranda using Westlaw and LexisNexis from remote workstation"
+      - "Coordinate virtual client meetings, depositions, and mediations via Zoom and Microsoft Teams"
+      - "Prepare and e-file pleadings, motions, and discovery documents in state and federal courts"
+      - "Maintain organized digital file systems using NetDocuments and SharePoint"
+      - "Communicate daily with attorneys and clients via Slack, email, and video conferencing"
+      - "Track billable hours and generate client invoices using cloud-based billing platforms"
+
+  - title: "Paralegal"
+    company: "[PREVIOUS FIRM NAME]"
+    dates: "[START DATE] - [END DATE]"
+    bullets:
+      - "Transitioned office workflows to remote-capable systems during office modernization initiative"
+      - "Assisted attorneys with litigation support, including discovery management and trial preparation"
+      - "Drafted contracts, correspondence, and legal documents for review"
+      - "Managed calendaring and deadline tracking for multiple attorneys simultaneously"
+      - "Conducted client intake and maintained confidential case records"
+
+education:
+  - degree: "Bachelor of Arts in [FIELD]"
+    school: "[UNIVERSITY NAME]"
+    year: "[YEAR]"
+  - degree: "Paralegal Certificate"
+    school: "[SCHOOL NAME]"
+    year: "[YEAR]"
+
+certifications:
+  - "Paralegal Certificate - [ISSUING INSTITUTION]"
+  - "Notary Public - State of Texas"
+  - "eDiscovery Certification"
+  - "Remote Work Professional Certification"

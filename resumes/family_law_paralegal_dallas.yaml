@@ -1,0 +1,70 @@
+contact:
+  name: "[YOUR NAME]"
+  email: "[YOUR EMAIL]"
+  phone: "[YOUR PHONE]"
+  location: "Dallas, TX"
+  linkedin: "[YOUR LINKEDIN]"
+
+objective: "Experienced family law litigation paralegal seeking the {position_title} position at {company_name}, offering strong expertise in Texas Family Code proceedings, discovery management, and trial preparation to strengthen the firm's family law practice."
+
+summary: "Results-driven Family Law Litigation Paralegal with hands-on experience supporting attorneys through all stages of family law cases in Texas courts. Proficient in divorce proceedings, custody disputes, child support modifications, and protective orders. Adept at managing complex discovery, preparing trial exhibits, drafting pleadings, and coordinating with clients during emotionally sensitive legal matters."
+
+skills:
+  - "Texas Family Code Expertise"
+  - "Divorce Proceedings & Property Division"
+  - "Child Custody & Conservatorship"
+  - "Child Support Calculations & Modifications"
+  - "Protective Orders & Restraining Orders"
+  - "Mediation Preparation & Support"
+  - "Discovery Management (Interrogatories, RFPs, RFAs)"
+  - "Litigation Support & Trial Preparation"
+  - "Court Filing & E-Filing (Texas Courts)"
+  - "Pleading & Motion Drafting"
+  - "Deposition Preparation & Summaries"
+  - "Financial Document Analysis"
+  - "Client Communication & Case Updates"
+  - "Legal Research (Westlaw, LexisNexis)"
+  - "Case Management Software (Clio, MyCase)"
+  - "Calendar & Deadline Management"
+  - "Exhibit Preparation & Organization"
+  - "Subpoena Preparation & Service"
+  - "Temporary Restraining Orders"
+  - "Post-Decree Modifications"
+
+experience:
+  - title: "Family Law Litigation Paralegal"
+    company: "[LAW FIRM NAME]"
+    dates: "[START DATE] - Present"
+    bullets:
+      - "Support attorneys on 75+ active family law cases including contested divorces, custody disputes, and modifications"
+      - "Draft petitions, motions, discovery requests, and responses under the Texas Family Code"
+      - "Prepare protective order applications and represent firm at ex parte hearings alongside attorneys"
+      - "Manage complex discovery processes including document production, interrogatory responses, and deposition scheduling"
+      - "Calculate child support using Texas guidelines and prepare financial information statements"
+      - "Coordinate mediation logistics and prepare mediation statements, settlement proposals, and asset inventories"
+      - "Organize trial exhibits, witness lists, and trial notebooks for contested hearings and jury trials"
+      - "Communicate with clients regarding case updates, document requests, and court dates"
+      - "E-file pleadings and motions in Dallas County and surrounding Texas courts"
+
+  - title: "Legal Assistant - Family Law"
+    company: "[PREVIOUS FIRM NAME]"
+    dates: "[START DATE] - [END DATE]"
+    bullets:
+      - "Assisted with intake for new family law clients, gathering financial records and case history"
+      - "Maintained case calendars and tracked court deadlines for a team of three attorneys"
+      - "Drafted standard divorce pleadings, temporary orders, and agreed decrees"
+      - "Organized and indexed financial discovery documents for property division cases"
+      - "Coordinated with court clerks, opposing counsel, and process servers"
+
+education:
+  - degree: "Bachelor of Arts in [FIELD]"
+    school: "[UNIVERSITY NAME]"
+    year: "[YEAR]"
+  - degree: "Paralegal Certificate"
+    school: "[SCHOOL NAME]"
+    year: "[YEAR]"
+
+certifications:
+  - "Paralegal Certificate - [ISSUING INSTITUTION]"
+  - "Notary Public - State of Texas"
+  - "Texas Board of Legal Specialization - Paralegal (Family Law)"

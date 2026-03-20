@@ -110,25 +110,20 @@ def export_text(resume_dict):
     # Contact info
     contact = resume_dict.get("contact", {})
     lines.append(contact.get("name", "[YOUR NAME]").upper())
+    if resume_dict.get("headline"):
+        lines.append(resume_dict["headline"])
     contact_parts = []
+    if contact.get("location"):
+        contact_parts.append(contact["location"])
     if contact.get("email"):
         contact_parts.append(contact["email"])
     if contact.get("phone"):
         contact_parts.append(contact["phone"])
-    if contact.get("location"):
-        contact_parts.append(contact["location"])
-    if contact_parts:
-        lines.append(" | ".join(contact_parts))
     if contact.get("linkedin"):
-        lines.append(contact["linkedin"])
+        contact_parts.append(contact["linkedin"])
+    if contact_parts:
+        lines.append(" • ".join(contact_parts))
     lines.append("")
-
-    # Objective
-    if resume_dict.get("objective"):
-        lines.append("OBJECTIVE")
-        lines.append("-" * 60)
-        lines.append(resume_dict["objective"])
-        lines.append("")
 
     # Summary
     if resume_dict.get("summary"):
@@ -137,50 +132,69 @@ def export_text(resume_dict):
         lines.append(resume_dict["summary"])
         lines.append("")
 
-    # Skills
+    # Skills / Core Competencies
     skills = resume_dict.get("skills", [])
     if skills:
-        lines.append("SKILLS")
+        lines.append("CORE COMPETENCIES")
         lines.append("-" * 60)
-        # Display in two columns
-        for i in range(0, len(skills), 2):
-            if i + 1 < len(skills):
-                lines.append(f"  * {skills[i]:<40s}  * {skills[i+1]}")
-            else:
-                lines.append(f"  * {skills[i]}")
+        for skill in skills:
+            lines.append(f"  • {skill}")
         lines.append("")
 
     # Experience
     experience = resume_dict.get("experience", [])
     if experience:
-        lines.append("EXPERIENCE")
+        lines.append("PROFESSIONAL EXPERIENCE")
         lines.append("-" * 60)
         for exp in experience:
-            lines.append(f"{exp.get('title', '')} | {exp.get('company', '')}")
-            lines.append(f"{exp.get('dates', '')}")
+            title_line = exp.get("title", "")
+            if exp.get("company"):
+                title_line += f" · {exp['company']}"
+            if exp.get("location"):
+                title_line += f" — {exp['location']}"
+            lines.append(title_line)
+            if exp.get("dates"):
+                lines.append(exp["dates"])
+            # Handle sectioned bullets (e.g., family law resume)
+            if exp.get("sections"):
+                for section in exp["sections"]:
+                    lines.append(f"  {section.get('name', '')}")
+                    for bullet in section.get("bullets", []):
+                        lines.append(f"    • {bullet}")
             for bullet in exp.get("bullets", []):
-                lines.append(f"  - {bullet}")
+                lines.append(f"  • {bullet}")
             lines.append("")
 
     # Education
     education = resume_dict.get("education", [])
     if education:
-        lines.append("EDUCATION")
+        lines.append("EDUCATION & PROFESSIONAL DEVELOPMENT")
         lines.append("-" * 60)
         for edu in education:
             lines.append(
-                f"{edu.get('degree', '')} - {edu.get('school', '')} "
-                f"({edu.get('year', '')})"
+                f"{edu.get('degree', '')} · {edu.get('school', '')}  "
+                f"{edu.get('year', '')}"
             )
+            if edu.get("notes"):
+                lines.append(f"  {edu['notes']}")
         lines.append("")
 
-    # Certifications
+    # Additional
+    additional = resume_dict.get("additional", [])
+    if additional:
+        lines.append("ADDITIONAL")
+        lines.append("-" * 60)
+        for item in additional:
+            lines.append(f"  {item}")
+        lines.append("")
+
+    # Legacy: Certifications (kept for backward compat)
     certs = resume_dict.get("certifications", [])
     if certs:
         lines.append("CERTIFICATIONS")
         lines.append("-" * 60)
         for cert in certs:
-            lines.append(f"  * {cert}")
+            lines.append(f"  • {cert}")
         lines.append("")
 
     return "\n".join(lines)

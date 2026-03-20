@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Import Jobs - Job Tracker{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Import from Email</h1>
+</div>
+
+<div class="card form-card">
+    <p>Paste the content of your Indeed job alert email below. The tool will automatically parse job titles, companies, and locations.</p>
+
+    <div class="tip-box">
+        <strong>Supported formats:</strong>
+        <ul>
+            <li>Title - Company - Location</li>
+            <li>Title at Company in Location</li>
+        </ul>
+    </div>
+
+    <form method="post" action="/import">
+        <div class="form-group">
+            <label for="email_content">Email Content</label>
+            <textarea id="email_content" name="email_content" rows="15"
+                placeholder="Paste your Indeed email content here...
+
+Example:
+Immigration Paralegal - Smith Law Firm - Dallas, TX
+Family Law Paralegal at Jones & Associates in Plano, TX
+Legal Assistant - Corporate Legal Dept - Fort Worth, TX"></textarea>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Import Jobs</button>
+            <a href="/jobs" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

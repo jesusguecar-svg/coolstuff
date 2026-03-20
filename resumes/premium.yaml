@@ -1,0 +1,68 @@
+contact:
+  name: "Jesus Esteban Guerra"
+  email: "jesusguecar@gmail.com"
+  phone: "+1 469-610-6257"
+  location: "Dallas, TX"
+  linkedin: "linkedin.com/in/iamjesusguerra"
+
+headline: "Paralegal | Legal Operations & Tech Integration | Bilingual English/Spanish"
+
+objective: "Paralegal and legal operations professional seeking the {position_title} position at {company_name}, bringing litigation experience combined with a proven track record building AI-powered legal workflow systems and a strong foundation in regulatory frameworks and compliance."
+
+summary: "Paralegal and legal operations professional with 2.5+ years of litigation experience and a parallel track record building AI-powered legal workflow systems from scratch. Holds a Bachelor of Law degree (LL.B.) — a five-year legal education providing strong grounding in civil procedure, evidence, contracts, and regulatory frameworks. Experienced drafting legal documents for attorney review, managing high-volume case files, coordinating filings across multiple jurisdictions, and developing process systems that reduce friction and improve output quality. Comfortable operating in ambiguous, fast-moving environments. Enthusiastic about technology and its application to legal operations. Bilingual in English and Spanish."
+
+skills:
+  - "Legal Document Drafting: Briefs, motions, pleadings, declarations, affidavits, contracts, correspondence"
+  - "Legal Operations: Process design, workflow automation, document management, compliance tracking, e-discovery support, vendor coordination"
+  - "Technology Integration: AI-powered intake systems, automated workflows, document management platforms, case management systems, e-filing"
+  - "Data & Document Management: Organized large document sets across active dockets; structured data collection and file management at scale"
+  - "Contracts & Agreements: Drafting and review assistance; familiar with contract structure, defined terms, representations, and compliance provisions"
+  - "Research & Analysis: Statutory research, regulatory analysis, case law compilation"
+  - "Tools: MS Office Suite, Google Workspace, case management platforms, e-filing systems, AI workflow tools; strong interest in Relativity and Google Vault"
+  - "Languages: English (Fluent) | Spanish (Native)"
+
+experience:
+  - title: "Founder — Legal Tech & Workflow Consultant"
+    company: "Solomon Agency"
+    location: "Dallas, TX"
+    dates: "Aug 2023 – Jan 2026"
+    bullets:
+      - "Designed and deployed an AI-powered legal intake system using Telegram, OpenAI, and Whisper — handling message analysis, voice note transcription, draft reply generation with an approval workflow, conversation memory, encrypted logging, and offline message recovery. Built from scratch, no vendor, no template"
+      - "Developed AI-assisted workflow automation and process documentation systems for professional service clients, reducing manual effort and improving operational consistency"
+      - "Identified operational problems, designed the architecture, tested outputs, and delivered running systems. Also managed client relationships, timelines, and deliverable quality across concurrent engagements"
+      - "Built intake logic, decision trees, and compliance checklists used to structure AI-assisted processes for legal and professional service contexts"
+
+  - title: "Paralegal"
+    company: "Law Office of Ify Ononogbu"
+    location: "Dallas, TX"
+    dates: "Aug 2021 – Dec 2023"
+    bullets:
+      - "Assisted attorneys across a mixed litigation docket spanning immigration proceedings and Texas family law matters — drafting, organizing, and filing legal documents at each stage under attorney supervision"
+      - "Drafted pleadings, motions, declarations, affidavits, proposed orders, and correspondence for attorney review; ensured accuracy, completeness, and compliance with applicable procedural rules before submission"
+      - "Managed document collections and case file organization across high-volume active dockets — tracking deadlines, filing windows, and outstanding items with consistent follow-through"
+      - "Regularly filed documents electronically in Texas state courts and with federal agencies (USCIS, EOIR), managing submission requirements and procedural compliance"
+      - "Compiled legal research on statutes, regulations, and case law for attorney review; assisted in preparing case summaries and document packages for hearings and submissions"
+      - "Communicated directly with clients in English and Spanish — coordinating document collection, explaining process requirements, and managing expectations throughout complex multi-stage matters"
+
+  - title: "Legal Associate"
+    company: "Fazio & Associates"
+    location: "Venezuela"
+    dates: "Aug 2017 – Jan 2018"
+    bullets:
+      - "Drafted legal documents in Spanish for attorney review under Venezuela's civil law procedural framework — including court filings, correspondence, and formal dispositions"
+      - "Compiled research findings for attorney use; maintained organized case files and tracked deadlines across concurrent civil and procedural matters"
+
+education:
+  - degree: "Bachelor of Law (LL.B.)"
+    school: "Universidad Católica del Táchira, Venezuela"
+    year: "2011 – 2016"
+    notes: "Five-year law degree: civil and commercial law, constitutional and administrative law, contracts, employment law, criminal procedure, evidence, and formal legal drafting."
+  - degree: "Introduction to the American Law System"
+    school: "Penn State Law (Non-Credit)"
+    year: "2022"
+  - degree: "Intensive English Business Communication"
+    school: "Chemeketa Community College, OR"
+    year: "2019"
+
+additional:
+  - "Host & Producer — Trascender Hoy Podcast (Spotify, Substack, YouTube): weekly Spanish-language content on immigration law, AI in legal services, and legal operations"

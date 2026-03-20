@@ -388,5 +388,5 @@ def category_name_filter(category):
 
 if __name__ == "__main__":
     print("\n  Job Application Helper Dashboard")
-    print("  http://localhost:5000\n")
-    app.run(debug=True, port=5000)
+    print("  https://localhost:5000\n")
+    app.run(debug=True, port=5000, ssl_context="adhoc")

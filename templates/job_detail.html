@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% block title %}{{ job.title }} - Job Tracker{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <a href="/jobs" class="back-link">&larr; Back to Jobs</a>
+        <h1>{{ job.title }}</h1>
+        <p class="subtitle">{{ job.company }}{% if job.location %} &mdash; {{ job.location }}{% endif %}</p>
+    </div>
+    <span class="status status-{{ job.status or 'pending' }} status-large">
+        {{ (job.status or 'pending')|capitalize }}
+    </span>
+</div>
+
+<div class="grid-2">
+    <!-- Job Info -->
+    <div class="card">
+        <h2>Job Details</h2>
+        <div class="detail-grid">
+            <div class="detail-item">
+                <span class="detail-label">Category</span>
+                <span class="chip">{{ job.category|category_name }}</span>
+            </div>
+            {% if job.salary %}
+            <div class="detail-item">
+                <span class="detail-label">Salary</span>
+                <span>{{ job.salary }}</span>
+            </div>
+            {% endif %}
+            <div class="detail-item">
+                <span class="detail-label">Added</span>
+                <span>{{ job.date_added[:10] if job.date_added else '—' }}</span>
+            </div>
+            {% if job.date_applied %}
+            <div class="detail-item">
+                <span class="detail-label">Applied</span>
+                <span>{{ job.date_applied[:10] }}</span>
+            </div>
+            {% endif %}
+            {% if job.url %}
+            <div class="detail-item">
+                <span class="detail-label">URL</span>
+                <a href="{{ job.url }}" target="_blank" rel="noopener">Open Job Posting &rarr;</a>
+            </div>
+            {% endif %}
+            {% if job.notes %}
+            <div class="detail-item">
+                <span class="detail-label">Notes</span>
+                <span>{{ job.notes }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if job.description %}
+        <h3>Description</h3>
+        <div class="description-box">{{ job.description }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Resume & Cover Letter -->
+    <div>
+        {% if resume %}
+        <div class="card">
+            <h2>Tailored Objective</h2>
+            <p class="objective-text">{{ resume.objective }}</p>
+        </div>
+
+        {% if points %}
+        <div class="card">
+            <h2>Cover Letter Key Points</h2>
+            <ul class="key-points">
+                {% for point in points %}
+                <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if matched_keywords %}
+        <div class="card">
+            <h2>Matched Keywords</h2>
+            <div class="keyword-chips">
+                {% for kw in matched_keywords %}
+                <span class="chip chip-green">{{ kw }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% endif %}
+
+        <!-- Actions -->
+        <div class="card">
+            <h2>Actions</h2>
+            {% if job.status != 'applied' %}
+            <form method="post" action="/jobs/{{ job.id }}/status" class="action-form">
+                <input type="hidden" name="status" value="applied">
+                <input type="text" name="notes" placeholder="Notes (optional)" class="input-full">
+                <button type="submit" class="btn btn-green btn-full">Mark as Applied</button>
+            </form>
+            {% endif %}
+
+            {% if job.status != 'interview' %}
+            <form method="post" action="/jobs/{{ job.id }}/status" class="action-form">
+                <input type="hidden" name="status" value="interview">
+                <button type="submit" class="btn btn-blue btn-full">Mark as Interview</button>
+            </form>
+            {% endif %}
+
+            {% if job.status != 'rejected' %}
+            <form method="post" action="/jobs/{{ job.id }}/status" class="action-form">
+                <input type="hidden" name="status" value="rejected">
+                <button type="submit" class="btn btn-secondary btn-full">Reject</button>
+            </form>
+            {% endif %}
+
+            <form method="post" action="/jobs/{{ job.id }}/delete" class="action-form"
+                  onsubmit="return confirm('Delete this job?')">
+                <button type="submit" class="btn btn-danger btn-full">Delete</button>
+            </form>
+
+            {% if resume %}
+            <a href="/resume/{{ job.category }}?job_id={{ job.id }}" class="btn btn-secondary btn-full" style="text-align:center">
+                View Full Resume
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Application Checklist -->
+<div class="card">
+    <h2>Application Checklist</h2>
+    <div class="checklist">
+        <label class="checklist-item">
+            <input type="checkbox"> Open job posting {% if job.url %}<a href="{{ job.url }}" target="_blank">(link)</a>{% endif %}
+        </label>
+        <label class="checklist-item">
+            <input type="checkbox"> Review job requirements against your experience
+        </label>
+        <label class="checklist-item">
+            <input type="checkbox"> Upload resume ({{ job.category|category_name }} template)
+        </label>
+        <label class="checklist-item">
+            <input type="checkbox"> Write cover letter using key points above
+        </label>
+        <label class="checklist-item">
+            <input type="checkbox"> Double-check all fields and attachments
+        </label>
+        <label class="checklist-item">
+            <input type="checkbox"> Submit application
+        </label>
+    </div>
+</div>
+{% endblock %}

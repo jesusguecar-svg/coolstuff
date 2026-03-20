@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Job Tracker{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Dashboard</h1>
+    <p class="subtitle">{{ now.strftime('%A, %B %d, %Y') }}</p>
+</div>
+
+<!-- Daily Progress -->
+<div class="card progress-card">
+    <div class="card-header">
+        <h2>Today's Progress</h2>
+        <span class="badge {% if pct >= 100 %}badge-green{% elif pct >= 50 %}badge-yellow{% else %}badge-red{% endif %}">
+            {% if pct >= 100 %}Goal Reached!{% elif pct >= 50 %}Keep Going!{% else %}Get Started!{% endif %}
+        </span>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" style="width: {{ pct }}%"></div>
+    </div>
+    <div class="progress-stats">
+        <div class="stat">
+            <span class="stat-number">{{ applied_today }}</span>
+            <span class="stat-label">Applied</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">{{ goal }}</span>
+            <span class="stat-label">Goal</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">{{ daily.pending }}</span>
+            <span class="stat-label">Pending</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">{{ [0, goal - applied_today]|max }}</span>
+            <span class="stat-label">Remaining</span>
+        </div>
+    </div>
+</div>
+
+<div class="grid-2">
+    <!-- Today by Category -->
+    <div class="card">
+        <h2>Today by Category</h2>
+        {% if daily.by_category %}
+        <table>
+            <thead><tr><th>Category</th><th class="text-right">Applied</th></tr></thead>
+            <tbody>
+            {% for cat, count in daily.by_category.items()|sort %}
+            <tr>
+                <td>{{ cat|category_name }}</td>
+                <td class="text-right"><strong>{{ count }}</strong></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="empty-state">No applications yet today. <a href="/jobs?status=pending">Start applying!</a></p>
+        {% endif %}
+    </div>
+
+    <!-- This Week -->
+    <div class="card">
+        <h2>This Week</h2>
+        <p class="big-number">{{ weekly.applied_this_week }}</p>
+        <p class="stat-label" style="text-align:center">applications</p>
+        {% if weekly.by_day %}
+        <table>
+            <thead><tr><th>Day</th><th class="text-right">Applied</th></tr></thead>
+            <tbody>
+            {% for day, count in weekly.by_day.items()|sort %}
+            <tr>
+                <td>{{ day }}</td>
+                <td class="text-right">{{ count }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</div>
+
+<!-- All Time -->
+<div class="card">
+    <h2>All Time</h2>
+    <div class="progress-stats">
+        <div class="stat">
+            <span class="stat-number">{{ total.total }}</span>
+            <span class="stat-label">Total Jobs</span>
+        </div>
+        {% for status, count in total.by_status.items()|sort %}
+        <div class="stat">
+            <span class="stat-number">{{ count }}</span>
+            <span class="stat-label stat-label-{{ status }}">{{ status|capitalize }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% if total.by_category %}
+    <div class="category-chips">
+        {% for cat, count in total.by_category.items()|sort %}
+        <span class="chip">{{ cat|category_name }} <strong>{{ count }}</strong></span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<!-- Quick Actions -->
+<div class="quick-actions">
+    <a href="/jobs/add" class="btn btn-primary">+ Add Job</a>
+    <a href="/jobs?status=pending" class="btn btn-secondary">View Pending ({{ daily.pending }})</a>
+    <a href="/import" class="btn btn-secondary">Import from Email</a>
+</div>
+{% endblock %}

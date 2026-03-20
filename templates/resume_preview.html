@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Resume - Job Tracker{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Resume Preview</h1>
+</div>
+
+<!-- Category selector -->
+<div class="card filter-bar">
+    <form method="get" action="/resume" class="filter-form">
+        <div class="filter-group">
+            <label>Template</label>
+            <select name="category" onchange="this.form.submit()">
+                {% for key, name in categories.items() %}
+                <option value="{{ key }}" {% if current_category == key %}selected{% endif %}>{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Customize for Job ID</label>
+            <input type="number" name="job_id" value="{{ job_id or '' }}" placeholder="Optional" style="width: 100px">
+        </div>
+        <button type="submit" class="btn btn-secondary">Preview</button>
+        {% if current_category %}
+        <a href="/resume/{{ current_category }}/export{% if job_id %}?job_id={{ job_id }}{% endif %}"
+           class="btn btn-primary">Download .txt</a>
+        {% endif %}
+    </form>
+</div>
+
+{% if job %}
+<div class="card">
+    <p><strong>Customized for:</strong> {{ job.title }} at {{ job.company }}</p>
+</div>
+{% endif %}
+
+{% if resume_text %}
+<div class="card resume-card">
+    <pre class="resume-text">{{ resume_text }}</pre>
+</div>
+{% else %}
+<div class="card empty-state-card">
+    <p class="empty-state">Select a template to preview.</p>
+</div>
+{% endif %}
+{% endblock %}

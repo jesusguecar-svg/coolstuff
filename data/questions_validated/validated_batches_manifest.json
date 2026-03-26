@@ -1,0 +1,96 @@
+{
+  "manifest_version": "1.0.0",
+  "description": "Registry of all validated question batches for the Texas General Lines Practice Engine",
+  "total_batches": 10,
+  "total_questions": 250,
+  "batches": [
+    {
+      "batch_id": "01",
+      "file": "question_bank_validated_batch_01.json",
+      "report": "validation_report_batch_01.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "02",
+      "file": "question_bank_validated_batch_02.json",
+      "report": "validation_report_batch_02.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "03",
+      "file": "question_bank_validated_batch_03.json",
+      "report": "validation_report_batch_03.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "04",
+      "file": "question_bank_validated_batch_04.json",
+      "report": "validation_report_batch_04.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "05",
+      "file": "question_bank_validated_batch_05.json",
+      "report": "validation_report_batch_05.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "06",
+      "file": "question_bank_validated_batch_06.json",
+      "report": "validation_report_batch_06.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "07",
+      "file": "question_bank_validated_batch_07.json",
+      "report": "validation_report_batch_07.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "08",
+      "file": "question_bank_validated_batch_08.json",
+      "report": "validation_report_batch_08.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "09",
+      "file": "question_bank_validated_batch_09.json",
+      "report": "validation_report_batch_09.json",
+      "question_count": 25,
+      "status": "approved"
+    },
+    {
+      "batch_id": "10",
+      "file": "question_bank_validated_batch_10.json",
+      "report": "validation_report_batch_10.json",
+      "question_count": 25,
+      "status": "approved"
+    }
+  ],
+  "normalization_log": [
+    {
+      "action": "copy_to_standard_name",
+      "source": "validation_report_batch_06_complete.json",
+      "target": "validation_report_batch_06.json",
+      "reason": "File existed only as *_complete.json variant; content unchanged"
+    },
+    {
+      "action": "duplicate_removed",
+      "file": "question_bank_validated_batch_06_complete.json",
+      "reason": "Identical to question_bank_validated_batch_06.json (diff confirmed)"
+    },
+    {
+      "action": "excluded",
+      "file": "question_bank_raw_batch_03.json",
+      "reason": "Raw files are not permitted in validated pipeline per project constraints"
+    }
+  ]
+}

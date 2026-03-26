@@ -1,0 +1,73 @@
+{
+  "batch_id": "02",
+  "source_file": "question_bank_raw_batch_02_patched.json",
+  "validated_file": "question_bank_validated_batch_02.json",
+  "validation_date": "2026-03-23",
+  "validated_by": "chatgpt",
+  "decision": "APPROVED_WITH_CORRECTIONS",
+  "schema_check": {
+    "status": "pass",
+    "notes": [
+      "All 25 questions include the approved batch fields used in validated batch 01.",
+      "Options are represented as an array of {label,text} objects, consistent with the current repo/app contract.",
+      "No missing required top-level or per-question fields were found."
+    ]
+  },
+  "rule_support_check": {
+    "status": "pass_with_corrections",
+    "notes": [
+      "The uploaded file still contained pre-correction versions of Q004, Q017, and Q023 despite the textual summary saying those edits had already been applied.",
+      "Those three items were corrected during validation using current official sources.",
+      "Q024's patched religion-based distractor was confirmed as supportable under Texas Insurance Code \u00a7544.002."
+    ]
+  },
+  "duplicate_check": {
+    "status": "limited_pass",
+    "notes": [
+      "No material within-batch duplicates were found.",
+      "Cross-batch duplicate review was limited because the full validated bank was not supplied in this validation turn."
+    ]
+  },
+  "flags": [
+    {
+      "question_id": "B02-Q004",
+      "flag_type": "unsupported_rule_statement",
+      "severity": "medium",
+      "issue": "The uploaded file still stated that Texas resident agent licensure requires pre-licensing education.",
+      "resolution": "Corrected the answer text and explanations to track current TDI resident-agent steps: pass the exam before applying, complete fingerprints, and apply through Sircon/NIPR.",
+      "status": "resolved"
+    },
+    {
+      "question_id": "B02-Q017",
+      "flag_type": "factual_error",
+      "severity": "high",
+      "issue": "The uploaded file still used 2 ethics hours instead of the current 3-hour ethics requirement.",
+      "resolution": "Corrected option B and related explanations to 24 hours including 3 hours of ethics.",
+      "status": "resolved"
+    },
+    {
+      "question_id": "B02-Q023",
+      "flag_type": "overstatement",
+      "severity": "medium",
+      "issue": "The uploaded file still treated conversion after COBRA as unconditional.",
+      "resolution": "Made the stem, answer text, and explanation conditional on the group plan actually offering a conversion privilege.",
+      "status": "resolved"
+    },
+    {
+      "question_id": "B02-Q024",
+      "flag_type": "support_check",
+      "severity": "low",
+      "issue": "Patched protected-category distractor required confirmation against Texas Insurance Code \u00a7544.002.",
+      "resolution": "Confirmed as supportable; no further change required.",
+      "status": "resolved"
+    }
+  ],
+  "disposition_summary": {
+    "approved_total": 25,
+    "corrected_during_validation": 4,
+    "validated_without_change": 21,
+    "flagged_unresolved": 0,
+    "rejected": 0
+  },
+  "next_step": "Safe to ingest into data/questions_validated/ after saving both the validated batch and this report."
+}

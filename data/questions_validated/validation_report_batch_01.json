@@ -1,0 +1,75 @@
+{
+  "validation_report": {
+    "batch_id": "01",
+    "validation_date": "2026-03-23",
+    "validator": "claude_self_review_with_upstream_flags",
+    "upstream_flags_source": "chatgpt_validator",
+    "total_questions": 25,
+    "disposition_summary": {
+      "validated_no_changes": 19,
+      "validated_with_edits": 4,
+      "flagged_for_further_review": 0,
+      "rejected": 0,
+      "deferred": 2
+    },
+    "schema_notes": [
+      {
+        "issue": "options field uses array of {label, text} objects",
+        "resolution": "Acceptable. Schema allows array-of-object format. No change needed. Document in schemas.json that both keyed-object and label-text-array formats are permitted.",
+        "severity": "info"
+      },
+      {
+        "issue": "trap_type is null on 11 questions",
+        "resolution": "Acceptable. Null means no deliberate trap pattern was applied. Schema should allow null | string for trap_type.",
+        "severity": "info"
+      }
+    ],
+    "flagged_items": [
+      {
+        "question_id": "B01-Q002",
+        "flag_type": "legal_accuracy",
+        "severity": "medium",
+        "source": "TIC §1114.051(a)(c)(d)",
+        "issue": "Original answer B described the duty as providing a 'written comparison of the existing and proposed policies and a signed replacement notice.' The actual statutory duty under §1114.051 is: (1) submit a signed statement with the application about whether existing policies exist, and (2) if yes, present and read to the applicant a commissioner-approved replacement notice no later than the time of taking the application. There is no 'written comparison' duty on the agent; the duty is the replacement notice in commissioner-approved form.",
+        "action": "Rewrote answer B, correct_explanation, and wrong_explanation for A to match statutory language. Tightened stem to focus on the notice requirement.",
+        "post_edit_status": "validated"
+      },
+      {
+        "question_id": "B01-Q017",
+        "flag_type": "legal_accuracy",
+        "severity": "medium",
+        "source": "TIC §1114.051(a)(b)(c)",
+        "issue": "Original question asked when replacement disclosure duties 'trigger.' The answer was broadly correct (transaction involving lapse/surrender/reduction) but the explanation drifted into vague language. Tightened to match the statute: agent must always submit the signed statement about existing policies (§1114.051(a)). Replacement notice duties trigger only when the applicant states existing policies exist AND the transaction involves replacement.",
+        "action": "Rewrote correct_explanation and wrong_explanation A to reflect the two-step statutory structure. Adjusted stem for clarity.",
+        "post_edit_status": "validated"
+      },
+      {
+        "question_id": "B01-Q019",
+        "flag_type": "timing_ambiguity",
+        "severity": "low",
+        "source": "45 CFR §164.520(c)(1); HHS.gov guidance",
+        "issue": "Original stem said 'during the application process.' Under HIPAA, health plans must provide the Notice of Privacy Practices at enrollment (not at application). Health care providers must provide it at first service delivery. The stem's phrasing created a timing mismatch.",
+        "action": "Changed stem from 'during the application process' to 'when an individual enrolls in an individual health insurance policy.' Adjusted correct_explanation to specify the enrollment trigger.",
+        "post_edit_status": "validated"
+      },
+      {
+        "question_id": "B01-Q021",
+        "flag_type": "legal_overstatement",
+        "severity": "high",
+        "source": "42 U.S.C. §1395ss; Medicare.gov; KFF analysis; NCOA",
+        "issue": "Original answer B stated the insurer 'cannot impose pre-existing condition exclusions' during Medigap open enrollment. This is legally incorrect. Federal law permits insurers to impose up to a 6-month pre-existing condition waiting period even during open enrollment if the applicant lacked prior creditable coverage for 6+ months. The waiting period is reduced month-for-month by creditable coverage. Only applicants with 6+ months of continuous creditable coverage face no waiting period.",
+        "action": "Completely rewrote Q021. New stem tests the correct nuance: guaranteed issue (cannot deny, cannot charge more based on health) is TRUE, but a pre-existing condition waiting period may still apply. Rewrote all options and explanations to reflect the actual federal rule.",
+        "post_edit_status": "validated"
+      }
+    ],
+    "items_validated_without_changes": [
+      "B01-Q001", "B01-Q003", "B01-Q004", "B01-Q005", "B01-Q006",
+      "B01-Q007", "B01-Q008", "B01-Q009", "B01-Q010", "B01-Q011",
+      "B01-Q012", "B01-Q013", "B01-Q014", "B01-Q015", "B01-Q016",
+      "B01-Q018", "B01-Q020", "B01-Q022", "B01-Q023", "B01-Q024",
+      "B01-Q025"
+    ],
+    "deferred_items": [],
+    "batch_verdict": "APPROVED — all 25 questions pass validation after targeted edits to Q002, Q017, Q019, and Q021. Batch may proceed to question_bank_validated_batch_01.json."
+  }
+}

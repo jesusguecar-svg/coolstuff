@@ -1,0 +1,101 @@
+{
+  "batch_id": "04",
+  "source_file": "question_bank_raw_batch_04.json",
+  "validated_file": "question_bank_validated_batch_04.json",
+  "validated_date": "2026-03-24",
+  "validated_by": "chatgpt",
+  "overall_disposition": "APPROVED_WITH_CORRECTIONS",
+  "summary": {
+    "questions_reviewed": 25,
+    "validated_without_change": 21,
+    "corrected_and_validated": 4,
+    "flagged_unresolved": 0,
+    "rejected": 0
+  },
+  "corrections": [
+    {
+      "question_id": "B04-Q011",
+      "severity": "minor",
+      "issue_type": "scope_precision",
+      "issue": "The original stem referred generically to a small-employer group health plan, which could imply plans not subject to Texas mini-COBRA rules.",
+      "correction": "Specified that the employer's plan is fully insured so the 9-month Texas state-continuation answer is unambiguous.",
+      "sources": [
+        "Texas Insurance Code Section 1251.255",
+        "Texas Department of Insurance 2026 Texas Health Coverage Guide"
+      ]
+    },
+    {
+      "question_id": "B04-Q013",
+      "severity": "high",
+      "issue_type": "incorrect_penalty_amount",
+      "issue": "The original item used a $25,000-per-violation ceiling for violating a deceptive-trade-practices cease and desist order, which is not the Chapter 541 administrative-penalty cap.",
+      "correction": "Revised the correct answer to $1,000 per violation and updated the explanation to track Texas Insurance Code Section 541.110 ($1,000 per violation, $5,000 aggregate cap).",
+      "sources": [
+        "Texas Insurance Code Section 541.110"
+      ]
+    },
+    {
+      "question_id": "B04-Q020",
+      "severity": "minor",
+      "issue_type": "timing_precision",
+      "issue": "The original explanation used shorthand about a 30-day deadline without tying it cleanly to the statute's 'monthly basis' language.",
+      "correction": "Clarified the explanation to reflect the statute's monthly-basis reporting requirement and TDI's current 30-day operational guidance for address changes.",
+      "sources": [
+        "Texas Insurance Code Section 4001.252",
+        "Texas Department of Insurance FIN533 / address-change guidance"
+      ]
+    },
+    {
+      "question_id": "B04-Q007",
+      "severity": "minor",
+      "issue_type": "overstatement_cleanup",
+      "issue": "One distractor explanation used unnecessarily absolute wording about the scope of conditional-receipt coverage.",
+      "correction": "Softened the explanation so it states that coverage can take effect if the receipt conditions are satisfied and the applicant is found insurable, rather than using broader absolute language.",
+      "sources": [
+        "project conditional-receipt rule mapping / standard exam treatment"
+      ]
+    }
+  ],
+  "notable_passes": [
+    {
+      "question_id": "B04-Q005",
+      "note": "Supportable under Texas Insurance Code Section 463.451 prohibiting use of guaranty-association protection as a sales inducement."
+    },
+    {
+      "question_id": "B04-Q006",
+      "note": "Correctly applies the Medigap waiting-period reduction using prior creditable coverage."
+    },
+    {
+      "question_id": "B04-Q021",
+      "note": "Supportable under Texas HMO emergency-care provisions requiring coverage without prior authorization and reimbursement obligations for out-of-network emergency care."
+    },
+    {
+      "question_id": "B04-Q023",
+      "note": "Matches Texas Medicare supplement guidance requiring a 30-day free-look period."
+    },
+    {
+      "question_id": "B04-Q025",
+      "note": "Commingling / fiduciary-handling concept is supportable and distinct from prior batches."
+    }
+  ],
+  "schema_review": {
+    "status": "pass",
+    "notes": [
+      "Batch matches the established validated question-item shape used in batches 01 through 03.",
+      "options remain an array of {label, text} objects.",
+      "trap_type null values remain acceptable for questions without an assigned trap."
+    ]
+  },
+  "cross_batch_duplicate_review": {
+    "status": "pass_with_note",
+    "notes": [
+      "No exact duplicates were identified against the supplied validated batches 01 through 03.",
+      "B04-Q016 revisits the defamation concept, but the retained item uses a public-pamphlet dissemination angle that is distinguishable from batch 03's one-to-one competitor-disparagement scenario."
+    ]
+  },
+  "recommendations": [
+    "Move this file to data/questions_validated/question_bank_validated_batch_04.json",
+    "Move this report to data/questions_validated/validation_report_batch_04.json",
+    "Keep Codex wired only to validated-content paths and ingest batch 04 only after these validated files are in the repo."
+  ]
+}

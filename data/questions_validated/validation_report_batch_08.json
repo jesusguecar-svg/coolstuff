@@ -1,0 +1,70 @@
+{
+  "batch_id": "08",
+  "report_version": "1.0.0",
+  "validated_at": "2026-03-25T14:30:00Z",
+  "validator": "chatgpt",
+  "source_batch_file": "question_bank_raw_batch_08.json",
+  "final_batch_file": "question_bank_validated_batch_08.json",
+  "verdict": "APPROVED_WITH_CORRECTIONS",
+  "summary": {
+    "question_count": 25,
+    "schema_status": "pass",
+    "questions_validated_without_substantive_change": 21,
+    "questions_corrected": 4,
+    "questions_flagged": 0,
+    "questions_rejected": 0
+  },
+  "corrections": [
+    {
+      "question_id": "B08-Q014",
+      "issue_type": "duplicate_angle",
+      "severity": "medium",
+      "issue": "Raw item repeated the Medigap 30-day free-look angle already validated in an earlier batch.",
+      "action": "Replaced with a Texas long-term care 30-day free-look angle while preserving the timing concept.",
+      "post_edit_status": "validated"
+    },
+    {
+      "question_id": "B08-Q017",
+      "issue_type": "duplicate_angle",
+      "severity": "low",
+      "issue": "Monthly grace-period angle would have duplicated a prior validated batch if left unchanged.",
+      "action": "Validated the fresh legal-actions timing angle instead.",
+      "post_edit_status": "validated"
+    },
+    {
+      "question_id": "B08-Q018",
+      "issue_type": "unsupported_wording",
+      "severity": "medium",
+      "issue": "Raw item used an unsupported 31-day post-COBRA conversion framing.",
+      "action": "Replaced with the supported COBRA conversion-option rule requiring the option to be offered during the 180-day period ending on COBRA expiration if such a conversion option is otherwise generally available under the plan.",
+      "post_edit_status": "validated"
+    },
+    {
+      "question_id": "B08-Q024",
+      "issue_type": "legal_overstatement",
+      "severity": "medium",
+      "issue": "Raw item overstated that the insurer is always the sole ultimately responsible party for the content of an advertisement.",
+      "action": "Replaced with the supported Texas advertising rule that an advertisement must identify the person or entity responsible for it.",
+      "post_edit_status": "validated"
+    }
+  ],
+  "notable_checks": [
+    {
+      "question_id": "B08-Q003",
+      "result": "supported",
+      "note": "Electronic clean claims from preferred providers generally require action/payment within 30 days; nonelectronic clean claims within 45 days."
+    },
+    {
+      "question_id": "B08-Q006",
+      "result": "supported",
+      "note": "Expired general-lines license renewals within 90 days require the renewal fee plus an additional fee equal to one-half of the required renewal fee, with CE completed."
+    },
+    {
+      "question_id": "B08-Q025",
+      "result": "supported",
+      "note": "Reinstated health policies cover accidental injury after reinstatement and sickness beginning more than 10 days after reinstatement."
+    }
+  ],
+  "cross_batch_review": "Performed targeted duplicate-angle review against validated batches 01\u201307. Approval-blocking repeats were corrected in B08-Q014, B08-Q018, and B08-Q024. No unresolved approval-blocking duplicate-angle issues remain.",
+  "ready_for_repo_ingestion": true
+}

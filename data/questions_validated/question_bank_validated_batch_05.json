@@ -1,0 +1,1305 @@
+{
+  "batch_id": "05",
+  "version": "1.0.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B05-Q001",
+      "rule_ids": [
+        "RC-MED-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Medicare Supplement Texas Rules",
+      "difficulty": "hard",
+      "format": "calculation_scenario",
+      "stem": "A 65-year-old Texas resident enrolls in a Medicare Supplement (Medigap) policy. She had 3 months of continuous creditable group health coverage immediately prior to enrolling. What is the maximum pre-existing condition waiting period the insurer can legally apply to her new Medigap policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0 months"
+        },
+        {
+          "label": "B",
+          "text": "3 months"
+        },
+        {
+          "label": "C",
+          "text": "6 months"
+        },
+        {
+          "label": "D",
+          "text": "9 months"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Insurers may generally impose a maximum pre-existing condition waiting period of 6 months on a new Medigap policy. However, federal and state laws require this 6-month period to be reduced month-for-month by the applicant's prior continuous creditable coverage. Since the applicant had 3 months of creditable coverage, the maximum waiting period is reduced to 3 months (6 months max minus 3 months creditable = 3 months).",
+      "wrong_explanations": {
+        "A": "A zero-month waiting period only applies if the applicant had 6 or more months of continuous creditable coverage.",
+        "C": "6 months is the standard maximum waiting period for an individual with no prior creditable coverage. It must be reduced by her prior coverage.",
+        "D": "9 months exceeds the maximum allowable pre-existing condition waiting period for Medicare Supplements."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q002",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Under the mandatory provisions of the Uniform Individual Accident and Sickness Policy Provisions Law, how many days does the insured typically have to submit a formal written 'Proof of Loss' to the insurer after a covered loss occurs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "60 days"
+        },
+        {
+          "label": "D",
+          "text": "90 days"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "The standard Proof of Loss provision requires the insured to submit formal written proof to the insurer within 90 days of the loss, or as soon as reasonably possible (but not to exceed one year unless the insured is legally incapacitated).",
+      "wrong_explanations": {
+        "A": "15 days is the timeframe the insurer has to provide claim forms to the insured after receiving a Notice of Claim.",
+        "B": "20 days is the timeframe the insured has to provide the initial 'Notice of Claim' to the insurer, not the final Proof of Loss.",
+        "C": "60 days is the waiting period an insured must observe after filing Proof of Loss before they can initiate a lawsuit against the insurer."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q003",
+      "rule_ids": [
+        "RC-UW-003"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Receipts (Conditional vs. Binding)",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An applicant completes a life insurance application, pays the initial premium, and is given a conditional receipt. The insurer requires a medical exam as part of the underwriting process. The very next day, before taking the required medical exam, the applicant dies in a car accident. How will the insurer handle the claim?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pay the full death benefit, because the premium was paid and the receipt was issued."
+        },
+        {
+          "label": "B",
+          "text": "Pay the death benefit, but deduct the cost of the missed medical exam from the proceeds."
+        },
+        {
+          "label": "C",
+          "text": "Deny the claim and refund the premium, because the required medical exam was not completed."
+        },
+        {
+          "label": "D",
+          "text": "Deny the claim, because conditional receipts never cover accidental death prior to policy delivery."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "A conditional receipt makes coverage effective as of the date of the application OR the date of the required medical exam, whichever is later\u2014provided the applicant is insurable at standard rates. Because the applicant died before taking the required medical exam, the condition for coverage was never met. The insurer will deny the claim and refund the premium.",
+      "wrong_explanations": {
+        "A": "Paying the premium is only one condition; completing required medical exams is the other. Coverage does not begin until all requirements are met.",
+        "B": "Insurers do not pay claims with deductions for missed underwriting requirements. If the requirements aren't met, there is no coverage.",
+        "D": "Conditional receipts do cover accidental death, provided the applicant has met all conditions (including the medical exam) and is deemed insurable."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q004",
+      "rule_ids": [
+        "RC-BUS-001",
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Application Procedures",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "A corporation purchases a Key Person life insurance policy on its top executive. The corporation is the applicant, policyowner, premium payor, and beneficiary. Who must sign the application to give consent for this policy to be issued?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only an authorized officer of the corporation"
+        },
+        {
+          "label": "B",
+          "text": "Only the Key Person (the executive)"
+        },
+        {
+          "label": "C",
+          "text": "Both an authorized officer of the corporation and the Key Person"
+        },
+        {
+          "label": "D",
+          "text": "The corporation's board of directors and the agent"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "In any life insurance transaction involving third-party ownership, both the applicant/owner (an authorized officer of the corporation) and the proposed insured (the Key Person) must sign the application. The insured must sign to provide written consent to be insured.",
+      "wrong_explanations": {
+        "A": "The corporation cannot legally take out a life insurance policy on an employee without the employee's written consent and signature.",
+        "B": "The executive must sign as the insured, but the corporation must also sign as the applicant and owner of the policy.",
+        "D": "While the agent signs the application, the critical missing signature in this option is the proposed insured's consent."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q005",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Health Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A self-employed architect purchases an individual Disability Income policy and pays the premiums out of her personal, after-tax savings. How are the premiums and benefits treated for federal income tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Premiums are tax-deductible; benefits are taxable as income."
+        },
+        {
+          "label": "B",
+          "text": "Premiums are not tax-deductible; benefits are received tax-free."
+        },
+        {
+          "label": "C",
+          "text": "Premiums are tax-deductible; benefits are received tax-free."
+        },
+        {
+          "label": "D",
+          "text": "Premiums are not tax-deductible; benefits are taxable as income."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "For an individually owned disability income policy where the insured pays the premiums with after-tax dollars, the premiums are not tax-deductible. Consequently, if the insured becomes disabled, the disability benefits are received 100% tax-free.",
+      "wrong_explanations": {
+        "A": "This describes the tax treatment of group disability income insurance where the employer pays the premiums.",
+        "C": "The IRS does not allow an individual to both deduct the premiums and receive the benefits tax-free.",
+        "D": "Since the premiums were paid with after-tax dollars, the benefits are not taxed again."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q006",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas State Continuation laws, eligible employees who are terminated from a small group health plan can continue their coverage for up to 9 months. To be eligible for this state continuation, the employee must have been continuously covered under the group plan for at least how long prior to termination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 month"
+        },
+        {
+          "label": "B",
+          "text": "3 consecutive months"
+        },
+        {
+          "label": "C",
+          "text": "6 consecutive months"
+        },
+        {
+          "label": "D",
+          "text": "12 consecutive months"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "To qualify for Texas State Continuation of group health insurance, the employee must have been continuously covered under the group plan for at least 3 consecutive months immediately prior to the termination of their employment or the reduction in hours that caused the loss of coverage.",
+      "wrong_explanations": {
+        "A": "1 month of coverage is insufficient to trigger state continuation rights in Texas.",
+        "C": "6 months is not the requirement; the law requires only 3 consecutive months.",
+        "D": "While employees often have a waiting period to join a plan, the specific continuous coverage requirement to qualify for Texas continuation is 3 months, not a full year."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q007",
+      "rule_ids": [
+        "RC-GUAR-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Guaranty Association",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "If a life insurance company operating in Texas becomes financially impaired or insolvent, the Texas Life and Health Insurance Guaranty Association provides consumer protection. What is the maximum amount of life insurance death benefit protection the Association provides for any one individual?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$100,000"
+        },
+        {
+          "label": "B",
+          "text": "$300,000"
+        },
+        {
+          "label": "C",
+          "text": "$500,000"
+        },
+        {
+          "label": "D",
+          "text": "An unlimited amount up to the policy's face value"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under Texas law, the Life and Health Insurance Guaranty Association limits its liability for life insurance death benefits to $300,000 per individual, regardless of how many policies the insured held with the insolvent company.",
+      "wrong_explanations": {
+        "A": "$100,000 is the limit for life insurance net cash surrender and net cash withdrawal values, not the death benefit.",
+        "C": "$500,000 is the limit for basic hospital, medical, and surgical insurance or major medical expense plan benefits.",
+        "D": "The Guaranty Association acts as a safety net with strict statutory limits; it does not guarantee unlimited face values."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q008",
+      "rule_ids": [
+        "RC-LIC-005"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Texas law, a temporary agent's license is intended primarily for training purposes. A temporary license holder may not obtain commissions on sales made to which of the following groups?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Out-of-state residents who commute to Texas for work"
+        },
+        {
+          "label": "B",
+          "text": "The temporary license holder, certain family members, the temporary license holder's employer, the employer's employees, or persons with a family, employment, or business relationship with the temporary license holder"
+        },
+        {
+          "label": "C",
+          "text": "Small businesses with fewer than 50 employees"
+        },
+        {
+          "label": "D",
+          "text": "Individuals who have previously been declined for coverage"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas Insurance Code \u00a74001.157 bars a temporary license holder from obtaining commissions on sales made to people with a family, employment, or business relationship with the temporary license holder, and more specifically bars commissions on contracts covering the temporary license holder, certain relatives, the temporary license holder's employer during the past six months, or the employer's employees.",
+      "wrong_explanations": {
+        "A": "Texas law does not single out commuters or nonresidents here; the restriction is based on family, employment, or business relationships.",
+        "C": "Small businesses may be sold insurance by a temporary license holder if the sale does not fall within the prohibited family, employment, or business-relationship commission restrictions.",
+        "D": "Prior declinations are underwriting matters, not the specific commission restriction imposed on temporary license holders."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q009",
+      "rule_ids": [
+        "RC-BUS-002"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A small business owner purchases a Business Overhead Expense (BOE) disability policy to keep the business running if he suffers a disabling injury. Which of the following expenses would NOT be covered by the BOE policy benefits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Utility bills and property property taxes"
+        },
+        {
+          "label": "B",
+          "text": "Employee salaries and payroll taxes"
+        },
+        {
+          "label": "C",
+          "text": "The business owner's personal salary"
+        },
+        {
+          "label": "D",
+          "text": "Rent for the business premises"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Business Overhead Expense (BOE) insurance is designed to pay the ongoing, routine operating expenses of a business if the owner becomes disabled. It covers rent, utilities, and employee salaries. It specifically does NOT cover the disabled owner's personal salary, income, or profit.",
+      "wrong_explanations": {
+        "A": "Utilities and property taxes are standard fixed overhead expenses covered by a BOE policy.",
+        "B": "Employee salaries (excluding the disabled owner) are critical ongoing expenses covered by BOE.",
+        "D": "Rent for the business property is a classic example of an overhead expense covered by a BOE policy."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q010",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "Two equal partners own a successful restaurant. They want to ensure that if one partner dies, the surviving partner has the funds to purchase the deceased partner's share of the business from their heirs. To achieve this, each partner buys a life insurance policy on the other. This arrangement is known as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Cross-Purchase Buy-Sell Agreement"
+        },
+        {
+          "label": "B",
+          "text": "An Entity Purchase Buy-Sell Agreement"
+        },
+        {
+          "label": "C",
+          "text": "Executive Bonus Plan"
+        },
+        {
+          "label": "D",
+          "text": "Key Person Insurance"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "In a Cross-Purchase Buy-Sell Agreement, the individual business owners purchase life insurance policies on each other. When one dies, the survivor receives the death benefit and uses it to buy the deceased owner's share of the business.",
+      "wrong_explanations": {
+        "B": "In an Entity Purchase (or Stock Redemption) plan, the business itself buys the policies on the owners, pays the premiums, and buys the deceased owner's share.",
+        "C": "An Executive Bonus Plan is a fringe benefit where an employer pays the premium on a personal life insurance policy owned by an employee.",
+        "D": "Key Person Insurance is used to protect the business against the financial loss of a critical employee's death, not to facilitate the transfer of business ownership."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q011",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Medicare Supplement Texas Rules",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "An individual qualifies for guaranteed issue of a Medicare Supplement (Medigap) policy during their Medigap open enrollment period. Under federal and Texas rules, exactly when does this 6-month open enrollment period begin?",
+      "options": [
+        {
+          "label": "A",
+          "text": "On the individual's 65th birthday, regardless of Medicare enrollment status."
+        },
+        {
+          "label": "B",
+          "text": "On the first day of the month in which the individual is both age 65 or older AND enrolled in Medicare Part B."
+        },
+        {
+          "label": "C",
+          "text": "On the first day of the annual Medicare Open Enrollment period (October 15)."
+        },
+        {
+          "label": "D",
+          "text": "On the date the individual officially retires and loses employer-sponsored health coverage."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Medigap open enrollment period is a one-time-only, 6-month period that strictly begins on the first day of the month in which the applicant is both 65 or older AND enrolled in Medicare Part B. During this period, insurers cannot deny coverage or charge higher premiums based on health status.",
+      "wrong_explanations": {
+        "A": "If a person turns 65 but delays enrolling in Part B (because they are still working and have group coverage), their Medigap open enrollment period does not begin until they actually enroll in Part B.",
+        "C": "October 15 to December 7 is the Annual Election Period for Medicare Advantage and Part D plans, which is entirely different from the one-time Medigap open enrollment period.",
+        "D": "While retiring and losing coverage may trigger a Special Enrollment Period for Part B, the Medigap open enrollment rule is specifically tied to Part B effective date at age 65 or older."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q012",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "An agent convinces a policyholder to cancel their existing whole life insurance policy and buy a new one from the agent. The agent achieves this by making false and misleading comparisons about the benefits and costs of the two policies. This illegal practice is known as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Defamation"
+        },
+        {
+          "label": "C",
+          "text": "Twisting"
+        },
+        {
+          "label": "D",
+          "text": "Commingling"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Twisting is the unfair trade practice of making misleading representations or fraudulent comparisons of insurance policies to induce a person to lapse, forfeit, surrender, or exchange their current policy for a new one.",
+      "wrong_explanations": {
+        "A": "Rebating involves offering something of value not stated in the policy as an inducement to buy.",
+        "B": "Defamation involves making maliciously critical or derogatory statements about an insurer's financial condition.",
+        "D": "Commingling is the illegal act of mixing collected premiums with the agent's personal or business funds."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q013",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Texas regulations for Health Maintenance Organizations (HMOs), within what maximum timeframe must the HMO provide an Evidence of Coverage document to a new subscriber after they enroll?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "30 days"
+        },
+        {
+          "label": "C",
+          "text": "60 days"
+        },
+        {
+          "label": "D",
+          "text": "90 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code requires that an HMO issue an Evidence of Coverage document to each subscriber no later than 60 days after enrollment. This document details the covered services, limitations, and the enrollee's rights.",
+      "wrong_explanations": {
+        "A": "15 days is the timeline for an insurer to acknowledge a claim under prompt payment laws.",
+        "B": "30 days is a common timeline (such as for address change notifications), but the EOC must be delivered within 60 days.",
+        "D": "90 days is too long and violates the 60-day statutory maximum for EOC delivery."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q014",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Under the 'Time Limit on Certain Defenses' provision mandatory in all individual health insurance policies, how long does the insurer have to void the policy or deny a claim on the basis of misstatements made on the application (excluding fraudulent misstatements)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 year"
+        },
+        {
+          "label": "B",
+          "text": "2 years"
+        },
+        {
+          "label": "C",
+          "text": "3 years"
+        },
+        {
+          "label": "D",
+          "text": "There is no time limit; misstatements can always void the policy"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Time Limit on Certain Defenses provision (similar to the incontestability clause in life insurance) states that after the policy has been in force for 2 years, no misstatements on the application, except fraudulent ones, can be used to void the policy or deny a claim.",
+      "wrong_explanations": {
+        "A": "1 year is the limit for taking legal action against an insurer after submitting proof of loss (in some instances), but the contestability period is 2 years.",
+        "C": "3 years is the time limit for defending claims in some older life insurance policies from other eras, but the standard uniform health provision is strictly 2 years.",
+        "D": "While fraudulent misstatements can often be contested at any time in health insurance, non-fraudulent misstatements are protected after 2 years."
+      },
+      "trap_type": "TP008-Fraud_Exception_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q015",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "A policyholder purchases an individual health insurance policy and elects to pay the premiums on a weekly basis. Under the Uniform Individual Accident and Sickness Policy Provisions Law, what is the mandatory grace period for this policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7 days"
+        },
+        {
+          "label": "B",
+          "text": "10 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "31 days"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "In individual health insurance, the grace period is tied to the premium payment mode. The mandatory grace period is 7 days for weekly premium policies, 10 days for monthly premium policies, and 31 days for all other modes (quarterly, semi-annual, annual).",
+      "wrong_explanations": {
+        "B": "10 days is the required grace period if premiums are paid on a monthly basis.",
+        "C": "30 days is a common timeline in insurance, but grace periods for health policies are 7, 10, or 31 days.",
+        "D": "31 days is the grace period for policies where premiums are paid quarterly, semi-annually, or annually, as well as for life insurance policies."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q016",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the Texas prompt payment of claims statute, after an insurer receives a notice of claim from an insured, within how many days must the insurer acknowledge receipt of the claim, commence any investigation, and request all items or forms required from the claimant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "20 days"
+        },
+        {
+          "label": "D",
+          "text": "30 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas law dictates that within 15 days of receiving notice of a claim, an insurer must acknowledge receipt, commence any necessary investigation, and request all necessary statements, forms, and items from the claimant.",
+      "wrong_explanations": {
+        "A": "10 days is the standard free look period, not the claim acknowledgment timeframe.",
+        "C": "20 days is the time the insured has to initially notify the insurer of a claim (Notice of Claim), not the insurer's response time.",
+        "D": "30 days is the timeframe the insurer has to pay the claim after receiving all requested items (proof of loss)."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q017",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "When an employee terminates employment and loses coverage under a group life insurance policy, they typically have the right to convert the group coverage to an individual whole life policy without providing evidence of insurability. Under Texas law, what is the length of this conversion period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "31 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The group life insurance conversion privilege gives an employee 31 days after termination of employment to convert their group term coverage to an individual permanent (whole life) policy without proving insurability.",
+      "wrong_explanations": {
+        "A": "10 days is the standard free-look period for life insurance.",
+        "B": "20 days is the standard notice of claim requirement in health insurance, and the free-look period for replacement life policies.",
+        "D": "60 days is the conversion window for some health insurance policies, but group life conversion is strictly 31 days."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q018",
+      "rule_ids": [
+        "RC-PROV-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Life Policy Provisions",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "In Texas, when a new life insurance policy is issued to replace an existing life insurance policy, the replacing insurer must provide the policyowner with a 'free look' period of at least how many days?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "31 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "While the standard free-look period for a newly issued life insurance policy in Texas is 10 days, Texas replacement regulations strictly require a 20-day free-look period when a policy is being replaced, allowing the consumer more time to evaluate the change.",
+      "wrong_explanations": {
+        "A": "10 days is the standard free-look period for non-replacement life insurance transactions.",
+        "C": "30 days is the free-look period required for Medicare Supplement and Long-Term Care policies.",
+        "D": "31 days is the standard grace period for life insurance, not the free-look period."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q019",
+      "rule_ids": [
+        "RC-TAX-004"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Qualified vs. Non-Qualified Retirement Plans",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "An employee participates in an employer-sponsored 401(k) qualified retirement plan. The employer matches the employee's contributions up to 5%. When are the employer's contributions, and the investment earnings on those contributions, taxed to the employee?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are taxed in the year the contribution is made."
+        },
+        {
+          "label": "B",
+          "text": "They are taxed annually based on the growth of the account."
+        },
+        {
+          "label": "C",
+          "text": "They are taxed as ordinary income when they are distributed or withdrawn."
+        },
+        {
+          "label": "D",
+          "text": "They are completely tax-free to the employee at distribution."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "In a tax-qualified retirement plan like a 401(k), employer contributions are tax-deductible to the employer and grow tax-deferred in the account. They are not taxed to the employee until the funds are distributed or withdrawn, at which point the entire withdrawal (contributions and earnings) is taxed as ordinary income.",
+      "wrong_explanations": {
+        "A": "This describes non-qualified compensation. Qualified plan contributions are deferred and not taxed in the year they are made.",
+        "B": "Qualified plans enjoy tax-deferred growth. Earnings are not taxed annually.",
+        "D": "Distributions from traditional qualified plans are fully taxable as ordinary income. Only Roth accounts (which are funded with after-tax dollars) offer tax-free distributions."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q020",
+      "rule_ids": [
+        "RC-ACA-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An employee covered under a Texas small employer health benefit plan gives birth to a child. Under Texas law, initial coverage for the newborn begins at birth. To continue coverage beyond the initial guaranteed period, by when must the issuer receive notice of the birth and any required additional premium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "31 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "For a Texas small employer health benefit plan, coverage of a newborn ends on the 32nd day after birth unless the issuer receives notice of the birth and any required additional premium not later than the 31st day after the date of birth.",
+      "wrong_explanations": {
+        "A": "Texas newborn-coverage statutes do not use 10 days for this notice-and-premium requirement.",
+        "B": "20 days is not the newborn-notice deadline under the small-employer newborn-coverage rule.",
+        "D": "60 days is too late; the statute requires notice and any additional premium by the 31st day after birth."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q021",
+      "rule_ids": [
+        "RC-HMO-004"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "If a Texas HMO denies a proposed medical treatment on the grounds that it is not medically necessary, and the enrollee has exhausted the HMO's internal appeal process, what is the enrollee's next available right of recourse under Texas law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sue the primary care physician for medical malpractice."
+        },
+        {
+          "label": "B",
+          "text": "Request a review by an Independent Review Organization (IRO)."
+        },
+        {
+          "label": "C",
+          "text": "Re-apply for the treatment during the next annual open enrollment period."
+        },
+        {
+          "label": "D",
+          "text": "File a grievance directly with the National Association of Insurance Commissioners (NAIC)."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In Texas, if an HMO or other health carrier makes an 'adverse determination' (denying coverage because a service is deemed not medically necessary or is experimental), the enrollee has the statutory right to an independent, external review by an Independent Review Organization (IRO) after exhausting internal appeals.",
+      "wrong_explanations": {
+        "A": "The denial of coverage is an administrative/contractual decision by the HMO, not a medical malpractice issue by the physician who proposed the treatment.",
+        "C": "Open enrollment periods are for changing health plans, not for appealing clinical denials of specific medical treatments.",
+        "D": "The NAIC is a standard-setting body, not a regulatory agency that reviews individual consumer medical appeals."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q022",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medicare Supplements",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Which part of the original Medicare program primarily covers inpatient hospital care, skilled nursing facility care, and hospice care?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Medicare Part A"
+        },
+        {
+          "label": "B",
+          "text": "Medicare Part B"
+        },
+        {
+          "label": "C",
+          "text": "Medicare Part C"
+        },
+        {
+          "label": "D",
+          "text": "Medicare Part D"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "Medicare Part A is hospital insurance. It covers inpatient hospital care, skilled nursing facility care, hospice care, and some home health care.",
+      "wrong_explanations": {
+        "B": "Medicare Part B is medical insurance, which primarily covers doctors' services, outpatient care, medical supplies, and preventive services.",
+        "C": "Medicare Part C (Medicare Advantage) is a private plan option that bundles Part A, Part B, and usually Part D into a single plan.",
+        "D": "Medicare Part D is the prescription drug coverage program."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q023",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Health Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Health Savings Accounts (HSAs) offer significant tax advantages for individuals enrolled in High Deductible Health Plans (HDHPs). Which of the following best describes the tax treatment of HSA withdrawals used for qualified medical expenses?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are taxed as ordinary income, but are not subject to a penalty."
+        },
+        {
+          "label": "B",
+          "text": "They are taxed as capital gains."
+        },
+        {
+          "label": "C",
+          "text": "They are completely tax-free."
+        },
+        {
+          "label": "D",
+          "text": "They are tax-free only up to the amount of the plan's deductible."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The primary advantage of a Health Savings Account (HSA) is its triple tax benefit: contributions are tax-deductible, earnings grow tax-deferred, and withdrawals used for qualified medical expenses are completely tax-free.",
+      "wrong_explanations": {
+        "A": "If an HSA withdrawal is used for NON-qualified expenses before age 65, it is taxed as ordinary income AND is subject to a 20% penalty.",
+        "B": "HSA funds are never taxed as capital gains; they are either tax-free (for medical) or taxed as ordinary income (for non-medical).",
+        "D": "Tax-free withdrawals are not limited by the deductible; they apply to all qualified medical expenses, including copays, coinsurance, and vision/dental care."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q024",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Under the mandatory 'Entire Contract' provision found in all individual health insurance policies, the entire contract consists of the policy document, any attached riders or endorsements, and which other important document?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The agent's sales illustration"
+        },
+        {
+          "label": "B",
+          "text": "The Medical Information Bureau (MIB) report"
+        },
+        {
+          "label": "C",
+          "text": "A copy of the original application"
+        },
+        {
+          "label": "D",
+          "text": "The attending physician's statement"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Entire Contract provision states that the health insurance policy, including any attached riders, endorsements, and a copy of the original application, constitutes the entire contract between the parties. Nothing outside of these attached documents can be used in court to alter the terms.",
+      "wrong_explanations": {
+        "A": "Sales illustrations are marketing materials and are explicitly not part of the legal contract.",
+        "B": "The MIB report is an underwriting tool used by the insurer, but it is not attached to or part of the legal contract.",
+        "D": "Physician statements are underwriting evidence, but unless they are incorporated into the application itself, they are not part of the entire contract."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B05-Q025",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Texas insurance law, it is strictly prohibited and considered unfair discrimination to charge different premiums or deny coverage to individuals of the same actuarial class based solely on which of the following?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age and gender"
+        },
+        {
+          "label": "B",
+          "text": "Tobacco usage"
+        },
+        {
+          "label": "C",
+          "text": "Blindness or partial blindness"
+        },
+        {
+          "label": "D",
+          "text": "A history of severe heart disease"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code strictly prohibits insurers from refusing to insure, refusing to continue to insure, or limiting the amount, extent, or kind of coverage available to an individual based solely on blindness or partial blindness.",
+      "wrong_explanations": {
+        "A": "Age and gender are standard, legally permitted actuarial factors used to determine premiums for life and health insurance.",
+        "B": "Tobacco usage carries known morbidity and mortality risks and is a standard, permitted rating factor.",
+        "D": "Severe heart disease represents a distinct actuarial risk, and insurers are legally permitted to underwrite, rate, or deny coverage based on such adverse health history."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T15:34:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T16:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    }
+  ]
+}

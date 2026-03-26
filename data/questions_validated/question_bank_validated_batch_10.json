@@ -1,0 +1,1302 @@
+{
+  "batch_id": "10",
+  "version": "1.0.0",
+  "generated_date": "2026-03-25",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B10-Q001",
+      "rule_ids": [
+        "RC-LIFE-008"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Juvenile Life",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "A parent purchases a whole life insurance policy on their young child. The policy features a level premium, but automatically increases the face amount of the death benefit\u2014typically by five times the original amount\u2014when the child reaches a specific age (usually 18 or 21). This specific type of policy is known as a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Modified Whole Life policy"
+        },
+        {
+          "label": "B",
+          "text": "Jumping Juvenile policy"
+        },
+        {
+          "label": "C",
+          "text": "Guaranteed Insurability policy"
+        },
+        {
+          "label": "D",
+          "text": "Return of Premium policy"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A Jumping Juvenile policy (also known as a Juvenile Estate Builder) is a specialized permanent life insurance product for children. Its defining feature is that the death benefit automatically 'jumps' (usually quintuples) when the insured child reaches the age of majority, without any increase in the premium or required evidence of insurability.",
+      "wrong_explanations": {
+        "A": "Modified Whole Life features premiums that start low and increase after a few years, but the death benefit remains level.",
+        "C": "Guaranteed Insurability is a rider that allows the purchase of additional coverage at future dates at standard rates, but it requires the payment of additional premiums for each increase.",
+        "D": "Return of Premium is a term life feature that refunds premiums if the insured outlives the term; it does not multiply the death benefit."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q002",
+      "rule_ids": [
+        "RC-LIC-009"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Agent Responsibilities and Maintenance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Texas Insurance Code \u00a74001.252, an individual licensed as an agent must notify the department on a monthly basis of which of the following events?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A change in the office furniture used by the agency"
+        },
+        {
+          "label": "B",
+          "text": "A felony conviction of the license holder"
+        },
+        {
+          "label": "C",
+          "text": "A routine change in the insurer's underwriting guidelines"
+        },
+        {
+          "label": "D",
+          "text": "A change in the premium rate for one product line"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas Insurance Code \u00a74001.252 requires an individual licensed as an agent to notify the department on a monthly basis of certain information, including a felony conviction of the license holder, a change of mailing address, or an administrative action taken by a financial or insurance regulator. Routine business changes like office furniture or product pricing are not part of this notice requirement.",
+      "wrong_explanations": {
+        "A": "Office setup changes are not among the statutory items that must be reported to the department.",
+        "C": "Underwriting-guideline changes belong to the insurer's product administration, not the individual agent's monthly notice duties.",
+        "D": "Premium-rate changes are filed by insurers with regulators; they are not monthly-report items for an individual agent."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate address-change angle with different \u00a74001.252 reporting trigger."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q003",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A policyowner conducts a Section 1035 tax-free exchange, transferring the cash value of an old life insurance policy into a new one. The old policy had an outstanding loan of $15,000, which the insurer forgives/extinguishes rather than carrying it over to the new policy. How does the IRS treat the extinguished $15,000 loan?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is completely tax-free because the transaction qualifies under Section 1035."
+        },
+        {
+          "label": "B",
+          "text": "It is treated as 'boot' and is taxable as ordinary income to the extent of any gain in the old policy."
+        },
+        {
+          "label": "C",
+          "text": "It reduces the death benefit of the new policy but triggers no immediate tax consequences."
+        },
+        {
+          "label": "D",
+          "text": "It is taxed at the long-term capital gains rate, regardless of the policy's cost basis."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In a 1035 exchange, if an outstanding loan is extinguished (forgiven) rather than carried over into the new policy, the IRS treats the extinguished debt as constructive receipt of cash. This cash equivalent is known as 'boot.' Boot is taxable as ordinary income to the extent that there is a gain in the surrendered policy.",
+      "wrong_explanations": {
+        "A": "While the rollover of the main cash value is tax-free, the extinguished loan is considered an economic benefit received by the owner, violating the pure tax-free status.",
+        "C": "It does trigger immediate tax consequences because the debt was wiped out.",
+        "D": "Gains in life insurance are taxed as ordinary income, never as capital gains."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q004",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Limited and Specialized Health Policies",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A university purchases a single health insurance policy designed specifically to cover all of its student athletes against injuries sustained while participating in school-sponsored sports. Individual students are not issued certificates of insurance, and coverage automatically updates as the roster changes. This is an example of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fraternal benefit insurance"
+        },
+        {
+          "label": "B",
+          "text": "Standard group major medical insurance"
+        },
+        {
+          "label": "C",
+          "text": "Blanket health insurance"
+        },
+        {
+          "label": "D",
+          "text": "A Health Maintenance Organization (HMO) plan"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Blanket health insurance is designed for groups where the membership changes frequently, such as students, passengers on a common carrier, or sports teams. Because the individuals covered change constantly, the insurer does not underwrite individuals or issue individual certificates of coverage.",
+      "wrong_explanations": {
+        "A": "Fraternal benefit insurance is sold by fraternal societies to their dues-paying members, not by institutions covering transient groups.",
+        "B": "Standard employer group health insurance issues individual certificates of coverage to each enrolled employee.",
+        "D": "An HMO provides comprehensive health care to enrolled subscribers in a specific geographic area, not specialized, certificate-free injury coverage for transient groups."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q005",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An agent distributes branded promotional items, such as calendars and pens, to prospective clients during a sales presentation. Under Texas anti-rebating laws, this practice is permitted as long as the value of the promotional item does not exceed:",
+      "options": [
+        {
+          "label": "A",
+          "text": "$10"
+        },
+        {
+          "label": "B",
+          "text": "$25"
+        },
+        {
+          "label": "C",
+          "text": "$50"
+        },
+        {
+          "label": "D",
+          "text": "$100"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas law permits certain promotional advertising items, educational items, or traditional courtesies commonly extended to consumers if the item is valued at $25 or less.",
+      "wrong_explanations": {
+        "A": "$10 is below the statutory limit but is not the maximum allowable amount.",
+        "C": "$50 exceeds the maximum amount allowed for this promotional-item exception.",
+        "D": "$100 is far above the permitted limit and would risk becoming an unlawful inducement."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q006",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas Insurance Code \u00a7843.203, an enrollee in a Health Maintenance Organization (HMO) has the right to select or change a primary care physician or provider within the network. An HMO may limit the enrollee's request to change physicians or providers to not more than how many changes in a 12-month period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 changes"
+        },
+        {
+          "label": "B",
+          "text": "4 changes"
+        },
+        {
+          "label": "C",
+          "text": "6 changes"
+        },
+        {
+          "label": "D",
+          "text": "12 changes"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas Insurance Code \u00a7843.203 gives an enrollee the right to select or change a primary care physician or provider within the HMO network, but it allows the HMO to limit those changes to not more than four in a 12-month period.",
+      "wrong_explanations": {
+        "A": "Texas law allows the HMO to permit up to four changes, not just two.",
+        "C": "Six changes would exceed the statutory maximum the HMO may impose.",
+        "D": "The statute does not require unlimited monthly changes; it specifically permits a four-change annual limit."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate HMO Evidence of Coverage timing angle with PCP-change rule."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q007",
+      "rule_ids": [
+        "RC-LIFE-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Underwriting Process",
+      "difficulty": "easy",
+      "format": "scenario",
+      "stem": "An investment group targets elderly individuals, persuading them to take out large life insurance policies. The investors pay all the premiums and are named as the beneficiaries, intending to collect the death benefit for profit when the seniors die. Because the investors have no true financial loss upon the seniors' deaths, this illegal scheme is known as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Viatical Settlement"
+        },
+        {
+          "label": "B",
+          "text": "Stranger-Originated Life Insurance (STOLI)"
+        },
+        {
+          "label": "C",
+          "text": "A Life Settlement"
+        },
+        {
+          "label": "D",
+          "text": "Third-Party Beneficiary Fraud"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Stranger-Originated Life Insurance (STOLI) is an arrangement in which a policy is procured for the benefit of a party that lacks insurable interest, typically an investor who intends to profit from the death benefit.",
+      "wrong_explanations": {
+        "A": "A viatical settlement involves the sale of an existing policy by a terminally ill insured.",
+        "C": "A life settlement is the sale of an existing policy that was originally procured for a legitimate reason.",
+        "D": "That is not the recognized insurance-law term for this scheme."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q008",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Group Health Insurance",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A 66-year-old employee continues to work full-time for a large corporation with 500 employees. The employee is covered by the corporation's group health plan and is also enrolled in Medicare Parts A and B. If the employee incurs a medical expense, how are the benefits coordinated between the two plans?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Medicare is the primary payer, and the employer group plan is secondary."
+        },
+        {
+          "label": "B",
+          "text": "The employer group plan is the primary payer, and Medicare is secondary."
+        },
+        {
+          "label": "C",
+          "text": "The two plans split the costs exactly 50/50."
+        },
+        {
+          "label": "D",
+          "text": "Medicare is the exclusive payer because federal law voids group coverage at age 65."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under Medicare Secondary Payer rules, when an actively working employee age 65 or older is covered by a large employer plan (20 or more employees), the employer group plan pays first and Medicare pays second.",
+      "wrong_explanations": {
+        "A": "Medicare would be primary only in smaller-employer or retired-employee situations.",
+        "C": "Primary/secondary coordination is used, not an automatic 50/50 split.",
+        "D": "Federal law does not cancel employer coverage at age 65."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q009",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the required \u201cChange of Beneficiary\u201d provision for an individual accident and health insurance policy, who generally has the right to change the beneficiary when the original designation is not irrevocable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the current beneficiary"
+        },
+        {
+          "label": "B",
+          "text": "The insured, without needing the beneficiary's consent"
+        },
+        {
+          "label": "C",
+          "text": "The insurer, whenever it determines a change is equitable"
+        },
+        {
+          "label": "D",
+          "text": "Any family member who paid a premium on the policy"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The required Change of Beneficiary provision for an individual accident and health policy reserves the right to change the beneficiary to the insured unless the insured made an irrevocable designation. In that ordinary case, the beneficiary's consent is not required for a change, surrender, assignment, or other policy changes.",
+      "wrong_explanations": {
+        "A": "A revocable beneficiary does not control the policy and cannot veto a change by the insured.",
+        "C": "The insurer administers the contract but does not choose beneficiaries for the policyowner.",
+        "D": "Paying a premium does not itself create policy-control rights unless the person is the insured or owner with those rights reserved."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate Facility of Payment angle with change-of-beneficiary provision."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q010",
+      "rule_ids": [
+        "RC-LIC-008"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "The Texas Commissioner of Insurance issues a temporary agent's license to a qualified applicant while the applicant is being considered for appointment by an insurer. What is the maximum duration of this temporary license under Texas Insurance Code \u00a74001.155?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "90 days"
+        },
+        {
+          "label": "C",
+          "text": "180 days"
+        },
+        {
+          "label": "D",
+          "text": "1 year"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under Texas Insurance Code \u00a74001.155, a temporary agent's license is valid for 180 days after the date the license is issued. The temporary license is a short-term authorization but it is longer than 90 days.",
+      "wrong_explanations": {
+        "A": "30 days is far shorter than the statutory maximum temporary-license term.",
+        "B": "90 days is not the general term in \u00a74001.155 for this temporary license.",
+        "D": "A temporary agent's license does not remain valid for a full year."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt",
+          "note": "Corrected from unsupported surviving-spouse 90-day framing to general temporary-license term."
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Corrected temporary-license term to 180 days under \u00a74001.155."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q011",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Which of the following is true regarding a Cost of Living (COL) rider attached to a life insurance policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It automatically increases the death benefit based on an inflation index without requiring the insured to prove insurability."
+        },
+        {
+          "label": "B",
+          "text": "It decreases the premium when the Consumer Price Index (CPI) drops."
+        },
+        {
+          "label": "C",
+          "text": "It allows the insured to purchase additional coverage at specific ages, provided they undergo a new medical exam."
+        },
+        {
+          "label": "D",
+          "text": "It waives the policy premiums if the insured's living expenses exceed their disability income."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "A Cost of Living rider increases the death benefit based on an inflation index, typically without requiring evidence of insurability for those automatic increases.",
+      "wrong_explanations": {
+        "B": "The rider is designed to increase benefits with inflation, not to reduce premiums if inflation eases.",
+        "C": "That describes a different purchase-option style rider, not a COL rider.",
+        "D": "That is not the function of a COL rider."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q012",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Limited and Specialized Health Policies",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "An individual buys a specialized health insurance policy that promises to pay a fixed, one-time lump sum of $50,000 if the insured is diagnosed with cancer, regardless of the actual cost of medical treatment. What type of policy is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A comprehensive major medical policy"
+        },
+        {
+          "label": "B",
+          "text": "A dread disease / critical illness policy"
+        },
+        {
+          "label": "C",
+          "text": "A hospital indemnity policy"
+        },
+        {
+          "label": "D",
+          "text": "A short-term medical policy"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A dread disease or critical illness policy pays a flat lump sum on diagnosis of a covered illness such as cancer, heart attack, or stroke, without tying payment to actual medical bills.",
+      "wrong_explanations": {
+        "A": "Major medical pays covered expenses rather than a fixed diagnostic lump sum.",
+        "C": "Hospital indemnity generally pays a fixed daily or per-confinement amount rather than a disease-triggered lump sum like this.",
+        "D": "Short-term medical is temporary broad health coverage, not a diagnosis-triggered lump-sum product."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q013",
+      "rule_ids": [
+        "RC-TAX-003"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Health Insurance",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A 55-year-old taxpayer pays out-of-pocket premiums for an individual, tax-qualified Long-Term Care (LTC) insurance policy. Under federal tax law, how are these premium payments treated if the individual itemizes their deductions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are fully deductible from the first dollar."
+        },
+        {
+          "label": "B",
+          "text": "They are never deductible because they are considered personal expenses."
+        },
+        {
+          "label": "C",
+          "text": "They are deductible as medical expenses, but only to the extent that total unreimbursed medical expenses exceed 7.5% of Adjusted Gross Income (AGI)."
+        },
+        {
+          "label": "D",
+          "text": "They are deductible only if the taxpayer actually receives LTC benefits during the tax year."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Tax-qualified LTC premiums may be treated as medical expenses, and itemized medical expenses are deductible only to the extent they exceed 7.5% of AGI, subject to other applicable tax limits.",
+      "wrong_explanations": {
+        "A": "They are not deductible from the first dollar.",
+        "B": "Qualified LTC premiums can qualify as medical expenses under federal law.",
+        "D": "The deduction turns on paying qualified premiums, not on receiving benefits that year."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q014",
+      "rule_ids": [
+        "RC-LIFE-030"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Viatical Settlements",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "In a life settlement transaction, a licensed life settlement broker negotiates the sale of a policy between the policyowner and a life settlement provider. Under Texas law, to whom does the life settlement broker exclusively owe a fiduciary duty?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The life settlement provider (the buyer)"
+        },
+        {
+          "label": "B",
+          "text": "The original insurance company that issued the policy"
+        },
+        {
+          "label": "C",
+          "text": "The policyowner (the viator)"
+        },
+        {
+          "label": "D",
+          "text": "The primary beneficiary of the policy"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas law provides that a life settlement broker represents only the policyowner and owes a fiduciary duty to act according to the owner's instructions and in the owner's best interest.",
+      "wrong_explanations": {
+        "A": "The broker does not represent the provider.",
+        "B": "The broker owes no fiduciary duty to the issuing insurer in this transaction.",
+        "D": "The broker's duty runs to the current owner who is selling the policy, not to the beneficiary."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q015",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A dependent child is covered under their parent's employer-sponsored group health plan. The child reaches age 26 and is no longer eligible for coverage under the plan. Under federal COBRA regulations, what continuation rights does this dependent have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They have no continuation rights because reaching age 26 is not a qualifying event."
+        },
+        {
+          "label": "B",
+          "text": "They are eligible to continue coverage for up to 18 months."
+        },
+        {
+          "label": "C",
+          "text": "They are eligible to continue coverage for up to 29 months."
+        },
+        {
+          "label": "D",
+          "text": "They are eligible to continue coverage for up to 36 months."
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Loss of dependent status is a COBRA qualifying event for the affected dependent, and the maximum continuation period for that event is 36 months.",
+      "wrong_explanations": {
+        "A": "Aging out is a qualifying event under COBRA.",
+        "B": "18 months is the standard period for termination or reduction in hours, not loss of dependent status.",
+        "C": "29 months applies to certain disability extensions."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q016",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Five years after purchasing a universal life insurance policy that successfully passed the initial IRS 7-pay test, the policyowner exercises their right to significantly increase the policy's death benefit. How does this action affect the policy's tax status under IRS rules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It automatically classifies the policy as a Modified Endowment Contract (MEC)."
+        },
+        {
+          "label": "B",
+          "text": "It constitutes a \"material change,\" requiring the policy to undergo a brand new 7-pay test from the date of the change."
+        },
+        {
+          "label": "C",
+          "text": "It has no effect because the policy already passed the 7-pay test at inception."
+        },
+        {
+          "label": "D",
+          "text": "It converts the policy from a FIFO tax structure to a capital gains tax structure."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A material change, such as a significant increase in death benefit, triggers a new 7-pay test under MEC rules; the policy is retested from the date of the change rather than automatically becoming a MEC.",
+      "wrong_explanations": {
+        "A": "The policy must be retested, but it does not become a MEC automatically.",
+        "C": "Passing the original test does not prevent a later material change from reopening MEC testing.",
+        "D": "Capital gains treatment is not the governing rule here."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q017",
+      "rule_ids": [
+        "RC-COMM-004"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Commissioner of Insurance",
+      "difficulty": "easy",
+      "format": "scenario",
+      "stem": "The Texas Commissioner of Insurance discovers that an unlicensed individual is actively selling fraudulent health insurance policies, presenting an immediate danger to the public welfare. What immediate administrative action can the Commissioner take to halt this activity before a full hearing is held?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Issue an emergency cease and desist order."
+        },
+        {
+          "label": "B",
+          "text": "Arrest the individual and impound their business records."
+        },
+        {
+          "label": "C",
+          "text": "Revoke the individual's nonexistent license."
+        },
+        {
+          "label": "D",
+          "text": "Assess an immediate criminal penalty of $25,000 without due process."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "Texas Insurance Code Chapter 83 authorizes the commissioner to issue an ex parte emergency cease and desist order when statutory conditions are met, including unauthorized insurance activity or fraudulent or hazardous conduct presenting immediate danger.",
+      "wrong_explanations": {
+        "B": "The commissioner is a regulator, not a criminal arresting authority.",
+        "C": "There is no license to revoke if the person is unlicensed.",
+        "D": "The commissioner cannot impose criminal penalties without due process."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q018",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Beneficiaries",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An insured names their two adult children, Alex and Brenda, as equal primary beneficiaries 'per stirpes.' Alex has two children of his own. If Alex dies before the insured, and then the insured dies a year later, how will the insurer distribute the death benefit proceeds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Brenda receives 100% of the proceeds."
+        },
+        {
+          "label": "B",
+          "text": "Brenda receives 50%, and Alex's two children each receive 25%."
+        },
+        {
+          "label": "C",
+          "text": "Brenda, and Alex's two children, each receive exactly 33.3%."
+        },
+        {
+          "label": "D",
+          "text": "Brenda receives 50%, and the other 50% is paid to the insured's estate."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under a per stirpes designation, a deceased beneficiary's branch receives that beneficiary's share. So Brenda keeps her 50%, and Alex's 50% share passes to Alex's two children equally.",
+      "wrong_explanations": {
+        "A": "That result would be more like a surviving-beneficiary absorption outcome, not per stirpes.",
+        "C": "Per stirpes follows the family branch rather than equal headcount among all survivors.",
+        "D": "The per stirpes designation directs the deceased beneficiary's share to descendants, not back to the insured's estate."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q019",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medicare Part B",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under original Medicare Part B (Medical Insurance), once the beneficiary has met the annual calendar-year deductible, what percentage of the Medicare-approved amount is the beneficiary responsible for paying as coinsurance for covered medical services?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0%"
+        },
+        {
+          "label": "B",
+          "text": "10%"
+        },
+        {
+          "label": "C",
+          "text": "20%"
+        },
+        {
+          "label": "D",
+          "text": "30%"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "After the Part B deductible is met, the beneficiary typically pays 20% of the Medicare-approved amount for covered services, with Medicare paying 80%.",
+      "wrong_explanations": {
+        "A": "Part B is not 100% coverage after the deductible.",
+        "B": "10% is lower than the standard patient coinsurance.",
+        "D": "30% is higher than the standard Part B coinsurance."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q020",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the mandatory Legal Actions provision in an individual accident and health insurance policy, the insured may not bring an action at law or in equity to recover on the policy before which point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Before the 31st day after written proof of loss is provided"
+        },
+        {
+          "label": "B",
+          "text": "Before the 45th day after written proof of loss is provided"
+        },
+        {
+          "label": "C",
+          "text": "Before the 61st day after written proof of loss is provided"
+        },
+        {
+          "label": "D",
+          "text": "Before the 91st day after written proof of loss is provided"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code \u00a71201.217 requires an individual accident and health policy to state that no action at law or in equity may be brought to recover on the policy before the 61st day after written proof of loss has been provided. The same provision also bars suit after three years from the time proof of loss was required.",
+      "wrong_explanations": {
+        "A": "31 days is not the waiting period in the Legal Actions provision.",
+        "B": "45 days is not the statutory waiting period for suit under the required provision.",
+        "D": "The required waiting period is 61 days, not 91 days."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate Notice of Claim timing angle with Legal Actions provision."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q021",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "Which disability rider is specifically designed to be attached to a Universal Life insurance policy to cover the internal mortality and expense charges from the cash value if the insured becomes totally disabled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Waiver of Premium rider"
+        },
+        {
+          "label": "B",
+          "text": "Waiver of Monthly Deduction rider"
+        },
+        {
+          "label": "C",
+          "text": "Disability Income rider"
+        },
+        {
+          "label": "D",
+          "text": "Payor Benefit rider"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Because universal life uses monthly internal deductions rather than a single fixed premium in the same way as traditional policies, the disability-related rider used is the Waiver of Monthly Deduction rider.",
+      "wrong_explanations": {
+        "A": "Waiver of Premium is the traditional rider used for fixed-premium policies.",
+        "C": "A disability income rider pays cash benefits rather than merely protecting policy deductions.",
+        "D": "A Payor Benefit rider is associated with juvenile-policy premium protection."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q022",
+      "rule_ids": [
+        "RC-ACA-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Affordable Care Act (State Implementations)",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under the Affordable Care Act (ACA), all non-grandfathered individual and small group health insurance plans are required to cover 10 core categories of Essential Health Benefits (EHBs). Which of the following is explicitly mandated as one of these 10 EHBs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adult dental and vision care"
+        },
+        {
+          "label": "B",
+          "text": "Pediatric services, including oral and vision care"
+        },
+        {
+          "label": "C",
+          "text": "Long-term custodial care in a nursing facility"
+        },
+        {
+          "label": "D",
+          "text": "Cosmetic surgery and elective procedures"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Pediatric services, including oral and vision care, are among the ACA's essential health benefit categories for applicable plans.",
+      "wrong_explanations": {
+        "A": "Adult dental and vision are not among the federal EHB categories.",
+        "C": "Long-term custodial care is not an EHB.",
+        "D": "Cosmetic and elective procedures are not mandated EHBs."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q023",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A depository institution tells a borrower that the loan will be approved only if the borrower purchases hazard insurance through the bank's affiliated agency, even though the borrower already has acceptable coverage available elsewhere. Under Texas insurance law, this conduct is an example of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A permissible cross-selling practice"
+        },
+        {
+          "label": "B",
+          "text": "Tying, an unfair method of competition or unfair practice"
+        },
+        {
+          "label": "C",
+          "text": "A lawful illustration requirement"
+        },
+        {
+          "label": "D",
+          "text": "A rebate because the borrower received a discount"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas Insurance Code \u00a7556.051 treats it as an unfair practice for a depository institution to condition the extension or renewal of credit on the purchase of insurance from the institution, its affiliate, or a particular person or entity. That conduct is commonly described as tying.",
+      "wrong_explanations": {
+        "A": "Conditioning credit on buying insurance from a specific source is specifically prohibited, not merely aggressive marketing.",
+        "C": "Illustration rules concern policy disclosures, not coercive loan-conditioning practices.",
+        "D": "The problem here is coercive conditioning of credit, not the offering of an unauthorized inducement to buy."
+      },
+      "trap_type": "TP005-Ethical_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate defamation angle with tying by depository institution."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q024",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Beneficiaries",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured names three adult children as equal beneficiaries \u201cper capita.\u201d One child dies before the insured, leaving two children of their own. When the insured later dies, how are the proceeds distributed under the per capita designation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The deceased child's two children split their parent's one-third share"
+        },
+        {
+          "label": "B",
+          "text": "The two surviving named beneficiaries each receive one-half of the proceeds"
+        },
+        {
+          "label": "C",
+          "text": "The proceeds are split equally among the two surviving children and the two grandchildren"
+        },
+        {
+          "label": "D",
+          "text": "One-third of the proceeds is paid to the insured's estate and the other two-thirds to the surviving children"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A per capita designation distributes the proceeds by the head to the surviving named beneficiaries in that class. If one named beneficiary predeceases the insured, that person's descendants do not automatically take the share. Instead, the surviving named beneficiaries divide the proceeds equally, so the two surviving children each receive one-half.",
+      "wrong_explanations": {
+        "A": "That describes a per stirpes result, where descendants inherit the deceased beneficiary's branch share.",
+        "C": "Per capita does not automatically include grandchildren when the named class was the insured's children and two named children survived.",
+        "D": "The share of the deceased beneficiary does not go to the estate when surviving named beneficiaries remain in the class."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T23:50:00Z",
+          "actor": "assistant",
+          "note": "Replaced duplicate common-disaster angle with per capita beneficiary distribution."
+        }
+      ]
+    },
+    {
+      "question_id": "B10-Q025",
+      "rule_ids": [
+        "RC-ACA-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Affordable Care Act (State Implementations)",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the Affordable Care Act (ACA), if an individual purchases a health plan through the Marketplace, receives advance premium tax credits (APTC), and has previously paid at least one month's premium in full, how long is the mandatory grace period for non-payment of subsequent premiums before the policy can be terminated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "31 days"
+        },
+        {
+          "label": "C",
+          "text": "3 consecutive months (90 days)"
+        },
+        {
+          "label": "D",
+          "text": "6 consecutive months (180 days)"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "For Marketplace enrollees receiving advance premium tax credits who have paid at least one full month's premium, federal rules provide a three-consecutive-month grace period for nonpayment of subsequent premiums.",
+      "wrong_explanations": {
+        "A": "10 days is too short and does not reflect the ACA's special grace-period rule for APTC recipients.",
+        "B": "31 days is the standard commercial grace-period concept, not the ACA's APTC grace-period rule.",
+        "D": "180 days exceeds the federal grace period."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-25T11:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T18:10:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    }
+  ]
+}

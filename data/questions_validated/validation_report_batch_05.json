@@ -1,0 +1,54 @@
+{
+  "batch_id": "05",
+  "validation_date": "2026-03-24",
+  "validator": "ChatGPT",
+  "source_file": "question_bank_raw_batch_05.json",
+  "verdict": "APPROVED_WITH_CORRECTIONS",
+  "summary": {
+    "total_questions_reviewed": 25,
+    "validated_without_change": 21,
+    "corrected": 4,
+    "flagged_but_retained": 1,
+    "rejected": 0
+  },
+  "corrections": [
+    {
+      "question_id": "B05-Q008",
+      "severity": "moderate",
+      "issue": "Temporary-license restriction was framed too loosely as 'controlled business.'",
+      "action": "Rewrote stem, correct option text, and explanations to track Texas Insurance Code \u00a74001.157 more closely.",
+      "result": "retained_with_correction"
+    },
+    {
+      "question_id": "B05-Q020",
+      "severity": "moderate",
+      "issue": "Stem referred to an 'individual family' policy, while the Texas newborn-coverage authority reviewed was tied to employer-plan statutes.",
+      "action": "Reframed the item to a Texas small employer health benefit plan while keeping the 31-day answer.",
+      "result": "retained_with_correction"
+    },
+    {
+      "question_id": "B05-Q025",
+      "severity": "minor",
+      "issue": "Domain label was inconsistent with a common-to-all-lines unfair-discrimination item.",
+      "action": "Normalized the domain label.",
+      "result": "retained_with_correction"
+    }
+  ],
+  "flags": [
+    {
+      "question_id": "B05-Q001",
+      "severity": "low",
+      "issue": "Near-duplicate concept with validated batch 04's Medigap waiting-period reduction item.",
+      "note": "Retained because the batch still needs Medigap coverage and this item remains legally supportable, but future batches should avoid repeating the same month-for-month reduction angle."
+    }
+  ],
+  "schema_issues": [],
+  "cross_batch_notes": [
+    {
+      "question_id": "B05-Q001",
+      "related_prior_item": "B04-Q006",
+      "relationship": "same core Medigap waiting-period reduction concept",
+      "disposition": "retained_with_caution"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 /**
  * UI controller for the Texas Insurance Practice Exam web app.
- * Manages view transitions and DOM updates.
+ * Manages view transitions, filtering, deferred feedback, and dashboard stats.
  */
 
 (function () {
@@ -8,6 +8,7 @@
 
   let session = null;
   let currentQuestion = null;
+  let deferredMode = false;
 
   // --- DOM refs ---
   const views = {
@@ -23,36 +24,157 @@
     window.scrollTo(0, 0);
   }
 
-  // --- Welcome view ---
+  // =========================================================
+  //  Welcome View — Stats, Filters, Count
+  // =========================================================
+
   function initWelcome() {
-    const stats = computeStats(QUESTION_BANK);
+    renderDashboardStats();
+    populateDomainCheckboxes();
+    updateCountHint();
+  }
+
+  function renderDashboardStats() {
     const statsBox = document.getElementById("stats-box");
-    statsBox.innerHTML =
-      `<div class="stat"><span class="stat-num">${stats.total}</span> questions</div>` +
-      `<div class="stat"><span class="stat-num">${stats.domainCount}</span> domains</div>` +
-      `<div class="stat-difficulty">` +
-        `<span class="diff easy">${stats.easy} easy</span>` +
-        `<span class="diff medium">${stats.medium} medium</span>` +
-        `<span class="diff hard">${stats.hard} hard</span>` +
-      `</div>`;
+    const history = ExamStorage.getStats();
+    const totalBank = QUESTION_BANK.length;
+    const domains = new Set(QUESTION_BANK.map(q => q.domain));
 
-    document.getElementById("count-hint").textContent = `of ${stats.total}`;
-    document.getElementById("question-count").max = stats.total;
-  }
+    if (history.totalAnswered === 0) {
+      // Fresh user — simple stats
+      const easy = QUESTION_BANK.filter(q => q.difficulty === "easy").length;
+      const medium = QUESTION_BANK.filter(q => q.difficulty === "medium").length;
+      const hard = QUESTION_BANK.filter(q => q.difficulty === "hard").length;
+      statsBox.innerHTML =
+        `<div class="stat"><span class="stat-num">${totalBank}</span> questions</div>` +
+        `<div class="stat"><span class="stat-num">${domains.size}</span> domains</div>` +
+        `<div class="stat-difficulty">` +
+          `<span class="diff easy">${easy} easy</span>` +
+          `<span class="diff medium">${medium} medium</span>` +
+          `<span class="diff hard">${hard} hard</span>` +
+        `</div>`;
+      return;
+    }
 
-  function computeStats(questions) {
-    const domains = new Set();
-    let easy = 0, medium = 0, hard = 0;
-    questions.forEach(q => {
-      domains.add(q.domain);
-      if (q.difficulty === "easy") easy++;
-      else if (q.difficulty === "medium") medium++;
-      else hard++;
+    // Returning user — rich stats
+    const pct = Math.round((history.totalCorrect / history.totalAnswered) * 100);
+    const progressPct = Math.round((history.totalAnswered / totalBank) * 100);
+
+    let html = `<div class="dash-section dash-overall">`;
+    html += `<div class="dash-big-num">${pct}%</div>`;
+    html += `<div class="dash-sub">${history.totalAnswered} of ${totalBank} answered (${progressPct}% complete)</div>`;
+    html += `<div class="progress-full"><div class="progress-full-bar" style="width:${progressPct}%"></div></div>`;
+    html += `</div>`;
+
+    // Difficulty breakdown
+    html += `<div class="dash-section"><h4>By Difficulty</h4><div class="dash-row">`;
+    ["easy", "medium", "hard"].forEach(d => {
+      const s = history.byDifficulty[d];
+      const dpct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
+      html += `<div class="dash-diff-item">` +
+        `<div class="diff-label ${d}">${d}</div>` +
+        `<div class="diff-stat">${dpct}% (${s.answered})</div>` +
+        `</div>`;
     });
-    return { total: questions.length, domainCount: domains.size, easy, medium, hard };
+    html += `</div></div>`;
+
+    // Domain breakdown
+    html += `<div class="dash-section"><h4>By Domain</h4>`;
+    const sortedDomains = [...domains].sort();
+    sortedDomains.forEach(domain => {
+      const ds = history.byDomain[domain];
+      const answered = ds ? ds.answered : 0;
+      const correct = ds ? ds.correct : 0;
+      const domainTotal = QUESTION_BANK.filter(q => q.domain === domain).length;
+      const dpct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+      const coveragePct = Math.round((answered / domainTotal) * 100);
+      html += `<div class="dash-domain-row">` +
+        `<span class="domain-name">${domain}</span>` +
+        `<div class="progress-mini"><div class="progress-mini-bar" style="width:${coveragePct}%"></div></div>` +
+        `<span class="domain-pct">${dpct}%</span>` +
+        `</div>`;
+    });
+    html += `</div>`;
+
+    // Clear history button
+    html += `<div class="dash-clear"><button class="link-btn" id="btn-clear-history">Clear history</button></div>`;
+
+    statsBox.innerHTML = html;
+
+    document.getElementById("btn-clear-history").addEventListener("click", () => {
+      ExamStorage.clearHistory();
+      renderDashboardStats();
+      updateCountHint();
+    });
   }
 
-  // --- Question view ---
+  function populateDomainCheckboxes() {
+    const container = document.getElementById("domain-checkboxes");
+    const domains = [...new Set(QUESTION_BANK.map(q => q.domain))].sort();
+    container.innerHTML = domains.map(d =>
+      `<label class="domain-check-label">` +
+        `<input type="checkbox" value="${d}" checked>` +
+        `<span>${d}</span>` +
+      `</label>`
+    ).join("");
+
+    // Listen for changes
+    container.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", updateCountHint);
+    });
+  }
+
+  function getFilteredPool() {
+    // Difficulty
+    const diffToggles = document.querySelectorAll("#difficulty-toggles input:checked");
+    const activeDiffs = new Set([...diffToggles].map(cb => cb.value));
+
+    // Domains
+    const domainCbs = document.querySelectorAll("#domain-checkboxes input:checked");
+    const activeDomains = new Set([...domainCbs].map(cb => cb.value));
+
+    // Skip answered
+    const skipAnswered = document.getElementById("opt-skip-answered").checked;
+    const answeredIds = skipAnswered ? ExamStorage.getAnsweredIds() : new Set();
+
+    // Deferred feedback
+    const deferFeedback = document.getElementById("opt-deferred-feedback").checked;
+
+    let pool = QUESTION_BANK.filter(q =>
+      activeDiffs.has(q.difficulty) &&
+      activeDomains.has(q.domain) &&
+      (!skipAnswered || !answeredIds.has(q.question_id))
+    );
+
+    return { pool, deferFeedback };
+  }
+
+  function updateCountHint() {
+    const { pool } = getFilteredPool();
+    const hint = document.getElementById("count-hint");
+    const input = document.getElementById("question-count");
+    const warning = document.getElementById("filter-warning");
+    const startBtn = document.getElementById("btn-start");
+
+    hint.textContent = `of ${pool.length}`;
+    input.max = pool.length;
+
+    if (pool.length === 0) {
+      warning.classList.add("visible");
+      startBtn.disabled = true;
+    } else {
+      warning.classList.remove("visible");
+      startBtn.disabled = false;
+      if (parseInt(input.value, 10) > pool.length) {
+        input.value = pool.length;
+      }
+    }
+  }
+
+  // =========================================================
+  //  Question View
+  // =========================================================
+
   function showQuestion(q) {
     currentQuestion = q;
     const pct = ((q.questionNumber - 1) / q.totalQuestions) * 100;
@@ -78,14 +200,34 @@
     showView("question");
   }
 
-  // --- Answer handling ---
+  // =========================================================
+  //  Answer Handling
+  // =========================================================
+
   function handleAnswer(label) {
     const result = session.submitAnswer(label);
-    showFeedback(result);
+
+    // Record to localStorage
+    const q = currentQuestion;
+    ExamStorage.recordAnswer(result.questionId, result.isCorrect, q.domain, q.difficulty);
+
+    if (deferredMode) {
+      // Skip feedback, go to next question or summary
+      if (session.hasNext()) {
+        showQuestion(session.nextQuestion());
+      } else {
+        showSummary(session.getSummary());
+      }
+    } else {
+      showFeedback(result);
+    }
   }
 
+  // =========================================================
+  //  Feedback View
+  // =========================================================
+
   function showFeedback(result) {
-    // Keep progress and meta context
     const q = currentQuestion;
     const pct = (q.questionNumber / q.totalQuestions) * 100;
     document.getElementById("feedback-progress-bar").style.width = pct + "%";
@@ -112,29 +254,27 @@
     document.getElementById("fb-correct-label").textContent = result.correctAnswer;
     document.getElementById("fb-correct-text").textContent = result.correctExplanation;
 
-    // Wrong explanations for all incorrect options
+    // Wrong explanations
     const wrongBoxes = document.getElementById("fb-wrong-boxes");
     wrongBoxes.innerHTML = "";
     const wrongEntries = Object.entries(result.wrongExplanations);
     if (wrongEntries.length > 0) {
-      // Show the user's wrong pick first (highlighted), then the rest
       const sorted = wrongEntries.sort((a, b) => {
         if (a[0] === result.selected) return -1;
         if (b[0] === result.selected) return 1;
         return a[0].localeCompare(b[0]);
       });
-      // Find option text for each label
       const optionText = {};
       (result.options || []).forEach(o => { optionText[o.label] = o.text; });
 
-      sorted.forEach(([label, explanation]) => {
-        const isUserPick = !result.isCorrect && label === result.selected;
+      sorted.forEach(([lbl, explanation]) => {
+        const isUserPick = !result.isCorrect && lbl === result.selected;
         const box = document.createElement("div");
         box.className = "explanation-box wrong-box" + (isUserPick ? " user-pick" : "");
-        const optText = optionText[label] ? ` — ${optionText[label]}` : "";
+        const optText = optionText[lbl] ? ` — ${optionText[lbl]}` : "";
         box.innerHTML =
           `<div class="explanation-label">` +
-            `${label}${optText}` +
+            `${lbl}${optText}` +
             `${isUserPick ? ' <span class="your-answer-tag">your answer</span>' : ""}` +
           `</div>` +
           `<div class="explanation-text">${explanation}</div>`;
@@ -149,7 +289,10 @@
     showView("feedback");
   }
 
-  // --- Summary view ---
+  // =========================================================
+  //  Summary View
+  // =========================================================
+
   function showSummary(summary) {
     // Score
     const scoreBox = document.getElementById("score-box");
@@ -178,38 +321,90 @@
       tbody.appendChild(tr);
     });
 
-    // Missed questions
+    // Missed questions (immediate mode)
     const missed = summary.results.filter(r => !r.isCorrect);
     const missedSection = document.getElementById("missed-section");
     const missedList = document.getElementById("missed-list");
-    if (missed.length > 0) {
-      missedSection.style.display = "block";
-      missedList.innerHTML = missed.map(r =>
-        `<div class="missed-item">` +
-          `<span class="missed-id">${r.questionId}</span> ` +
-          `You chose <strong>${r.selected}</strong>, correct: <strong>${r.correctAnswer}</strong>` +
-        `</div>`
-      ).join("");
+    const deferredSection = document.getElementById("deferred-review");
+    const deferredList = document.getElementById("deferred-review-list");
+
+    if (deferredMode) {
+      // Deferred: show full question-by-question review
+      missedSection.style.display = "none";
+      deferredSection.style.display = "block";
+      deferredList.innerHTML = "";
+
+      const questions = session.questions;
+      summary.results.forEach((r, i) => {
+        const q = questions[i];
+        const card = document.createElement("div");
+        card.className = "review-card " + (r.isCorrect ? "review-correct" : "review-wrong");
+
+        let inner = `<div class="review-header">`;
+        inner += `<span class="review-num">Q${i + 1}</span>`;
+        inner += `<span class="review-result ${r.isCorrect ? 'correct' : 'wrong'}">${r.isCorrect ? 'Correct' : 'Incorrect'}</span>`;
+        inner += `</div>`;
+        inner += `<div class="review-stem">${q.stem}</div>`;
+        inner += `<div class="review-answer"><span class="label">Your answer:</span> ${r.selected}</div>`;
+        if (!r.isCorrect) {
+          inner += `<div class="review-answer"><span class="label">Correct answer:</span> ${r.correctAnswer}</div>`;
+        }
+        inner += `<div class="review-explanation"><strong>Why ${r.correctAnswer} is correct:</strong> ${r.correctExplanation}</div>`;
+
+        // Wrong explanations
+        const wrongEntries = Object.entries(r.wrongExplanations);
+        if (wrongEntries.length > 0) {
+          wrongEntries.sort((a, b) => a[0].localeCompare(b[0]));
+          wrongEntries.forEach(([lbl, explanation]) => {
+            const tag = (!r.isCorrect && lbl === r.selected) ? ' <span class="your-answer-tag">your answer</span>' : '';
+            inner += `<div class="review-explanation"><strong>Why ${lbl} is wrong${tag}:</strong> ${explanation}</div>`;
+          });
+        }
+
+        card.innerHTML = inner;
+        deferredList.appendChild(card);
+      });
     } else {
-      missedSection.style.display = "block";
-      missedList.innerHTML = `<div class="perfect">Perfect score!</div>`;
+      // Immediate mode: show missed questions
+      deferredSection.style.display = "none";
+      if (missed.length > 0) {
+        missedSection.style.display = "block";
+        missedList.innerHTML = missed.map(r =>
+          `<div class="missed-item">` +
+            `<span class="missed-id">${r.questionId}</span> ` +
+            `You chose <strong>${r.selected}</strong>, correct: <strong>${r.correctAnswer}</strong>` +
+          `</div>`
+        ).join("");
+      } else {
+        missedSection.style.display = "block";
+        missedList.innerHTML = `<div class="perfect">Perfect score!</div>`;
+      }
     }
 
     showView("summary");
   }
 
-  // --- Event listeners ---
-  document.getElementById("btn-start").addEventListener("click", () => {
-    const countInput = document.getElementById("question-count");
-    let count = parseInt(countInput.value, 10);
-    if (isNaN(count) || count < 1) count = 10;
-    if (count > QUESTION_BANK.length) count = QUESTION_BANK.length;
+  // =========================================================
+  //  Event Listeners
+  // =========================================================
 
-    session = new PracticeSession(QUESTION_BANK, count);
+  // Start button
+  document.getElementById("btn-start").addEventListener("click", () => {
+    const { pool, deferFeedback } = getFilteredPool();
+    if (pool.length === 0) return;
+
+    deferredMode = deferFeedback;
+
+    let count = parseInt(document.getElementById("question-count").value, 10);
+    if (isNaN(count) || count < 1) count = 10;
+    if (count > pool.length) count = pool.length;
+
+    session = new PracticeSession(pool, count);
     const q = session.nextQuestion();
     showQuestion(q);
   });
 
+  // Next button
   document.getElementById("btn-next").addEventListener("click", () => {
     if (session.hasNext()) {
       showQuestion(session.nextQuestion());
@@ -218,9 +413,12 @@
     }
   });
 
+  // Restart
   document.getElementById("btn-restart").addEventListener("click", () => {
     session = null;
     currentQuestion = null;
+    deferredMode = false;
+    initWelcome();
     showView("welcome");
   });
 
@@ -230,6 +428,32 @@
       document.getElementById("question-count").value = btn.dataset.count;
     });
   });
+
+  // Filter toggle
+  document.getElementById("filter-toggle").addEventListener("click", () => {
+    const body = document.getElementById("filter-body");
+    const arrow = document.getElementById("filter-arrow");
+    body.classList.toggle("open");
+    arrow.classList.toggle("open");
+  });
+
+  // Difficulty toggles
+  document.querySelectorAll("#difficulty-toggles input").forEach(cb => {
+    cb.addEventListener("change", updateCountHint);
+  });
+
+  // Domain all/none
+  document.getElementById("domain-select-all").addEventListener("click", () => {
+    document.querySelectorAll("#domain-checkboxes input").forEach(cb => { cb.checked = true; });
+    updateCountHint();
+  });
+  document.getElementById("domain-select-none").addEventListener("click", () => {
+    document.querySelectorAll("#domain-checkboxes input").forEach(cb => { cb.checked = false; });
+    updateCountHint();
+  });
+
+  // Skip answered toggle
+  document.getElementById("opt-skip-answered").addEventListener("change", updateCountHint);
 
   // Keyboard shortcuts: 1-4 or A-D to select answer
   document.addEventListener("keydown", (e) => {

@@ -1,0 +1,53 @@
+{
+  "batch_id": "10",
+  "report_type": "validation_report",
+  "verdict": "APPROVED_WITH_CORRECTIONS",
+  "summary": "Batch 10 was completed by correcting the temporary-license term and replacing six duplicate-angle items with fresh, supportable questions. The completed batch is now suitable to keep with the approved question bank.",
+  "corrected_items": [
+    {
+      "question_id": "B10-Q010",
+      "issue": "Temporary-license term misstated as 90 days.",
+      "resolution": "Corrected to 180 days under Texas Insurance Code \u00a74001.155."
+    },
+    {
+      "question_id": "B10-Q002",
+      "issue": "Near-duplicate of prior agent address-change timing angle.",
+      "resolution": "Replaced with monthly notice duty for felony conviction under \u00a74001.252."
+    },
+    {
+      "question_id": "B10-Q006",
+      "issue": "Near-duplicate of prior HMO Evidence of Coverage 60-day timing angle.",
+      "resolution": "Replaced with HMO right-to-change-PCP rule under \u00a7843.203."
+    },
+    {
+      "question_id": "B10-Q009",
+      "issue": "Near-duplicate of prior Facility of Payment clause angle.",
+      "resolution": "Replaced with health-policy change-of-beneficiary provision."
+    },
+    {
+      "question_id": "B10-Q020",
+      "issue": "Near-duplicate of prior Notice of Claim timing angle.",
+      "resolution": "Replaced with Legal Actions provision under \u00a71201.217."
+    },
+    {
+      "question_id": "B10-Q023",
+      "issue": "Near-duplicate of prior defamation angle.",
+      "resolution": "Replaced with prohibited tying by a depository institution under \u00a7556.051."
+    },
+    {
+      "question_id": "B10-Q024",
+      "issue": "Near-duplicate of prior common-disaster / beneficiary-survival angle.",
+      "resolution": "Replaced with per capita beneficiary distribution."
+    }
+  ],
+  "flagged_duplicate_angle_items": [],
+  "supportable_items_noted": [
+    "B10-Q005 promotional-item exception at $25 or less",
+    "B10-Q017 emergency cease and desist authority",
+    "B10-Q025 ACA three-month grace period for Marketplace enrollees receiving APTC",
+    "B10-Q003 1035 exchange boot concept",
+    "B10-Q008 Medicare secondary payer large-employer rule"
+  ],
+  "schema_status": "complete",
+  "next_step": "Batch 10 can be retained as a completed validated batch."
+}

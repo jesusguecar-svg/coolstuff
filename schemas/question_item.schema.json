@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "question_item.schema.json",
+  "title": "Texas Insurance Practice Question Item",
+  "description": "Schema for validated question items in the Texas General Lines Life Accident Health and HMO practice engine.",
+  "type": "object",
+  "required": [
+    "question_id", "rule_ids", "domain", "subdomain", "difficulty", "format",
+    "stem", "options", "correct_answer", "correct_explanation", "wrong_explanations",
+    "source_confidence", "review_status", "status_history"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "pattern": "^B\\d{2}-Q\\d{3}$",
+      "description": "Unique identifier: B{batch}-Q{sequence}"
+    },
+    "rule_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "References to regulatory/content rule codes"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Top-level content domain (e.g., Policy Provisions, Agent Duties)"
+    },
+    "subdomain": {
+      "type": "string",
+      "description": "Specific topic within the domain"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"]
+    },
+    "format": {
+      "type": "string",
+      "description": "Question format type (e.g., direct_rule, application_scenario)"
+    },
+    "stem": {
+      "type": "string",
+      "minLength": 10,
+      "description": "The question text"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "text"],
+        "properties": {
+          "label": { "type": "string", "enum": ["A", "B", "C", "D"] },
+          "text": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "correct_answer": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "correct_explanation": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Explanation for why the correct answer is right"
+    },
+    "wrong_explanations": {
+      "type": "object",
+      "description": "Keyed by option label (A/B/C/D), explaining why each wrong answer is incorrect. May include the correct answer key.",
+      "patternProperties": {
+        "^[A-D]$": { "type": "string", "minLength": 5 }
+      },
+      "additionalProperties": false,
+      "minProperties": 3,
+      "maxProperties": 4
+    },
+    "trap_type": {
+      "type": ["string", "null"],
+      "description": "Trap pattern code if applicable, null otherwise"
+    },
+    "source_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "validated", "flagged", "rejected"]
+    },
+    "status_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string" },
+          "date": { "type": "string" },
+          "timestamp": { "type": "string" },
+          "agent": { "type": "string" },
+          "actor": { "type": "string" },
+          "note": { "type": "string" }
+        },
+        "required": ["status"]
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

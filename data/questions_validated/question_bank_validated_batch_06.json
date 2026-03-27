@@ -1,0 +1,1308 @@
+{
+  "batch_id": "06",
+  "version": "1.1.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini+chatgpt",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B06-Q001",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An employee works for a small graphic design firm in Texas with 12 full-time employees. The employee is terminated and loses coverage under the employer's fully insured group health plan. Which of the following describes the employee's continuation rights?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The employee is eligible for federal COBRA continuation for up to 18 months."
+        },
+        {
+          "label": "B",
+          "text": "The employee is eligible for Texas State Continuation for up to 9 months."
+        },
+        {
+          "label": "C",
+          "text": "The employee is eligible for Texas State Continuation for up to 18 months."
+        },
+        {
+          "label": "D",
+          "text": "The employee has no continuation rights because the firm has fewer than 20 employees."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Federal COBRA applies to employers with 20 or more employees. For employers with fewer than 20 employees, Texas State Continuation applies, which permits eligible employees to continue their group health coverage for up to 9 months.",
+      "wrong_explanations": {
+        "A": "Federal COBRA does not apply because the employer has fewer than 20 employees.",
+        "C": "Texas State Continuation provides up to 9 months of coverage, not 18 months.",
+        "D": "Employees of small firms are protected by Texas State Continuation laws."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior Texas continuation small-employer question angle (batches 04/05)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q002",
+      "rule_ids": [
+        "RC-LIFE-020"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "Three years after issuing a whole life insurance policy, the insurer discovers the insured intentionally concealed a severe medical diagnosis on the original application. The insured dies shortly after this discovery. How must the insurer handle the claim?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deny the claim and refund the premiums, because intentional concealment constitutes fraud."
+        },
+        {
+          "label": "B",
+          "text": "Deny the claim but retain the premiums due to the applicant's fraudulent act."
+        },
+        {
+          "label": "C",
+          "text": "Pay the full death benefit because the incontestability period has expired."
+        },
+        {
+          "label": "D",
+          "text": "Pay a reduced benefit based on what the premiums would have purchased if the true medical history were known."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The incontestability clause in a life insurance policy prevents the insurer from denying a claim due to material misrepresentations in the application after the policy has been in force for 2 years. Unlike health insurance, life insurance cannot be contested even for fraud after the 2-year period has passed.",
+      "wrong_explanations": {
+        "A": "In life insurance, even intentional fraud cannot be used to void the policy after the 2-year incontestability period.",
+        "B": "The insurer cannot deny the claim after 2 years.",
+        "D": "This describes the Misstatement of Age or Sex provision, not the remedy for general medical concealment."
+      },
+      "trap_type": "TP008-Fraud_Exception_Misdirection",
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior life incontestability-after-two-years fraud angle (batch 04)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q003",
+      "rule_ids": [
+        "RC-COMM-004"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Commissioner of Insurance",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "The Texas Commissioner of Insurance issues a final cease and desist order against an agent for engaging in deceptive trade practices. If the agent willfully violates this final order, what is the maximum administrative penalty the Commissioner may assess per violation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$1,000"
+        },
+        {
+          "label": "B",
+          "text": "$5,000"
+        },
+        {
+          "label": "C",
+          "text": "$10,000"
+        },
+        {
+          "label": "D",
+          "text": "$25,000"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "For a cease and desist order issued under Texas Insurance Code Chapter 541, the administrative penalty may not exceed $1,000 for each violation and $5,000 for all violations.",
+      "wrong_explanations": {
+        "A": "$1,000 is the per-violation cap under Texas Insurance Code \u00a7541.110.",
+        "B": "$5,000 is the cap for all violations, not the per-violation cap.",
+        "C": "$10,000 exceeds the administrative-penalty cap in \u00a7541.110.",
+        "D": "$25,000 is not the Chapter 541 per-violation administrative-penalty cap."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Corrected legal error, but still repeats prior cease-and-desist penalty angle from batch 04."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q004",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Disability Income Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "When an applicant is purchasing an individual disability income policy, how does their choice of elimination period affect the policy's premium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A longer elimination period results in a higher premium."
+        },
+        {
+          "label": "B",
+          "text": "A longer elimination period results in a lower premium."
+        },
+        {
+          "label": "C",
+          "text": "The elimination period affects only the benefit payout amount, not the premium."
+        },
+        {
+          "label": "D",
+          "text": "A shorter elimination period lowers the premium because the insurer pays fewer long-term claims."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The elimination period (waiting period) acts like a time-deductible. A longer elimination period means the insured is taking on more of the short-term risk, which reduces the insurer's liability and therefore lowers the premium cost.",
+      "wrong_explanations": {
+        "A": "This is an inverse relationship. A longer wait makes the policy cheaper, not more expensive.",
+        "C": "The elimination period directly impacts the premium cost.",
+        "D": "A shorter elimination period increases the premium because the insurer must begin paying benefits sooner."
+      },
+      "trap_type": "TP009-Inverse_Relationship",
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior elimination-period premium relationship angle (batch 04)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q005",
+      "rule_ids": [
+        "RC-TAX-004"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Qualified vs. Non-Qualified Retirement Plans",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "In order to avoid a 10% IRS penalty tax for premature distributions from a qualified retirement plan or traditional IRA, an individual must generally wait until they reach what age to withdraw funds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age 55"
+        },
+        {
+          "label": "B",
+          "text": "Age 59 1/2"
+        },
+        {
+          "label": "C",
+          "text": "Age 62"
+        },
+        {
+          "label": "D",
+          "text": "Age 65"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Distributions from qualified retirement plans and IRAs taken before the owner reaches age 59 1/2 are considered premature and are subject to a 10% penalty tax, in addition to standard ordinary income taxes.",
+      "wrong_explanations": {
+        "A": "Age 55 is tied to a specific exception for 401(k) plans upon separation from service, not the general rule.",
+        "C": "Age 62 is the earliest age to draw standard Social Security retirement benefits.",
+        "D": "Age 65 is the Medicare eligibility age, but retirement funds can be accessed without the 10% penalty starting at 59 1/2."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior age-59\u00bd early-distribution penalty rule (batch 04)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q006",
+      "rule_ids": [
+        "RC-HMO-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "In a standard Texas Health Maintenance Organization (HMO), if an enrollee decides to see an out-of-network specialist for a routine, non-emergency issue without obtaining a referral from their Primary Care Physician (PCP), how will the claim typically be handled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HMO will pay the claim at a reduced out-of-network coinsurance rate."
+        },
+        {
+          "label": "B",
+          "text": "The HMO will pay the claim in full because specialists are essential health providers."
+        },
+        {
+          "label": "C",
+          "text": "The HMO will deny the claim and the enrollee will be responsible for the entire cost."
+        },
+        {
+          "label": "D",
+          "text": "The HMO will pend the claim until the enrollee secures a retroactive referral."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "An HMO utilizes a Primary Care Physician (PCP) as a gatekeeper. For non-emergency care, an enrollee must have a referral to see a specialist or go out-of-network. If the enrollee bypasses this requirement, the HMO will generally deny the claim and the enrollee must pay the entire bill.",
+      "wrong_explanations": {
+        "A": "This describes a PPO (Preferred Provider Organization), which allows out-of-network care at a reduced benefit level without a referral.",
+        "B": "HMOs require referrals for specialty care; they do not pay out-of-network non-emergency claims without them.",
+        "D": "HMOs typically do not allow retroactive referrals for services already rendered."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior HMO gatekeeper / out-of-network non-emergency denial angle (batch 04)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q007",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Disability Income Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "In an individual disability income policy, which definition of total disability is considered the most favorable to the insured?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any occupation"
+        },
+        {
+          "label": "B",
+          "text": "Own occupation"
+        },
+        {
+          "label": "C",
+          "text": "Presumptive disability"
+        },
+        {
+          "label": "D",
+          "text": "Partial disability"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The 'own occupation' definition of total disability is the most favorable and typically the most expensive. It defines disability as the inability to perform the duties of the insured's regular occupation, allowing them to potentially receive benefits even if they find work in a different field.",
+      "wrong_explanations": {
+        "A": "The 'any occupation' definition is more restrictive, paying benefits only if the insured is unable to perform the duties of any occupation for which they are reasonably suited by education, training, or experience.",
+        "C": "Presumptive disability specifies certain conditions (like loss of two limbs or blindness) that automatically qualify for full benefits, but it is a provision rather than the core definition of general total disability.",
+        "D": "Partial disability pays a reduced benefit when the insured can still work part-time or perform some, but not all, duties."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q008",
+      "rule_ids": [
+        "RC-LIFE-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Annuities",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "A married couple wants annuity income that continues for as long as either spouse is alive, but stops only after the second spouse dies. Which annuity payout option best matches that goal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Life Income with Period Certain"
+        },
+        {
+          "label": "B",
+          "text": "Joint and Survivor Life"
+        },
+        {
+          "label": "C",
+          "text": "Fixed Amount"
+        },
+        {
+          "label": "D",
+          "text": "Cash Refund Life"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A joint and survivor life option continues income until the second annuitant dies. It is commonly used when spouses want lifetime income protection for both lives.",
+      "wrong_explanations": {
+        "A": "Life income with period certain guarantees payments for life, but if the annuitant dies early the remaining certain-period payments go only through the end of that period, not necessarily until a second person dies.",
+        "C": "A fixed amount option pays a stated dollar amount until the funds are exhausted, regardless of whether either spouse is still alive.",
+        "D": "A cash refund life option provides a refund if total payments before death are less than the premium paid, but it is not designed to continue income for a surviving spouse for life."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q009",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "If a permanent life insurance policy is overfunded and fails the IRS 7-pay test, it is classified as a Modified Endowment Contract (MEC). How are cash withdrawals from a MEC treated for tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are tax-free because they are considered a return of principal."
+        },
+        {
+          "label": "B",
+          "text": "They are taxed on a First-In, First-Out (FIFO) basis."
+        },
+        {
+          "label": "C",
+          "text": "They are taxed on a Last-In, First-Out (LIFO) basis, meaning earnings are withdrawn and taxed first."
+        },
+        {
+          "label": "D",
+          "text": "They are taxed as long-term capital gains."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Once a policy is classified as a MEC, it loses the favorable FIFO tax treatment of standard life insurance. Withdrawals from a MEC are taxed on a Last-In, First-Out (LIFO) basis, meaning the taxable interest/earnings are considered to be withdrawn first. Additionally, withdrawals before age 59 1/2 are subject to a 10% penalty.",
+      "wrong_explanations": {
+        "A": "Withdrawals from a MEC are not tax-free until all earnings have been withdrawn and taxed.",
+        "B": "FIFO is the favorable tax treatment for standard, non-MEC life insurance policies.",
+        "D": "Earnings withdrawn from a MEC are taxed as ordinary income, not capital gains."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q010",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Risk Classification",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "Under Texas insurance law, an insurer is strictly prohibited from charging different premiums or denying coverage to individuals in the same actuarial class based solely on which of the following characteristics?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age"
+        },
+        {
+          "label": "B",
+          "text": "Tobacco usage"
+        },
+        {
+          "label": "C",
+          "text": "Blindness or partial blindness"
+        },
+        {
+          "label": "D",
+          "text": "A history of severe heart disease"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code strictly prohibits insurers from refusing to insure, refusing to continue to insure, or limiting coverage available to an individual based solely on blindness or partial blindness, classifying it as unfair discrimination.",
+      "wrong_explanations": {
+        "A": "Age is a primary, legally permitted actuarial factor used to determine life and health premiums.",
+        "B": "Tobacco usage carries known morbidity and mortality risks and is a legally permitted rating factor.",
+        "D": "Severe heart disease represents a distinct actuarial risk, and insurers are legally permitted to underwrite, rate, or deny coverage based on such adverse health history."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q011",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Traditional Whole Life",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A policyowner takes out a policy loan against their whole life insurance cash value. Over time, the policyowner fails to pay the annual interest on the loan. What happens to the policy if the unpaid interest causes the total loan balance to exceed the policy's available cash surrender value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The policy will be converted to an extended term policy."
+        },
+        {
+          "label": "B",
+          "text": "The insurer will garnish the policyowner's wages to repay the loan."
+        },
+        {
+          "label": "C",
+          "text": "The policy will lapse and terminate, usually after a 30-day notice period."
+        },
+        {
+          "label": "D",
+          "text": "The death benefit will be reduced, but the policy will remain in force indefinitely."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "If a policy loan is not repaid, the unpaid interest is added to the principal. If the total outstanding loan balance (principal plus interest) ever equals or exceeds the policy's cash value, the policy will lapse and terminate. Insurers must provide at least 30 days' written notice before the policy is voided.",
+      "wrong_explanations": {
+        "A": "Extended term is a nonforfeiture option used when a policyowner stops paying premiums while there is still cash value, not when a loan exceeds the cash value.",
+        "B": "Policy loans are essentially advances on the policy's own funds; there is no legal obligation to repay them, so an insurer cannot garnish wages.",
+        "D": "The policy cannot remain in force if there is no cash value left to support it against the loan."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q012",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medicare Supplements",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "A Medicare beneficiary buys a Medicare SELECT policy to save on premiums. For non-emergency care under this type of Medigap policy, which statement is generally true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The policy pays full supplemental benefits no matter which hospital or physician the insured uses."
+        },
+        {
+          "label": "B",
+          "text": "The insured generally must use network hospitals and, in some cases, network physicians to receive full benefits."
+        },
+        {
+          "label": "C",
+          "text": "The policy works only if the insured enrolls in Medicare Advantage instead of Original Medicare."
+        },
+        {
+          "label": "D",
+          "text": "The policy can deny both emergency and non-emergency claims whenever services are received outside the network."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Medicare SELECT is a Medigap policy with network restrictions. For non-emergency services, the insured generally must use network hospitals and sometimes network physicians to receive full supplemental benefits.",
+      "wrong_explanations": {
+        "A": "That describes a standard Medigap policy more closely than a Medicare SELECT policy, which adds network restrictions.",
+        "C": "Medicare SELECT is still a form of Medigap, which supplements Original Medicare rather than replacing it with Medicare Advantage.",
+        "D": "Emergency services are the key exception. Network restrictions generally apply to non-emergency care, not true emergencies."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q013",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A life insurance policyowner adds a Guaranteed Insurability Rider to their policy. What is the primary benefit of this rider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It prevents the policy from lapsing if the insured becomes permanently disabled."
+        },
+        {
+          "label": "B",
+          "text": "It allows the policyowner to purchase additional coverage at specified future dates without providing evidence of insurability."
+        },
+        {
+          "label": "C",
+          "text": "It guarantees that the premium will never increase over the life of the policy."
+        },
+        {
+          "label": "D",
+          "text": "It pays double the face amount if the insured dies in an accident."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Guaranteed Insurability Rider allows the policyowner to buy additional amounts of life insurance at specific ages or life events (like marriage or the birth of a child) at standard rates, without the need to prove insurability (no medical exams or health questions).",
+      "wrong_explanations": {
+        "A": "This describes the Waiver of Premium rider.",
+        "C": "Premiums for whole life policies are already guaranteed level. The rider itself does not guarantee the cost of the *additional* coverage; the new coverage is priced at the insured's attained age.",
+        "D": "This describes the Accidental Death Benefit (Double Indemnity) rider."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q014",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Health Insurance",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "An HSA owner is age 67 and takes money from the Health Savings Account for a non-medical expense. How is that distribution generally treated for federal tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is completely tax-free because the owner is over age 65."
+        },
+        {
+          "label": "B",
+          "text": "It is taxable as ordinary income, but no 20% penalty applies."
+        },
+        {
+          "label": "C",
+          "text": "It is taxable as ordinary income and also subject to a 20% penalty."
+        },
+        {
+          "label": "D",
+          "text": "It is taxed as long-term capital gain income."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "After age 65, HSA distributions used for non-qualified expenses are still taxable as ordinary income, but the additional 20% penalty no longer applies.",
+      "wrong_explanations": {
+        "A": "Only HSA distributions used for qualified medical expenses are tax-free.",
+        "C": "The 20% additional tax applies to non-qualified HSA distributions before age 65, not after age 65.",
+        "D": "HSA non-qualified distributions are not taxed as capital gains."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q015",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A parent buys a juvenile whole life policy on their 10-year-old child and adds a Payor Benefit rider. What protection does this rider provide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It doubles the death benefit if the child dies before age 21."
+        },
+        {
+          "label": "B",
+          "text": "It waives the child's policy premiums if the premium-paying parent dies or becomes disabled."
+        },
+        {
+          "label": "C",
+          "text": "It guarantees the child can buy any amount of insurance at age 18 without evidence of insurability."
+        },
+        {
+          "label": "D",
+          "text": "It refunds all premiums if the child survives to age 21."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A Payor Benefit rider is commonly used on juvenile policies. If the premium-paying parent dies or becomes disabled, the insurer waives future premiums so the child's coverage can stay in force.",
+      "wrong_explanations": {
+        "A": "That describes an accidental death or other special benefit, not a payor benefit rider.",
+        "C": "That describes a guaranteed insurability concept, not the payor benefit rider.",
+        "D": "That describes a return-of-premium style feature, not the payor benefit rider."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q016",
+      "rule_ids": [
+        "RC-ACA-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Affordable Care Act (State Implementations)",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the Affordable Care Act (ACA), health insurance plans that offer dependent child coverage must allow adult children to remain on their parent's policy up to what age, regardless of their marital or student status?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age 21"
+        },
+        {
+          "label": "B",
+          "text": "Age 24"
+        },
+        {
+          "label": "C",
+          "text": "Age 26"
+        },
+        {
+          "label": "D",
+          "text": "Age 30"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Affordable Care Act mandates that health plans offering dependent coverage must allow children to stay on a parent's plan until they reach age 26. This applies regardless of whether the child is married, living with the parents, attending school, or financially dependent.",
+      "wrong_explanations": {
+        "A": "Age 21 was a common cutoff prior to the ACA.",
+        "B": "Age 24 was a common cutoff for full-time students prior to the ACA.",
+        "D": "Age 30 is incorrect; the federal mandate ends at age 26."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "flagged",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "flagged",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Near-duplicate of prior ACA dependent-child age-26 angle (batch 04)."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q017",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "An insured bought an individual accident and health policy while working as an accountant. A year later, the insured changed jobs and became a commercial roofer but never notified the insurer. Under the Change of Occupation provision, what may happen if the insured is later injured on the job?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The claim must be paid in full because occupation changes never affect accident and health benefits after issue."
+        },
+        {
+          "label": "B",
+          "text": "The insurer may reduce benefits to the amount the paid premium would have purchased for the more hazardous occupation."
+        },
+        {
+          "label": "C",
+          "text": "The insurer may void the policy entirely for concealment, even if the change of occupation provision applies."
+        },
+        {
+          "label": "D",
+          "text": "The insurer must refund all premiums and deny the claim because the insured changed to a hazardous occupation."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the Change of Occupation provision, if the insured changes to a more hazardous occupation, the insurer may reduce the benefit to what the premium paid would have purchased for that more hazardous class.",
+      "wrong_explanations": {
+        "A": "The standard provision exists specifically because occupation changes can affect accident and health benefits.",
+        "C": "The Change of Occupation provision provides an adjustment method rather than automatically voiding the contract.",
+        "D": "The standard result is benefit adjustment, not automatic premium refund and claim denial."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q018",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "Several competing insurers agree they will no longer appoint any independent agent who places business with a new discount carrier entering the market. Their goal is to pressure agents to stop doing business with that competitor. Under Texas insurance law, this conduct is best described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Defamation"
+        },
+        {
+          "label": "C",
+          "text": "Boycott, coercion, or intimidation"
+        },
+        {
+          "label": "D",
+          "text": "Twisting"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Boycott, coercion, or intimidation involves concerted action or pressure intended to restrain trade or force others to avoid a particular insurer or market participant.",
+      "wrong_explanations": {
+        "A": "Rebating involves offering something of value as an inducement to buy insurance, not coordinated market pressure.",
+        "B": "Defamation involves false derogatory statements about an insurer's financial condition or business reputation, not collective refusal to deal.",
+        "D": "Twisting involves misleading policy comparisons to induce replacement of an existing policy."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q019",
+      "rule_ids": [
+        "RC-LIFE-007"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Term Life",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "Which type of life insurance policy is most commonly marketed and used to provide funds to pay off an outstanding mortgage balance in the event of the insured's premature death?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Level term life"
+        },
+        {
+          "label": "B",
+          "text": "Decreasing term life"
+        },
+        {
+          "label": "C",
+          "text": "Variable whole life"
+        },
+        {
+          "label": "D",
+          "text": "Single premium whole life"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Decreasing term life insurance features a death benefit that gradually decreases over the term of the policy, while the premium remains level. Because a mortgage balance also decreases over time, this product is perfectly suited for mortgage protection.",
+      "wrong_explanations": {
+        "A": "Level term maintains the same death benefit throughout the term; it does not track a declining debt balance.",
+        "C": "Variable whole life is an investment-driven permanent policy, not specifically designed to mirror a declining debt.",
+        "D": "Single premium whole life requires a large upfront lump sum and provides level permanent coverage."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q020",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Dividend Options",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "If a participating whole life policyowner selects the 'Paid-Up Additions' dividend option, how are the policy dividends utilized?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To reduce the next annual premium payment."
+        },
+        {
+          "label": "B",
+          "text": "To purchase single-premium, permanent additions to the policy's face amount."
+        },
+        {
+          "label": "C",
+          "text": "To purchase a 1-year term life insurance rider."
+        },
+        {
+          "label": "D",
+          "text": "To pay off an outstanding policy loan."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the Paid-Up Additions dividend option, the insurer uses the annual dividend as a single premium to buy a small amount of additional, fully paid-up whole life insurance. This increases both the total death benefit and the total cash value of the policy over time.",
+      "wrong_explanations": {
+        "A": "This describes the Premium Reduction dividend option.",
+        "C": "This describes the One-Year Term dividend option.",
+        "D": "While dividends can sometimes be applied to loan balances, that is not the definition of Paid-Up Additions."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q021",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Policy Delivery",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An applicant applies for a life insurance policy but does not pay the initial premium at the time of application. When the agent later delivers the approved policy, what must the agent collect in addition to the initial premium to put the policy into force?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A signed conditional receipt"
+        },
+        {
+          "label": "B",
+          "text": "A signed Statement of Good Health"
+        },
+        {
+          "label": "C",
+          "text": "A new medical examination report"
+        },
+        {
+          "label": "D",
+          "text": "An inspection report fee"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "If the initial premium is not paid with the application, coverage cannot take effect immediately. Upon policy delivery, the agent must collect the premium and a signed Statement of Good Health from the applicant, verifying that their health has not changed since the application was completed.",
+      "wrong_explanations": {
+        "A": "A conditional receipt is given when the premium IS collected at the time of application, not at delivery.",
+        "C": "A new medical exam is not required unless the Statement of Good Health reveals a change in condition.",
+        "D": "Inspection reports are ordered by the underwriter during the application process, not collected as a fee at delivery."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q022",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medical Expense Insurance",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "In a basic hospital-and-surgical plan paired with a supplemental major medical policy, what is the primary purpose of the corridor deductible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the annual deductible that must be met before the basic policy pays any benefits."
+        },
+        {
+          "label": "B",
+          "text": "It bridges the gap between the benefits paid by the basic policy and the point at which the major medical coverage begins paying."
+        },
+        {
+          "label": "C",
+          "text": "It limits the insured's out-of-pocket costs for the year to a fixed maximum."
+        },
+        {
+          "label": "D",
+          "text": "It allows the insured to use out-of-network providers at in-network cost-sharing levels."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A corridor deductible is used in supplemental major medical arrangements. It fills the gap between what the basic policy pays and when the major medical layer begins coverage.",
+      "wrong_explanations": {
+        "A": "That describes the ordinary deductible under a basic policy, not the corridor deductible.",
+        "C": "That describes a stop-loss or maximum out-of-pocket feature, not a corridor deductible.",
+        "D": "That describes a network-benefit design feature, not a supplemental major medical deductible concept."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T22:30:00Z",
+          "actor": "ChatGPT"
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q023",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "How are the death benefit proceeds of an individual life insurance policy generally treated for federal income tax purposes when paid as a lump sum to a named beneficiary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are taxed as long-term capital gains."
+        },
+        {
+          "label": "B",
+          "text": "They are taxed as ordinary income to the beneficiary."
+        },
+        {
+          "label": "C",
+          "text": "They are received entirely income tax-free by the beneficiary."
+        },
+        {
+          "label": "D",
+          "text": "They are tax-free up to $100,000, with any excess taxed as ordinary income."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "As a general rule under federal tax law, life insurance death benefits paid in a lump sum to a named beneficiary are received completely free of federal income tax.",
+      "wrong_explanations": {
+        "A": "Death benefits are not subject to capital gains tax.",
+        "B": "Only the interest earned on death benefits left with the insurer under a settlement option is taxed as ordinary income; the principal death benefit is tax-free.",
+        "D": "There is no statutory cap on the amount of death benefit that can be received income tax-free."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q024",
+      "rule_ids": [
+        "RC-HMO-003"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An enrollee in a Texas HMO experiences severe chest pains and believes they are having a heart attack. They rush to the nearest out-of-network emergency room. It is later determined that the pain was caused by severe indigestion, not a heart attack. How must the HMO treat the claim under Texas law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HMO will deny the claim because the final diagnosis was not an actual emergency."
+        },
+        {
+          "label": "B",
+          "text": "The HMO must cover the claim because the enrollee met the \"prudent layperson\" standard for an emergency, without requiring prior authorization."
+        },
+        {
+          "label": "C",
+          "text": "The HMO will pay the claim only if the enrollee called their Primary Care Physician (PCP) for a referral on the way to the hospital."
+        },
+        {
+          "label": "D",
+          "text": "The HMO will deny the claim because it was an out-of-network facility and the condition was not life-threatening."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas law applies the 'prudent layperson' standard to emergency care in HMOs. If a reasonable person with an average knowledge of health and medicine would believe their symptoms indicate a severe emergency (like a heart attack), the HMO must cover the emergency room visit\u2014even if the final diagnosis turns out to be non-threatening. No prior authorization is required for emergencies.",
+      "wrong_explanations": {
+        "A": "The HMO cannot deny the claim based solely on the final diagnosis if the initial symptoms reasonably indicated an emergency.",
+        "C": "In a true emergency (based on symptoms), enrollees do not have time to get a referral, and the law prohibits HMOs from requiring one.",
+        "D": "Emergencies are the universal exception to HMO network restrictions. Out-of-network facilities must be covered if the prudent layperson standard is met."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    },
+    {
+      "question_id": "B06-Q025",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured becomes totally disabled and qualifies for the Waiver of Premium rider on their life insurance policy. The rider has a standard 6-month waiting period. What happens to the premiums that become due during those first 6 months of disability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer automatically waives them from the first day of disability."
+        },
+        {
+          "label": "B",
+          "text": "The insured must pay them, but the insurer will refund them once the 6-month waiting period is satisfied."
+        },
+        {
+          "label": "C",
+          "text": "The insured does not have to pay them, but the unpaid amount is deducted from the death benefit."
+        },
+        {
+          "label": "D",
+          "text": "The insured must pay them, and they are not refunded; the waiver only applies to premiums due after the 6th month."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the Waiver of Premium rider, the insured must continue paying the premiums during the waiting period (typically 6 months). If the insured remains totally disabled at the end of the 6 months, the insurer begins waving future premiums AND refunds the premiums paid during the waiting period.",
+      "wrong_explanations": {
+        "A": "The premiums are not waived immediately; the insured must satisfy the waiting period first.",
+        "C": "Premiums are not deducted from the death benefit under this rider; they are refunded.",
+        "D": "The waiver is retroactive to the beginning of the disability once the waiting period is met, meaning those initial premiums are refunded."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T16:16:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-24T21:40:00Z",
+          "actor": "chatgpt",
+          "reason": "Validated for schema and rule support."
+        }
+      ]
+    }
+  ]
+}

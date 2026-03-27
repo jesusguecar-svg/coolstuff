@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "question_batch.schema.json",
+  "title": "Texas Insurance Practice Question Batch",
+  "description": "Schema for a validated batch file containing 25 practice questions.",
+  "type": "object",
+  "required": ["batch_id", "version", "generated_date", "generated_by", "question_count", "questions"],
+  "properties": {
+    "batch_id": {
+      "type": "string",
+      "description": "Batch identifier"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "generated_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "generated_by": {
+      "type": "string"
+    },
+    "question_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "difficulty_distribution": {
+      "type": "object",
+      "properties": {
+        "easy": { "type": "integer" },
+        "medium": { "type": "integer" },
+        "hard": { "type": "integer" }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": { "$ref": "question_item.schema.json" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

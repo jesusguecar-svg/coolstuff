@@ -1,0 +1,44 @@
+{
+  "report_id": "validation_report_batch_07",
+  "batch_id": "07",
+  "verdict": "APPROVED_WITH_CORRECTIONS",
+  "generated_date": "2026-03-25",
+  "validator": "chatgpt",
+  "summary": "Batch 07 is approved with targeted corrections for one unsupported Texas-appointment formulation, one statutory wording cleanup, and two duplicate-angle replacements.",
+  "corrected_items": [
+    {
+      "question_id": "B07-Q006",
+      "issue": "Original stem/explanation tied the 30-day appointment deadline to receipt of an application/first premium in a way not cleanly supported by the Texas statute used.",
+      "action": "Reframed the item to test additional-appointment reporting within 30 days after the effective date of the appointment under \u00a74001.202."
+    },
+    {
+      "question_id": "B07-Q015",
+      "issue": "Original wording referred to every authorized insurer/domestic insurer rather than the broader statutory carrier language.",
+      "action": "Tightened stem and explanation to match Insurance Code \u00a7401.052."
+    },
+    {
+      "question_id": "B07-Q020",
+      "issue": "Near-duplicate angle of earlier validated grace-period death claim question.",
+      "action": "Replaced with a fresh Automatic Premium Loan angle."
+    },
+    {
+      "question_id": "B07-Q023",
+      "issue": "Near-duplicate angle of earlier validated MEC loan taxation question.",
+      "action": "Replaced with a fresh interest-only settlement taxation angle."
+    }
+  ],
+  "duplicate_angle_notes": [
+    {
+      "question_id": "B07-Q020",
+      "prior_overlap": "B01-Q006",
+      "resolution": "Replaced"
+    },
+    {
+      "question_id": "B07-Q023",
+      "prior_overlap": "B06-Q009",
+      "resolution": "Replaced"
+    }
+  ],
+  "schema_issues": "None.",
+  "remaining_flags": "None requiring rejection after corrections."
+}

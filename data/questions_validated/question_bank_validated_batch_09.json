@@ -1,0 +1,1300 @@
+{
+  "batch_id": "09",
+  "version": "1.0.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B09-Q001",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "A business owner pledges their life insurance policy to a bank as security for a commercial loan. Once the loan is fully repaid, the assignment is lifted and the policyowner regains full rights. This type of assignment is known as a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Absolute assignment"
+        },
+        {
+          "label": "B",
+          "text": "Collateral assignment"
+        },
+        {
+          "label": "C",
+          "text": "Irrevocable assignment"
+        },
+        {
+          "label": "D",
+          "text": "Viatical assignment"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A collateral assignment is a temporary transfer of a portion of ownership rights to a creditor as security for a debt. Once the debt is repaid, the assigned rights are returned to the policyowner.",
+      "wrong_explanations": {
+        "A": "Absolute assignment is the complete and permanent transfer of all ownership rights to another party.",
+        "C": "Irrevocable usually applies to beneficiary designations, not the standard terminology for temporary loan assignments.",
+        "D": "A viatical assignment involves selling a policy to a third party when the insured is terminally ill, which is a form of absolute assignment."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q002",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Beneficiaries",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A life insurance policy names the insured's 12-year-old son as the sole beneficiary. The insured dies unexpectedly, and the insurer receives proof that the child's aunt personally paid the funeral expenses. Before a guardian is formally appointed, which clause allows the insurer to pay those expenses directly to the aunt instead of paying the full proceeds to the minor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Common Disaster clause"
+        },
+        {
+          "label": "B",
+          "text": "Facility of Payment clause"
+        },
+        {
+          "label": "C",
+          "text": "Spendthrift clause"
+        },
+        {
+          "label": "D",
+          "text": "Incontestability clause"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Facility of Payment clause allows the insurer, at its option, to pay a portion of the proceeds to a relative or another person who appears equitably entitled because that person incurred expenses, such as the insured's final medical or funeral costs. This is especially useful when the named beneficiary is a minor or otherwise not in a position to receive the proceeds directly.",
+      "wrong_explanations": {
+        "A": "The Common Disaster clause addresses the order of death when the insured and beneficiary die in the same event.",
+        "C": "A Spendthrift clause protects proceeds from a beneficiary's creditors; it does not authorize payment to someone who paid expenses for the insured.",
+        "D": "The Incontestability clause limits the insurer's ability to void a policy after it has been in force for the required period."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate-angle spendthrift question with fresh facility-of-payment angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q003",
+      "rule_ids": [
+        "RC-LIFE-007"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Joint and Survivorship Life",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Which type of life insurance policy insures two or more lives but specifically pays the death benefit only upon the death of the last surviving insured, making it an ideal tool for funding estate taxes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Joint Life (First-to-Die)"
+        },
+        {
+          "label": "B",
+          "text": "Survivorship Life (Second-to-Die)"
+        },
+        {
+          "label": "C",
+          "text": "Family Income Policy"
+        },
+        {
+          "label": "D",
+          "text": "Variable Universal Life"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Survivorship Life (also known as Second-to-Die life insurance) covers two lives but does not pay the death benefit until the second insured dies. This is frequently used in estate planning to provide liquidity to pay estate taxes that typically come due after both spouses have passed away.",
+      "wrong_explanations": {
+        "A": "Joint Life pays the death benefit upon the death of the FIRST insured, not the last.",
+        "C": "A Family Income policy combines whole life with decreasing term to provide monthly income if the breadwinner dies.",
+        "D": "Variable Universal Life is a permanent policy with investment subaccounts, but it typically insures only one life unless a specific rider is attached."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q004",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas prompt payment of claims laws, once an insurer has completed its investigation and formally notified the claimant in writing that the claim will be paid, the insurer must actually pay the claim no later than:",
+      "options": [
+        {
+          "label": "A",
+          "text": "The 5th business day after the notice is made."
+        },
+        {
+          "label": "B",
+          "text": "The 15th calendar day after the notice is made."
+        },
+        {
+          "label": "C",
+          "text": "The 30th calendar day after the notice is made."
+        },
+        {
+          "label": "D",
+          "text": "The 60th business day after the notice is made."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "According to Texas Insurance Code \u00a7 542.057, if an insurer notifies a claimant that it will pay a claim or part of a claim, the insurer must pay the claim not later than the 5th business day after the date notice is made.",
+      "wrong_explanations": {
+        "B": "15 days is the timeline for the insurer to initially acknowledge receipt of the claim and request necessary forms, not the timeline to issue the check after approval.",
+        "C": "30 days is the timeframe an insurer has to accept or reject a claim after receiving all requested items (or the timeline for HMO electronic clean claims).",
+        "D": "60 days is generally irrelevant to the prompt payment of a clean, approved claim in Texas."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q005",
+      "rule_ids": [
+        "RC-LIC-008"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Texas insurance agents are required to complete continuing education (CE) to renew their licenses. How long must an agent maintain the records and certificates of completion for their CE courses after the course completion date?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 year"
+        },
+        {
+          "label": "B",
+          "text": "2 years"
+        },
+        {
+          "label": "C",
+          "text": "4 years"
+        },
+        {
+          "label": "D",
+          "text": "Indefinitely"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Department of Insurance regulations (28 TAC \u00a7 19.1011) require licensees to maintain records of continuing education course completion for a period of 4 years from the date of completion.",
+      "wrong_explanations": {
+        "A": "1 year is too short and does not cover even one full license renewal cycle.",
+        "B": "2 years is the length of the license renewal period itself, but the CE records must be kept for two full cycles (4 years) for auditing purposes.",
+        "D": "The law does not require indefinite record-keeping; 4 years is the statutory mandate."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q006",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Accidental Death and Dismemberment (AD&D)",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured has a standalone Accidental Death and Dismemberment (AD&D) policy with a principal sum of $100,000. If the insured loses sight in one eye due to a covered accident, how much will the policy typically pay?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$0, because sight must be lost in both eyes to trigger benefits."
+        },
+        {
+          "label": "B",
+          "text": "$50,000, which is the capital sum."
+        },
+        {
+          "label": "C",
+          "text": "$100,000, because any dismemberment triggers the full principal sum."
+        },
+        {
+          "label": "D",
+          "text": "$100,000, but paid out in monthly installments over one year."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In an AD&D policy, the Principal Sum is paid for accidental death or the loss of two primary parts (e.g., two limbs, sight in both eyes). The Capital Sum, which is typically 50% of the principal sum, is paid for the accidental loss of one limb or sight in one eye. Therefore, the insured would receive $50,000.",
+      "wrong_explanations": {
+        "A": "Loss of sight in one eye is a covered dismemberment event that triggers the capital sum benefit.",
+        "C": "The full principal sum ($100,000) is reserved for death or double dismemberment (loss of two limbs/eyes).",
+        "D": "AD&D benefits are typically paid as a lump sum, not installments, and the amount for a single eye would be $50,000."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q007",
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "subdomain": "Tax-Advantaged Health Plans",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "Which of the following tax-advantaged health care accounts is funded by the employee through pre-tax payroll deductions but is generally subject to a strict 'use-it-or-lose-it' rule at the end of the plan year?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Health Savings Account (HSA)"
+        },
+        {
+          "label": "B",
+          "text": "Flexible Spending Account (FSA)"
+        },
+        {
+          "label": "C",
+          "text": "Health Reimbursement Arrangement (HRA)"
+        },
+        {
+          "label": "D",
+          "text": "Medical Savings Account (MSA)"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A Flexible Spending Account (FSA) is funded by the employee with pre-tax dollars for medical expenses. However, FSAs are subject to a 'use-it-or-lose-it' rule, meaning funds not spent by the end of the year (or grace period) are typically forfeited back to the employer.",
+      "wrong_explanations": {
+        "A": "HSA funds roll over from year to year indefinitely and belong to the employee permanently.",
+        "C": "HRAs are funded exclusively by the employer, not the employee, and the employer decides if funds roll over.",
+        "D": "MSAs were the predecessors to HSAs (designed for small businesses/self-employed) and did not have a strict use-it-or-lose-it rule."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q008",
+      "rule_ids": [
+        "RC-LIC-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Insurer Authorization",
+      "difficulty": "medium",
+      "format": "definition_scenario",
+      "stem": "An insurance company does not hold a Certificate of Authority from the Texas Department of Insurance, but it nevertheless attempts to transact insurance business directly with Texas consumers. In Texas regulatory terminology, that company is acting as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A domestic insurer"
+        },
+        {
+          "label": "B",
+          "text": "A foreign insurer"
+        },
+        {
+          "label": "C",
+          "text": "An alien insurer"
+        },
+        {
+          "label": "D",
+          "text": "An unauthorized insurer"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "An insurer that does not hold a Certificate of Authority in Texas is an unauthorized insurer. Terms like domestic, foreign, and alien describe where an insurer is organized, while authorized versus unauthorized describes whether the insurer is licensed to transact insurance in the state.",
+      "wrong_explanations": {
+        "A": "Domestic describes an insurer organized under Texas law; it does not answer whether the company is licensed.",
+        "B": "Foreign describes an insurer organized under the laws of another U.S. state; a foreign insurer can still be authorized if it has a Texas certificate.",
+        "C": "Alien describes an insurer organized under the laws of another country; an alien insurer can also be either authorized or unauthorized."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate insurer-classification angle with unauthorized-insurer angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q009",
+      "rule_ids": [
+        "RC-UTP-005"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Fraud",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An insurance agent suspects that a policyholder has committed a fraudulent insurance act by staging a fake accident. Under Texas Insurance Code, the agent is required to report this suspected fraud to the Texas Department of Insurance (or an authorized law enforcement agency) no later than how many days after the suspicion arises?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under Texas Insurance Code \u00a7 701.051, a person who determines or reasonably suspects that a fraudulent insurance act has been or is about to be committed must report the information in writing to the TDI insurance fraud unit or an authorized law enforcement agency not later than the 30th day after making the determination.",
+      "wrong_explanations": {
+        "A": "10 days is the standard free-look period, not the fraud reporting timeline.",
+        "B": "15 days is the prompt pay requirement for acknowledging a claim.",
+        "D": "60 days exceeds the statutory mandate for reporting suspected insurance fraud."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q010",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Settlement Options",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A beneficiary chooses the interest-only settlement option under a life insurance policy. Which of the following best describes how the death proceeds are handled under this option?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer pays only the interest earned on the proceeds at stated intervals, while holding the principal until a later date."
+        },
+        {
+          "label": "B",
+          "text": "The insurer immediately pays the full death benefit in one lump sum and sends additional interest checks each year."
+        },
+        {
+          "label": "C",
+          "text": "The insurer pays a guaranteed amount of principal plus interest each month until the fund is exhausted."
+        },
+        {
+          "label": "D",
+          "text": "The insurer converts the proceeds into a life annuity that continues only for the beneficiary's lifetime."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "Under the interest-only settlement option, the insurer retains the principal death proceeds and pays the beneficiary only the interest earned on those funds at stated intervals. The principal remains with the insurer until it is withdrawn later or paid under another arrangement.",
+      "wrong_explanations": {
+        "B": "A lump-sum payment ends the settlement arrangement; there would be no principal left with the insurer to generate continuing interest-only payments.",
+        "C": "This describes a fixed-amount settlement option, not interest-only.",
+        "D": "This describes a life-income settlement option, not interest-only."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate APL angle with fresh interest-only settlement angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q011",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Exclusive Provider Organization (EPO)",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "Which statement best describes how an Exclusive Provider Organization (EPO) plan typically handles non-emergency medical care obtained outside the plan's provider network?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It generally provides no benefit for non-emergency out-of-network care."
+        },
+        {
+          "label": "B",
+          "text": "It pays reduced out-of-network benefits after a higher deductible is met."
+        },
+        {
+          "label": "C",
+          "text": "It allows any provider choice as long as the member obtains a referral first."
+        },
+        {
+          "label": "D",
+          "text": "It pays all non-emergency out-of-network claims at the in-network rate."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "An EPO generally requires members to use the plan's network providers for non-emergency care. Unlike a PPO or POS plan, an EPO typically does not offer reduced benefits for routine out-of-network services; if the care is non-emergency and out of network, there is usually no coverage.",
+      "wrong_explanations": {
+        "B": "Reduced out-of-network benefits are characteristic of PPO and POS plans, not a typical EPO structure.",
+        "C": "Referrals are more closely associated with HMO-style gatekeeper models and do not create out-of-network coverage in a standard EPO.",
+        "D": "An EPO does not generally pay routine out-of-network care at the in-network rate."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate POS angle with fresh EPO angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q012",
+      "rule_ids": [
+        "RC-COMM-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Commissioner of Insurance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "The chief executive and administrative officer of the Texas Department of Insurance is the Commissioner of Insurance. How does the Commissioner obtain this position, and for how long is the term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elected by the voters of Texas for a 4-year term."
+        },
+        {
+          "label": "B",
+          "text": "Appointed by the Governor of Texas for a 2-year term."
+        },
+        {
+          "label": "C",
+          "text": "Appointed by the state legislature for a 4-year term."
+        },
+        {
+          "label": "D",
+          "text": "Hired by the National Association of Insurance Commissioners (NAIC) for an indefinite term."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under Texas Insurance Code \u00a7 31.022, the Commissioner of Insurance is appointed by the Governor (with the advice and consent of the senate) and serves a 2-year term that ends on February 1 of each odd-numbered year.",
+      "wrong_explanations": {
+        "A": "The Commissioner is appointed, not elected by the public.",
+        "C": "The appointment is made by the Governor, not the legislature, and the term is 2 years, not 4.",
+        "D": "The NAIC is an advisory and standard-setting body; it does not hire state regulators."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q013",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Beneficiaries",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A widower names his three adult children as beneficiaries of his life insurance policy \u201cper stirpes.\u201d One child dies before the insured, leaving two children of her own. When the insured later dies, how will the death benefit ordinarily be distributed under a per stirpes designation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two surviving children split the entire death benefit equally, and the deceased child's descendants receive nothing."
+        },
+        {
+          "label": "B",
+          "text": "The death benefit is paid entirely to the estate of the child who died first."
+        },
+        {
+          "label": "C",
+          "text": "Each surviving child receives one-third, and the deceased child's one-third share passes equally to that child's descendants."
+        },
+        {
+          "label": "D",
+          "text": "All four grandchildren and children share the proceeds equally per capita."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "A per stirpes designation means that each branch of the family receives the share that the deceased beneficiary would have taken. Here, each of the insured's three children represents one branch. The two living children each receive one-third, and the deceased child's one-third share passes to that child's descendants equally.",
+      "wrong_explanations": {
+        "A": "That result would be more consistent with having no contingent treatment for the deceased beneficiary's line, not a per stirpes designation.",
+        "B": "A per stirpes designation passes the share down the deceased beneficiary's line rather than paying it to the deceased beneficiary's estate by default.",
+        "D": "Equal sharing among all descendants regardless of branch would be a per capita concept, not per stirpes."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate common-disaster angle with fresh per-stirpes beneficiary angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q014",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Application Procedures",
+      "difficulty": "medium",
+      "format": "definition_scenario",
+      "stem": "A wife applies for a life insurance policy on the life of her husband. She will pay the premiums and retain all ownership rights. This arrangement, where the applicant/owner and the insured are two different people, is referred to as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A viatical settlement"
+        },
+        {
+          "label": "B",
+          "text": "Third-party ownership"
+        },
+        {
+          "label": "C",
+          "text": "A collateral assignment"
+        },
+        {
+          "label": "D",
+          "text": "Fiduciary interest"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Third-party ownership occurs when a life insurance policy is owned by someone other than the insured (e.g., a spouse owning a policy on their partner, or a business owning a policy on a key executive). The third-party owner must have an insurable interest in the insured at the time of application.",
+      "wrong_explanations": {
+        "A": "A viatical settlement is the sale of an existing policy by a terminally ill insured to a third party.",
+        "C": "Collateral assignment is using a policy as collateral for a loan.",
+        "D": "Fiduciary interest refers to the financial trust responsibility of an agent handling money, not the ownership structure of a policy."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q015",
+      "rule_ids": [
+        "RC-MED-001"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medicare Part A",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under original Medicare Part A, how many days of care in a Skilled Nursing Facility (SNF) are covered in full (with zero copayment from the patient) per benefit period, following a qualifying hospital stay?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0 days (there is a copayment from day 1)"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "60 days"
+        },
+        {
+          "label": "D",
+          "text": "100 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Medicare Part A covers up to 100 days of Skilled Nursing Facility (SNF) care per benefit period. However, only the first 20 days are covered in full (100% paid by Medicare). Days 21 through 100 require a substantial daily copayment from the patient.",
+      "wrong_explanations": {
+        "A": "Medicare pays 100% of the cost for the first 20 days; there is no copayment initially.",
+        "C": "60 days refers to the fully covered duration for inpatient hospital stays under Part A, not SNF care.",
+        "D": "100 days is the maximum duration of SNF coverage per benefit period, but only the first 20 are paid in full without a copayment."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q016",
+      "rule_ids": [
+        "RC-TAX-002"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Annuities",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "An individual purchases a non-qualified deferred annuity with $50,000 of after-tax savings. Years later, the account has grown to $75,000. Before the annuity start date, the owner withdraws $10,000 to pay for home repairs. How is this $10,000 withdrawal treated for tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is completely tax-free because it is considered a return of principal (FIFO)."
+        },
+        {
+          "label": "B",
+          "text": "It is fully taxable as ordinary income because withdrawals are treated as Last-In, First-Out (LIFO)."
+        },
+        {
+          "label": "C",
+          "text": "It is taxed proportionately based on the exclusion ratio."
+        },
+        {
+          "label": "D",
+          "text": "It is taxed at the lower long-term capital gains rate."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "For non-qualified annuities, partial withdrawals taken before the annuitization phase (during the accumulation period) are taxed on a Last-In, First-Out (LIFO) basis. This means the IRS considers all withdrawn funds to come from the taxable interest/gains first. Since the account has $25,000 of gain, the entire $10,000 withdrawal is taxable as ordinary income.",
+      "wrong_explanations": {
+        "A": "FIFO taxation (principal out first) applies to standard life insurance withdrawals, but annuities use LIFO.",
+        "C": "The exclusion ratio only applies to fixed annuitization payments (monthly income stream), not to random lump-sum withdrawals during the accumulation phase.",
+        "D": "Annuity gains are always taxed as ordinary income, never as capital gains."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q017",
+      "rule_ids": [
+        "RC-LIC-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Insurer Authorization",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Before an insurance company can legally transact the business of insurance in Texas, it must first obtain which of the following documents from the Commissioner of Insurance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Certificate of Authority"
+        },
+        {
+          "label": "B",
+          "text": "A Letter of Good Standing"
+        },
+        {
+          "label": "C",
+          "text": "A Binder of Coverage"
+        },
+        {
+          "label": "D",
+          "text": "An Agent's Appointment"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "An insurer must be granted a Certificate of Authority by the Texas Department of Insurance to legally transact insurance business in the state. An insurer with this certificate is known as an 'authorized' or 'admitted' company.",
+      "wrong_explanations": {
+        "B": "A letter of good standing is a generic business term, not the specific regulatory license required for insurers.",
+        "C": "A binder is a temporary contract of insurance issued by an agent to an insured, not a license to operate.",
+        "D": "An appointment is the document authorizing an individual agent to sell for a specific company."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q018",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "Several insurance companies in Texas collude and refuse to write general liability coverage for a specific local construction firm, intending to drive the firm out of business. Under Texas Unfair Trade Practices laws, this collective action is an illegal example of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Defamation"
+        },
+        {
+          "label": "C",
+          "text": "Boycott, Coercion, or Intimidation"
+        },
+        {
+          "label": "D",
+          "text": "Twisting"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Entering into an agreement to commit an act of boycott, coercion, or intimidation that results in an unreasonable restraint of, or monopoly in, the business of insurance is strictly prohibited as an unfair trade practice.",
+      "wrong_explanations": {
+        "A": "Rebating is offering something of value not in the contract to induce a sale.",
+        "B": "Defamation involves publishing false statements about an insurer's financial condition.",
+        "D": "Twisting is making misrepresentations to induce a policyholder to lapse a policy and buy a new one."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q019",
+      "rule_ids": [
+        "RC-LIC-009"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Agent Responsibilities and Maintenance",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "If an insurance company terminates the appointment of an agent for cause (e.g., discovering the agent engaged in fraudulent activities), the insurer must formally notify the Texas Department of Insurance within how many days of the termination?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "90 days"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "Under Texas Insurance Code \u00a7 4001.206, when an appointment is terminated for cause, the insurer or agent must immediately file with the department a statement of the facts relating to the termination and the date and cause of termination.",
+      "wrong_explanations": {
+        "A": "This is the statutory standard for terminations for cause.",
+        "B": "15 days is the timeline for prompt claim acknowledgement, not appointment termination notices.",
+        "D": "90 days is too long and violates the 30-day statutory limit.",
+        "C": "Thirty days is the reporting deadline for certain appointment and additional-appointment notices, but terminations for cause must be filed immediately."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Corrected Texas for-cause termination filing timing from 30 days to immediate under \u00a74001.206."
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q020",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Dividend Options",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A policyowner of a participating whole life policy selects the 'Accumulate at Interest' dividend option. Which of the following describes the correct tax treatment of this option?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both the dividend and the interest earned are tax-free."
+        },
+        {
+          "label": "B",
+          "text": "Both the dividend and the interest earned are taxable as ordinary income."
+        },
+        {
+          "label": "C",
+          "text": "The dividend is tax-free, but the interest earned is taxable as ordinary income in the year it is credited."
+        },
+        {
+          "label": "D",
+          "text": "The interest is tax-free, but the dividend itself is taxable as a capital gain."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Policy dividends are considered a return of overcharged premium and are therefore generally income tax-free. However, if the dividends are left with the insurer to 'Accumulate at Interest,' the interest generated on those dividends is considered investment growth and is taxable as ordinary income in the year it is credited.",
+      "wrong_explanations": {
+        "A": "The interest portion is subject to taxation.",
+        "B": "The base dividend itself is not taxable.",
+        "D": "Dividends are tax-free, and interest is ordinary income (not capital gains)."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q021",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "In a new individual disability income policy, the 'probationary period' is a one-time period immediately following the effective date of the policy. During this specific period, which of the following is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benefits are paid for accidental injuries, but not for sickness."
+        },
+        {
+          "label": "B",
+          "text": "Benefits are paid for sickness, but not for accidental injuries."
+        },
+        {
+          "label": "C",
+          "text": "No benefits are paid for either sickness or accidental injuries."
+        },
+        {
+          "label": "D",
+          "text": "The policyowner can return the policy for a full premium refund."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "The probationary period (typically 15 to 30 days after policy issuance) is designed to protect the insurer against adverse selection. During this time, disabilities caused by sickness are not covered. However, coverage for accidental injuries begins immediately on the policy effective date.",
+      "wrong_explanations": {
+        "B": "This is backwards; sickness is excluded, accidents are covered.",
+        "C": "Accidents are covered immediately because they cannot be anticipated (unlike an illness someone might feel coming on).",
+        "D": "The right to return the policy for a refund is the Free Look period, not the probationary period."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q022",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A software company purchases a Key Person life insurance policy on its lead developer. The company is the owner, premium payor, and beneficiary. How are the premiums and the death benefit treated for tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Premiums are tax-deductible to the company; the death benefit is taxable."
+        },
+        {
+          "label": "B",
+          "text": "Premiums are not tax-deductible to the company; the death benefit is received tax-free."
+        },
+        {
+          "label": "C",
+          "text": "Premiums are tax-deductible to the company; the death benefit is received tax-free."
+        },
+        {
+          "label": "D",
+          "text": "Premiums are considered taxable income to the developer; the death benefit is tax-free to the company."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In Key Person life insurance, the business cannot deduct the premium payments as a business expense. Because the premiums are paid with after-tax dollars, the resulting death benefit is paid to the business completely income tax-free.",
+      "wrong_explanations": {
+        "A": "If premiums were deductible, the death benefit would be taxable. The IRS does not allow both a deduction and tax-free receipt.",
+        "C": "The business cannot deduct the premiums.",
+        "D": "The developer does not own the policy and receives no direct benefit, so the premiums are not taxable income to the developer (unlike an Executive Bonus plan)."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q023",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Before a Health Maintenance Organization (HMO) can be granted a Certificate of Authority to operate in Texas, it must demonstrate to the Commissioner that it has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A network of participating providers capable of providing comprehensive health care services to enrollees."
+        },
+        {
+          "label": "B",
+          "text": "A minimum of 100,000 pre-enrolled subscribers."
+        },
+        {
+          "label": "C",
+          "text": "Eliminated all primary care gatekeeper requirements."
+        },
+        {
+          "label": "D",
+          "text": "Agreed to pay all claims strictly on a fee-for-service basis."
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "To obtain a Certificate of Authority in Texas, an HMO must prove it is operationally viable. This includes demonstrating that it has established a sufficient network of physicians and facilities (a provider network) capable of delivering basic, comprehensive health care services to its prospective enrollees.",
+      "wrong_explanations": {
+        "B": "There is no statutory requirement to have 100,000 pre-enrolled subscribers before authorization.",
+        "C": "HMOs fundamentally rely on primary care gatekeepers; eliminating them is a feature of PPOs, not a requirement for an HMO license.",
+        "D": "HMOs typically use capitation (a set fee per member per month) rather than fee-for-service to compensate primary care physicians."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q024",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An employee works for a Texas company with 500 employees. The employee is caught stealing company funds and is terminated for \"gross misconduct.\" Regarding the employee's group health insurance, how does this specific termination reason affect their rights under federal COBRA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The employee is still entitled to 18 months of COBRA continuation."
+        },
+        {
+          "label": "B",
+          "text": "The employee's COBRA rights are forfeited entirely due to the gross misconduct."
+        },
+        {
+          "label": "C",
+          "text": "The employee's COBRA continuation period is reduced from 18 months to 9 months."
+        },
+        {
+          "label": "D",
+          "text": "The employee must pay 150% of the premium instead of the standard 102%."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under federal COBRA regulations, termination of employment is a standard qualifying event triggering 18 months of continuation coverage. However, the one explicit exception is termination due to 'gross misconduct.' If an employee is fired for gross misconduct, the employer is legally permitted to deny COBRA continuation rights entirely.",
+      "wrong_explanations": {
+        "A": "Gross misconduct voids the right to standard COBRA continuation.",
+        "C": "COBRA is not reduced to 9 months; it is denied completely. (9 months is the standard Texas State Continuation limit).",
+        "D": "The premium maximum is 102% (or 150% during a disability extension), but in a gross misconduct case, the coverage isn't offered at all."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B09-Q025",
+      "rule_ids": [
+        "RC-LIFE-030"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Viatical Settlements",
+      "difficulty": "medium",
+      "format": "definition_scenario",
+      "stem": "An insured is diagnosed with a terminal illness and has a life expectancy of less than two years. Needing funds for medical care, the insured sells their life insurance policy to a third-party company for 70% of its face value. The third-party becomes the new owner and beneficiary. This transaction is called a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Life Settlement"
+        },
+        {
+          "label": "B",
+          "text": "Viatical Settlement"
+        },
+        {
+          "label": "C",
+          "text": "Accelerated Death Benefit"
+        },
+        {
+          "label": "D",
+          "text": "1035 Exchange"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A Viatical Settlement involves a terminally ill insured (a viator) selling their existing life insurance policy to a third party (a viatical settlement provider) for an immediate lump sum that is less than the death benefit. The provider takes over premium payments and collects the full death benefit when the insured dies.",
+      "wrong_explanations": {
+        "A": "A Life Settlement is similar but involves an insured who is generally healthy (usually a senior citizen) who simply no longer wants or needs the policy.",
+        "C": "An Accelerated Death Benefit is a rider that allows the insured to access a portion of their own death benefit directly from the insurance company, without selling the policy to a third party.",
+        "D": "A 1035 Exchange is a tax-free transfer of funds from one insurance/annuity contract to another, not a sale."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T22:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    }
+  ],
+  "validation_summary": {
+    "verdict": "APPROVED_WITH_CORRECTIONS",
+    "notes": "Five duplicate-angle items were replaced with fresh supported angles, and the prior legal correction to B09-Q019 was retained."
+  }
+}

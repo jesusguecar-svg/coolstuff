@@ -1,0 +1,1331 @@
+{
+  "batch_id": "08",
+  "version": "1.0.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B08-Q001",
+      "rule_ids": [
+        "RC-LIFE-007"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Term Life",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "In an Annually Renewable Term (ART) life insurance policy, what happens to the premium and the death benefit each year at renewal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The premium remains level, but the death benefit decreases."
+        },
+        {
+          "label": "B",
+          "text": "Both the premium and the death benefit increase."
+        },
+        {
+          "label": "C",
+          "text": "The premium increases based on the insured's attained age, while the death benefit remains level."
+        },
+        {
+          "label": "D",
+          "text": "The premium decreases based on favorable mortality experience, while the death benefit remains level."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Annually Renewable Term (ART) provides a level death benefit for a period of one year. When the policy renews each year without evidence of insurability, the premium increases because it is recalculated based on the insured's older, attained age.",
+      "wrong_explanations": {
+        "A": "This describes a decreasing term policy with a level premium, often used for mortgage protection.",
+        "B": "The death benefit does not automatically increase in a standard ART policy.",
+        "D": "Premiums increase as the insured ages, reflecting the increased statistical risk of death; they do not decrease."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q002",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A parent purchases a life insurance policy on their minor child and includes a Payor Benefit rider. If the parent dies or becomes totally disabled before the child reaches the age of majority, what does this rider explicitly provide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It pays the death benefit to the child immediately."
+        },
+        {
+          "label": "B",
+          "text": "It waives the premiums until the child reaches a specified age, usually 21."
+        },
+        {
+          "label": "C",
+          "text": "It doubles the face amount of the policy."
+        },
+        {
+          "label": "D",
+          "text": "It transfers the ownership of the policy to a court-appointed guardian."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Payor Benefit rider is commonly attached to juvenile policies. If the adult premium payor (usually a parent) dies or becomes totally disabled, the insurer waives the premiums until the insured child reaches a specified age, such as 21, ensuring the policy does not lapse.",
+      "wrong_explanations": {
+        "A": "The policy insures the child, not the parent. The parent's death does not trigger the death benefit.",
+        "C": "This rider waives premiums; it does not increase the face amount.",
+        "D": "While ownership transfers might happen legally, the specific financial function of the Payor Benefit rider is premium waiver, not ownership administration."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q003",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas prompt payment laws, if a participating provider submits a \"clean claim\" electronically to a Health Maintenance Organization (HMO) or an insurer, within how many days must the claim generally be paid to avoid statutory penalties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "30 days"
+        },
+        {
+          "label": "C",
+          "text": "45 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas prompt pay laws require insurers and HMOs to pay a clean claim submitted electronically by a preferred provider within 30 days. If the claim is submitted via non-electronic means (paper), the deadline is 45 days.",
+      "wrong_explanations": {
+        "A": "15 days is the timeline for an insurer to acknowledge receipt of a claim, commence investigation, and request forms.",
+        "C": "45 days is the deadline for paying a clean claim submitted in a non-electronic (paper) format.",
+        "D": "60 days is the timeframe for issuing an Evidence of Coverage after enrollment, not the prompt pay deadline for claims."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "legal_checked",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Confirmed 30-day electronic and 45-day nonelectronic clean-claim deadlines for preferred providers."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q004",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "An employer pays the entire premium for a group term life insurance policy covering its employees. Under federal tax law, how is the cost of this coverage treated for the employee?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The entire premium paid by the employer is tax-free to the employee."
+        },
+        {
+          "label": "B",
+          "text": "The entire premium paid by the employer is treated as taxable ordinary income to the employee."
+        },
+        {
+          "label": "C",
+          "text": "The cost of the first $50,000 of coverage is tax-free, but the cost of coverage exceeding $50,000 is treated as taxable imputed income."
+        },
+        {
+          "label": "D",
+          "text": "The premiums are tax-free, but the death benefit will be fully taxable to the employee's beneficiary."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under Section 79 of the Internal Revenue Code, the cost of employer-provided group term life insurance up to $50,000 is tax-free to the employee. The cost of any coverage amount provided above $50,000 is considered a taxable fringe benefit and is treated as imputed income for the employee.",
+      "wrong_explanations": {
+        "A": "The exemption is strictly capped at $50,000 of coverage. Amounts above that trigger taxable income.",
+        "B": "Only the value of the coverage exceeding $50,000 generates taxable income, not the entire premium.",
+        "D": "Death benefits from employer-sponsored group term life are generally received income tax-free by the beneficiary, just like individual life insurance."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q005",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Application Procedures",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An agent is reviewing a completed life insurance application with an applicant and notices a mistake in the medical history section. What is the proper procedure for correcting this error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The agent should use correction fluid to hide the error and write the correct information."
+        },
+        {
+          "label": "B",
+          "text": "The agent should cross out the error, write the correct information, and have the applicant initial the change."
+        },
+        {
+          "label": "C",
+          "text": "The agent should submit the application as-is and attach a separate explanatory note for the underwriter."
+        },
+        {
+          "label": "D",
+          "text": "The agent should erase the error, correct it independently, and sign their own name next to the change."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "If a mistake is made on an insurance application, the proper procedure is to strike through the error, write the correct information, and have the applicant place their initials next to the change to verify they acknowledge and agree to the correction.",
+      "wrong_explanations": {
+        "A": "Correction fluid (white-out) should never be used on an application, as it implies tampering or concealment of information.",
+        "C": "Leaving an known error on the application form itself creates a legal liability, even with an attached note.",
+        "D": "Agents may not independently alter an applicant's answers. The applicant must authorize and initial any changes."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q006",
+      "rule_ids": [
+        "RC-LIC-008"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A Texas general lines agent's license expires on March 1. The agent realizes the oversight on April 15 (45 days later). Under Texas law, what must the agent do to successfully renew the license during this specific window?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pay the regular renewal fee only, as there is an automatic 60-day grace period."
+        },
+        {
+          "label": "B",
+          "text": "Submit a renewal application, complete required CE, and pay the regular renewal fee plus a 50% late penalty fee."
+        },
+        {
+          "label": "C",
+          "text": "Retake the state licensing exam and submit a new application."
+        },
+        {
+          "label": "D",
+          "text": "Wait one full year before reapplying for a new license."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "If a Texas insurance license has been expired for 90 days or less, the agent may renew the license by submitting a renewal application, ensuring CE is complete, and paying the required renewal fee plus a penalty fee equal to one-half (50%) of the renewal fee.",
+      "wrong_explanations": {
+        "A": "There is no \"free\" grace period for an expired license; a penalty applies immediately upon expiration.",
+        "C": "Retaking the state licensing exam is required only if the license has been expired for more than one year.",
+        "D": "Waiting a year is not required. The agent can renew immediately with a penalty if within 90 days, or reapply with a new application and fee (without a test) between 91 and 365 days."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "legal_checked",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Confirmed expired-license renewal within 90 days requires renewal fee plus additional fee equal to one-half of required renewal fee."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q007",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "Under the Uniform Individual Accident and Sickness Policy Provisions Law, an insurer must furnish claim forms within 15 days of receiving a notice of claim. If the insurer fails to provide the forms within this timeframe, how can the insured legally comply with the proof of loss requirement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By verbally describing the loss to the agent over the phone."
+        },
+        {
+          "label": "B",
+          "text": "By waiting indefinitely until the insurer eventually sends the official forms."
+        },
+        {
+          "label": "C",
+          "text": "By submitting written proof detailing the occurrence, character, and extent of the loss within the required time frame."
+        },
+        {
+          "label": "D",
+          "text": "The insured is permanently excused from proving the loss and the claim must be paid automatically."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under the Claim Forms provision, if the insurer does not furnish the necessary forms within 15 days of being notified, the claimant is deemed to have complied with the proof of loss requirement by submitting their own written proof detailing the nature and extent of the loss within the time frame specified in the policy.",
+      "wrong_explanations": {
+        "A": "A verbal description is insufficient; the claimant must submit written proof.",
+        "B": "The insured is not protected if they simply wait; they must still submit written proof within the original proof of loss timeframe (typically 90 days).",
+        "D": "The insurer's failure to send forms does not guarantee automatic payment; the insured still has a legal burden to provide written evidence of the loss."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q008",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Beneficiaries",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "A policyowner names an irrevocable beneficiary on a life insurance policy. Which of the following rights does the policyowner lose as a direct result of this specific designation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The right to pay the policy premiums."
+        },
+        {
+          "label": "B",
+          "text": "The right to change the beneficiary, borrow cash value, or assign the policy without the beneficiary's consent."
+        },
+        {
+          "label": "C",
+          "text": "The right to receive policy dividends."
+        },
+        {
+          "label": "D",
+          "text": "The right to lapse the policy for nonpayment."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Naming an irrevocable beneficiary gives that beneficiary a vested interest in the policy. The policyowner loses the right to unilaterally alter the policy\u2014such as changing the beneficiary, taking a policy loan, or assigning the contract\u2014without obtaining the irrevocable beneficiary's written consent.",
+      "wrong_explanations": {
+        "A": "The policyowner retains the right and obligation to pay premiums.",
+        "C": "Dividend options are generally selected by the owner unless they affect the guaranteed cash value or death benefit in a way that harms the irrevocable beneficiary's interest.",
+        "D": "The policyowner can still let the policy lapse by stopping premium payments; the beneficiary cannot force the owner to pay."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q009",
+      "rule_ids": [
+        "RC-PROV-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Life Policy Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "In a standard Credit Life insurance transaction used to secure a loan, who is typically the owner and the named beneficiary of the policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The debtor is both the owner and the beneficiary."
+        },
+        {
+          "label": "B",
+          "text": "The creditor is the owner, and the debtor's estate is the beneficiary."
+        },
+        {
+          "label": "C",
+          "text": "The creditor is both the owner and the beneficiary."
+        },
+        {
+          "label": "D",
+          "text": "The debtor is the owner, and the debtor's spouse is the beneficiary."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Credit Life insurance is specifically designed to pay off an outstanding loan if the borrower (debtor) dies. In these arrangements, the lending institution (creditor) is both the owner and the beneficiary of the policy. The death benefit cannot exceed the outstanding loan balance.",
+      "wrong_explanations": {
+        "A": "The debtor is the insured, but not the owner or beneficiary. The coverage exists to protect the creditor.",
+        "B": "The creditor must be the beneficiary to ensure the loan is paid off. Only if the death benefit briefly exceeds the declining debt balance would any excess be paid to the estate.",
+        "D": "The spouse is not the beneficiary; the creditor is. Standard personal life insurance would be needed to protect the spouse directly."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q010",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A wealthy individual dies, and their life insurance death benefits are included in their gross estate, subjecting the proceeds to federal estate taxes. Which of the following scenarios is the primary reason this inclusion would occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The death benefit exceeded the annual IRS gift tax exclusion limit."
+        },
+        {
+          "label": "B",
+          "text": "The insured possessed 'incidents of ownership' in the policy at the time of death."
+        },
+        {
+          "label": "C",
+          "text": "The policy was classified as a Modified Endowment Contract (MEC)."
+        },
+        {
+          "label": "D",
+          "text": "The beneficiary opted to receive the death benefit in a lump sum."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Life insurance proceeds are included in the deceased's gross estate for federal estate tax purposes if the proceeds are payable to the estate, or if the deceased possessed any 'incidents of ownership' in the policy at the time of death (such as the right to change the beneficiary, borrow cash value, or assign the policy).",
+      "wrong_explanations": {
+        "A": "The gift tax exclusion limit applies to living gifts (like paying premiums for someone else), not the inclusion of death benefits in an estate.",
+        "C": "MEC status alters the taxation of living benefits (loans/withdrawals), but does not cause death benefits to be subject to estate taxes.",
+        "D": "Lump-sum death benefits are generally income tax-free. The settlement option does not determine estate tax inclusion; ownership does."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q011",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "medium",
+      "format": "calculation_scenario",
+      "stem": "A manufacturing company is structured as a partnership with four equal partners. To fund an Entity Purchase (Stock Redemption) Buy-Sell Agreement, how many life insurance policies must be purchased in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 policies"
+        },
+        {
+          "label": "B",
+          "text": "8 policies"
+        },
+        {
+          "label": "C",
+          "text": "12 policies"
+        },
+        {
+          "label": "D",
+          "text": "16 policies"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "In an Entity Purchase (or Stock Redemption) Buy-Sell Agreement, the business entity itself buys, owns, and pays the premiums on one policy for each partner. With four partners, the business simply buys 4 policies. (This contrasts with a Cross-Purchase plan, which would require 12 policies).",
+      "wrong_explanations": {
+        "B": "8 is mathematically incorrect for both plan types.",
+        "C": "12 policies would be required under a Cross-Purchase plan, where every partner buys a policy on every other partner using the formula N x (N - 1).",
+        "D": "16 is mathematically incorrect and would represent N x N, which includes partners buying policies on themselves."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q012",
+      "rule_ids": [
+        "RC-LIFE-020"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "The mandatory Entire Contract provision in a life insurance policy stipulates that the policy document and a copy of the original application constitute the entire contract. Under this provision, who is explicitly prohibited from making changes to the policy or waiving any of its provisions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurance company's president"
+        },
+        {
+          "label": "B",
+          "text": "An executive officer of the insurer"
+        },
+        {
+          "label": "C",
+          "text": "The insurance agent"
+        },
+        {
+          "label": "D",
+          "text": "The primary beneficiary"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Entire Contract provision dictates that only an executive officer of the insurance company can make changes to the contract. It explicitly states that an agent does not have the authority to alter the contract or waive any of its provisions.",
+      "wrong_explanations": {
+        "A": "The president of the insurance company is an executive officer and typically has the legal authority to approve changes.",
+        "B": "Executive officers are specifically authorized to sign off on contractual amendments.",
+        "D": "While a beneficiary cannot change the contract, the provision exists specifically to clarify the limits of the agent's authority in binding the insurer."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q013",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Disability Income Insurance",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "In an individual disability income policy, what does the \"benefit period\" represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The time the insured must wait before benefits begin."
+        },
+        {
+          "label": "B",
+          "text": "The maximum length of time the policy will pay disability benefits for any one continuous period of disability."
+        },
+        {
+          "label": "C",
+          "text": "The time period during which the policyowner is allowed to renew the contract."
+        },
+        {
+          "label": "D",
+          "text": "The number of days an insured has to file a formal proof of loss."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The benefit period in a disability income policy is the maximum amount of time (e.g., 2 years, 5 years, or to age 65) that the insurer will pay out income benefits for a covered disability. A longer benefit period results in a higher premium.",
+      "wrong_explanations": {
+        "A": "The time the insured must wait before benefits begin is known as the elimination period or waiting period.",
+        "C": "This relates to renewability provisions (like guaranteed renewable or noncancelable), not the benefit period.",
+        "D": "The time to file proof of loss is a standard claims provision (typically 90 days), not the benefit period."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q014",
+      "rule_ids": [
+        "RC-PROV-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Long-Term Care Insurance",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas consumer guidance for long-term care insurance, how long must the buyer be allowed to review a newly delivered long-term care policy and return it for a refund if dissatisfied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "20 days"
+        },
+        {
+          "label": "D",
+          "text": "30 days"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Texas consumer guidance says long-term care insurance companies must give buyers at least 30 days after receiving the policy to review it and return it for a refund of any premium paid.",
+      "wrong_explanations": {
+        "A": "Ten days is common for many ordinary policies, but Texas long-term care guidance gives buyers at least 30 days.",
+        "B": "Fifteen days is not the Texas long-term care free-look standard.",
+        "C": "Twenty days is not the Texas long-term care free-look standard."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced near-duplicate Medigap free-look angle with Texas long-term care free-look angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q015",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Nonforfeiture Options",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A policyowner stops paying premiums on a whole life policy and elects the \"Reduced Paid-Up\" nonforfeiture option. How will the policy's coverage change?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The face amount remains the same, but the coverage converts to term life and will eventually expire."
+        },
+        {
+          "label": "B",
+          "text": "The cash value acts as a single premium to purchase a fully paid-up whole life policy with a smaller death benefit."
+        },
+        {
+          "label": "C",
+          "text": "The insurer uses the cash value to pay the existing premium automatically until the cash value is exhausted."
+        },
+        {
+          "label": "D",
+          "text": "The policy is canceled, and the cash value is paid out as a single lump sum to the owner."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the Reduced Paid-Up nonforfeiture option, the insurer uses the policy's accumulated cash value as a net single premium to buy a fully paid-up permanent (whole life) policy. The new policy covers the insured for life, but at a reduced face amount compared to the original policy.",
+      "wrong_explanations": {
+        "A": "This describes the Extended Term nonforfeiture option.",
+        "C": "This describes the Automatic Premium Loan (APL) provision, not a nonforfeiture option.",
+        "D": "This describes the Cash Surrender nonforfeiture option."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q016",
+      "rule_ids": [
+        "RC-LIC-009"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Agent Responsibilities and Maintenance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "When an insurance agent collects premium payments from clients on behalf of an insurer, the agent holds those funds in a position of financial trust. Under Texas law, this obligation is referred to as acting in what capacity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An executive capacity"
+        },
+        {
+          "label": "B",
+          "text": "A fiduciary capacity"
+        },
+        {
+          "label": "C",
+          "text": "An administrative capacity"
+        },
+        {
+          "label": "D",
+          "text": "An indemnification capacity"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "An agent who handles premiums acts in a fiduciary capacity, meaning a position of special financial trust and confidence. The agent is legally required to handle the funds responsibly and keep them separate from personal or business operating accounts (avoiding commingling).",
+      "wrong_explanations": {
+        "A": "Executive capacity implies management over corporate strategy, not the specific legal duty of handling client funds.",
+        "C": "Administrative capacity refers to clerical duties, not the high legal standard of trust required for funds.",
+        "D": "Indemnification refers to making an insured financially whole after a loss, not an agent's duty regarding premiums."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q017",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Under the Uniform Individual Accident and Sickness Policy Provisions Law, after written proof of loss has been furnished, how long must an insured generally wait before bringing a legal action against the insurer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "45 days"
+        },
+        {
+          "label": "C",
+          "text": "60 days"
+        },
+        {
+          "label": "D",
+          "text": "90 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Legal Actions provision generally bars suit until 60 days after written proof of loss has been furnished and also limits suit to within three years after proof of loss is required.",
+      "wrong_explanations": {
+        "A": "Thirty days is not the standard waiting period before suit under the legal actions provision.",
+        "B": "Forty-five days is associated with certain clean-claim timelines, not the legal-actions waiting period.",
+        "D": "Ninety days is commonly associated with proof-of-loss submission, not the waiting period before filing suit."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Confirmed as fresh legal-actions angle rather than duplicate grace-period angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q018",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Group Health Insurance",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An employee exhausts the standard 18 months of COBRA continuation coverage following termination of employment. Shortly before the 18-month period ends, the plan notifies the qualified beneficiary that the plan offers an individual conversion health plan option. Under federal COBRA rules, what must the plan do regarding that conversion option?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Require the beneficiary to provide evidence of insurability before enrolling in the conversion plan."
+        },
+        {
+          "label": "B",
+          "text": "Provide the beneficiary the option to enroll in a conversion health plan during the 180-day period ending on COBRA expiration, if such a conversion option is otherwise generally available under the plan."
+        },
+        {
+          "label": "C",
+          "text": "Automatically extend COBRA for another 18 months at the same premium."
+        },
+        {
+          "label": "D",
+          "text": "Offer a Medigap policy regardless of the beneficiary's age or Medicare status."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Federal COBRA requires that if a conversion health plan option is otherwise generally available under the plan, the qualified beneficiary must be given that option during the 180-day period ending when the COBRA continuation period expires.",
+      "wrong_explanations": {
+        "A": "The COBRA conversion-option rule is about making the option available; it is not framed as a new evidence-of-insurability requirement in the COBRA statute.",
+        "C": "Standard COBRA does not automatically extend another 18 months after ordinary exhaustion absent a separate statutory basis such as disability or a second qualifying event.",
+        "D": "Medigap rights are separate Medicare-related rights and are not the standard COBRA exhaustion remedy."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced unsupported 31-day conversion wording with COBRA conversion-option rule."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q019",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A married woman has group health insurance through her own employer and is also covered as a dependent on her husband's group health plan. If she incurs a medical expense, how will the Coordination of Benefits (COB) provision determine the payment order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The plan that has been in force the longest is primary."
+        },
+        {
+          "label": "B",
+          "text": "Her husband's plan is primary because he is the head of the household."
+        },
+        {
+          "label": "C",
+          "text": "Her employer's plan is the primary payer, and her husband's plan is the secondary payer."
+        },
+        {
+          "label": "D",
+          "text": "The expenses are split equally 50/50 between the two plans."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under standard Coordination of Benefits (COB) rules, the health plan that covers an individual as an employee (the primary policyholder) always pays first. The plan that covers the individual as a dependent pays second.",
+      "wrong_explanations": {
+        "A": "Length of time a policy has been in force does not determine primary status between an employee plan and a dependent plan.",
+        "B": "Head of household is an obsolete concept and does not dictate insurance coordination.",
+        "D": "Insurance companies coordinate to ensure up to 100% of the claim is paid, but they do not automatically split bills 50/50; the primary pays its limits first."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q020",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Dental Insurance",
+      "difficulty": "medium",
+      "format": "definition_scenario",
+      "stem": "A dental insurance plan pays benefits based on the Usual, Customary, and Reasonable (UCR) fees for the geographic area, and requires the insured to meet an annual deductible before applying a coinsurance percentage. What type of dental plan is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A Scheduled dental plan"
+        },
+        {
+          "label": "B",
+          "text": "A Comprehensive (or Non-Scheduled) dental plan"
+        },
+        {
+          "label": "C",
+          "text": "A Dental Health Maintenance Organization (DHMO)"
+        },
+        {
+          "label": "D",
+          "text": "A Basic Medical Expense dental plan"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Comprehensive (or Non-Scheduled) dental plans operate much like major medical insurance. Benefits are based on Usual, Customary, and Reasonable (UCR) charges, and they utilize deductibles and coinsurance (e.g., 80/20 splits for basic procedures).",
+      "wrong_explanations": {
+        "A": "A Scheduled plan pays benefits based on a specific, fixed dollar amount listed in a schedule for each procedure, regardless of the actual UCR cost.",
+        "C": "A DHMO provides prepaid care through a network of dentists, typically using copayments rather than UCR fees, deductibles, and coinsurance.",
+        "D": "Basic Medical Expense plans are first-dollar health coverages with low limits, not a classification for dental plans."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q021",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Application Procedures",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "In insurance contracts, statements made by the applicant on the application that are believed to be true to the best of their knowledge, but are not guaranteed to be absolutely true, are known as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Warranties"
+        },
+        {
+          "label": "B",
+          "text": "Representations"
+        },
+        {
+          "label": "C",
+          "text": "Concealments"
+        },
+        {
+          "label": "D",
+          "text": "Waivers"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Statements on an insurance application are legally considered representations. A representation is a statement believed to be true to the best of one's knowledge and belief. An insurer can only void a contract if a representation is proven to be a material misstatement.",
+      "wrong_explanations": {
+        "A": "A warranty is a statement that is guaranteed to be absolutely true. Breach of a warranty can automatically void a contract.",
+        "C": "Concealment is the intentional withholding of material facts that would affect an underwriting decision.",
+        "D": "A waiver is the voluntary relinquishment of a known legal right."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q022",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Tax-Advantaged Health Plans",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An individual age 66 is enrolled in Medicare Part A and Part B. They are also covered by a High Deductible Health Plan (HDHP) through their employer. Are they eligible to open and contribute to a Health Savings Account (HSA)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because they are covered by an eligible HDHP."
+        },
+        {
+          "label": "B",
+          "text": "Yes, but they may only contribute up to half the standard annual limit."
+        },
+        {
+          "label": "C",
+          "text": "No, because individuals enrolled in Medicare are strictly prohibited from contributing to an HSA."
+        },
+        {
+          "label": "D",
+          "text": "No, because individuals over age 65 cannot work and maintain employer benefits."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "To be eligible to contribute to a Health Savings Account (HSA), an individual must be covered by a High Deductible Health Plan (HDHP) and must NOT be covered by other comprehensive health insurance. Enrollment in Medicare immediately disqualifies an individual from making further HSA contributions.",
+      "wrong_explanations": {
+        "A": "Having an HDHP is required, but it is not the only rule. The presence of Medicare coverage disqualifies them.",
+        "B": "There is no partial contribution rule based on age 65+; Medicare enrollment halts contributions entirely.",
+        "D": "Individuals over 65 can absolutely continue to work and maintain employer benefits, but they cannot contribute to an HSA if they are enrolled in Medicare."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q023",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "An individual health insurance policy contains the optional \"Misstatement of Age\" provision. If the insurer discovers during the investigation of a claim that the insured understated their age on the original application, how is the insurer permitted to respond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By voiding the policy entirely and refunding the premiums, citing fraud."
+        },
+        {
+          "label": "B",
+          "text": "By adjusting the claim benefits to the amount that the premium actually paid would have purchased at the correct age."
+        },
+        {
+          "label": "C",
+          "text": "By paying the claim in full, provided the two-year incontestability limit has passed."
+        },
+        {
+          "label": "D",
+          "text": "By billing the insured retroactively for the unpaid premium difference before paying the claim."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the optional Misstatement of Age provision in health insurance (which mirrors the life insurance rule), the insurer does not void the policy. Instead, they equitably adjust the payable benefits to match what the premiums paid would have bought had the correct age been stated on the application.",
+      "wrong_explanations": {
+        "A": "The policy is not voided; the benefit is simply adjusted to make the contract fair.",
+        "C": "The incontestability (Time Limit on Certain Defenses) clause explicitly does not protect misstatements of age. The insurer can adjust for age at any time.",
+        "D": "The insurer adjusts the benefit amount outward; they do not issue retroactive bills for back premiums."
+      },
+      "trap_type": "TP008-Fraud_Exception_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q024",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "Under Texas advertising rules, an insurance advertisement must identify which of the following?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the printing company that produced the advertisement."
+        },
+        {
+          "label": "B",
+          "text": "Only the Texas Department of Insurance office that regulates the product."
+        },
+        {
+          "label": "C",
+          "text": "The person or entity responsible for the advertisement."
+        },
+        {
+          "label": "D",
+          "text": "Only the policy form number and filing date."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas advertising rules require an advertisement to identify the person or entity responsible for the advertisement, such as the insurer or agent whose licensed name or approved identifier appears in the ad.",
+      "wrong_explanations": {
+        "A": "The print vendor is not the required responsible-party identification.",
+        "B": "The rule concerns identifying the responsible advertiser, not the regulator.",
+        "D": "A policy form number may appear in some contexts, but it is not the core identification requirement of the advertising rule."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "corrected",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced overbroad insurer-liability angle with supported responsible-entity identification rule."
+        }
+      ]
+    },
+    {
+      "question_id": "B08-Q025",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured reinstates a lapsed individual health insurance policy on October 1. On October 5, the insured is diagnosed with an illness and incurs medical bills. On October 8, the insured breaks an arm in a fall. Under the standard Reinstatement provision, how will the insurer handle these claims?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer will cover both the illness and the broken arm because the policy was reinstated prior to the losses."
+        },
+        {
+          "label": "B",
+          "text": "The insurer will deny both claims due to a mandatory 15-day probationary period following reinstatement."
+        },
+        {
+          "label": "C",
+          "text": "The insurer will cover the illness but deny the broken arm."
+        },
+        {
+          "label": "D",
+          "text": "The insurer will cover the broken arm, but will deny the illness claim because sickness is not covered until 10 days after reinstatement."
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "To protect against adverse selection, the uniform Reinstatement provision states that once a health policy is reinstated, coverage for accidental injury begins immediately, but coverage for sickness is subject to a 10-day waiting period. Therefore, the broken arm (injury) is covered, but the illness (occurring on day 5) is denied.",
+      "wrong_explanations": {
+        "A": "Sickness claims are excluded during the first 10 days after reinstatement.",
+        "B": "Accidental injuries are covered immediately upon reinstatement, not delayed by a probationary period.",
+        "C": "This is the exact opposite of the rule; injuries are covered immediately, while sickness requires a 10-day wait."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T20:00:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt"
+        },
+        {
+          "status": "legal_checked",
+          "timestamp": "2026-03-25T14:30:00Z",
+          "actor": "chatgpt",
+          "note": "Confirmed reinstated health policy covers accident immediately and sickness beginning more than 10 days after reinstatement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "batch_id": "03",
+  "source_file": "question_bank_raw_batch_03.json",
+  "validated_file": "question_bank_validated_batch_03.json",
+  "validated_date": "2026-03-24",
+  "validated_by": "chatgpt",
+  "overall_disposition": "APPROVED_WITH_CORRECTIONS",
+  "summary": {
+    "questions_reviewed": 25,
+    "validated_without_change": 21,
+    "corrected_and_validated": 4,
+    "flagged_unresolved": 0,
+    "rejected": 0
+  },
+  "corrections": [
+    {
+      "question_id": "B03-Q002",
+      "severity": "moderate",
+      "issue_type": "rule_overstatement",
+      "issue": "Explanation and answer overstated reinstatement timing and included an unsupported policy-loan repayment requirement for the standard Texas life-policy rule.",
+      "correction": "Aligned the item to Texas Insurance Code Section 1101.156: three-year reinstatement window, evidence of insurability satisfactory to the insurer, and payment of arrears with interest, assuming the policy has not been surrendered and any automatic nonforfeiture insurance remains in force.",
+      "sources": [
+        "Texas Insurance Code Section 1101.156"
+      ]
+    },
+    {
+      "question_id": "B03-Q010",
+      "severity": "minor",
+      "issue_type": "scope_precision",
+      "issue": "Answer wording implied the Guaranty Association protects only Texas residents.",
+      "correction": "Clarified that Chapter 463 primarily protects Texas residents and, in limited statutory circumstances, certain nonresidents as well.",
+      "sources": [
+        "Texas Insurance Code Sections 463.002, 463.051, 463.201"
+      ]
+    },
+    {
+      "question_id": "B03-Q013",
+      "severity": "moderate",
+      "issue_type": "ambiguity",
+      "issue": "Stem said only 'material misrepresentation,' while the proposed answer depended on the misrepresentation being non-fraudulent.",
+      "correction": "Revised the stem to specify a material but non-fraudulent misrepresentation so the answer is unambiguous.",
+      "sources": [
+        "standard time-limit-on-certain-defenses concept as described in batch rule mapping"
+      ]
+    },
+    {
+      "question_id": "B03-Q016",
+      "severity": "high",
+      "issue_type": "outdated_rule_statement",
+      "issue": "The original item used a generic individual-health pre-existing-condition exclusion clause that conflicts with current ACA-era prohibition on preexisting-condition exclusions for group and individual health insurance coverage.",
+      "correction": "Replaced the item with a current, supportable Texas Medicare supplement open-enrollment waiting-period question: insurer must sell the policy, but may impose a waiting period of up to six months for preexisting conditions in certain cases.",
+      "sources": [
+        "42 U.S.C. 300gg-3",
+        "Texas Department of Insurance Medicare supplement insurance guide"
+      ]
+    }
+  ],
+  "notable_passes": [
+    {
+      "question_id": "B03-Q006",
+      "note": "Supportable under Texas utilization-review law requiring review under a Texas-licensed physician and referral of denials to an appropriate physician, dentist, or other provider for medical-necessity determination."
+    },
+    {
+      "question_id": "B03-Q021",
+      "note": "Supportable under Texas HMO internal appeal requirements."
+    },
+    {
+      "question_id": "B03-Q022",
+      "note": "Matches Texas proof-of-loss provision: before the 91st day after the date of loss, with limited one-year extension if not reasonably possible."
+    },
+    {
+      "question_id": "B03-Q023",
+      "note": "Supportable under Texas backdating rule limiting backdating to no more than six months when used to obtain a younger issue age."
+    },
+    {
+      "question_id": "B03-Q025",
+      "note": "Supportable under Texas independent review provisions after internal appeal is denied."
+    }
+  ],
+  "schema_review": {
+    "status": "pass",
+    "notes": [
+      "Batch matches the established question-item shape used in validated batches 01 and 02.",
+      "options remain an array of {label, text} objects.",
+      "trap_type null values remain acceptable for questions without an assigned trap."
+    ]
+  },
+  "cross_batch_duplicate_review": {
+    "status": "limited_pass",
+    "notes": "Based on the supplied batch summary and spot review, no obvious angle-level duplicates with batches 01 and 02 were detected. Full machine duplicate comparison across all validated batches was not available in this turn."
+  },
+  "recommendations": [
+    "Move this file to data/questions_validated/question_bank_validated_batch_03.json",
+    "Move this report to data/questions_validated/validation_report_batch_03.json",
+    "When ingesting into the repo, keep the app wired only to validated-content paths."
+  ]
+}

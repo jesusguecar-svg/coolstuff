@@ -1,0 +1,1292 @@
+{
+  "batch_id": "04",
+  "version": "1.0.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B04-Q001",
+      "rule_ids": [
+        "RC-HMO-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An enrollee in a Texas Health Maintenance Organization (HMO) decides to visit an out-of-network dermatologist for a non-emergency skin condition without obtaining a referral from her Primary Care Physician (PCP). How will the HMO handle the claim for this visit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HMO will pay 100% of the claim because dermatology is a required essential health benefit."
+        },
+        {
+          "label": "B",
+          "text": "The HMO will pay a reduced out-of-network percentage of the claim."
+        },
+        {
+          "label": "C",
+          "text": "The HMO will deny the claim and the enrollee will be fully responsible for the cost."
+        },
+        {
+          "label": "D",
+          "text": "The HMO will pend the claim until the enrollee obtains a retroactive referral from her PCP."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "For non-emergency care in an HMO, the PCP gatekeeper / referral structure controls access to specialty care. If the enrollee bypasses that requirement and obtains out-of-network non-emergency care without authorization, the claim is generally denied and the enrollee bears the cost.",
+      "wrong_explanations": {
+        "A": "Even when a service category is covered, an HMO may still require referral or authorization procedures for non-emergency specialty care.",
+        "B": "That is more typical of a PPO. An HMO does not generally pay a reduced out-of-network share for unauthorized non-emergency specialty care.",
+        "D": "Texas HMO rules do not generally require retroactive referrals to salvage unauthorized non-emergency care after the service has already been provided."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q002",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Health Insurance",
+      "difficulty": "hard",
+      "format": "calculation_scenario",
+      "stem": "An employer offers a group disability income policy to its employees. The employer pays 60% of the premium, and the employee pays the remaining 40% with after-tax dollars. If the employee becomes disabled and receives a monthly benefit of $5,000, what portion of this monthly benefit is subject to federal income tax?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$0"
+        },
+        {
+          "label": "B",
+          "text": "$2,000"
+        },
+        {
+          "label": "C",
+          "text": "$3,000"
+        },
+        {
+          "label": "D",
+          "text": "$5,000"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Disability income benefits are taxable in proportion to the premium paid with pre-tax or employer dollars. Because the employer paid 60% of the premium, 60% of the benefit is taxable. Sixty percent of $5,000 is $3,000.",
+      "wrong_explanations": {
+        "A": "That would be true only if the employee had paid 100% of the premium with after-tax dollars.",
+        "B": "$2,000 is the portion attributable to the employee's after-tax premium contribution, which is generally received tax-free.",
+        "D": "That would be true only if the employer had paid 100% of the premium."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q003",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "An insurance agent offers two free season tickets to a local professional sports team to a prospective client, on the condition that the client purchases a large whole life insurance policy. Under Texas insurance law, this practice is considered:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twisting"
+        },
+        {
+          "label": "B",
+          "text": "Coercion"
+        },
+        {
+          "label": "C",
+          "text": "Rebating"
+        },
+        {
+          "label": "D",
+          "text": "A value-added service"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Rebating is offering something of value not stated in the insurance contract as an inducement to purchase insurance. Season tickets offered only if the prospect buys the policy are a classic rebate / inducement problem.",
+      "wrong_explanations": {
+        "A": "Twisting involves misrepresentation used to induce a policy replacement or lapse, not gifts or tickets as inducements.",
+        "B": "Coercion involves pressure or intimidation, not offering a gift.",
+        "D": "Calling the item a 'value-added service' does not make it lawful when it functions as an inducement not stated in the contract."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q004",
+      "rule_ids": [
+        "RC-LIFE-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Annuities",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A 60-year-old individual inherits $100,000 and decides to purchase a Single Premium Immediate Annuity (SPIA). When will the first payout from this annuity typically begin?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Within 12 months of the purchase date"
+        },
+        {
+          "label": "B",
+          "text": "Exactly one year after the purchase date"
+        },
+        {
+          "label": "C",
+          "text": "When the annuitant reaches age 65"
+        },
+        {
+          "label": "D",
+          "text": "At any time determined by the annuitant, without restriction"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "An immediate annuity is designed to begin payments no later than one year from purchase. In practice, payments often begin much sooner, such as one month after purchase, but the defining rule is that they begin within 12 months.",
+      "wrong_explanations": {
+        "B": "The first payout does not have to start exactly one year later; the defining line is within 12 months.",
+        "C": "Waiting until age 65 would make the product function like a deferred annuity, not an immediate annuity.",
+        "D": "Immediate annuities do not allow an unrestricted open-ended delay in payout start."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q005",
+      "rule_ids": [
+        "RC-GUAR-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Guaranty Association",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "During a sales presentation, an agent assures a hesitant client that even if the insurance company becomes insolvent, the policy is fully protected by the Texas Life and Health Insurance Guaranty Association. Under Texas law, this statement is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permitted, provided the agent also gives the official disclosure at delivery."
+        },
+        {
+          "label": "B",
+          "text": "Permitted, because it accurately describes a consumer protection statute."
+        },
+        {
+          "label": "C",
+          "text": "Prohibited, because the Guaranty Association does not cover life or health insurance policies."
+        },
+        {
+          "label": "D",
+          "text": "Prohibited, because agents may not use the existence of the Guaranty Association as an inducement to sell insurance."
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Texas law prohibits using the existence of the Guaranty Association as a sales inducement or solicitation device. Even if some protection exists, agents may not use that protection as a pitch to induce a purchase.",
+      "wrong_explanations": {
+        "A": "Providing a disclosure does not authorize the agent to use guaranty-association protection as a sales inducement.",
+        "B": "The fact that a statute exists does not make it lawful to use it as a sales inducement where the statute forbids that use.",
+        "C": "The problem is not lack of coverage; the problem is prohibited sales use of the association's existence."
+      },
+      "trap_type": "TP005-Ethical_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q006",
+      "rule_ids": [
+        "RC-MED-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Medicare Supplement Texas Rules",
+      "difficulty": "hard",
+      "format": "calculation_scenario",
+      "stem": "A 66-year-old Texas resident applies for a Medicare Supplement (Medigap) policy during her open enrollment period. She has had 4 months of continuous, creditable group health coverage immediately prior to applying. Under federal and state law, what is the maximum pre-existing condition waiting period the insurer may impose on her Medigap policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0 months"
+        },
+        {
+          "label": "B",
+          "text": "2 months"
+        },
+        {
+          "label": "C",
+          "text": "4 months"
+        },
+        {
+          "label": "D",
+          "text": "6 months"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A Medigap issuer may impose up to a 6-month preexisting-condition waiting period in certain cases, but the waiting period must be reduced month-for-month by prior creditable coverage. Four months of creditable coverage reduces the maximum waiting period from 6 months to 2 months.",
+      "wrong_explanations": {
+        "A": "A zero-month waiting period would apply only if the applicant had at least 6 months of qualifying prior creditable coverage for this purpose.",
+        "C": "Four months is the amount of creditable coverage, not the remaining waiting period.",
+        "D": "Six months is the unreduced maximum for an applicant with no qualifying creditable coverage."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q007",
+      "rule_ids": [
+        "RC-UW-003"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Receipts (Conditional vs. Binding)",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An applicant completes a life insurance application, pays the initial premium, and receives a conditional receipt on June 1. A required medical exam is completed on June 5. On June 10, before the insurer approves the policy, the applicant dies in an accident. During the claim review, the insurer determines the applicant met all underwriting standards as of June 5. What action will the insurer take?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deny the claim and refund the premium, because the policy was never officially issued."
+        },
+        {
+          "label": "B",
+          "text": "Pay the full death benefit, because coverage became effective on the date of the medical exam."
+        },
+        {
+          "label": "C",
+          "text": "Pay only a portion of the death benefit, because the applicant died during the underwriting period."
+        },
+        {
+          "label": "D",
+          "text": "Deny the claim, because conditional receipts do not cover accidental death."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the standard exam framing of a conditional receipt, temporary coverage can take effect on the later of the application date or required medical exam date, provided the applicant proves insurable under the insurer's underwriting standards. Because the applicant is determined insurable as of June 5, coverage is treated as effective before the June 10 death.",
+      "wrong_explanations": {
+        "A": "A conditional receipt exists precisely to create possible interim coverage before formal policy issue, subject to its conditions.",
+        "C": "The death benefit is not prorated simply because death occurred during underwriting.",
+        "D": "A conditional receipt is not limited to accidental death or nonaccidental death. If the receipt conditions are satisfied and the applicant is found insurable, full coverage can take effect before formal policy issue."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q008",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "Under the Uniform Individual Accident and Sickness Policy Provisions Law, how many days does an insured typically have to provide a written Notice of Claim to the insurer after a covered loss occurs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "60 days"
+        },
+        {
+          "label": "D",
+          "text": "90 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The standard Notice of Claim provision generally requires written notice within 20 days after a covered loss, or as soon thereafter as reasonably possible.",
+      "wrong_explanations": {
+        "A": "15 days is associated with the insurer's duty to furnish claim forms after receiving notice, not the insured's notice deadline.",
+        "C": "60 days is associated with suit / legal-action timing concepts, not the initial notice-of-claim deadline.",
+        "D": "90 days is associated with proof of loss, not notice of claim."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q009",
+      "rule_ids": [
+        "RC-LIC-005"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "The Texas Commissioner of Insurance may issue a temporary agent's license to an applicant being considered for an appointment by an insurer. What is the maximum duration of this temporary license?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "90 days"
+        },
+        {
+          "label": "C",
+          "text": "180 days"
+        },
+        {
+          "label": "D",
+          "text": "1 year"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under Texas Insurance Code Section 4001.155, a temporary license is valid for 180 days after issuance.",
+      "wrong_explanations": {
+        "A": "30 days is too short. Texas sets the temporary-license term at 180 days.",
+        "B": "90 days is a common guess, but Texas law currently allows a 180-day term.",
+        "D": "One year exceeds the statutory temporary-license term."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q010",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A tech startup purchases a Key Person life insurance policy on its lead software developer to protect against the financial impact of that employee's premature death. In this arrangement, who typically holds the roles of policyowner, premium payor, and beneficiary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The developer is the owner and payor; the startup is the beneficiary."
+        },
+        {
+          "label": "B",
+          "text": "The startup is the owner, payor, and beneficiary."
+        },
+        {
+          "label": "C",
+          "text": "The startup is the owner and payor; the developer's family is the beneficiary."
+        },
+        {
+          "label": "D",
+          "text": "The developer is the owner; the startup is the payor and beneficiary."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In a classic key-person arrangement, the business owns the policy, pays the premiums, and is the beneficiary because the policy is intended to indemnify the business for the loss of a key employee.",
+      "wrong_explanations": {
+        "A": "The employee is not usually the owner or premium payor in a key-person arrangement.",
+        "C": "If the family were the beneficiary, the structure would not be the usual key-person setup.",
+        "D": "The business, not the employee, generally owns the policy in a key-person arrangement."
+      },
+      "trap_type": "TP007-Role_Reversal",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q011",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An employee works for a small graphic design firm in Texas that has 12 full-time employees. The employee is terminated and loses coverage under the employer's fully insured group health plan. Because the employer is too small to be subject to federal COBRA laws, the employee applies for Texas State Continuation. What is the maximum duration the employee may continue group health coverage under Texas law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 months"
+        },
+        {
+          "label": "B",
+          "text": "9 months"
+        },
+        {
+          "label": "C",
+          "text": "18 months"
+        },
+        {
+          "label": "D",
+          "text": "36 months"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "For a fully insured Texas group health plan not subject to federal COBRA, state continuation can provide up to 9 months of continued coverage after election, assuming the eligibility conditions are met.",
+      "wrong_explanations": {
+        "A": "Six months is too short for standard Texas state continuation when COBRA does not apply.",
+        "C": "18 months is the standard federal COBRA period for many qualifying events, not Texas mini-COBRA for a small employer plan not subject to COBRA.",
+        "D": "36 months applies to certain federal COBRA qualifying events, not standard Texas state continuation for this scenario."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q012",
+      "rule_ids": [
+        "RC-LIFE-020"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "Three years after issuing a life insurance policy, an insurer discovers that the insured intentionally lied about a severe heart condition on the original application. The insured then dies from a heart attack. How will the insurer respond to the claim under the incontestability clause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deny the claim and refund all premiums because the lie was intentional fraud."
+        },
+        {
+          "label": "B",
+          "text": "Deny the claim but retain the premiums because the insured committed fraud."
+        },
+        {
+          "label": "C",
+          "text": "Pay the full death benefit because the incontestability period has expired."
+        },
+        {
+          "label": "D",
+          "text": "Pay a reduced death benefit equal to what the premium would have purchased had the truth been known."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Once the standard life-insurance incontestability period has expired, the insurer generally cannot deny the claim based on misrepresentations in the application, other than for nonpayment of premium. At three years, the policy is beyond the ordinary contestability period.",
+      "wrong_explanations": {
+        "A": "After the life-policy incontestability period expires, the insurer generally cannot deny the claim based on the application misrepresentation.",
+        "B": "Retaining premiums while denying the claim is inconsistent with the usual effect of the expired incontestability period.",
+        "D": "That adjustment is associated with misstatement of age or sex, not the ordinary treatment of a barred contest based on health misrepresentation after the incontestability period."
+      },
+      "trap_type": "TP008-Fraud_Exception_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q013",
+      "rule_ids": [
+        "RC-COMM-004"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Commissioner of Insurance",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "The Texas Commissioner of Insurance issues a final cease and desist order against an agent for engaging in deceptive trade practices under Texas Insurance Code Chapter 541. What is the maximum administrative penalty for each violation of that cease and desist order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$1,000"
+        },
+        {
+          "label": "B",
+          "text": "$5,000"
+        },
+        {
+          "label": "C",
+          "text": "$10,000"
+        },
+        {
+          "label": "D",
+          "text": "$25,000"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "Texas Insurance Code Section 541.110 provides that a person who violates a Chapter 541 cease and desist order is subject to an administrative penalty that may not exceed $1,000 for each violation, with a separate aggregate cap of $5,000 for all violations.",
+      "wrong_explanations": {
+        "A": "$1,000 is correct because Section 541.110 caps the administrative penalty at $1,000 for each violation.",
+        "B": "$5,000 is the aggregate cap for all violations, not the per-violation amount.",
+        "C": "$10,000 is not the Chapter 541 per-violation administrative cap for violating a deceptive-trade-practices cease and desist order.",
+        "D": "$25,000 overstates the administrative penalty available under Section 541.110 for this type of cease and desist violation."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q014",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Disability Income Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "When designing an individual disability income insurance policy, how does the length of the elimination period relate to the policy's premium cost?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A longer elimination period results in a higher premium."
+        },
+        {
+          "label": "B",
+          "text": "A longer elimination period results in a lower premium."
+        },
+        {
+          "label": "C",
+          "text": "The elimination period affects only benefit duration, not premium."
+        },
+        {
+          "label": "D",
+          "text": "A shorter elimination period lowers the premium because the insurer pays fewer short-term claims."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The elimination period acts like a time deductible. If the insured agrees to wait longer before benefits begin, the insurer bears less short-term risk, so the premium is lower.",
+      "wrong_explanations": {
+        "A": "The relationship is inverse, not direct. A longer elimination period lowers premium.",
+        "C": "The elimination period is a major pricing factor; it does not affect only benefit duration.",
+        "D": "A shorter elimination period generally increases, not lowers, premium because the insurer may have to start paying sooner."
+      },
+      "trap_type": "TP009-Inverse_Relationship",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q015",
+      "rule_ids": [
+        "RC-TAX-004"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Qualified vs. Non-Qualified Retirement Plans",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "In order to avoid the general 10% IRS penalty for premature distributions from a qualified retirement plan or traditional IRA, an individual must generally wait until what age to withdraw funds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age 55"
+        },
+        {
+          "label": "B",
+          "text": "Age 59 1/2"
+        },
+        {
+          "label": "C",
+          "text": "Age 62"
+        },
+        {
+          "label": "D",
+          "text": "Age 65"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The general age threshold for avoiding the 10% premature-distribution penalty is age 59 1/2, unless a specific exception applies.",
+      "wrong_explanations": {
+        "A": "Age 55 is relevant to a specific separation-from-service exception, not the general rule.",
+        "C": "Age 62 is associated with Social Security, not the general qualified-plan penalty threshold.",
+        "D": "Age 65 is a common retirement marker, but it is not the general tax-penalty threshold."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q016",
+      "rule_ids": [
+        "RC-UTP-005"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An agent frustrated by losing business to a competitor prints and distributes a pamphlet claiming the competing insurance company is insolvent and routinely denies legitimate claims, even though the agent knows those statements are false. Under Texas law, this unfair trade practice is BEST described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "False Advertising"
+        },
+        {
+          "label": "B",
+          "text": "Defamation"
+        },
+        {
+          "label": "C",
+          "text": "Twisting"
+        },
+        {
+          "label": "D",
+          "text": "Boycott, Coercion, and Intimidation"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Defamation in insurance includes making, publishing, or circulating false, derogatory statements about the financial condition of an insurer that are calculated to injure that insurer or persons engaged in the business of insurance.",
+      "wrong_explanations": {
+        "A": "False advertising usually concerns misleading statements about one's own product or policy; this scenario centers on false derogatory statements about a competitor's financial condition.",
+        "C": "Twisting involves misrepresentations used to induce a policyholder to replace existing coverage, not general public disparagement of an insurer.",
+        "D": "Boycott, coercion, and intimidation involve concerted pressure or threats, not the publication of false pamphlets about an insurer's financial condition."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q017",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Nonforfeiture Options",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "A policyowner can no longer afford the premiums on a whole life policy and wants a nonforfeiture option that keeps the exact same face amount of death benefit, even though the coverage may eventually expire. Which option fits that goal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cash Surrender Value option"
+        },
+        {
+          "label": "B",
+          "text": "Reduced Paid-Up option"
+        },
+        {
+          "label": "C",
+          "text": "Extended Term option"
+        },
+        {
+          "label": "D",
+          "text": "One-Year Term Dividend option"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Extended term insurance uses the policy's cash value to buy term coverage with the same original face amount for as long as the cash value will support it.",
+      "wrong_explanations": {
+        "A": "Cash surrender terminates the policy in exchange for the cash value, so no death benefit is maintained.",
+        "B": "Reduced paid-up keeps coverage in force permanently but with a reduced face amount.",
+        "D": "A one-year term dividend option is a dividend choice, not the standard nonforfeiture option used when the owner stops paying premiums."
+      },
+      "trap_type": "TP010-Superlative_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q018",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medical Expense Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "In a major medical expense insurance policy, what is the primary function of the stop-loss limit (maximum out-of-pocket provision)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It limits the maximum lifetime benefit the insurer will pay."
+        },
+        {
+          "label": "B",
+          "text": "It requires the insurer to pay 100% of covered expenses once the insured's out-of-pocket costs reach a specified amount."
+        },
+        {
+          "label": "C",
+          "text": "It prevents the insured from filing additional claims for the rest of the year."
+        },
+        {
+          "label": "D",
+          "text": "It determines the initial deductible the insured must pay before coinsurance begins."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The stop-loss limit protects the insured from catastrophic out-of-pocket expense. Once the insured's covered deductibles and coinsurance reach the stated threshold, the insurer typically pays 100% of additional covered expenses for the remainder of the period.",
+      "wrong_explanations": {
+        "A": "That describes a lifetime maximum or plan-payment cap, not the insured's out-of-pocket cap.",
+        "C": "The stop-loss provision does not block further claims; it improves coverage after the threshold is reached.",
+        "D": "The deductible is one piece of cost sharing, but the stop-loss limit is the overall cap on the insured's covered out-of-pocket obligation."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q019",
+      "rule_ids": [
+        "RC-ACA-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Affordable Care Act (State Implementations)",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Under the Affordable Care Act, health plans that offer dependent child coverage must generally allow adult children to remain on a parent's policy up to what age, regardless of marital or student status?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Age 21"
+        },
+        {
+          "label": "B",
+          "text": "Age 23"
+        },
+        {
+          "label": "C",
+          "text": "Age 25"
+        },
+        {
+          "label": "D",
+          "text": "Age 26"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "The ACA's dependent-coverage rule generally allows eligible adult children to stay on a parent's plan until age 26, regardless of marital or student status.",
+      "wrong_explanations": {
+        "A": "Age 21 is too low under the ACA dependent-coverage rule.",
+        "B": "Age 23 is not the ACA dependent-coverage cutoff.",
+        "C": "Age 25 is close but still incorrect; the general cutoff is age 26."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q020",
+      "rule_ids": [
+        "RC-LIC-008"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Agent Responsibilities and Maintenance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "A licensed Texas insurance agent moves their primary residence and office across town. Under Texas law, within how many days must the agent notify the Texas Department of Insurance of the change in mailing address?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "20 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code Section 4001.252 requires an individual agent to notify the department on a monthly basis of a change in mailing address, and TDI's current address-change process reflects a 30-day reporting window for address changes.",
+      "wrong_explanations": {
+        "A": "10 days is associated with other reporting duties, not the regular address-change reporting expectation for agents.",
+        "B": "20 days is a common insurance-timing distractor but not the current Texas address-change reporting window.",
+        "D": "60 days is longer than the monthly / 30-day reporting expectation reflected in current Texas guidance."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q021",
+      "rule_ids": [
+        "RC-HMO-003"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An enrollee in a Texas HMO is traveling out of state and suffers a severe, life-threatening asthma attack. They are rushed to the nearest out-of-network hospital emergency room. Under Texas HMO regulations, how must the HMO handle this claim?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HMO must cover the emergency care, but only if the enrollee obtained prior authorization from their PCP before the ambulance arrived."
+        },
+        {
+          "label": "B",
+          "text": "The HMO must cover the emergency services without requiring prior authorization or a referral."
+        },
+        {
+          "label": "C",
+          "text": "The HMO will deny the claim because HMOs strictly prohibit any out-of-network care, regardless of the situation."
+        },
+        {
+          "label": "D",
+          "text": "The HMO will cover the care only if the out-of-network hospital agrees to accept the HMO's standard in-network fee schedule."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas HMO emergency-care rules require coverage of true emergency services without prior authorization or referral. For out-of-network emergency care, the HMO still has payment obligations under Texas law.",
+      "wrong_explanations": {
+        "A": "Prior authorization is not required for true emergency care.",
+        "C": "HMOs do not get to deny a true emergency claim solely because the patient used an out-of-network emergency facility.",
+        "D": "Coverage does not depend on the provider accepting an in-network fee schedule; Texas law imposes emergency-care payment obligations even for non-network emergency care."
+      },
+      "trap_type": "TP001-Absolute_Terms",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q022",
+      "rule_ids": [
+        "RC-BUS-002"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "hard",
+      "format": "concept_application",
+      "stem": "A dentist purchases a Business Overhead Expense (BOE) disability policy to ensure her clinic's rent and employee salaries are paid if she becomes disabled. How are the premiums and benefits of this BOE policy treated for tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Premiums are tax-deductible; benefits are received tax-free."
+        },
+        {
+          "label": "B",
+          "text": "Premiums are not tax-deductible; benefits are received tax-free."
+        },
+        {
+          "label": "C",
+          "text": "Premiums are tax-deductible; benefits are taxable as income to the business."
+        },
+        {
+          "label": "D",
+          "text": "Premiums are not tax-deductible; benefits are taxable as income to the business."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Business overhead expense premiums are generally treated as a deductible business expense. Because of that deduction, benefits paid to cover business overhead are generally taxable to the business when received.",
+      "wrong_explanations": {
+        "A": "If the premiums are deducted, the benefits are not generally received tax-free.",
+        "B": "That answer gets both sides wrong for the usual BOE tax treatment.",
+        "D": "The standard exam treatment for BOE is deductible premiums with taxable benefits, not nondeductible premiums."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q023",
+      "rule_ids": [
+        "RC-MED-003"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Medicare Supplement Texas Rules",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "A Texas resident purchases a Medicare Supplement (Medigap) policy. Under state regulations, what is the mandatory free-look period during which the insured may return the policy for a full refund of all premiums paid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "20 days"
+        },
+        {
+          "label": "D",
+          "text": "30 days"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Texas Medicare supplement rules require a 30-day free-look period during which the policyholder may return the policy for a full refund of premium.",
+      "wrong_explanations": {
+        "A": "10 days is a common free-look period in other contexts, but not for Texas Medigap policies.",
+        "B": "15 days is too short for the Texas Medigap free-look requirement.",
+        "C": "20 days is not the Texas Medigap free-look period."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q024",
+      "rule_ids": [
+        "RC-LIFE-016"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Annuities",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "An individual is making monthly premium payments into a deferred annuity to build up a retirement fund. In the context of annuities, this period of time during which funds are being paid in and interest is growing tax-deferred is known as the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Annuitization period"
+        },
+        {
+          "label": "B",
+          "text": "Accumulation period"
+        },
+        {
+          "label": "C",
+          "text": "Liquidation period"
+        },
+        {
+          "label": "D",
+          "text": "Grace period"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The accumulation period is the pay-in / growth phase of a deferred annuity, during which premiums are paid and values grow tax-deferred.",
+      "wrong_explanations": {
+        "A": "Annuitization is the payout phase, not the premium-building phase.",
+        "C": "Liquidation is used for the payout / depletion side, not the accumulation side.",
+        "D": "Grace period refers to late-premium timing on a policy, not the growth phase of an annuity."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B04-Q025",
+      "rule_ids": [
+        "RC-LIC-009"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Agent Responsibilities and Maintenance",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A Texas life insurance agent collects initial premium checks from clients. Instead of depositing them into a separate trust account, the agent deposits the checks into his personal checking account to cover his own bills for the weekend, intending to forward the money to the insurer on Monday. This illegal practice is a breach of fiduciary duty known as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Commingling"
+        },
+        {
+          "label": "C",
+          "text": "Twisting"
+        },
+        {
+          "label": "D",
+          "text": "Redlining"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Commingling is the improper mixing of client premium funds with the agent's personal or business funds. Premiums collected in a fiduciary capacity must be kept separate and handled as trust funds.",
+      "wrong_explanations": {
+        "A": "Rebating involves unauthorized inducements to buy insurance, not mishandling client premium funds.",
+        "C": "Twisting involves misrepresentation used to induce a replacement of existing coverage.",
+        "D": "Redlining involves discriminatory refusal or restriction of coverage based on geography or similar forbidden underwriting patterns."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-24",
+          "agent": "gemini"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-24",
+          "agent": "chatgpt"
+        }
+      ]
+    }
+  ],
+  "validated_date": "2026-03-24",
+  "validated_by": "chatgpt"
+}

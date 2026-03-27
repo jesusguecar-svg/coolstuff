@@ -1,0 +1,1345 @@
+{
+  "batch_id": "01_validated",
+  "version": "1.0.0",
+  "generated_date": "2026-03-23",
+  "generated_by": "claude",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B01-Q001",
+      "rule_ids": [
+        "RC-PROV-001"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Free Look Period",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "An agent delivers a new life insurance policy to the insured on March 1. The insured reads the policy and decides the coverage does not meet her needs. Under Texas law, what is the last day the insured may return the policy for a full refund of premium?",
+      "options": [
+        {
+          "label": "A",
+          "text": "March 10"
+        },
+        {
+          "label": "B",
+          "text": "March 11"
+        },
+        {
+          "label": "C",
+          "text": "March 31"
+        },
+        {
+          "label": "D",
+          "text": "April 1"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas provides a 10-day free look period beginning on the date the policy is delivered. Delivery on March 1 means the insured has through March 11 (10 full days after delivery) to return the policy for a complete premium refund.",
+      "wrong_explanations": {
+        "A": "March 10 is only 9 days after delivery. The free look period is 10 days, not 9.",
+        "C": "March 31 represents a 30-day window, which confuses the free look period with the grace period for premium payment.",
+        "D": "April 1 represents 31 days, which is the grace period for life insurance premium payment, not the free look window."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q002",
+      "rule_ids": [
+        "RC-REPL-001",
+        "RC-REPL-002"
+      ],
+      "domain": "Agent Duties",
+      "subdomain": "Replacement",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A licensed agent meets with a client who owns an existing whole life policy and wants to purchase a new universal life policy from a different insurer. The client intends to surrender the existing policy. Under Texas Insurance Code Chapter 1114, which of the following is the agent REQUIRED to do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verbally explain the differences between the two policies and document the conversation in the client file"
+        },
+        {
+          "label": "B",
+          "text": "Present and read to the applicant a commissioner-approved replacement notice no later than the time of taking the application, signed by both the applicant and the agent"
+        },
+        {
+          "label": "C",
+          "text": "Contact the existing insurer to negotiate improved terms before processing the replacement"
+        },
+        {
+          "label": "D",
+          "text": "Advise the client to keep the existing policy because replacement always results in financial loss"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under TIC §1114.051, when an applicant states that existing policies exist, the agent must present and read to the applicant a replacement notice in a form adopted or approved by the commissioner, no later than the time of taking the application. The notice must be signed by both the applicant and the agent, attesting that the notice was read aloud or that the applicant declined to have it read aloud. The agent must also leave the notice with the applicant.",
+      "wrong_explanations": {
+        "A": "A verbal explanation alone does not satisfy the statutory requirement. TIC §1114.051 mandates a written, commissioner-approved replacement notice that must be presented, read, and signed. File notes are not a substitute for the formal notice.",
+        "C": "The agent has no statutory duty to contact the existing insurer or negotiate conservation. The agent's obligation is to provide the required replacement notice and signed statement to the applicant and the replacing insurer.",
+        "D": "Replacement does not always result in financial loss, and the agent is not required to discourage it. The agent's duty is to ensure the applicant receives the proper replacement notice so the applicant can make an informed decision."
+      },
+      "trap_type": "TP001",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "under_review",
+          "date": "2026-03-23",
+          "agent": "chatgpt_validator"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Corrected to match TIC §1114.051 statutory language"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q003",
+      "rule_ids": [
+        "RC-HMO-001",
+        "RC-HMO-002"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "HMO",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "Maria is enrolled in a Texas HMO plan. She experiences recurring knee pain and wants to see an orthopedic specialist. What must Maria do FIRST under a standard HMO plan?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Schedule directly with any in-network orthopedic specialist"
+        },
+        {
+          "label": "B",
+          "text": "Obtain a referral from her primary care physician"
+        },
+        {
+          "label": "C",
+          "text": "File a pre-authorization request with the HMO claims department"
+        },
+        {
+          "label": "D",
+          "text": "Visit an out-of-network specialist and submit a reimbursement claim"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "HMO plans operate under a gatekeeper model. The enrolled member must first see her assigned primary care physician, who evaluates the condition and provides a referral to a specialist within the HMO network if medically necessary.",
+      "wrong_explanations": {
+        "A": "This describes PPO behavior, not HMO. In an HMO, members cannot self-refer to specialists without first obtaining a PCP referral.",
+        "C": "Pre-authorization may be required for certain procedures, but the gatekeeper step (PCP referral) comes first in an HMO before any specialist visit or authorization request.",
+        "D": "HMO plans generally do not cover out-of-network services except in emergencies. Visiting an out-of-network specialist without authorization would likely result in the member bearing the full cost."
+      },
+      "trap_type": "TP003",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q004",
+      "rule_ids": [
+        "RC-LIFE-001",
+        "RC-LIFE-002"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Term vs Whole Life",
+      "difficulty": "easy",
+      "format": "distinction",
+      "stem": "A 28-year-old client with a young family and a tight budget wants coverage that will protect her dependents for the next 20 years while her children are growing up. Which type of policy BEST fits this need?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20-year level term life insurance"
+        },
+        {
+          "label": "B",
+          "text": "Whole life insurance"
+        },
+        {
+          "label": "C",
+          "text": "Single premium whole life insurance"
+        },
+        {
+          "label": "D",
+          "text": "Variable universal life insurance"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "A 20-year level term policy provides a death benefit for the specific period of need at the lowest premium cost. It matches the client's temporary protection need and budget constraint precisely.",
+      "wrong_explanations": {
+        "B": "Whole life provides permanent coverage and builds cash value, but its premium is significantly higher. Given the tight budget and a defined 20-year need, term life is the better fit.",
+        "C": "Single premium whole life requires one large lump-sum payment, which contradicts the tight-budget requirement. It is designed for wealth transfer, not affordable temporary protection.",
+        "D": "Variable universal life carries investment risk, has higher costs, and is more complex. It does not align with a simple temporary protection need on a limited budget."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q005",
+      "rule_ids": [
+        "RC-UTP-001",
+        "RC-UTP-002"
+      ],
+      "domain": "Unfair Trade Practices",
+      "subdomain": "Twisting",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An agent tells a policyholder that her current insurer is financially unstable and will likely be unable to pay claims, even though the insurer holds an A-rated financial strength rating. The agent urges the client to surrender the policy and purchase a new one through his agency. This conduct is BEST described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replacement"
+        },
+        {
+          "label": "B",
+          "text": "Twisting"
+        },
+        {
+          "label": "C",
+          "text": "Rebating"
+        },
+        {
+          "label": "D",
+          "text": "Conservation"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Twisting occurs when an agent uses misrepresentation or incomplete comparison to induce a policyholder to lapse, surrender, or replace an existing policy. Falsely claiming the current insurer is financially unstable to pressure a switch is a textbook twisting violation.",
+      "wrong_explanations": {
+        "A": "Replacement is a neutral term describing the purchase of a new policy in connection with the surrender of an existing one. It becomes twisting when misrepresentation is used to induce the replacement.",
+        "C": "Rebating involves offering something of value (money, gifts, premium discounts not in the contract) as an inducement to purchase insurance. No such inducement is described here.",
+        "D": "Conservation is the practice of persuading a policyholder to keep an existing policy. This is the opposite of what the agent is doing."
+      },
+      "trap_type": "TP001",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q006",
+      "rule_ids": [
+        "RC-PROV-002"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Grace Period",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "A life insurance policyholder's annual premium was due on February 1 but has not been paid. Under the standard grace period provision, the policy will remain in force through which date?",
+      "options": [
+        {
+          "label": "A",
+          "text": "February 10"
+        },
+        {
+          "label": "B",
+          "text": "February 28"
+        },
+        {
+          "label": "C",
+          "text": "March 3"
+        },
+        {
+          "label": "D",
+          "text": "March 4"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Life insurance policies provide a 31-day grace period after the premium due date. With a February 1 due date, the policyholder has through March 4 (31 days later) to pay the overdue premium while the policy remains in force.",
+      "wrong_explanations": {
+        "A": "February 10 is only 9 days after the due date. This confuses the grace period with the free look period.",
+        "B": "February 28 is only 27 days, which does not satisfy the 31-day grace period requirement.",
+        "C": "March 3 is 30 days after the due date. The life insurance grace period is 31 days, not 30."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q007",
+      "rule_ids": [
+        "RC-LIFE-003",
+        "RC-LIFE-004"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Universal Life vs Variable Life",
+      "difficulty": "medium",
+      "format": "distinction",
+      "stem": "A prospective buyer asks about a policy that allows flexible premium payments and credits interest at a rate declared by the insurer but never below a guaranteed minimum. Which product is the agent describing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Variable life insurance"
+        },
+        {
+          "label": "B",
+          "text": "Variable universal life insurance"
+        },
+        {
+          "label": "C",
+          "text": "Universal life insurance"
+        },
+        {
+          "label": "D",
+          "text": "Indexed universal life insurance"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Universal life features flexible premiums and a cash value that earns interest at a current rate declared by the insurer, with a guaranteed minimum floor. The insurer, not the policyowner, bears the investment risk on the general account.",
+      "wrong_explanations": {
+        "A": "Variable life has fixed scheduled premiums and invests cash value in separate accounts chosen by the policyowner. The investment risk falls on the policyowner, and there is no guaranteed minimum interest rate.",
+        "B": "Variable universal life combines flexible premiums with separate-account investment options. Because the policyowner directs investments, cash value can fluctuate below a guaranteed floor, unlike the scenario described.",
+        "D": "Indexed universal life credits interest based on the performance of an external index (such as the S&P 500), not a rate declared by the insurer. While it may have a floor, the crediting mechanism differs from a declared current rate."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q008",
+      "rule_ids": [
+        "RC-UTP-003"
+      ],
+      "domain": "Unfair Trade Practices",
+      "subdomain": "Rebating",
+      "difficulty": "medium",
+      "format": "exception_trigger",
+      "stem": "All of the following actions by an insurance agent would constitute rebating EXCEPT:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Offering a client a gift card worth $200 for purchasing a new annuity"
+        },
+        {
+          "label": "B",
+          "text": "Returning part of the commission to the insured as a premium discount not stated in the policy"
+        },
+        {
+          "label": "C",
+          "text": "Providing a free policy comparison analysis to a prospective client"
+        },
+        {
+          "label": "D",
+          "text": "Paying for a client's vacation as a reward for renewing a life insurance policy"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Providing a free policy comparison analysis is a standard professional service, not an inducement of value outside the contract. Rebating involves offering money, gifts, or other valuable consideration not specified in the policy as an inducement to purchase or renew insurance.",
+      "wrong_explanations": {
+        "A": "Offering a $200 gift card as an inducement to purchase an annuity is a textbook rebating violation. The gift card is valuable consideration not stated in the contract.",
+        "B": "Returning commission to the insured as a premium discount not reflected in the policy is an illegal rebate. Only dividends and discounts stated in the contract are permitted.",
+        "D": "Paying for a client's vacation as a reward for renewing a policy is an inducement of significant value outside the contract, which constitutes rebating."
+      },
+      "trap_type": "TP004",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q009",
+      "rule_ids": [
+        "RC-GRP-001",
+        "RC-GRP-002"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Group Life",
+      "difficulty": "hard",
+      "format": "distinction",
+      "stem": "An employee covered under an employer-sponsored group term life insurance plan terminates employment. Under the group conversion privilege, which of the following is TRUE?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The employee may convert to an individual term policy of equal face amount without evidence of insurability within 31 days"
+        },
+        {
+          "label": "B",
+          "text": "The employee may convert to an individual whole life policy of equal or lesser face amount without evidence of insurability within 31 days"
+        },
+        {
+          "label": "C",
+          "text": "The employee must submit a new application with full medical underwriting within 60 days of termination"
+        },
+        {
+          "label": "D",
+          "text": "The employee loses all coverage immediately upon termination with no conversion option"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The group conversion privilege allows a terminating employee to convert group coverage to an individual whole life policy (not term) of the same or lesser face amount, without evidence of insurability, provided the conversion is requested within 31 days of termination.",
+      "wrong_explanations": {
+        "A": "Conversion under group policies is to an individual whole life (permanent) policy, not a term policy. This is a key distinction tested on the exam.",
+        "C": "The conversion privilege exists specifically so that the employee does not have to provide evidence of insurability. Medical underwriting is not required, and the window is 31 days, not 60.",
+        "D": "Group policies include a conversion privilege as a standard provision. Coverage does not simply vanish upon termination. The employee has 31 days to exercise the conversion right."
+      },
+      "trap_type": "TP005",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q010",
+      "rule_ids": [
+        "RC-MEDSUP-001",
+        "RC-MEDSUP-002"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Medicare Supplement",
+      "difficulty": "hard",
+      "format": "distinction",
+      "stem": "A 67-year-old client enrolled in Original Medicare is comparing a Medicare Supplement (Medigap) policy to a Medicare Advantage plan. Which statement about Medicare Supplement policies is CORRECT?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Medicare Supplement plans use provider networks and require specialist referrals"
+        },
+        {
+          "label": "B",
+          "text": "Medicare Supplement plans are standardized, meaning each plan letter (A through N) offers the same benefits regardless of which insurer issues the policy"
+        },
+        {
+          "label": "C",
+          "text": "Medicare Supplement plans replace Original Medicare and provide all benefits directly"
+        },
+        {
+          "label": "D",
+          "text": "Medicare Supplement premiums are set by CMS and are identical across all insurance companies"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Medicare Supplement (Medigap) plans are federally standardized. Each plan letter (A, B, C, D, F, G, K, L, M, N) provides the same core benefits regardless of which insurer issues it. The insured can see any provider that accepts Medicare. Only premiums vary by insurer.",
+      "wrong_explanations": {
+        "A": "Medicare Supplement policies do not use provider networks or require referrals. That describes Medicare Advantage (Part C) plans, which may use HMO or PPO network structures.",
+        "C": "Medicare Supplement policies do not replace Original Medicare. They supplement it by covering some of the out-of-pocket costs (deductibles, copayments, coinsurance) that Original Medicare does not pay.",
+        "D": "While the benefits of each plan letter are standardized, premiums are set by each insurer individually and can vary significantly. CMS does not set Medigap premiums."
+      },
+      "trap_type": "TP006",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q011",
+      "rule_ids": [
+        "RC-PROV-003"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Incontestability",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A life insurance policy was issued on January 15, 2024. The insured made a material misrepresentation on the application regarding a pre-existing heart condition. The insurer discovers the misrepresentation on March 1, 2026. Can the insurer void the policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because misrepresentation on an application always voids the policy"
+        },
+        {
+          "label": "B",
+          "text": "Yes, because the insurer discovered the misrepresentation within the policy's lifetime"
+        },
+        {
+          "label": "C",
+          "text": "No, because the 2-year incontestability period has passed and the insurer can no longer contest the policy for misrepresentation"
+        },
+        {
+          "label": "D",
+          "text": "No, because material misrepresentation must be discovered within 12 months of issue"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The incontestability clause provides that after a life insurance policy has been in force for two years during the insured's lifetime, the insurer cannot contest the policy based on material misrepresentation in the application. The policy was issued January 15, 2024. By March 1, 2026, more than two years have elapsed, so the policy is incontestable.",
+      "wrong_explanations": {
+        "A": "Misrepresentation does not always void a policy. After the incontestability period expires, the insurer loses the right to contest coverage based on application misstatements.",
+        "B": "The timing of discovery alone is not the controlling factor. What matters is whether the incontestability period has expired. Once two years have passed with the policy in force during the insured's lifetime, the insurer's right to contest is extinguished.",
+        "D": "There is no 12-month discovery rule for misrepresentation. The standard incontestability period in life insurance is two years, not one."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q012",
+      "rule_ids": [
+        "RC-HMO-003"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "HMO",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An HMO member is vacationing out of state when she experiences severe chest pain and is admitted to the nearest emergency room, which is not in her HMO network. How will the HMO handle this claim?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The HMO will deny the claim because all services must be obtained from network providers"
+        },
+        {
+          "label": "B",
+          "text": "The HMO must cover the emergency services because emergency care is covered regardless of network status"
+        },
+        {
+          "label": "C",
+          "text": "The HMO will cover only 50% of the emergency room bill as an out-of-network penalty"
+        },
+        {
+          "label": "D",
+          "text": "The member must transfer to an in-network hospital within 24 hours or the claim will be denied"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "HMO plans are required to cover emergency medical services regardless of whether the provider is in or out of network. A true medical emergency (such as severe chest pain) triggers coverage at the emergency facility without prior authorization or network restriction.",
+      "wrong_explanations": {
+        "A": "While HMOs generally restrict coverage to network providers, emergency services are the exception. Denying a genuine emergency claim based solely on network status would violate regulatory requirements.",
+        "C": "Emergency services in a true emergency are not subject to out-of-network cost penalties in the same way elective services are. The plan must cover the emergency at its normal benefit level.",
+        "D": "There is no blanket 24-hour transfer requirement. Once stabilized, follow-up care may need to return to the network, but the initial emergency treatment is covered regardless."
+      },
+      "trap_type": "TP003",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q013",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Underwriting and Delivery",
+      "subdomain": "Insurable Interest",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A business partner applies for a life insurance policy on the life of her co-owner, naming herself as beneficiary. The co-owner consents to the application. Is there an insurable interest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because insurable interest only exists between spouses and blood relatives"
+        },
+        {
+          "label": "B",
+          "text": "No, because the beneficiary and the insured are not the same person"
+        },
+        {
+          "label": "C",
+          "text": "Yes, because a business partner has an insurable interest in the life of a co-owner whose death would cause financial loss to the business"
+        },
+        {
+          "label": "D",
+          "text": "Yes, but only if the policy face amount does not exceed the value of the business"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Insurable interest exists when the applicant would suffer a financial loss from the death of the insured. A business partner has an insurable interest in a co-owner because the co-owner's death could impair the business financially. Insurable interest is required at the time of application, and consent was given.",
+      "wrong_explanations": {
+        "A": "Insurable interest extends beyond family relationships. Business partners, key employees, creditors, and others with a financial stake in the insured's continued life qualify.",
+        "B": "The beneficiary and the insured do not need to be the same person. Third-party ownership is common in business insurance arrangements as long as insurable interest exists at application.",
+        "D": "While the face amount should bear a reasonable relationship to the financial interest, there is no rigid statutory requirement that the death benefit match the exact business value. The key requirement is that insurable interest exists at inception."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q014",
+      "rule_ids": [
+        "RC-PROV-004"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Nonforfeiture Options",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A whole life policyholder stops paying premiums after 15 years and does not elect a nonforfeiture option. Under the standard nonforfeiture provision, which option will the insurer automatically apply?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Extended term insurance for the face amount of the policy"
+        },
+        {
+          "label": "B",
+          "text": "Reduced paid-up whole life insurance"
+        },
+        {
+          "label": "C",
+          "text": "Cash surrender of the entire policy"
+        },
+        {
+          "label": "D",
+          "text": "Automatic premium loan from the cash value"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "When a whole life policyholder stops paying premiums and does not actively choose a nonforfeiture option, the automatic (default) nonforfeiture option is extended term insurance. The insurer uses the existing cash value to purchase term insurance for the original face amount, lasting as long as the cash value can support.",
+      "wrong_explanations": {
+        "B": "Reduced paid-up insurance is an available nonforfeiture option but it is not the automatic default. The policyholder must affirmatively elect it.",
+        "C": "Cash surrender terminates the policy and pays out the cash value. This is an elective option, not the automatic default when no choice is made.",
+        "D": "An automatic premium loan is a separate policy provision that uses cash value to pay the overdue premium. It is distinct from the nonforfeiture default and must be elected or included in the policy as a rider."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q015",
+      "rule_ids": [
+        "RC-UTP-004"
+      ],
+      "domain": "Unfair Trade Practices",
+      "subdomain": "Commingling",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An agent collects a $3,000 premium check from a client made payable to the agent personally. The agent deposits the check into his personal checking account and writes a personal check to the insurer the following week. Which violation has occurred?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Misrepresentation"
+        },
+        {
+          "label": "C",
+          "text": "Commingling of funds"
+        },
+        {
+          "label": "D",
+          "text": "Defamation"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Commingling occurs when an agent mixes client or insurer funds with personal funds. Depositing a client's premium payment into a personal account is a textbook commingling violation, regardless of whether the agent ultimately forwards the funds to the insurer.",
+      "wrong_explanations": {
+        "A": "Rebating involves providing an inducement of value not stated in the policy to encourage the purchase of insurance. No inducement is being offered here.",
+        "B": "Misrepresentation involves making false or misleading statements about a policy or insurer. The agent is not making false statements; he is improperly handling client funds.",
+        "D": "Defamation involves making false statements that damage the reputation of another insurer or agent. Fund handling is not a defamation issue."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q016",
+      "rule_ids": [
+        "RC-LTC-001"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Long-Term Care",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Texas law, which of the following is a required provision in a long-term care insurance policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A 90-day elimination period with no exceptions"
+        },
+        {
+          "label": "B",
+          "text": "Coverage for skilled nursing care only"
+        },
+        {
+          "label": "C",
+          "text": "A nonforfeiture benefit option or contingent benefit upon lapse"
+        },
+        {
+          "label": "D",
+          "text": "Unlimited lifetime benefit duration"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas regulations require that long-term care policies offer either a nonforfeiture benefit option or a contingent benefit upon lapse. This consumer protection ensures the policyholder retains some value even if the policy lapses after significant premium payments.",
+      "wrong_explanations": {
+        "A": "LTC policies may offer various elimination period options (30, 60, 90 days, etc.), but a 90-day period is not universally mandated. The elimination period is typically selected by the policyholder.",
+        "B": "LTC policies cover a range of care levels including custodial care, assisted living, home health care, and adult day care, not just skilled nursing.",
+        "D": "Unlimited benefit duration is an optional feature, not a regulatory requirement. Many LTC policies have a maximum benefit period (e.g., 3 or 5 years)."
+      },
+      "trap_type": null,
+      "source_confidence": "medium",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q017",
+      "rule_ids": [
+        "RC-REPL-001",
+        "RC-REPL-003"
+      ],
+      "domain": "Agent Duties",
+      "subdomain": "Replacement",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "During a client meeting, a prospect mentions she already owns a term life policy but wants to explore buying a whole life policy. She has not decided whether to keep the old policy or surrender it. At what point do the agent's replacement notice duties under TIC §1114.051 apply?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The moment the agent first learns the prospect owns any existing policy"
+        },
+        {
+          "label": "B",
+          "text": "When the applicant states on the signed application statement that existing policies exist and the transaction involves replacing one of those policies"
+        },
+        {
+          "label": "C",
+          "text": "When the application for the new policy is submitted to the insurer"
+        },
+        {
+          "label": "D",
+          "text": "When the new policy is delivered and the old policy has been surrendered"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under TIC §1114.051, every agent initiating an application must first submit a signed statement (signed by both applicant and agent) about whether the applicant has existing policies. If the applicant states that existing policies exist and the transaction constitutes a replacement, the agent must present and read the commissioner-approved replacement notice no later than the time of taking the application. The duty is triggered by the applicant's signed disclosure of existing coverage in connection with a replacement transaction, not by the agent's informal awareness.",
+      "wrong_explanations": {
+        "A": "The agent's informal knowledge of existing coverage does not, by itself, trigger the replacement notice duty. The statutory mechanism is the signed statement submitted with or as part of the application. If the client is only exploring options and no application is being taken, the replacement notice requirement has not yet been triggered.",
+        "C": "By the time the application is submitted to the insurer, the replacement notice should already have been presented and read to the applicant. The statute requires the notice no later than the time of taking the application, not at submission to the insurer.",
+        "D": "Waiting until delivery and surrender would be far too late. The notice must be provided no later than the time the application is taken, well before the new policy is issued or the old policy is surrendered."
+      },
+      "trap_type": "TP001",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "under_review",
+          "date": "2026-03-23",
+          "agent": "chatgpt_validator"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Corrected to reflect two-step statutory structure of §1114.051(a) signed statement + (c) replacement notice"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q018",
+      "rule_ids": [
+        "RC-HEALTH-001"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "PPO",
+      "difficulty": "medium",
+      "format": "distinction",
+      "stem": "A PPO plan member needs to see a dermatologist. Under a typical PPO arrangement, what is the member required to do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Obtain a referral from a primary care physician before the specialist visit"
+        },
+        {
+          "label": "B",
+          "text": "Choose any dermatologist, but the member will pay less if the provider is in-network"
+        },
+        {
+          "label": "C",
+          "text": "Visit only dermatologists within the PPO network; out-of-network visits are never covered"
+        },
+        {
+          "label": "D",
+          "text": "File a pre-authorization form with the insurer at least 14 days before the appointment"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "PPO plans allow members to see any provider without a referral. Members receive the highest benefit level when using in-network providers, but out-of-network providers are also covered at a reduced benefit level. No gatekeeper or referral is required.",
+      "wrong_explanations": {
+        "A": "This describes HMO behavior. PPOs do not require a PCP referral to see a specialist.",
+        "C": "PPO plans do cover out-of-network visits, though at a higher cost to the member. Unlike HMOs, PPOs do not restrict coverage exclusively to network providers.",
+        "D": "While some procedures may require pre-authorization under any plan type, there is no standard 14-day pre-authorization requirement for routine specialist visits under a PPO."
+      },
+      "trap_type": "TP003",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q019",
+      "rule_ids": [
+        "RC-UW-002"
+      ],
+      "domain": "Underwriting and Delivery",
+      "subdomain": "HIPAA Disclosures",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "When an individual enrolls in a health insurance plan, HIPAA requires the insurer to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Share the enrollee's medical information with the enrollee's employer upon request"
+        },
+        {
+          "label": "B",
+          "text": "Provide the enrollee with a Notice of Privacy Practices explaining how protected health information may be used and disclosed"
+        },
+        {
+          "label": "C",
+          "text": "Destroy all medical records within 30 days of the enrollment decision"
+        },
+        {
+          "label": "D",
+          "text": "Obtain the enrollee's written consent before disclosing medical information to any government agency, including regulators"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under 45 CFR §164.520, health plans must provide a Notice of Privacy Practices to new enrollees at the time of enrollment. The notice explains how the plan may use and disclose protected health information (PHI), describes the individual's privacy rights, and identifies how complaints may be filed. The plan must also send a reminder at least once every three years that the notice is available upon request.",
+      "wrong_explanations": {
+        "A": "HIPAA restricts disclosure of PHI. Sharing an enrollee's medical information with an employer without proper authorization would be a HIPAA violation, not a requirement.",
+        "C": "HIPAA does not require destruction of records within 30 days. Privacy policies, procedures, and related documentation must be retained for at least six years under HIPAA's record retention requirements.",
+        "D": "HIPAA permits certain disclosures to government agencies for public health, law enforcement, and regulatory oversight without individual consent. The enrollee's written consent is not required in all government disclosure scenarios."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "under_review",
+          "date": "2026-03-23",
+          "agent": "chatgpt_validator"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Corrected stem from 'during application process' to 'when an individual enrolls' per 45 CFR §164.520(c)(1)"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q020",
+      "rule_ids": [
+        "RC-LIFE-005"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Annuities",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Which of the following BEST describes the primary purpose of an annuity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To provide a death benefit to named beneficiaries"
+        },
+        {
+          "label": "B",
+          "text": "To provide a systematic liquidation of a sum of money over a period of time, typically as retirement income"
+        },
+        {
+          "label": "C",
+          "text": "To protect the insured against the financial consequences of disability"
+        },
+        {
+          "label": "D",
+          "text": "To build tax-free savings for a child's education expenses"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The primary purpose of an annuity is to provide periodic income payments, typically during retirement. An annuity systematically liquidates an accumulated sum over time, protecting the annuitant against the risk of outliving savings (longevity risk).",
+      "wrong_explanations": {
+        "A": "Providing a death benefit is the primary purpose of life insurance, not annuities. While some annuities include death benefit features, the core purpose is income distribution.",
+        "C": "Protection against disability income loss is the purpose of disability income insurance, not an annuity.",
+        "D": "Education savings are typically addressed through 529 plans or Coverdell accounts. Annuities are not designed as education savings vehicles and carry tax penalties for early withdrawal."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q021",
+      "rule_ids": [
+        "RC-MEDSUP-003"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Medicare Supplement",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A 65-year-old individual enrolls in Medicare Part B and applies for a Medigap policy during her 6-month open enrollment period. She had employer group health coverage continuously for the previous 10 years. Which of the following statements is TRUE regarding her Medigap enrollment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer may deny her application based on her health history during the open enrollment period"
+        },
+        {
+          "label": "B",
+          "text": "The insurer must accept her application and cannot impose a pre-existing condition waiting period because she has more than 6 months of prior creditable coverage"
+        },
+        {
+          "label": "C",
+          "text": "The insurer must accept her application but may impose up to a 12-month pre-existing condition waiting period regardless of prior coverage"
+        },
+        {
+          "label": "D",
+          "text": "The insurer may charge her a higher premium based on pre-existing health conditions during open enrollment"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "During the 6-month Medigap open enrollment period (beginning the month the individual is 65 or older and enrolled in Part B), insurers cannot deny coverage or charge higher premiums based on health status. Federal law permits insurers to impose up to a 6-month pre-existing condition waiting period, but this period must be reduced month-for-month by any prior creditable coverage. Because this applicant had 10 continuous years of employer group coverage, her creditable coverage exceeds 6 months, so the insurer cannot impose any waiting period.",
+      "wrong_explanations": {
+        "A": "During the Medigap open enrollment period, insurers cannot deny an applicant based on health history. Guaranteed issue applies: any Medigap plan sold in the state must be offered regardless of medical condition.",
+        "C": "The maximum pre-existing condition waiting period under federal law is 6 months, not 12 months. Additionally, the waiting period is reduced by prior creditable coverage. With 10 years of continuous employer coverage, this applicant would face no waiting period at all.",
+        "D": "During the open enrollment period, insurers cannot use health status to increase premiums. The applicant is entitled to the same rate offered to other enrollees of the same age and profile, without a health-based surcharge."
+      },
+      "trap_type": "TP006",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "under_review",
+          "date": "2026-03-23",
+          "agent": "chatgpt_validator"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Rewrote to test correct nuance: guaranteed issue + creditable coverage offset of pre-existing condition waiting period per 42 U.S.C. §1395ss"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q022",
+      "rule_ids": [
+        "RC-PROV-005"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Beneficiary Designations",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A policyholder names his wife as primary beneficiary and his two adult children as equal contingent beneficiaries. The wife predeceases the insured. The insured dies without changing the beneficiary designation. Who receives the death benefit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insured's estate"
+        },
+        {
+          "label": "B",
+          "text": "The two children, each receiving 50% as contingent beneficiaries"
+        },
+        {
+          "label": "C",
+          "text": "The wife's estate, because she was the named primary beneficiary"
+        },
+        {
+          "label": "D",
+          "text": "The insurer retains the funds until a court determines the rightful recipient"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "When the primary beneficiary predeceases the insured, the death benefit passes to the contingent (secondary) beneficiaries. The two adult children, named as equal contingent beneficiaries, each receive 50% of the death benefit.",
+      "wrong_explanations": {
+        "A": "The death benefit goes to the estate only if there are no surviving beneficiaries (primary or contingent). Here, both contingent beneficiaries are alive.",
+        "C": "A deceased primary beneficiary's estate does not automatically inherit the death benefit. The proceeds pass to the contingent beneficiaries, not the estate of the predeceased primary.",
+        "D": "The insurer does not retain the funds. The policy's beneficiary designation governs distribution. Contingent beneficiaries receive the proceeds when the primary beneficiary is deceased."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q023",
+      "rule_ids": [
+        "RC-UTP-005"
+      ],
+      "domain": "Unfair Trade Practices",
+      "subdomain": "Misrepresentation",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An agent tells a prospective client that a whole life policy's dividends are guaranteed to be paid every year. In reality, policy dividends are never guaranteed. This statement is an example of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twisting"
+        },
+        {
+          "label": "B",
+          "text": "Misrepresentation"
+        },
+        {
+          "label": "C",
+          "text": "Rebating"
+        },
+        {
+          "label": "D",
+          "text": "Controlled business"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Misrepresentation occurs when an agent makes a false or misleading statement about the terms, benefits, or features of an insurance policy. Stating that dividends are guaranteed when they are not is a direct misrepresentation of the policy's features.",
+      "wrong_explanations": {
+        "A": "Twisting involves using misrepresentation specifically to induce a policyholder to replace an existing policy. This scenario involves a new prospect, not a replacement situation.",
+        "C": "Rebating involves offering valuable consideration not in the contract as an inducement. The agent is not offering any gift or discount; he is making a false statement about the product.",
+        "D": "Controlled business refers to an agent selling primarily to himself, family, or close associates to earn commissions. It has nothing to do with false statements about policy features."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q024",
+      "rule_ids": [
+        "RC-LIFE-006"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Settlement Options",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "A life insurance beneficiary wants to receive the death benefit as equal monthly payments for a fixed number of years. Which settlement option should the beneficiary select?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Life income option"
+        },
+        {
+          "label": "B",
+          "text": "Fixed period (installments for a fixed period) option"
+        },
+        {
+          "label": "C",
+          "text": "Interest only option"
+        },
+        {
+          "label": "D",
+          "text": "Lump sum option"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The fixed period (installments for a fixed period) settlement option pays equal installments over a chosen number of years until the proceeds and interest are exhausted. This matches the beneficiary's request for equal monthly payments over a defined time.",
+      "wrong_explanations": {
+        "A": "The life income option pays installments for the beneficiary's lifetime, not for a set number of years. Payment duration depends on how long the beneficiary lives, not a fixed period.",
+        "C": "The interest only option leaves the principal with the insurer and pays only the interest earned. The principal is not distributed in installments under this option.",
+        "D": "The lump sum option pays the entire death benefit at once, not as monthly installments over a period of years."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    },
+    {
+      "question_id": "B01-Q025",
+      "rule_ids": [
+        "RC-HMO-004",
+        "RC-TXSTAT-001"
+      ],
+      "domain": "Texas Statutes",
+      "subdomain": "HMO Regulation",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A Texas HMO is required to provide each enrollee with an evidence of coverage document. All of the following must be included in this document EXCEPT:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A description of the health care services and benefits covered under the plan"
+        },
+        {
+          "label": "B",
+          "text": "The procedures for obtaining covered services, including any referral or authorization requirements"
+        },
+        {
+          "label": "C",
+          "text": "A guarantee that the enrollee's monthly premium will never increase during the contract period"
+        },
+        {
+          "label": "D",
+          "text": "The complaint and appeals procedures available to enrollees"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The evidence of coverage must describe covered services, procedures for accessing care, and complaint or appeals processes. However, HMOs are not required to guarantee that premiums will never increase. Premiums are subject to regulatory approval and may change at renewal.",
+      "wrong_explanations": {
+        "A": "A description of covered services is a fundamental required element of the evidence of coverage document.",
+        "B": "Procedures for obtaining services, including referral and authorization processes, must be disclosed so members understand how to access care within the HMO structure.",
+        "D": "Complaint and appeals procedures are a required component of the evidence of coverage, ensuring enrollees know how to challenge adverse decisions."
+      },
+      "trap_type": "TP004",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "claude",
+          "note": "Passed validation without changes"
+        }
+      ]
+    }
+  ],
+  "validated_date": "2026-03-23",
+  "validation_notes": "All 25 questions validated. Q002, Q017, Q019, Q021 corrected per upstream legal review. See validation_report_batch_01.json for details."
+}

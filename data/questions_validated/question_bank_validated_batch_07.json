@@ -1,0 +1,1294 @@
+{
+  "batch_id": "07",
+  "version": "1.0.0",
+  "generated_date": "2026-03-24",
+  "generated_by": "gemini",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B07-Q001",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured submits a reinstatement application and past-due premium for a lapsed individual health insurance policy. The insurer issues a conditional receipt but never formally notifies the insured in writing of the application's approval or denial. Under standard health policy provisions, when is the policy automatically reinstated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "On the 15th day after the date of the conditional receipt"
+        },
+        {
+          "label": "B",
+          "text": "On the 30th day after the date of the conditional receipt"
+        },
+        {
+          "label": "C",
+          "text": "On the 45th day after the date of the conditional receipt"
+        },
+        {
+          "label": "D",
+          "text": "The policy cannot be reinstated without formal written approval from the insurer"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under the mandatory Reinstatement provision in individual health insurance, if the insurer requires an application for reinstatement and issues a conditional receipt, the policy is automatically reinstated on the 45th day following the date of the receipt, unless the insurer notifies the insured in writing of denial before that date.",
+      "wrong_explanations": {
+        "A": "15 days is too short and does not align with the uniform reinstatement provision.",
+        "B": "30 days is a common timeline in insurance (e.g., grace periods), but the automatic reinstatement provision is specifically 45 days.",
+        "D": "The uniform provision is designed to protect the insured from unreasonable insurer delays by enforcing automatic reinstatement if no denial is issued within 45 days."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q002",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A corporation sets up an Executive Bonus plan to reward its vice president. The corporation purchases a whole life insurance policy where the vice president is the policyowner and insured, and the corporation pays the premiums. How are these premium payments treated for tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are tax-deductible to the corporation and tax-free to the vice president."
+        },
+        {
+          "label": "B",
+          "text": "They are tax-deductible to the corporation and taxable as ordinary income to the vice president."
+        },
+        {
+          "label": "C",
+          "text": "They are not tax-deductible to the corporation, but they are tax-free to the vice president."
+        },
+        {
+          "label": "D",
+          "text": "They are not tax-deductible to the corporation, but the death benefit is taxable to the vice president's heirs."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In an Executive Bonus plan, the business pays the premium on a life insurance policy owned by the executive. The IRS treats these premium payments as additional compensation to the executive. Therefore, the corporation can deduct the premiums as a business expense, and the executive must report the premium amounts as taxable ordinary income.",
+      "wrong_explanations": {
+        "A": "The premiums are considered additional salary/compensation, so they cannot be received tax-free by the executive.",
+        "C": "The corporation is permitted to deduct the premiums because they are classified as employee compensation.",
+        "D": "The premiums are tax-deductible to the business, and the resulting death benefit paid to the executive's beneficiaries will generally be income tax-free."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q003",
+      "rule_ids": [
+        "RC-LIFE-020"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "Five years after issuing a whole life insurance policy, the insurer discovers during a death claim investigation that the insured understated their age on the application by 10 years to secure a lower premium. Although the 2-year incontestability period has long expired, how will the insurer handle the claim?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer will deny the claim entirely because the misstatement of age constitutes intentional fraud."
+        },
+        {
+          "label": "B",
+          "text": "The insurer must pay the full original face amount because the incontestability period has passed."
+        },
+        {
+          "label": "C",
+          "text": "The insurer will pay a reduced death benefit equal to the amount the actual premium paid would have purchased at the correct age."
+        },
+        {
+          "label": "D",
+          "text": "The insurer will refund the premiums paid plus interest, but deny the death benefit."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Misstatement of Age or Sex provision operates independently of the incontestability clause. If an age or sex misstatement is discovered at any time\u2014even decades after the policy was issued\u2014the insurer adjusts the death benefit to the amount the premium paid would have purchased at the correct age. The policy is not voided.",
+      "wrong_explanations": {
+        "A": "Misstatement of age does not void the policy; it merely triggers an equitable adjustment of benefits.",
+        "B": "The incontestability clause explicitly does not apply to misstatements of age or sex. The insurer is always allowed to adjust the benefit for age discrepancies.",
+        "D": "The insurer is obligated to pay the adjusted death benefit, not merely refund the premiums."
+      },
+      "trap_type": "TP008-Fraud_Exception_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q004",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under Section 1035 of the Internal Revenue Code, which of the following policy exchanges is strictly prohibited from receiving tax-free treatment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exchanging a permanent life insurance policy for a deferred annuity."
+        },
+        {
+          "label": "B",
+          "text": "Exchanging a deferred annuity for a new permanent life insurance policy."
+        },
+        {
+          "label": "C",
+          "text": "Exchanging one deferred annuity for another deferred annuity."
+        },
+        {
+          "label": "D",
+          "text": "Exchanging a permanent life insurance policy for an endowment policy."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Section 1035 allows tax-free exchanges to prevent policyholders from being taxed when merely upgrading or swapping contracts. However, the IRS does not allow an individual to exchange an annuity (which is fully taxable upon withdrawal) for a life insurance policy (which features tax-free death benefits), as this would be a loophole to escape taxation on the annuity's gains.",
+      "wrong_explanations": {
+        "A": "Exchanging life insurance for an annuity is permitted under Section 1035.",
+        "C": "Exchanging one annuity for another annuity is a standard, permitted 1035 exchange.",
+        "D": "Exchanging life insurance for an endowment is permitted under Section 1035."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q005",
+      "rule_ids": [
+        "RC-HMO-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "HMO Regulations in Texas",
+      "difficulty": "hard",
+      "format": "scenario",
+      "stem": "A primary care physician (PCP) leaves a Texas Health Maintenance Organization (HMO) network for reasons other than imminent harm or fraud. If an enrollee is currently being treated by this PCP for a life-threatening illness, Texas law requires the HMO to allow the enrollee to continue receiving care from this physician at the in-network benefit level for up to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days following the date of the provider's termination."
+        },
+        {
+          "label": "B",
+          "text": "60 days following the date of the provider's termination."
+        },
+        {
+          "label": "C",
+          "text": "90 days following the date of the provider's termination."
+        },
+        {
+          "label": "D",
+          "text": "180 days following the date of the provider's termination."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under Texas managed care continuity of care laws, if a physician's contract is terminated (not for cause), the HMO must allow an enrollee with a special circumstance\u2014such as a life-threatening illness, acute condition, or being past the 24th week of pregnancy\u2014to continue receiving care from that physician at in-network rates for up to 90 days.",
+      "wrong_explanations": {
+        "A": "30 days is the standard notice period for premium nonpayment cancellations, not continuity of care.",
+        "B": "60 days is the timeframe for delivering an Evidence of Coverage document.",
+        "D": "180 days exceeds the statutory mandate; the protection is limited to 90 days to allow safe transition to a new physician."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q006",
+      "rule_ids": [
+        "RC-LIC-008"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An agent is already licensed and appointed with one insurer in Texas and then receives an additional appointment from another insurer. Under Texas law, by when must the agent and insurer notify the department of that additional appointment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 days"
+        },
+        {
+          "label": "B",
+          "text": "15 days"
+        },
+        {
+          "label": "C",
+          "text": "30 days"
+        },
+        {
+          "label": "D",
+          "text": "Applications cannot be submitted before an appointment is officially filed."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code \u00a74001.202 provides that, for an additional appointment authorizing an agent to act for one or more additional insurers, the agent and insurer must notify the department not later than the 30th day after the effective date of the appointment.",
+      "wrong_explanations": {
+        "A": "10 days is not the statutory deadline for reporting an additional appointment.",
+        "B": "15 days is not the statutory deadline for reporting an additional appointment.",
+        "D": "Texas permits multiple appointments, but additional appointments must still be reported to the department within the required 30-day period."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Reframed to track Texas Insurance Code \u00a74001.202 additional-appointment notice rule."
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q007",
+      "rule_ids": [
+        "RC-LIFE-007"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Universal Life",
+      "difficulty": "easy",
+      "format": "concept_application",
+      "stem": "Which type of permanent life insurance policy is characterized by its unbundled structure, allowing the policyowner to flexibly adjust both the premium payment amounts and the death benefit (subject to insurability)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Traditional Whole Life"
+        },
+        {
+          "label": "B",
+          "text": "Variable Whole Life"
+        },
+        {
+          "label": "C",
+          "text": "Universal Life"
+        },
+        {
+          "label": "D",
+          "text": "Decreasing Term Life"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Universal Life insurance (sometimes called flexible premium adjustable life) allows the policyowner to adjust the premium payments and the face amount of the death benefit. The mortality charge, expense charges, and interest credited are unbundled and clearly visible to the owner.",
+      "wrong_explanations": {
+        "A": "Traditional whole life has a fixed premium and fixed death benefit that cannot be flexibly adjusted.",
+        "B": "Variable whole life has a fixed premium, though the cash value fluctuates with market performance.",
+        "D": "Decreasing term life is a temporary policy with a declining face amount and no cash value component."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q008",
+      "rule_ids": [
+        "RC-HLTH-008"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "An insured holds an individual disability income policy containing the standard 'Change of Occupation' optional provision. If the insured leaves their desk job for a significantly more hazardous occupation in construction and subsequently files a claim, how will the insurer respond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer will deny the claim entirely because the change in occupation voided the policy."
+        },
+        {
+          "label": "B",
+          "text": "The insurer will pay the original benefit amount but charge the insured retroactively for the higher premiums."
+        },
+        {
+          "label": "C",
+          "text": "The insurer will pay reduced benefits equivalent to what the original premium would have purchased for the more hazardous occupation."
+        },
+        {
+          "label": "D",
+          "text": "The insurer will pay the full original benefit because the policy was already issued and in force."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Under the Change of Occupation provision, if an insured changes to a more hazardous job, the insurer will automatically adjust the benefits downward. The new benefit amount will be what the premiums paid would have purchased at the rates for the more hazardous occupation.",
+      "wrong_explanations": {
+        "A": "A change of occupation does not void the policy; it merely triggers a benefit or premium adjustment.",
+        "B": "The insurer does not issue retroactive bills; they adjust the payable benefit amount to match the existing premium.",
+        "D": "If the policy contains this specific provision, the insurer is legally entitled to reduce the benefits to reflect the increased risk."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q009",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "Under Texas law, fully insured group health benefit plans must provide coverage for a newborn child from the moment of birth. Which of the following is a specific statutory mandate regarding this newborn coverage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The plan must waive all standard deductibles and coinsurance for the newborn's first 31 days."
+        },
+        {
+          "label": "B",
+          "text": "The plan must cover the treatment of congenital defects and abnormalities without any waiting period or exclusion."
+        },
+        {
+          "label": "C",
+          "text": "The newborn is automatically covered for the first year, regardless of whether the parents notify the insurer."
+        },
+        {
+          "label": "D",
+          "text": "Coverage is limited only to routine nursery care and immunizations for the first 14 days."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas law strictly mandates that newborn coverage begins at the moment of birth and must explicitly include coverage for illness, injury, and the treatment of congenital defects and abnormalities. These conditions cannot be excluded or subjected to waiting periods.",
+      "wrong_explanations": {
+        "A": "Standard deductibles and coinsurance still apply to the newborn's care; they are not waived.",
+        "C": "The automatic coverage only lasts for an initial period (typically 31 days). The parents must notify the insurer and pay any required premium to continue coverage beyond that point.",
+        "D": "Coverage is comprehensive and includes injury and illness (including congenital defects), not just routine nursery care."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q010",
+      "rule_ids": [
+        "RC-HLTH-012"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Health Provisions",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "An individual health insurance policy is issued with a 15-day probationary period. What is the primary purpose of this specific period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To establish the time the insured must wait after a disability begins before receiving benefit checks."
+        },
+        {
+          "label": "B",
+          "text": "To protect the insurer against adverse selection by excluding coverage for sicknesses that manifest shortly after policy issuance."
+        },
+        {
+          "label": "C",
+          "text": "To allow the insured time to review the policy and return it for a full premium refund."
+        },
+        {
+          "label": "D",
+          "text": "To define the timeframe during which the insurer can contest the validity of the contract for fraud."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The probationary period is a one-time waiting period (often 15 or 30 days) immediately following the policy's effective date. During this time, sicknesses are not covered, though accidental injuries are covered immediately. This protects the insurer from applicants who buy coverage because they feel an illness coming on (adverse selection).",
+      "wrong_explanations": {
+        "A": "This describes the Elimination Period, which is triggered after a covered loss occurs.",
+        "C": "This describes the Free-Look period, a consumer protection feature.",
+        "D": "This describes the Time Limit on Certain Defenses (or Incontestability) provision, which is typically 2 years."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q011",
+      "rule_ids": [
+        "RC-UW-001"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Underwriting Process",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "During the underwriting process for a life insurance policy, an insurer checks the Medical Information Bureau (MIB). What is the primary function of the MIB?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To provide insurers with access to an applicant's complete hospital and physician billing records."
+        },
+        {
+          "label": "B",
+          "text": "To assign a mandatory credit score used to determine life insurance premium rates."
+        },
+        {
+          "label": "C",
+          "text": "To serve as a clearinghouse of coded medical information submitted by member insurers to help detect fraud and omissions on applications."
+        },
+        {
+          "label": "D",
+          "text": "To conduct independent physical examinations of applicants on behalf of the insurance company."
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Medical Information Bureau (MIB) is a non-profit trade association that maintains confidential, coded medical information on individuals who have previously applied for life or health insurance. It helps underwriters detect inconsistencies, omissions, and potential fraud by comparing current applications with past reports.",
+      "wrong_explanations": {
+        "A": "The MIB does not have access to complete hospital records; it relies on codes reported by member insurers based on previous applications.",
+        "B": "The MIB does not issue credit scores. Financial data is typically obtained through a consumer reporting agency.",
+        "D": "The MIB does not conduct physical exams. Exams are performed by paramedical professionals hired directly by the insurer."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q012",
+      "rule_ids": [
+        "RC-LIFE-025"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Settlement Options",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A life insurance beneficiary elects a settlement option that guarantees a specified income for as long as they live. However, the option stipulates that if the beneficiary dies before the principal is fully depleted, all payments stop and the remaining balance is forfeited to the insurer. Which option did they select?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Life Income with Period Certain"
+        },
+        {
+          "label": "B",
+          "text": "Fixed Amount Option"
+        },
+        {
+          "label": "C",
+          "text": "Straight Life Income Option"
+        },
+        {
+          "label": "D",
+          "text": "Interest-Only Option"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The Straight Life Income (or Pure Life) option pays the highest monthly amount because it guarantees income for the beneficiary's lifetime but offers no guarantees beyond that. If the beneficiary dies shortly after payments begin, the remaining principal is kept by the insurer.",
+      "wrong_explanations": {
+        "A": "Life Income with Period Certain guarantees payments for life, but also promises that if the beneficiary dies early, payments will continue to a secondary beneficiary for the remainder of the 'certain' period.",
+        "B": "The Fixed Amount option exhausts the principal by paying a set dollar amount until the money runs out; it is not based on a life contingency.",
+        "D": "The Interest-Only option holds the principal intact while paying out only the interest earned."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q013",
+      "rule_ids": [
+        "RC-TAX-004"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Social Security Benefits",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "In the context of Social Security survivor benefits, the 'Blackout Period' is defined as the timeframe during which no survivor benefits are paid to the surviving spouse. When does this specific period typically begin and end?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It begins immediately upon the worker's death and ends 6 months later."
+        },
+        {
+          "label": "B",
+          "text": "It begins when the youngest child reaches age 16 and ends when the surviving spouse reaches age 60."
+        },
+        {
+          "label": "C",
+          "text": "It begins when the surviving spouse reaches age 50 and ends at full retirement age (age 65 or 67)."
+        },
+        {
+          "label": "D",
+          "text": "It begins when the youngest child reaches age 18 and ends when the surviving spouse reaches age 65."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under Social Security rules, a surviving spouse caring for dependent children receives benefits until the youngest child turns 16. After that, the spouse enters the 'Blackout Period' where they receive no survivor benefits until they qualify for widow(er) retirement benefits, which can begin as early as age 60.",
+      "wrong_explanations": {
+        "A": "There is no automatic 6-month blackout after a worker's death; eligible dependents begin receiving benefits almost immediately.",
+        "C": "Age 50 is relevant only if the surviving spouse is disabled, but it does not define the standard blackout window.",
+        "D": "The cutoff for the parent's benefit is when the child turns 16, not 18 (though the child's own benefit continues to 18), and the spouse's benefits can resume at 60, not 65."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q014",
+      "rule_ids": [
+        "RC-UTP-001"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Unfair Trade Practices",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A loan officer tells a mortgage applicant that their loan will only be approved if the applicant purchases a credit life insurance policy directly from the bank's affiliated insurance agency. Under Texas insurance law, this illegal tie-in practice is a form of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rebating"
+        },
+        {
+          "label": "B",
+          "text": "Defamation"
+        },
+        {
+          "label": "C",
+          "text": "Coercion"
+        },
+        {
+          "label": "D",
+          "text": "Twisting"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Coercion occurs when a person applies physical or mental force, or a threat of economic harm, to compel another into a transaction. Requiring a borrower to buy insurance exclusively from a specific lender or affiliate as a condition of receiving a loan is an illegal coercive tie-in sale.",
+      "wrong_explanations": {
+        "A": "Rebating is offering a financial inducement or gift not specified in the contract to persuade someone to buy a policy.",
+        "B": "Defamation is publishing false, maliciously critical information about an insurer's financial condition.",
+        "D": "Twisting is making misrepresentations to induce a policyholder to lapse a current policy and buy a new one."
+      },
+      "trap_type": "TP002-Distractor_Misdirection",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q015",
+      "rule_ids": [
+        "RC-COMM-004"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Commissioner of Insurance",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Subject to statutory exceptions, the Texas Department of Insurance must examine a carrier at least how often?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 year"
+        },
+        {
+          "label": "B",
+          "text": "2 years"
+        },
+        {
+          "label": "C",
+          "text": "3 years"
+        },
+        {
+          "label": "D",
+          "text": "5 years"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Insurance Code \u00a7401.052 provides that, subject to statutory exceptions and rules for newer carriers, the department shall examine a carrier not less frequently than once every five years.",
+      "wrong_explanations": {
+        "A": "Annual statements are required, but full examinations are not mandated every year.",
+        "B": "Two years is not the statutory minimum frequency in \u00a7401.052.",
+        "C": "Three years is more frequent than the statutory minimum; the code sets a five-year outer limit.",
+        "D": "Five years is the minimum examination frequency stated in \u00a7401.052, subject to exceptions."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Tightened wording to match Insurance Code \u00a7401.052 carrier examination frequency."
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q016",
+      "rule_ids": [
+        "RC-GRP-002"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A married couple both have group health insurance through their respective employers, and both plans cover their dependent children. According to the standard Coordination of Benefits (COB) 'Birthday Rule,' which plan pays first for the children's medical claims?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The plan of the parent who is older."
+        },
+        {
+          "label": "B",
+          "text": "The plan of the parent whose birthday falls earlier in the calendar year."
+        },
+        {
+          "label": "C",
+          "text": "The plan of the parent who has been employed the longest."
+        },
+        {
+          "label": "D",
+          "text": "The plan that has the lowest annual deductible."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the standard Coordination of Benefits (COB) Birthday Rule, when a child is covered by both parents' group plans, the primary plan is the one belonging to the parent whose birthday (month and day) falls earliest in the calendar year. Year of birth is ignored.",
+      "wrong_explanations": {
+        "A": "The age of the parent (birth year) is completely irrelevant under the Birthday Rule.",
+        "C": "Length of employment does not determine primary coverage for dependents.",
+        "D": "Benefit richness (like deductibles) does not dictate which plan is primary; the rule is strictly chronological by month and day."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q017",
+      "rule_ids": [
+        "RC-MED-003"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Medicare Supplement Texas Rules",
+      "difficulty": "hard",
+      "format": "direct_rule",
+      "stem": "To discourage agents from inappropriately replacing Medicare Supplement (Medigap) policies, Texas regulations strictly limit agent compensation. First-year sales commissions for a Medigap policy cannot exceed what percentage of the commission paid for renewing the policy in the second year?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100%"
+        },
+        {
+          "label": "B",
+          "text": "150%"
+        },
+        {
+          "label": "C",
+          "text": "200%"
+        },
+        {
+          "label": "D",
+          "text": "300%"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code limits the compensation an agent can receive for selling a Medicare Supplement policy. The first-year commission or compensation may not exceed 200% of the commission paid for selling or servicing the policy in the second year.",
+      "wrong_explanations": {
+        "A": "While some companies choose to pay level commissions (100%), the legal maximum limit for the first year is higher.",
+        "B": "150% is incorrect; the statute specifically sets the cap at 200%.",
+        "D": "300% exceeds the legal limit designed to curb aggressive sales tactics and 'churning' of senior policies."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q018",
+      "rule_ids": [
+        "RC-LIFE-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Annuities",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "An individual seeking to protect their retirement funds from market downturns while still participating in market growth purchases an Equity-Indexed Annuity (EIA). How does an EIA achieve this balance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By investing the premium directly into mutual funds, but absorbing any losses over 10%."
+        },
+        {
+          "label": "B",
+          "text": "By guaranteeing a minimum interest rate floor to protect principal, while crediting additional interest based on the performance of a designated stock market index."
+        },
+        {
+          "label": "C",
+          "text": "By automatically shifting all funds into bonds whenever the stock market index drops for three consecutive months."
+        },
+        {
+          "label": "D",
+          "text": "By allowing the annuitant to personally select the individual stocks their funds are invested in, ensuring they control the risk."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Equity-Indexed Annuities are fixed annuities that provide a guaranteed minimum interest rate (the floor) preventing principal loss during market declines. When the market performs well, they credit interest based on a formula tied to an external stock market index (like the S&P 500).",
+      "wrong_explanations": {
+        "A": "EIAs do not invest directly in mutual funds; that is a feature of Variable Annuities.",
+        "C": "EIAs do not actively trade or shift funds between bonds and stocks based on monthly performance.",
+        "D": "Allowing the annuitant to pick individual stocks or subaccounts is a feature of Variable Annuities, not EIAs."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q019",
+      "rule_ids": [
+        "RC-HLTH-015"
+      ],
+      "domain": "Types of Policies",
+      "subdomain": "Medical Expense Insurance",
+      "difficulty": "easy",
+      "format": "definition_scenario",
+      "stem": "An insured has a Basic Medical Expense policy and a Supplemental Major Medical policy. After the Basic policy exhausts its limits, the insured must pay a specified out-of-pocket amount before the Supplemental policy begins paying. What is this specific deductible called?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A flat deductible"
+        },
+        {
+          "label": "B",
+          "text": "A corridor deductible"
+        },
+        {
+          "label": "C",
+          "text": "An integrated deductible"
+        },
+        {
+          "label": "D",
+          "text": "A maximum out-of-pocket deductible"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A corridor deductible applies to Supplemental Major Medical plans. It functions as a 'corridor' bridging the gap between the exhaustion of the Basic Medical Expense plan benefits and the start of the Supplemental Major Medical coverage.",
+      "wrong_explanations": {
+        "A": "A flat deductible is a set dollar amount applied at the beginning of a claim, typical of comprehensive major medical plans.",
+        "C": "An integrated deductible means the amount paid by the basic plan goes toward satisfying the major medical deductible.",
+        "D": "Maximum out-of-pocket refers to the stop-loss limit, not the bridge deductible between basic and supplemental plans."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q020",
+      "rule_ids": [
+        "RC-LIFE-020"
+      ],
+      "domain": "Policy Riders, Provisions, Options, and Exclusions",
+      "subdomain": "Standard Life Provisions",
+      "difficulty": "medium",
+      "format": "scenario",
+      "stem": "A whole life insurance policy includes an Automatic Premium Loan provision and has sufficient cash value when the policyowner forgets to pay the annual premium. What will the insurer do if the policyowner takes no action before the grace period expires?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The policy will lapse immediately because the premium was not paid in cash."
+        },
+        {
+          "label": "B",
+          "text": "The insurer will automatically pay the overdue premium by making a policy loan against the cash value."
+        },
+        {
+          "label": "C",
+          "text": "The insurer will convert the policy to reduced paid-up insurance without notice."
+        },
+        {
+          "label": "D",
+          "text": "The insurer will cancel the policy and send the cash value to the policyowner."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under an Automatic Premium Loan provision, if the policy has enough cash value and the premium is not paid by the end of the grace period, the insurer automatically advances the premium as a policy loan. This keeps the policy in force, with interest charged on the loan balance.",
+      "wrong_explanations": {
+        "A": "If the policy includes an automatic premium loan provision and has sufficient cash value, the policy does not immediately lapse at the end of the grace period.",
+        "C": "Reduced paid-up is a nonforfeiture option selected by the policyowner; it is not what the automatic premium loan provision does.",
+        "D": "The cash value is not automatically paid out under an automatic premium loan provision; instead, it supports a policy loan to keep the policy active."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate-angle grace-period death scenario with automatic premium loan angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q021",
+      "rule_ids": [
+        "RC-BUS-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Business Uses of Insurance",
+      "difficulty": "hard",
+      "format": "calculation_scenario",
+      "stem": "A specialized consulting firm is owned by 5 equal partners. They decide to set up a Cross-Purchase Buy-Sell Agreement to ensure smooth business continuity if one partner dies. How many separate life insurance policies must be purchased in total to fully fund this agreement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5 policies"
+        },
+        {
+          "label": "B",
+          "text": "10 policies"
+        },
+        {
+          "label": "C",
+          "text": "20 policies"
+        },
+        {
+          "label": "D",
+          "text": "25 policies"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "In a Cross-Purchase Buy-Sell Agreement, every partner must buy a policy on every other partner. The formula to determine the total number of policies required is N x (N - 1), where N is the number of partners. With 5 partners: 5 x (5 - 1) = 5 x 4 = 20 policies.",
+      "wrong_explanations": {
+        "A": "5 policies would be required under an Entity Purchase plan, where the business itself buys one policy on each partner.",
+        "B": "10 is an arbitrary number and does not fit the Cross-Purchase formula.",
+        "D": "25 would be N x N, which includes each partner buying a policy on themselves, which defeats the purpose of the agreement."
+      },
+      "trap_type": "TP006-Math_Distractor",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q022",
+      "rule_ids": [
+        "RC-PROV-001"
+      ],
+      "domain": "Texas State Statutes Pertaining to Life, Health, and HMOs",
+      "subdomain": "Texas Health Policy Provisions",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "To be marketed and sold as a Long-Term Care (LTC) insurance policy in Texas, the contract must provide coverage for medically necessary diagnostic, preventive, therapeutic, or personal care services for a minimum consecutive period of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 months"
+        },
+        {
+          "label": "B",
+          "text": "6 months"
+        },
+        {
+          "label": "C",
+          "text": "12 months"
+        },
+        {
+          "label": "D",
+          "text": "36 months"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Texas Insurance Code defines Long-Term Care insurance as an individual or group policy that is advertised or designed to provide coverage for not less than 12 consecutive months for covered persons requiring prolonged care.",
+      "wrong_explanations": {
+        "A": "3 months is insufficient; short-term medical policies or Medicare recovery benefits might cover short durations, but true LTC must cover at least 12 months.",
+        "B": "6 months is incorrect; the statutory minimum is 12 months.",
+        "D": "While some policies provide 36 months of coverage, the minimum required threshold by Texas law to be called an LTC policy is 12 months."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q023",
+      "rule_ids": [
+        "RC-TAX-001"
+      ],
+      "domain": "Taxes, Retirement, and Other Insurance Concepts",
+      "subdomain": "Taxation of Life Insurance",
+      "difficulty": "medium",
+      "format": "concept_application",
+      "stem": "A beneficiary elects to leave a life insurance death benefit on deposit with the insurer under an interest-only settlement option. How are the periodic amounts received by the beneficiary generally treated for federal income tax purposes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both the principal death benefit and the interest payments are completely income tax-free."
+        },
+        {
+          "label": "B",
+          "text": "The principal remains income tax-free, but the interest payments are taxable as ordinary income."
+        },
+        {
+          "label": "C",
+          "text": "The entire stream of payments is taxed as capital gains."
+        },
+        {
+          "label": "D",
+          "text": "The entire stream of payments is taxable as ordinary income because the beneficiary did not take a lump sum."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Life insurance death benefit principal is generally received income tax-free. However, when the beneficiary leaves the proceeds on deposit and receives interest-only payments, the interest portion is taxable as ordinary income.",
+      "wrong_explanations": {
+        "A": "Only the death benefit principal is generally income tax-free; interest earned after death is taxable.",
+        "C": "The interest is not taxed as capital gain; it is generally taxed as ordinary income.",
+        "D": "The principal death benefit does not become taxable merely because the beneficiary chooses an interest option; only the interest portion is taxed."
+      },
+      "trap_type": "TP003-Confusion_Pair",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt",
+          "note": "Replaced duplicate-angle MEC loan taxation item with fresh interest-only settlement tax treatment angle."
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q024",
+      "rule_ids": [
+        "RC-UW-003"
+      ],
+      "domain": "Completing the Application, Underwriting, and Delivering the Policy",
+      "subdomain": "Underwriting Process",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "Under the federal Fair Credit Reporting Act (FCRA), if an insurance company denies an application based on information obtained from an investigative consumer report, the insurer is legally required to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Provide the applicant with a free copy of the full report within 3 days."
+        },
+        {
+          "label": "B",
+          "text": "Provide the applicant with the name and address of the consumer reporting agency that supplied the report."
+        },
+        {
+          "label": "C",
+          "text": "Destroy all records of the application to protect the consumer's privacy."
+        },
+        {
+          "label": "D",
+          "text": "Offer the applicant a high-risk policy alternative before issuing a formal denial."
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "If adverse action (like a denial) is taken based on a consumer report, the Fair Credit Reporting Act requires the user of the report (the insurer) to supply the applicant with the name, address, and phone number of the reporting agency that provided the information, so the consumer can verify or dispute the findings.",
+      "wrong_explanations": {
+        "A": "The insurer does not provide the copy of the report; the consumer must request the copy directly from the reporting agency.",
+        "C": "Insurers must retain records to demonstrate compliance and justify underwriting decisions; they do not destroy them.",
+        "D": "The FCRA governs privacy and disclosure, not underwriting decisions. Insurers are not required to offer alternative policies."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B07-Q025",
+      "rule_ids": [
+        "RC-LIC-005"
+      ],
+      "domain": "Texas State Statutes Common to All Lines",
+      "subdomain": "Licensing Requirements",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "If the Texas Commissioner of Insurance revokes an agent's license for a violation of the Insurance Code, how long must that individual typically wait before they are eligible to apply for a new insurance license?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 year"
+        },
+        {
+          "label": "B",
+          "text": "2 years"
+        },
+        {
+          "label": "C",
+          "text": "3 years"
+        },
+        {
+          "label": "D",
+          "text": "5 years"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_explanation": "Under Texas Insurance Code \u00a74005.105, an individual whose license is revoked or whose application is denied for cause cannot apply for another insurance license for a period of 5 years.",
+      "wrong_explanations": {
+        "A": "1 year is incorrect; this applies to certain other administrative penalties, not revocation wait periods.",
+        "B": "2 years is the standard renewal term for a valid license, not the penalty period.",
+        "C": "3 years is incorrect; the specific statutory penalty waiting period is 5 years."
+      },
+      "trap_type": "TP004-Timeline_Trap",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "timestamp": "2026-03-24T18:30:00Z",
+          "actor": "gemini"
+        },
+        {
+          "status": "validated",
+          "timestamp": "2026-03-25T00:00:00Z",
+          "actor": "chatgpt"
+        }
+      ]
+    }
+  ]
+}

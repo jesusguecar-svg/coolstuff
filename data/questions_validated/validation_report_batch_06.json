@@ -1,0 +1,51 @@
+{
+  "batch_id": "06",
+  "validator": "chatgpt",
+  "validated_at": "2026-03-25T00:25:00Z",
+  "batch_verdict": "APPROVED_WITH_CORRECTIONS",
+  "summary": "The completed batch 06 file incorporates fresh replacement items for the seven questions previously flagged as duplicate-angle overlaps. With those replacements merged into the validated base, the batch is now suitable to keep as a single complete approved-content file for downstream use.",
+  "hard_corrections": [
+    {
+      "question_id": "B06-Q003",
+      "issue": "Earlier cease-and-desist administrative-penalty amount was corrected in the prior validation pass before this completed file was assembled."
+    }
+  ],
+  "replacement_items_merged": [
+    "B06-Q008",
+    "B06-Q012",
+    "B06-Q014",
+    "B06-Q015",
+    "B06-Q017",
+    "B06-Q018",
+    "B06-Q022"
+  ],
+  "validated_items": [
+    "B06-Q001",
+    "B06-Q002",
+    "B06-Q003",
+    "B06-Q004",
+    "B06-Q005",
+    "B06-Q006",
+    "B06-Q007",
+    "B06-Q008",
+    "B06-Q009",
+    "B06-Q010",
+    "B06-Q011",
+    "B06-Q012",
+    "B06-Q013",
+    "B06-Q014",
+    "B06-Q015",
+    "B06-Q016",
+    "B06-Q017",
+    "B06-Q018",
+    "B06-Q019",
+    "B06-Q020",
+    "B06-Q021",
+    "B06-Q022",
+    "B06-Q023",
+    "B06-Q024",
+    "B06-Q025"
+  ],
+  "not_ready_for_repo_ingestion": [],
+  "recommended_next_step": "Use question_bank_validated_batch_06_complete.json as the kept batch-06 artifact and place this matching report alongside it when you upload approved batches in one pass."
+}

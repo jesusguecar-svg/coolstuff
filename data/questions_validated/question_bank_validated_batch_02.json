@@ -1,0 +1,1325 @@
+{
+  "batch_id": "02",
+  "version": "1.1.0",
+  "generated_date": "2026-03-23",
+  "generated_by": "claude",
+  "question_count": 25,
+  "difficulty_distribution": {
+    "easy": 5,
+    "medium": 14,
+    "hard": 6
+  },
+  "questions": [
+    {
+      "question_id": "B02-Q001",
+      "rule_ids": [
+        "RC-LIFE-007"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Whole Life Cash Value",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Which of the following is a characteristic that distinguishes whole life insurance from term life insurance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whole life provides coverage only for a specified number of years"
+        },
+        {
+          "label": "B",
+          "text": "Whole life accumulates a cash value that the policyowner may borrow against or surrender"
+        },
+        {
+          "label": "C",
+          "text": "Whole life has a lower premium than term life for the same face amount"
+        },
+        {
+          "label": "D",
+          "text": "Whole life does not require payment of premiums after the first year"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Whole life insurance provides lifetime coverage and accumulates a cash value component. The policyowner may borrow against this cash value through policy loans or surrender the policy for its cash value. Term life insurance provides coverage for a stated period and does not build cash value.",
+      "wrong_explanations": {
+        "A": "Coverage for a specified number of years describes term life insurance, not whole life. Whole life is designed to provide coverage for the insured's entire lifetime as long as premiums are paid.",
+        "C": "Whole life premiums are significantly higher than term life premiums for the same face amount because whole life includes a savings (cash value) component and provides permanent coverage.",
+        "D": "Whole life requires premium payments for the duration specified in the contract (to age 100, for example, or for a limited-pay period such as 20 years). Only a paid-up policy requires no further premiums."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q002",
+      "rule_ids": [
+        "RC-GRP-001",
+        "RC-GRP-003"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Group Life",
+      "difficulty": "easy",
+      "format": "distinction",
+      "stem": "In a group life insurance arrangement, the employer (policyholder) receives the master contract. What document does each covered employee receive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A copy of the master contract"
+        },
+        {
+          "label": "B",
+          "text": "A certificate of insurance summarizing coverage, benefits, and rights"
+        },
+        {
+          "label": "C",
+          "text": "An individual policy with its own policy number issued by the insurer"
+        },
+        {
+          "label": "D",
+          "text": "A binder of coverage that expires in 30 days"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "In group insurance, the contract exists between the insurer and the group policyholder (typically the employer). Each covered employee receives a certificate of insurance, which is a summary document describing the employee's coverage, benefits, and rights under the group plan, including any conversion privileges.",
+      "wrong_explanations": {
+        "A": "Employees do not receive copies of the master contract. The master contract is held by the employer and contains all of the plan's terms. Employees receive a certificate summarizing their individual coverage.",
+        "C": "Group life insurance does not result in individual policies for each employee. Coverage is provided under the single master contract, and the certificate of insurance is the employee's evidence of participation.",
+        "D": "A binder is temporary proof of coverage used during the underwriting process for individual policies. Group certificates are not binders and do not expire in 30 days."
+      },
+      "trap_type": "TP005",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q003",
+      "rule_ids": [
+        "RC-HEALTH-002"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Deductibles",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "In a major medical health insurance policy, what is the primary purpose of a deductible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To eliminate all out-of-pocket costs for the insured after the deductible is met"
+        },
+        {
+          "label": "B",
+          "text": "To require the insured to pay a specified initial amount of covered expenses before the insurer begins paying benefits"
+        },
+        {
+          "label": "C",
+          "text": "To cap the total amount the insurer will pay in a calendar year"
+        },
+        {
+          "label": "D",
+          "text": "To reduce the death benefit proportionally based on claims paid"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "A deductible is the specified dollar amount of covered expenses the insured must pay out of pocket before the insurer begins to pay benefits. It is a cost-sharing mechanism designed to reduce small claims and lower premium costs. After the deductible is satisfied, the insurer pays benefits according to the policy's coinsurance and benefit terms.",
+      "wrong_explanations": {
+        "A": "Meeting the deductible does not eliminate all out-of-pocket costs. After the deductible, the insured typically continues to share costs through coinsurance (for example, 80/20) until the out-of-pocket maximum is reached.",
+        "C": "A cap on the total amount the insurer will pay describes a benefit maximum or policy limit, not a deductible. These are separate policy provisions.",
+        "D": "Deductibles apply to health insurance cost-sharing and have nothing to do with reducing a death benefit. Death benefits are a feature of life insurance, not health insurance deductibles."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q004",
+      "rule_ids": [
+        "RC-TXSTAT-002"
+      ],
+      "domain": "Texas Statutes",
+      "subdomain": "Agent Licensing",
+      "difficulty": "easy",
+      "format": "direct_rule",
+      "stem": "Under Texas law, which of the following is required BEFORE an individual may sell, solicit, or negotiate life and health insurance in Texas?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Completion of a four-year college degree in finance or insurance"
+        },
+        {
+          "label": "B",
+          "text": "Passing the state licensing examination and obtaining a license from the Texas Department of Insurance before engaging in any insurance sales activity"
+        },
+        {
+          "label": "C",
+          "text": "Working as a claims adjuster for at least two years"
+        },
+        {
+          "label": "D",
+          "text": "Registering with the National Association of Insurance Commissioners"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas requires a person to hold a valid TDI-issued license before selling, soliciting, or negotiating insurance. For a resident agent license, TDI directs applicants to pass the state licensing exam before applying, complete fingerprints, and apply through Sircon or the National Insurance Producer Registry.",
+      "wrong_explanations": {
+        "A": "Texas does not require a four-year college degree to obtain this license. The core resident-agent steps are passing the exam, completing fingerprints, and applying through the state-approved licensing system.",
+        "C": "Claims adjusting is a separate function with its own licensing requirements. Prior experience as a claims adjuster is not a prerequisite for an agent license.",
+        "D": "The NAIC is a voluntary organization of state insurance regulators. Agents are licensed by their state department of insurance, not by the NAIC."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated_revision",
+          "date": "2026-03-23",
+          "agent": "chatgpt",
+          "note": "Removed unsupported pre-licensing education claim and aligned the answer to current TDI resident-agent licensing steps."
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q005",
+      "rule_ids": [
+        "RC-PROV-006"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Beneficiary Designations",
+      "difficulty": "easy",
+      "format": "distinction",
+      "stem": "A policyowner names his spouse as an irrevocable beneficiary. What distinguishes this designation from a revocable beneficiary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An irrevocable beneficiary can be changed at any time without consent"
+        },
+        {
+          "label": "B",
+          "text": "An irrevocable beneficiary must consent before the policyowner can change the designation, assign the policy, or borrow against the cash value"
+        },
+        {
+          "label": "C",
+          "text": "An irrevocable designation automatically terminates if the policyowner and beneficiary divorce"
+        },
+        {
+          "label": "D",
+          "text": "An irrevocable beneficiary receives a larger death benefit than a revocable beneficiary"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "An irrevocable beneficiary has a vested interest in the policy. The policyowner cannot change the beneficiary designation, assign the policy, or take a policy loan against the cash value without the irrevocable beneficiary's written consent. A revocable beneficiary, by contrast, can be changed at any time by the policyowner without the beneficiary's knowledge or consent.",
+      "wrong_explanations": {
+        "A": "This describes a revocable beneficiary, not an irrevocable one. The defining feature of an irrevocable designation is that it cannot be changed without the beneficiary's consent.",
+        "C": "An irrevocable designation does not automatically terminate upon divorce in most jurisdictions. The policyowner would generally need the irrevocable beneficiary's consent or a court order to change the designation. State law may vary on this point.",
+        "D": "The beneficiary designation (revocable or irrevocable) does not affect the amount of the death benefit. The face amount is determined by the policy, not by the type of beneficiary designation."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q006",
+      "rule_ids": [
+        "RC-LIFE-008"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Riders",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A 35-year-old whole life policyholder becomes totally disabled after an accident. Her policy includes a waiver of premium rider. What is the effect of this rider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer pays the policyholder a monthly disability income benefit equal to 60% of her salary"
+        },
+        {
+          "label": "B",
+          "text": "The insurer waives all premium payments during the period of total disability, and the policy remains in full force"
+        },
+        {
+          "label": "C",
+          "text": "The policy automatically converts to a term life policy for the remaining coverage period"
+        },
+        {
+          "label": "D",
+          "text": "The policy's cash value is used to pay premiums until the cash value is exhausted"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The waiver of premium rider provides that if the insured becomes totally disabled (as defined in the rider) before a specified age (often 60 or 65), the insurer waives all premium payments for the duration of the disability. The policy remains in full force with all benefits and cash value growth intact, as if premiums were being paid.",
+      "wrong_explanations": {
+        "A": "The waiver of premium rider does not provide disability income. It waives premium payments only. Disability income benefits require a separate disability income insurance policy or rider.",
+        "C": "The policy does not convert to term upon disability. Under the waiver of premium rider, the whole life policy continues as a whole life policy with full benefits and cash value accumulation.",
+        "D": "Using cash value to pay premiums describes the automatic premium loan provision, not the waiver of premium rider. Under a waiver of premium, the insurer absorbs the premium cost rather than drawing from cash value."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q007",
+      "rule_ids": [
+        "RC-LIFE-009"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Accelerated Death Benefits",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A life insurance policyholder is diagnosed with a terminal illness and has a life expectancy of six months. The policy contains an accelerated death benefit provision. If the policyholder elects this benefit, what occurs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer pays the full face amount immediately and the policy terminates"
+        },
+        {
+          "label": "B",
+          "text": "The insurer advances a portion of the death benefit to the policyholder while living, and the remaining death benefit is reduced accordingly"
+        },
+        {
+          "label": "C",
+          "text": "The insurer doubles the death benefit payable to the beneficiary upon the insured's death"
+        },
+        {
+          "label": "D",
+          "text": "The insurer converts the life policy into a long-term care policy to cover medical expenses"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "An accelerated death benefit (also called a living benefit) allows a terminally ill insured to receive a portion of the death benefit before death. The amount advanced is typically a percentage of the face amount (for example, 50% to 80%). The remaining death benefit payable to beneficiaries upon the insured's death is reduced by the amount advanced, plus any applicable administrative charges.",
+      "wrong_explanations": {
+        "A": "The insurer does not pay the full face amount. The accelerated benefit is a partial advance, not a full payout. A portion of the death benefit is retained for the beneficiaries.",
+        "C": "The accelerated death benefit does not double the death benefit. It advances a portion of the existing benefit to the insured during life, reducing what remains for the beneficiary.",
+        "D": "The life insurance policy does not convert into a long-term care policy. The accelerated benefit is a cash advance from the existing death benefit, not a product conversion."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q008",
+      "rule_ids": [
+        "RC-HEALTH-003"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "COBRA Continuation",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An employee covered under her employer's group health plan is terminated from employment (not for gross misconduct). Under COBRA, which of the following is TRUE?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The employer must continue paying the full premium for the former employee's coverage for 18 months"
+        },
+        {
+          "label": "B",
+          "text": "The former employee may elect to continue group coverage for up to 18 months but must pay up to 102% of the full group premium"
+        },
+        {
+          "label": "C",
+          "text": "The former employee is automatically enrolled in an individual health policy issued by the same insurer at the same group rate"
+        },
+        {
+          "label": "D",
+          "text": "COBRA continuation is available only if the employer has fewer than 20 employees"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under COBRA, a qualified beneficiary who loses group health coverage due to a qualifying event (such as termination of employment other than for gross misconduct) may elect to continue the same group coverage for up to 18 months. The individual is responsible for paying the full premium, which may include up to 102% of the cost (100% of the premium plus a 2% administrative fee).",
+      "wrong_explanations": {
+        "A": "COBRA does not require the employer to pay the premium. The cost shifts to the former employee, who pays up to 102% of the group rate. The employer's obligation is to offer the continuation, not to fund it.",
+        "C": "COBRA continuation keeps the individual on the existing group plan; it does not create a new individual policy. The coverage terms remain the same as the group plan, not a separately issued individual contract.",
+        "D": "COBRA applies to employers with 20 or more employees, not fewer than 20. Smaller employers may be subject to state mini-COBRA laws but are not covered by the federal COBRA statute."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q009",
+      "rule_ids": [
+        "RC-HEALTH-004"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Disability Income",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A disability income insurance policyholder suffers a covered disability on March 1. The policy has a 90-day elimination period. When will the insurer begin paying disability income benefits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately on March 1"
+        },
+        {
+          "label": "B",
+          "text": "After 30 days, on March 31"
+        },
+        {
+          "label": "C",
+          "text": "After 90 days, on or about May 30"
+        },
+        {
+          "label": "D",
+          "text": "After 180 days, on or about August 28"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "The elimination period (also called a waiting period) is the number of days after the onset of disability that must pass before benefits begin. With a 90-day elimination period, the insured must remain disabled for 90 consecutive days. Benefits start on or about the 91st day (approximately May 30 for a March 1 disability).",
+      "wrong_explanations": {
+        "A": "Benefits do not begin on the date of disability. The elimination period must elapse first. This is analogous to a deductible expressed in time rather than dollars.",
+        "B": "Thirty days is shorter than the stated 90-day elimination period. A 30-day elimination period would apply only if the policy specifically provided one.",
+        "D": "One hundred eighty days is twice the stated elimination period. While 180-day elimination periods exist in some policies, this policy specifies 90 days."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q010",
+      "rule_ids": [
+        "RC-LIFE-010"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Annuity Surrender Charges",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A client purchased a deferred annuity two years ago with a 7-year declining surrender charge schedule. The client now wants to withdraw the full accumulated value. Which of the following is TRUE?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No surrender charge applies because annuities have a free-look period that eliminates surrender charges"
+        },
+        {
+          "label": "B",
+          "text": "A surrender charge will apply because the client is within the surrender charge period, and the charge typically decreases each year the annuity is held"
+        },
+        {
+          "label": "C",
+          "text": "The insurer will pay the full accumulated value with no deductions because surrender charges apply only to life insurance"
+        },
+        {
+          "label": "D",
+          "text": "The client cannot withdraw any funds from a deferred annuity before the annuity start date"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Deferred annuities typically impose a surrender charge if the contract owner withdraws funds or surrenders the contract during the surrender charge period. On a 7-year declining schedule, the charge is highest in year one and decreases annually, reaching zero after year seven. At year two, a significant charge would still apply to a full surrender.",
+      "wrong_explanations": {
+        "A": "The free-look period (typically 10 to 30 days after delivery) allows the purchaser to return the annuity for a full refund. It does not eliminate surrender charges after the free-look period has expired.",
+        "C": "Surrender charges are a standard feature of deferred annuities, not just life insurance. They protect the insurer against early withdrawals that disrupt the investment strategy supporting guaranteed rates.",
+        "D": "Most deferred annuities allow partial withdrawals or full surrender before the annuity start date, subject to surrender charges and potential tax penalties. The contract does not lock funds completely."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q011",
+      "rule_ids": [
+        "RC-PROV-007"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Policy Loans",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A whole life policyholder borrows $20,000 against the policy's cash value at the policy loan interest rate. If the insured dies while the loan is outstanding, how will the insurer handle the death benefit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insurer pays the full face amount to the beneficiary and writes off the loan balance"
+        },
+        {
+          "label": "B",
+          "text": "The insurer deducts the outstanding loan balance plus accrued interest from the death benefit before paying the beneficiary"
+        },
+        {
+          "label": "C",
+          "text": "The insurer requires the beneficiary to repay the loan in monthly installments before any death benefit is released"
+        },
+        {
+          "label": "D",
+          "text": "The loan is automatically forgiven upon the insured's death with no effect on the death benefit"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "An outstanding policy loan is a lien against the policy. When the insured dies, the insurer deducts the unpaid loan balance plus any accrued interest from the death benefit before paying the net amount to the beneficiary. The beneficiary receives the face amount minus the outstanding loan.",
+      "wrong_explanations": {
+        "A": "The insurer does not write off policy loans at death. The loan is an advance against the policy's value, and the death benefit is the primary collateral. The outstanding balance reduces the payout.",
+        "C": "The beneficiary is not required to make installment payments to repay the loan. The insurer settles the loan by deducting it from the death proceeds at the time of claim payment.",
+        "D": "Policy loans are not forgiven at death. They remain a charge against the policy and are deducted from the death benefit. The only way to avoid this reduction is to repay the loan while the insured is living."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q012",
+      "rule_ids": [
+        "RC-HEALTH-005",
+        "RC-HEALTH-006"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Renewability Provisions",
+      "difficulty": "medium",
+      "format": "distinction",
+      "stem": "What is the key difference between a guaranteed renewable health insurance policy and a noncancelable health insurance policy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A guaranteed renewable policy can be canceled by the insurer at any time, while a noncancelable policy cannot"
+        },
+        {
+          "label": "B",
+          "text": "A guaranteed renewable policy allows the insurer to raise premiums by class but not cancel; a noncancelable policy guarantees both renewability and a fixed premium"
+        },
+        {
+          "label": "C",
+          "text": "A noncancelable policy covers only accidental injuries, while a guaranteed renewable policy covers both accidents and sickness"
+        },
+        {
+          "label": "D",
+          "text": "There is no meaningful difference; both terms describe the same renewability feature"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under a guaranteed renewable policy, the insurer must renew the policy as long as premiums are paid, but may increase premiums for the entire class of policyholders. Under a noncancelable (also called noncancelable and guaranteed renewable) policy, the insurer must renew the policy AND cannot increase the premium above the rate stated in the policy. Noncancelable provides the highest level of premium protection.",
+      "wrong_explanations": {
+        "A": "A guaranteed renewable policy cannot be canceled by the insurer as long as premiums are paid on time. The insurer may raise premiums by class, but cancellation is not permitted.",
+        "C": "The renewability designation does not determine whether the policy covers accidents, sickness, or both. Both guaranteed renewable and noncancelable policies can cover accident and sickness.",
+        "D": "The two terms are distinct. Guaranteed renewable allows class-wide premium increases; noncancelable locks in the premium. This is a significant difference for policyholders and a common exam distinction."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q013",
+      "rule_ids": [
+        "RC-HEALTH-007"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Coordination of Benefits",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "An individual is covered as an employee under her own employer's group health plan and also as a dependent under her spouse's employer plan. She incurs a $5,000 medical bill. Under standard coordination of benefits rules, which plan pays first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The spouse's plan pays first because it has the higher premium"
+        },
+        {
+          "label": "B",
+          "text": "The individual's own employer plan pays first as the primary plan"
+        },
+        {
+          "label": "C",
+          "text": "Both plans split the bill equally, each paying $2,500"
+        },
+        {
+          "label": "D",
+          "text": "The individual may choose which plan pays first"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under standard coordination of benefits rules, the plan covering the individual as an employee (the individual's own employer plan) is primary and pays first. The plan covering the individual as a dependent (the spouse's plan) is secondary and may cover remaining eligible expenses up to its benefit limits. This prevents duplicate payments and overpayment.",
+      "wrong_explanations": {
+        "A": "The premium amount does not determine primary vs. secondary status. The standard COB rule looks at the nature of the coverage relationship: coverage as employee is primary over coverage as dependent.",
+        "C": "Coordination of benefits does not split bills equally. The primary plan pays according to its terms first, and the secondary plan covers allowable remaining costs. The goal is to avoid paying more than 100% of the covered expense.",
+        "D": "The insured does not get to choose which plan is primary. COB rules establish a standard order of determination that applies automatically."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q014",
+      "rule_ids": [
+        "RC-PROV-008"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Assignment",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A life insurance policyowner assigns all rights in the policy to a bank as collateral for a loan. If the insured dies while the assignment is in effect, who receives the death benefit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The named beneficiary receives the full death benefit; the bank has no claim"
+        },
+        {
+          "label": "B",
+          "text": "The bank receives the portion of the death benefit equal to the outstanding loan balance, and any remaining amount goes to the named beneficiary"
+        },
+        {
+          "label": "C",
+          "text": "The bank receives the full death benefit regardless of the loan balance"
+        },
+        {
+          "label": "D",
+          "text": "The death benefit is held in escrow by the insurer until the loan is paid off by the policyowner's estate"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under a collateral assignment, the assignee (bank) has rights in the policy only to the extent of its financial interest (the outstanding loan balance). The insurer pays the bank the amount owed, and any death benefit remaining after satisfying the assignment is paid to the named beneficiary.",
+      "wrong_explanations": {
+        "A": "A collateral assignment gives the bank a priority claim on the death benefit up to the loan balance. The beneficiary's interest is subordinate to the assignment to the extent of the outstanding debt.",
+        "C": "In a collateral assignment, the bank receives only the amount of its interest (the loan balance), not the full death benefit. An absolute assignment would transfer all rights, but the question describes collateral assignment for a loan.",
+        "D": "The death benefit is not held in escrow. The insurer settles the assignment by paying the bank its interest and distributing the remainder to the beneficiary in the normal claim process."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q015",
+      "rule_ids": [
+        "RC-PROV-009"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Misstatement of Age",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A life insurance applicant states his age as 35 on the application, but his actual age at issue was 40. The error is discovered after the insured's death. Under the misstatement of age provision, what will the insurer do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Void the policy and return all premiums paid"
+        },
+        {
+          "label": "B",
+          "text": "Pay the death benefit that the premiums actually paid would have purchased at the correct age of 40"
+        },
+        {
+          "label": "C",
+          "text": "Pay the full face amount because the insured is deceased and the policy cannot be contested"
+        },
+        {
+          "label": "D",
+          "text": "Deny the claim entirely because the age misstatement constitutes fraud"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The misstatement of age provision adjusts the death benefit rather than voiding the policy. The insurer calculates what amount of coverage the premiums paid would have purchased at the correct age of 40 (which would be a lower face amount, since premiums at 40 are higher). The beneficiary receives this adjusted amount.",
+      "wrong_explanations": {
+        "A": "The misstatement of age provision does not void the policy. It is an equitable adjustment provision: the benefit is recalculated, but the contract remains in force.",
+        "C": "The incontestability clause does not prevent a misstatement of age adjustment. Misstatement of age is treated as a benefit adjustment, not a contestability issue, and applies even after the incontestability period.",
+        "D": "The misstatement of age provision exists specifically to avoid a full denial. The insurer adjusts the benefit to what the premium would have purchased at the correct age. Outright denial would not be appropriate under this provision."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q016",
+      "rule_ids": [
+        "RC-PROV-010"
+      ],
+      "domain": "Policy Provisions",
+      "subdomain": "Entire Contract Clause",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "The entire contract clause in a life insurance policy provides that the contract consists of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the policy document itself, excluding all attachments and endorsements"
+        },
+        {
+          "label": "B",
+          "text": "The policy, the attached application (if any), and any riders or endorsements"
+        },
+        {
+          "label": "C",
+          "text": "The policy and any verbal promises made by the agent during the sales presentation"
+        },
+        {
+          "label": "D",
+          "text": "The policy and the insurer's internal underwriting file"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The entire contract clause states that the policy, together with the application (if attached) and any riders or endorsements, constitutes the entire contract between the parties. No external documents, verbal agreements, or other materials outside the policy form part of the contract.",
+      "wrong_explanations": {
+        "A": "The entire contract includes the policy AND any attached application and riders or endorsements. Excluding these would be incomplete and contrary to the clause's purpose.",
+        "C": "Verbal promises made by the agent are not part of the entire contract. The clause exists precisely to prevent reliance on representations outside the written policy. This protects both the insurer and the policyowner.",
+        "D": "The insurer's internal underwriting file is not part of the contract between the insurer and the policyowner. Only the policy, the attached application, and any riders or endorsements are included."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q017",
+      "rule_ids": [
+        "RC-TXSTAT-003"
+      ],
+      "domain": "Texas Statutes",
+      "subdomain": "Continuing Education",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "How many hours of continuing education must a Texas-licensed life and health insurance agent complete during each two-year license renewal period?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12 hours"
+        },
+        {
+          "label": "B",
+          "text": "24 hours, including at least 3 hours in ethics"
+        },
+        {
+          "label": "C",
+          "text": "50 hours"
+        },
+        {
+          "label": "D",
+          "text": "Texas does not require continuing education for insurance agents"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Texas requires General Lines Life, Accident, Health, and HMO licensees to complete 24 hours of continuing education every two years, including 3 hours of ethics. At least half the hours must be classroom or classroom-equivalent.",
+      "wrong_explanations": {
+        "A": "Twelve hours is below the Texas requirement. The required total is 24 hours during each two-year renewal period.",
+        "C": "Fifty hours exceeds the Texas requirement. The standard LAH requirement is 24 hours, including 3 hours of ethics, every two years.",
+        "D": "Texas does require continuing education for insurance agents. Failure to complete the required hours can lead to fines and renewal problems."
+      },
+      "trap_type": "TP002",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated_revision",
+          "date": "2026-03-23",
+          "agent": "chatgpt",
+          "note": "Corrected ethics requirement from 2 hours to 3 hours."
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q018",
+      "rule_ids": [
+        "RC-UW-003"
+      ],
+      "domain": "Underwriting and Delivery",
+      "subdomain": "Adverse Selection",
+      "difficulty": "medium",
+      "format": "direct_rule",
+      "stem": "In insurance, adverse selection refers to the tendency of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Insurers to deny coverage to all applicants who have any medical history"
+        },
+        {
+          "label": "B",
+          "text": "Individuals who are at higher risk of loss to seek insurance more actively than lower-risk individuals"
+        },
+        {
+          "label": "C",
+          "text": "Agents to sell only the most expensive policies to maximize commissions"
+        },
+        {
+          "label": "D",
+          "text": "State regulators to reject insurance company rate filings"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Adverse selection (also called anti-selection) is the tendency of individuals who face a higher-than-average probability of loss to be more likely to purchase or retain insurance. This creates a risk imbalance that insurers manage through underwriting, waiting periods, and other selection tools.",
+      "wrong_explanations": {
+        "A": "Insurers do not deny all applicants with medical history. Underwriting evaluates risk and may result in standard, substandard (rated), or declined decisions. Adverse selection describes applicant behavior, not insurer behavior.",
+        "C": "Selling expensive policies to maximize commissions describes a potential ethical violation (churning or unsuitable sales), not adverse selection. Adverse selection is about who seeks coverage, not how agents sell.",
+        "D": "Rate filing rejection by regulators is a regulatory action unrelated to adverse selection. Adverse selection is a market phenomenon driven by information asymmetry between applicants and insurers."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q019",
+      "rule_ids": [
+        "RC-LIFE-011"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Accidental Death Benefit",
+      "difficulty": "medium",
+      "format": "application_scenario",
+      "stem": "A life insurance policy includes an accidental death benefit (double indemnity) rider. The insured dies as the direct result of an accident. The policy has a $200,000 face amount. What total death benefit will the beneficiary receive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$200,000"
+        },
+        {
+          "label": "B",
+          "text": "$400,000"
+        },
+        {
+          "label": "C",
+          "text": "$600,000"
+        },
+        {
+          "label": "D",
+          "text": "$100,000"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The accidental death benefit (double indemnity) rider pays an additional amount equal to the face amount of the policy if the insured's death results directly from an accident. The beneficiary receives the base $200,000 death benefit plus an additional $200,000 from the rider, totaling $400,000.",
+      "wrong_explanations": {
+        "A": "$200,000 would be the death benefit without the accidental death rider. Since the death was accidental and the rider is in force, the additional benefit applies.",
+        "C": "$600,000 would represent triple the face amount. The standard accidental death benefit rider pays double (the face amount plus an equal additional amount), not triple.",
+        "D": "$100,000 is half the base face amount and does not reflect the accidental death benefit calculation. There is no provision that reduces the death benefit upon accidental death."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q020",
+      "rule_ids": [
+        "RC-UW-004",
+        "RC-UW-001"
+      ],
+      "domain": "Underwriting and Delivery",
+      "subdomain": "STOLI",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "An investor who has no personal or financial relationship with the insured offers to pay all premiums on a new life insurance policy naming the investor as owner and beneficiary. The insured agrees in exchange for a cash payment. This arrangement is BEST described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A standard key-person life insurance arrangement"
+        },
+        {
+          "label": "B",
+          "text": "A stranger-originated life insurance (STOLI) transaction, which lacks insurable interest and is generally void as against public policy"
+        },
+        {
+          "label": "C",
+          "text": "A valid viatical settlement"
+        },
+        {
+          "label": "D",
+          "text": "A legitimate third-party ownership arrangement"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Stranger-originated life insurance (STOLI) involves an investor with no insurable interest procuring a policy on another person's life primarily as a financial investment. Because the investor has no financial relationship with the insured that would create insurable interest at inception, the arrangement violates the insurable interest requirement and is generally void as against public policy. Texas and most states prohibit STOLI arrangements.",
+      "wrong_explanations": {
+        "A": "Key-person insurance is purchased by a business on the life of a key employee or executive whose death would cause financial loss to the business. The business has a legitimate insurable interest. This scenario involves a stranger with no such connection.",
+        "C": "A viatical settlement involves selling an existing life insurance policy by a terminally or chronically ill policyowner to a third party. STOLI differs because the policy is originated from the start as an investment vehicle for a stranger, not sold by a sick policyowner after issue.",
+        "D": "Legitimate third-party ownership requires that insurable interest exist at the time the policy is issued. A stranger with no financial or personal relationship to the insured does not have insurable interest, making this arrangement illegitimate."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q021",
+      "rule_ids": [
+        "RC-LIFE-012"
+      ],
+      "domain": "Life Insurance",
+      "subdomain": "Annuity Taxation",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A 68-year-old annuitant begins receiving monthly payments from a nonqualified fixed annuity she purchased with after-tax dollars. Each payment consists of two components. How is each payment taxed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The entire payment is taxed as ordinary income"
+        },
+        {
+          "label": "B",
+          "text": "The entire payment is received tax-free because the premiums were paid with after-tax dollars"
+        },
+        {
+          "label": "C",
+          "text": "A portion representing the return of the original premium (cost basis) is received tax-free, and the remaining portion representing earnings is taxed as ordinary income"
+        },
+        {
+          "label": "D",
+          "text": "All annuity payments are taxed as capital gains"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Annuity payments from a nonqualified annuity purchased with after-tax dollars are split into two components using the exclusion ratio. The portion of each payment that represents a return of the annuitant's cost basis (original premium) is received tax-free. The portion that represents accumulated earnings is taxed as ordinary income. The exclusion ratio determines the tax-free fraction of each payment.",
+      "wrong_explanations": {
+        "A": "Taxing the entire payment as ordinary income would double-tax the original premium, which was already paid with after-tax money. The exclusion ratio ensures the cost basis is returned tax-free.",
+        "B": "While the original premiums were paid with after-tax dollars, the earnings on those premiums have never been taxed. The earnings portion of each payment is taxable as ordinary income upon distribution.",
+        "D": "Annuity distributions are taxed as ordinary income, not capital gains. The tax code treats the earnings component of annuity payments as ordinary income regardless of how the insurer invested the funds."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q022",
+      "rule_ids": [
+        "RC-LTC-002"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Long-Term Care",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A Texas resident purchases a long-term care insurance policy that qualifies under the Texas Long-Term Care Partnership Program. If the insured exhausts the policy benefits and then applies for Medicaid, what advantage does the partnership qualification provide?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The insured is exempt from all Medicaid eligibility requirements"
+        },
+        {
+          "label": "B",
+          "text": "The insured may protect assets equal to the amount of benefits paid by the partnership-qualified policy from Medicaid's asset spend-down requirement"
+        },
+        {
+          "label": "C",
+          "text": "The insured automatically qualifies for Medicare Part A benefits in addition to Medicaid"
+        },
+        {
+          "label": "D",
+          "text": "The insured receives a full premium refund from the LTC insurer"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "Under the LTC Partnership Program, if the insured exhausts benefits from a partnership-qualified policy and then applies for Medicaid, the insured may protect personal assets from Medicaid's spend-down requirement in an amount equal to the insurance benefits received. For example, if the policy paid $200,000 in benefits, the insured can retain $200,000 in assets that would otherwise need to be spent down to qualify for Medicaid.",
+      "wrong_explanations": {
+        "A": "The partnership program does not exempt the insured from all Medicaid eligibility requirements. The insured must still meet Medicaid income and other eligibility criteria. The benefit is asset protection, not a blanket exemption.",
+        "C": "Medicare Part A eligibility is determined by age (65+) or disability status and Social Security work credits. It is not related to LTC partnership qualification or Medicaid eligibility.",
+        "D": "The partnership program does not provide a premium refund. The benefit is the ability to shelter assets from Medicaid spend-down equal to the benefits the LTC policy paid."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q023",
+      "rule_ids": [
+        "RC-GRP-004"
+      ],
+      "domain": "Health Insurance",
+      "subdomain": "Group Health Conversion",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "An employee covered under an employer's group health plan terminates employment and elects COBRA continuation. The 18-month COBRA period is about to expire. If the group plan includes a conversion privilege, what option is available?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The individual may convert to an individual health policy offered by the same insurer without evidence of insurability, if the plan provides that option"
+        },
+        {
+          "label": "B",
+          "text": "The individual must re-apply for group coverage through the former employer"
+        },
+        {
+          "label": "C",
+          "text": "The individual automatically receives a new group policy from a different insurer"
+        },
+        {
+          "label": "D",
+          "text": "The individual loses all coverage rights because COBRA was already used"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_explanation": "If the group plan includes a conversion option, federal COBRA rules preserve the qualified beneficiary's ability to exercise that option at the end of the maximum COBRA period. The plan must offer the conversion option within 180 days before COBRA coverage ends. The conversion policy may cost more and may provide different benefits than the group plan.",
+      "wrong_explanations": {
+        "B": "The conversion privilege provides access to an individual policy, not re-enrollment in the former employer's group plan. The individual's relationship with the group plan has ended.",
+        "C": "The conversion privilege is offered by the same insurer that provided the group coverage, not by a different insurer. There is no automatic issuance from a new carrier.",
+        "D": "Electing COBRA does not eliminate a conversion right. If the group plan includes a conversion privilege, COBRA law preserves the ability to exercise it at the end of the maximum COBRA period."
+      },
+      "trap_type": "TP005",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated_revision",
+          "date": "2026-03-23",
+          "agent": "chatgpt",
+          "note": "Made the conversion-right wording conditional on the plan actually offering a conversion privilege."
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q024",
+      "rule_ids": [
+        "RC-UTP-006"
+      ],
+      "domain": "Unfair Trade Practices",
+      "subdomain": "Unfair Discrimination",
+      "difficulty": "hard",
+      "format": "exception_trigger",
+      "stem": "Under Texas law, all of the following constitute unfair discrimination in insurance EXCEPT:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Charging different premiums to individuals of the same class and risk profile based solely on race"
+        },
+        {
+          "label": "B",
+          "text": "Refusing to issue a policy to an applicant solely because of the applicant's national origin"
+        },
+        {
+          "label": "C",
+          "text": "Charging higher premiums to a substandard-risk applicant based on documented adverse health history after proper underwriting"
+        },
+        {
+          "label": "D",
+          "text": "Refusing to pay a legitimate claim based solely on the claimant's religion"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_explanation": "Charging a higher premium to an applicant who presents a greater actuarial risk based on documented health history is not unfair discrimination. It is legitimate risk classification through proper underwriting. Unfair discrimination occurs when distinctions are based on prohibited factors (race, national origin, etc.) rather than actuarially supported risk factors.",
+      "wrong_explanations": {
+        "A": "Charging different premiums based solely on race is prohibited unfair discrimination. Race is not an actuarially valid underwriting criterion, and its use violates Texas insurance law.",
+        "B": "Refusing to issue a policy solely because of national origin is a prohibited form of unfair discrimination under both Texas and federal law.",
+        "D": "Refusing to pay a legitimate claim based solely on the claimant's religion is prohibited unfair discrimination. Claims decisions must be based on policy terms and the merits of the claim, not on a protected characteristic such as religion."
+      },
+      "trap_type": "TP004",
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "draft_revised",
+          "date": "2026-03-23",
+          "agent": "chatgpt",
+          "note": "Patched Q024 option D to a Texas Insurance Code \u00a7544.002 protected category without duplicating option B."
+        },
+        {
+          "status": "validated_confirmed",
+          "date": "2026-03-23",
+          "agent": "chatgpt",
+          "note": "Confirmed the patched protected-category distractor is supportable under Texas Insurance Code \u00a7544.002."
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    },
+    {
+      "question_id": "B02-Q025",
+      "rule_ids": [
+        "RC-TXSTAT-004"
+      ],
+      "domain": "Texas Statutes",
+      "subdomain": "TDI Complaints",
+      "difficulty": "hard",
+      "format": "application_scenario",
+      "stem": "A Texas insurance consumer believes an insurer has unfairly denied a valid health insurance claim. The consumer has already appealed through the insurer's internal process without resolution. What is the consumer's next regulatory recourse?",
+      "options": [
+        {
+          "label": "A",
+          "text": "File a complaint directly with the National Association of Insurance Commissioners"
+        },
+        {
+          "label": "B",
+          "text": "File a complaint with the Texas Department of Insurance, which has authority to investigate insurer conduct and enforce compliance"
+        },
+        {
+          "label": "C",
+          "text": "File a lawsuit in federal court as the first step, since health insurance is exclusively regulated at the federal level"
+        },
+        {
+          "label": "D",
+          "text": "Contact the insurer's independent sales agent, who has binding authority to override claim denials"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_explanation": "The Texas Department of Insurance (TDI) is the state regulatory body with authority to receive consumer complaints, investigate insurer practices, and enforce compliance with Texas insurance law. After exhausting the insurer's internal appeals, filing a complaint with TDI is the appropriate next regulatory step.",
+      "wrong_explanations": {
+        "A": "The NAIC is a voluntary association of state regulators and does not directly investigate individual consumer complaints. Complaints should be filed with the state department of insurance, which is TDI in Texas.",
+        "C": "Health insurance is primarily regulated at the state level, not exclusively at the federal level. Filing a lawsuit in federal court is not the first regulatory step. The consumer's regulatory recourse is through TDI.",
+        "D": "An independent sales agent does not have authority to override claim denials. Claim decisions are made by the insurer's claims department. The agent's role is in sales and service, not claims adjudication."
+      },
+      "trap_type": null,
+      "source_confidence": "high",
+      "review_status": "validated",
+      "status_history": [
+        {
+          "status": "draft",
+          "date": "2026-03-23",
+          "agent": "claude"
+        },
+        {
+          "status": "validated",
+          "date": "2026-03-23",
+          "agent": "chatgpt"
+        }
+      ]
+    }
+  ],
+  "validated_date": "2026-03-23",
+  "validated_by": "chatgpt",
+  "validation_decision": "approved_with_corrections"
+}

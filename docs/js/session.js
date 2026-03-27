@@ -61,9 +61,12 @@ class PracticeSession {
 
     const q = this._questions[this._index];
     const isCorrect = selectedLabel === q.correct_answer;
-    let wrongExplanation = "";
-    if (!isCorrect) {
-      wrongExplanation = (q.wrong_explanations || {})[selectedLabel] || "";
+    const allWrongExplanations = {};
+    const we = q.wrong_explanations || {};
+    for (const label of ["A", "B", "C", "D"]) {
+      if (label !== q.correct_answer && we[label]) {
+        allWrongExplanations[label] = we[label];
+      }
     }
 
     const result = {
@@ -72,7 +75,8 @@ class PracticeSession {
       correctAnswer: q.correct_answer,
       isCorrect,
       correctExplanation: q.correct_explanation,
-      wrongExplanation,
+      wrongExplanations: allWrongExplanations,
+      options: q.options,
     };
 
     this._results.push(result);

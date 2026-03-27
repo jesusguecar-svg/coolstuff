@@ -112,14 +112,34 @@
     document.getElementById("fb-correct-label").textContent = result.correctAnswer;
     document.getElementById("fb-correct-text").textContent = result.correctExplanation;
 
-    // Wrong explanation
-    const wrongBox = document.getElementById("fb-wrong-box");
-    if (!result.isCorrect && result.wrongExplanation) {
-      wrongBox.style.display = "block";
-      document.getElementById("fb-wrong-label").textContent = result.selected;
-      document.getElementById("fb-wrong-text").textContent = result.wrongExplanation;
-    } else {
-      wrongBox.style.display = "none";
+    // Wrong explanations for all incorrect options
+    const wrongBoxes = document.getElementById("fb-wrong-boxes");
+    wrongBoxes.innerHTML = "";
+    const wrongEntries = Object.entries(result.wrongExplanations);
+    if (wrongEntries.length > 0) {
+      // Show the user's wrong pick first (highlighted), then the rest
+      const sorted = wrongEntries.sort((a, b) => {
+        if (a[0] === result.selected) return -1;
+        if (b[0] === result.selected) return 1;
+        return a[0].localeCompare(b[0]);
+      });
+      // Find option text for each label
+      const optionText = {};
+      (result.options || []).forEach(o => { optionText[o.label] = o.text; });
+
+      sorted.forEach(([label, explanation]) => {
+        const isUserPick = !result.isCorrect && label === result.selected;
+        const box = document.createElement("div");
+        box.className = "explanation-box wrong-box" + (isUserPick ? " user-pick" : "");
+        const optText = optionText[label] ? ` — ${optionText[label]}` : "";
+        box.innerHTML =
+          `<div class="explanation-label">` +
+            `${label}${optText}` +
+            `${isUserPick ? ' <span class="your-answer-tag">your answer</span>' : ""}` +
+          `</div>` +
+          `<div class="explanation-text">${explanation}</div>`;
+        wrongBoxes.appendChild(box);
+      });
     }
 
     // Next button

@@ -316,6 +316,26 @@ body {
   border-left-color: var(--color-wrong);
 }
 
+.explanation-box.wrong-box.user-pick {
+  border-left-width: 4px;
+  border-left-color: var(--color-wrong);
+  background: var(--color-wrong-bg);
+}
+
+.your-answer-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: var(--color-wrong);
+  color: white;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .explanation-label {
   font-weight: 600;
   font-size: 0.9rem;

@@ -112,4 +112,9 @@ class PracticeSession {
       domainBreakdown,
     };
   }
+
+  /** Expose questions array for deferred review. */
+  get questions() {
+    return this._questions;
+  }
 }

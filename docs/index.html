@@ -18,6 +18,44 @@
         <!-- Populated by app.js -->
       </div>
 
+      <!-- Filter panel -->
+      <div class="filter-panel" id="filter-panel">
+        <button class="filter-toggle" id="filter-toggle">
+          Filters &amp; Options <span class="filter-arrow" id="filter-arrow">&#9660;</span>
+        </button>
+        <div class="filter-body" id="filter-body">
+
+          <fieldset class="filter-group">
+            <legend>Difficulty</legend>
+            <div class="toggle-row" id="difficulty-toggles">
+              <label class="chip-toggle easy"><input type="checkbox" value="easy" checked><span>Easy</span></label>
+              <label class="chip-toggle medium"><input type="checkbox" value="medium" checked><span>Medium</span></label>
+              <label class="chip-toggle hard"><input type="checkbox" value="hard" checked><span>Hard</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>Domains <button class="link-btn" id="domain-select-all">all</button> / <button class="link-btn" id="domain-select-none">none</button></legend>
+            <div class="domain-checkboxes" id="domain-checkboxes">
+              <!-- Populated by app.js -->
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group">
+            <legend>Session Options</legend>
+            <label class="switch-label">
+              <span>Skip previously answered</span>
+              <input type="checkbox" id="opt-skip-answered">
+            </label>
+            <label class="switch-label">
+              <span>Show answers at end only</span>
+              <input type="checkbox" id="opt-deferred-feedback">
+            </label>
+          </fieldset>
+
+        </div>
+      </div>
+
       <div class="config-form">
         <label for="question-count">How many questions?</label>
         <div class="count-row">
@@ -30,6 +68,7 @@
           <button class="quick-btn" data-count="50">50</button>
           <button class="quick-btn" data-count="100">100</button>
         </div>
+        <div class="filter-warning" id="filter-warning">No questions match your filters.</div>
         <button class="btn btn-primary" id="btn-start">Start Practice Session</button>
       </div>
     </section>
@@ -75,9 +114,7 @@
     <!-- VIEW 4: Summary -->
     <section id="view-summary" class="view">
       <h2>Session Complete</h2>
-      <div class="score-box" id="score-box">
-        <!-- Score display -->
-      </div>
+      <div class="score-box" id="score-box"></div>
       <div class="domain-table-container">
         <h3>Domain Breakdown</h3>
         <table class="domain-table" id="domain-table">
@@ -91,12 +128,17 @@
         <h3>Questions to Review</h3>
         <div id="missed-list"></div>
       </div>
+      <div class="deferred-review" id="deferred-review" style="display:none;">
+        <h3>Question-by-Question Review</h3>
+        <div id="deferred-review-list"></div>
+      </div>
       <button class="btn btn-primary" id="btn-restart">Start New Session</button>
     </section>
 
   </div>
 
   <script src="js/questions.js"></script>
+  <script src="js/storage.js"></script>
   <script src="js/session.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -111,16 +111,55 @@
   function populateDomainCheckboxes() {
     const container = document.getElementById("domain-checkboxes");
     const domains = [...new Set(QUESTION_BANK.map(q => q.domain))].sort();
-    container.innerHTML = domains.map(d =>
-      `<label class="domain-check-label">` +
-        `<input type="checkbox" value="${d}" checked>` +
-        `<span>${d}</span>` +
-      `</label>`
-    ).join("");
+    const subCounts = getDomainSubdomainCounts();
 
-    // Listen for changes
-    container.querySelectorAll("input").forEach(cb => {
+    container.innerHTML = domains.map(d => {
+      const total = QUESTION_BANK.filter(q => q.domain === d).length;
+      const catalog = DOMAIN_CATALOG[d];
+      const desc = catalog ? catalog.description : "";
+      const subs = subCounts[d] || {};
+      const subHtml = Object.keys(subs).sort().map(s =>
+        `<div class="domain-card-sub-item"><span>${s}</span><span class="sub-count">${subs[s]}</span></div>`
+      ).join("");
+      const outlineHtml = catalog && catalog.outlineSections
+        ? catalog.outlineSections.map(s => `<span class="outline-tag">${s}</span>`).join("")
+        : "";
+
+      return `<div class="domain-card">` +
+        `<div class="domain-card-header">` +
+          `<input type="checkbox" value="${d}" checked>` +
+          `<span class="domain-card-name">${d}</span>` +
+          `<span class="domain-card-count">${total}</span>` +
+          `<button class="domain-card-arrow" aria-label="Expand">&#9660;</button>` +
+        `</div>` +
+        `<div class="domain-card-body">` +
+          (desc ? `<p class="domain-card-desc">${desc}</p>` : "") +
+          (outlineHtml ? `<div class="domain-card-outline">${outlineHtml}</div>` : "") +
+          (subHtml ? `<div class="domain-card-subs"><div class="domain-card-subs-title">Subdomains</div>${subHtml}</div>` : "") +
+        `</div>` +
+      `</div>`;
+    }).join("");
+
+    // Listen for checkbox changes
+    container.querySelectorAll("input[type=checkbox]").forEach(cb => {
       cb.addEventListener("change", updateCountHint);
+    });
+
+    // Expand/collapse
+    container.querySelectorAll(".domain-card-arrow").forEach(arrow => {
+      arrow.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const card = arrow.closest(".domain-card");
+        card.classList.toggle("expanded");
+      });
+    });
+
+    // Click header name to expand too
+    container.querySelectorAll(".domain-card-name").forEach(name => {
+      name.addEventListener("click", (e) => {
+        const card = name.closest(".domain-card");
+        card.classList.toggle("expanded");
+      });
     });
   }
 
@@ -180,6 +219,7 @@
     const pct = ((q.questionNumber - 1) / q.totalQuestions) * 100;
     document.getElementById("progress-bar").style.width = pct + "%";
     document.getElementById("q-domain").textContent = q.domain;
+    document.getElementById("q-subdomain").textContent = q.subdomain;
     const diffEl = document.getElementById("q-difficulty");
     diffEl.textContent = q.difficulty;
     diffEl.className = "badge badge-difficulty " + q.difficulty;
@@ -232,6 +272,7 @@
     const pct = (q.questionNumber / q.totalQuestions) * 100;
     document.getElementById("feedback-progress-bar").style.width = pct + "%";
     document.getElementById("fb-domain").textContent = q.domain;
+    document.getElementById("fb-subdomain").textContent = q.subdomain;
     const diffEl = document.getElementById("fb-difficulty");
     diffEl.textContent = q.difficulty;
     diffEl.className = "badge badge-difficulty " + q.difficulty;
@@ -306,19 +347,61 @@
         `Correct: ${summary.correctCount} &middot; Incorrect: ${summary.incorrectCount}` +
       `</div>`;
 
-    // Domain breakdown
+    // Domain + subdomain breakdown
     const tbody = document.getElementById("domain-tbody");
     tbody.innerHTML = "";
+
+    // Build subdomain stats
+    const subBreakdown = {};
+    summary.results.forEach((r, i) => {
+      const q = session.questions[i];
+      const key = q.domain + "|||" + q.subdomain;
+      if (!subBreakdown[key]) subBreakdown[key] = { domain: q.domain, subdomain: q.subdomain, correct: 0, total: 0 };
+      subBreakdown[key].total++;
+      if (r.isCorrect) subBreakdown[key].correct++;
+    });
+
     const sorted = Object.entries(summary.domainBreakdown)
       .sort((a, b) => a[0].localeCompare(b[0]));
     sorted.forEach(([domain, stats]) => {
       const pct = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+      // Domain header row
       const tr = document.createElement("tr");
+      tr.className = "domain-header-row";
+      const domainSubs = Object.values(subBreakdown).filter(s => s.domain === domain);
+      const hasMultipleSubs = domainSubs.length > 1;
       tr.innerHTML =
-        `<td>${domain}</td>` +
+        `<td>${hasMultipleSubs ? '<button class="subdomain-toggle" aria-label="Expand subdomains">&#9654;</button> ' : ''}${domain}</td>` +
         `<td>${stats.correct}/${stats.total}</td>` +
         `<td class="${pct >= 70 ? 'pass' : 'fail'}">${pct}%</td>`;
       tbody.appendChild(tr);
+
+      // Subdomain rows (hidden by default)
+      if (hasMultipleSubs) {
+        domainSubs.sort((a, b) => a.subdomain.localeCompare(b.subdomain)).forEach(sub => {
+          const spct = sub.total > 0 ? Math.round((sub.correct / sub.total) * 100) : 0;
+          const subTr = document.createElement("tr");
+          subTr.className = "subdomain-row";
+          subTr.innerHTML =
+            `<td>${sub.subdomain}</td>` +
+            `<td>${sub.correct}/${sub.total}</td>` +
+            `<td class="${spct >= 70 ? 'pass' : 'fail'}">${spct}%</td>`;
+          tbody.appendChild(subTr);
+        });
+      }
+
+      // Toggle subdomain rows
+      if (hasMultipleSubs) {
+        const toggle = tr.querySelector(".subdomain-toggle");
+        toggle.addEventListener("click", () => {
+          tr.classList.toggle("expanded");
+          let next = tr.nextElementSibling;
+          while (next && next.classList.contains("subdomain-row")) {
+            next.classList.toggle("visible");
+            next = next.nextElementSibling;
+          }
+        });
+      }
     });
 
     // Missed questions (immediate mode)
@@ -473,6 +556,75 @@
       } else if (views.summary.classList.contains("active")) {
         document.getElementById("btn-restart").click();
       }
+    }
+  });
+
+  // =========================================================
+  //  Domain Guide Modal
+  // =========================================================
+
+  function renderDomainGuide() {
+    const body = document.getElementById("domain-guide-body");
+    const subCounts = getDomainSubdomainCounts();
+    const domains = [...new Set(QUESTION_BANK.map(q => q.domain))].sort();
+
+    let html = `<p class="guide-intro">This exam covers <strong>${QUESTION_BANK.length} questions</strong> across <strong>${domains.length} domains</strong>. Select domains in the filter panel to focus your study.</p>`;
+
+    domains.forEach(d => {
+      const total = QUESTION_BANK.filter(q => q.domain === d).length;
+      const catalog = DOMAIN_CATALOG[d];
+      const subs = subCounts[d] || {};
+
+      html += `<div class="guide-domain">`;
+      html += `<div class="guide-domain-header"><span class="guide-domain-name">${d}</span><span class="guide-domain-count">${total} questions</span></div>`;
+
+      if (catalog) {
+        html += `<p class="guide-domain-desc">${catalog.description}</p>`;
+        if (catalog.outlineSections && catalog.outlineSections.length) {
+          html += `<div class="guide-outline-tags">`;
+          catalog.outlineSections.forEach(s => {
+            html += `<span class="outline-tag">${s}</span>`;
+          });
+          html += `</div>`;
+        }
+      }
+
+      const subKeys = Object.keys(subs).sort();
+      if (subKeys.length > 0) {
+        html += `<div class="guide-sub-list">`;
+        subKeys.forEach(s => {
+          html += `<div class="guide-sub-item"><span>${s}</span><span class="sub-count">${subs[s]}</span></div>`;
+        });
+        html += `</div>`;
+      }
+
+      html += `</div>`;
+    });
+
+    body.innerHTML = html;
+  }
+
+  function openDomainGuide() {
+    renderDomainGuide();
+    document.getElementById("domain-guide-overlay").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeDomainGuide() {
+    document.getElementById("domain-guide-overlay").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  document.getElementById("btn-domain-guide").addEventListener("click", openDomainGuide);
+  document.getElementById("domain-guide-close").addEventListener("click", closeDomainGuide);
+  document.getElementById("domain-guide-overlay").addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closeDomainGuide();
+  });
+
+  // Escape key closes modal
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && document.getElementById("domain-guide-overlay").classList.contains("active")) {
+      closeDomainGuide();
     }
   });
 

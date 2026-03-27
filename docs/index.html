@@ -13,6 +13,7 @@
     <section id="view-welcome" class="view active">
       <h1>Texas General Lines<br>Practice Exam</h1>
       <p class="subtitle">Life, Accident, Health &amp; HMO</p>
+      <button class="btn btn-outline" id="btn-domain-guide">Domain Guide</button>
 
       <div class="stats-box" id="stats-box">
         <!-- Populated by app.js -->
@@ -80,6 +81,7 @@
       </div>
       <div class="question-meta">
         <span class="badge badge-domain" id="q-domain"></span>
+        <span class="badge badge-subdomain" id="q-subdomain"></span>
         <span class="badge badge-difficulty" id="q-difficulty"></span>
         <span class="question-counter" id="q-counter"></span>
       </div>
@@ -96,6 +98,7 @@
       </div>
       <div class="question-meta">
         <span class="badge badge-domain" id="fb-domain"></span>
+        <span class="badge badge-subdomain" id="fb-subdomain"></span>
         <span class="badge badge-difficulty" id="fb-difficulty"></span>
         <span class="question-counter" id="fb-counter"></span>
       </div>
@@ -135,9 +138,23 @@
       <button class="btn btn-primary" id="btn-restart">Start New Session</button>
     </section>
 
+    <!-- Domain Guide Modal -->
+    <div class="modal-overlay" id="domain-guide-overlay">
+      <div class="modal" id="domain-guide-modal">
+        <div class="modal-header">
+          <h2>Domain Guide</h2>
+          <button class="modal-close" id="domain-guide-close">&times;</button>
+        </div>
+        <div class="modal-body" id="domain-guide-body">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="js/questions.js"></script>
+  <script src="js/domains.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/session.js"></script>
   <script src="js/app.js"></script>

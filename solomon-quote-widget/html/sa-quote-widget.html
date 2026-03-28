@@ -1,0 +1,157 @@
+<!-- ============================================================
+     Solomon Agency — Request a Case Quote Widget
+     Part 3: INLINE HTML (paste into Carrd → Inline Embed)
+     ============================================================ -->
+
+<div class="sa-quote-widget" id="saqw-root">
+  <div class="saqw-card">
+    <div class="saqw-layout">
+
+      <!-- LEFT COLUMN: Form Inputs -->
+      <div class="saqw-form" role="form" aria-label="Case quote estimator">
+
+        <h2 class="saqw-title">Request a Case Quote</h2>
+        <p class="saqw-subtitle">Estimate scope, turnaround, and pricing for your immigration case support needs.</p>
+
+        <!-- Case Type -->
+        <div class="saqw-field-group">
+          <label class="saqw-label" for="saqw-case-type">Case Type</label>
+          <select class="saqw-select" id="saqw-case-type" name="saqw-case-type" required>
+            <option value="" disabled selected>Select case type&hellip;</option>
+            <option value="family">Family-based</option>
+            <option value="humanitarian">Humanitarian</option>
+            <option value="waiver">Waiver-related</option>
+            <option value="adjustment">Adjustment support</option>
+            <option value="rfe">RFE evidence support</option>
+            <option value="naturalization">Naturalization</option>
+            <option value="other">Other / custom</option>
+          </select>
+        </div>
+
+        <!-- Urgency -->
+        <div class="saqw-field-group">
+          <label class="saqw-label" for="saqw-urgency">Urgency</label>
+          <select class="saqw-select" id="saqw-urgency" name="saqw-urgency" required>
+            <option value="" disabled selected>Select urgency&hellip;</option>
+            <option value="standard">Standard</option>
+            <option value="priority">Priority</option>
+            <option value="rush">Rush</option>
+          </select>
+        </div>
+
+        <!-- Support Needed -->
+        <div class="saqw-field-group">
+          <fieldset class="saqw-fieldset">
+            <legend class="saqw-label">Support Needed</legend>
+            <div class="saqw-checkbox-group">
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="intake"> Intake cleanup
+              </label>
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="doc-org"> Document organization
+              </label>
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="evidence"> Missing evidence checklist
+              </label>
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="bilingual-followup"> Bilingual client follow-up
+              </label>
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="summary"> Case summary / timeline
+              </label>
+              <label class="saqw-checkbox-item">
+                <input type="checkbox" name="saqw-support" value="exhibit"> Exhibit index prep
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- Bilingual Coordination -->
+        <div class="saqw-field-group">
+          <label class="saqw-label" for="saqw-bilingual">Bilingual Coordination Needed?</label>
+          <select class="saqw-select" id="saqw-bilingual" name="saqw-bilingual" required>
+            <option value="" disabled selected>Select&hellip;</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <!-- File Condition -->
+        <div class="saqw-field-group">
+          <label class="saqw-label" for="saqw-file-condition">Current File Condition</label>
+          <select class="saqw-select" id="saqw-file-condition" name="saqw-file-condition" required>
+            <option value="" disabled selected>Select file condition&hellip;</option>
+            <option value="organized">Mostly organized</option>
+            <option value="scattered">Somewhat scattered</option>
+            <option value="very-scattered">Very scattered / incomplete</option>
+          </select>
+        </div>
+
+        <!-- Volume -->
+        <div class="saqw-field-group">
+          <label class="saqw-label" for="saqw-volume">Volume</label>
+          <select class="saqw-select" id="saqw-volume" name="saqw-volume" required>
+            <option value="" disabled selected>Select volume&hellip;</option>
+            <option value="one">One case</option>
+            <option value="multiple">Multiple cases</option>
+            <option value="ongoing">Ongoing support</option>
+          </select>
+        </div>
+
+        <!-- Validation Message -->
+        <div class="saqw-validation-msg saqw-hidden" id="saqw-validation" role="alert"></div>
+
+        <!-- Submit -->
+        <button type="button" class="saqw-btn-primary" id="saqw-submit">
+          Estimate My Case
+        </button>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Result Panel -->
+      <div class="saqw-result" id="saqw-result" aria-live="polite" aria-atomic="true">
+
+        <!-- Empty State -->
+        <div class="saqw-result-empty" id="saqw-result-empty">
+          <p class="saqw-result-empty-text">
+            Fill out the form to see your estimated case details.
+          </p>
+        </div>
+
+        <!-- Filled State -->
+        <div class="saqw-result-filled saqw-hidden" id="saqw-result-filled">
+          <div class="saqw-result-badge" id="saqw-fit-label"></div>
+
+          <div class="saqw-result-row">
+            <span class="saqw-result-key">Est. Turnaround</span>
+            <span class="saqw-result-value" id="saqw-turnaround"></span>
+          </div>
+
+          <div class="saqw-result-row">
+            <span class="saqw-result-key">Starting Price Range</span>
+            <span class="saqw-result-value" id="saqw-price"></span>
+          </div>
+
+          <div class="saqw-result-rush-note saqw-hidden" id="saqw-rush-note">
+            Rush pricing may apply.
+          </div>
+
+          <div class="saqw-result-row" style="border-bottom: none;">
+            <span class="saqw-result-key">Suggested Next Step</span>
+          </div>
+
+          <div class="saqw-result-cta-area" id="saqw-cta-area"></div>
+
+          <p class="saqw-result-note">
+            All work is provided as backend operational support for attorney review and approval. Estimates are non-binding and subject to case review.
+          </p>
+        </div>
+
+      </div>
+
+    </div><!-- /.saqw-layout -->
+  </div><!-- /.saqw-card -->
+
+  <!-- Hidden field for estimate summary handoff -->
+  <input type="hidden" id="saqw-estimate-summary" name="saqw-estimate-summary" value="">
+</div>

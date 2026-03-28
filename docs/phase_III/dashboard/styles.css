@@ -1,0 +1,107 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121933;
+  --text: #eaf0ff;
+  --muted: #9fb0de;
+  --accent: #55c2ff;
+  --ok: #3bd67f;
+  --warn: #ffc857;
+  --danger: #ff6b6b;
+  --line: #24305f;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, #080d1a 0%, #0f1730 100%);
+  color: var(--text);
+}
+
+.topbar {
+  padding: 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+h1 { margin: 0 0 8px; font-size: 1.4rem; }
+p { margin: 0; }
+
+.topbar-actions { display: flex; gap: 10px; align-items: center; }
+button, .import-label {
+  border: 1px solid var(--line);
+  background: #182248;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover, .import-label:hover { border-color: var(--accent); }
+button.danger { border-color: #673040; }
+button.danger:hover { border-color: var(--danger); }
+.import-label input { display: none; }
+
+.layout {
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+.panel {
+  background: rgba(18, 25, 51, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+.panel h2 { margin: 0 0 12px; font-size: 1.05rem; }
+
+.progress-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+.progress-track {
+  background: #101a37;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  height: 16px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--ok));
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: #101834;
+}
+.card label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.card small { color: var(--muted); display: block; margin-top: 6px; }
+
+.muted { color: var(--muted); }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 8px; }
+th { color: var(--muted); font-weight: 600; }
+
+@media (max-width: 760px) {
+  .topbar { padding: 14px; }
+  .layout { padding: 14px; }
+}

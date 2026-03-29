@@ -46,7 +46,7 @@ function saveState() {
 
 function checkbox(id, label, note) {
   const div = document.createElement("div");
-  div.className = "card" + (state[id] ? " checked" : "");
+  div.className = "card";
   div.innerHTML = `
     <label>
       <input type="checkbox" data-id="${id}" ${state[id] ? "checked" : ""} />

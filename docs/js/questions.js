@@ -1,5 +1,5 @@
 // Auto-generated from data/questions_validated/ — do not edit manually
-// Generated: 2026-03-27
+// Generated: 2026-03-28
 // Total questions: 250
 const QUESTION_BANK = [
   {
@@ -32,7 +32,8 @@ const QUESTION_BANK = [
       "A": "March 10 is only 9 days after delivery. The free look period is 10 days, not 9.",
       "C": "March 31 represents a 30-day window, which confuses the free look period with the grace period for premium payment.",
       "D": "April 1 represents 31 days, which is the grace period for life insurance premium payment, not the free look window."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B01-Q002",
@@ -64,7 +65,8 @@ const QUESTION_BANK = [
       "A": "A verbal explanation alone does not satisfy the statutory requirement. TIC §1114.051 mandates a written, commissioner-approved replacement notice that must be presented, read, and signed. File notes are not a substitute for the formal notice.",
       "C": "The agent has no statutory duty to contact the existing insurer or negotiate conservation. The agent's obligation is to provide the required replacement notice and signed statement to the applicant and the replacing insurer.",
       "D": "Replacement does not always result in financial loss, and the agent is not required to discourage it. The agent's duty is to ensure the applicant receives the proper replacement notice so the applicant can make an informed decision."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B01-Q003",
@@ -96,7 +98,8 @@ const QUESTION_BANK = [
       "A": "This describes PPO behavior, not HMO. In an HMO, members cannot self-refer to specialists without first obtaining a PCP referral.",
       "C": "Pre-authorization may be required for certain procedures, but the gatekeeper step (PCP referral) comes first in an HMO before any specialist visit or authorization request.",
       "D": "HMO plans generally do not cover out-of-network services except in emergencies. Visiting an out-of-network specialist without authorization would likely result in the member bearing the full cost."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q004",
@@ -128,7 +131,8 @@ const QUESTION_BANK = [
       "B": "Whole life provides permanent coverage and builds cash value, but its premium is significantly higher. Given the tight budget and a defined 20-year need, term life is the better fit.",
       "C": "Single premium whole life requires one large lump-sum payment, which contradicts the tight-budget requirement. It is designed for wealth transfer, not affordable temporary protection.",
       "D": "Variable universal life carries investment risk, has higher costs, and is more complex. It does not align with a simple temporary protection need on a limited budget."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B01-Q005",
@@ -160,7 +164,8 @@ const QUESTION_BANK = [
       "A": "Replacement is a neutral term describing the purchase of a new policy in connection with the surrender of an existing one. It becomes twisting when misrepresentation is used to induce the replacement.",
       "C": "Rebating involves offering something of value (money, gifts, premium discounts not in the contract) as an inducement to purchase insurance. No such inducement is described here.",
       "D": "Conservation is the practice of persuading a policyholder to keep an existing policy. This is the opposite of what the agent is doing."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B01-Q006",
@@ -192,7 +197,8 @@ const QUESTION_BANK = [
       "A": "February 10 is only 9 days after the due date. This confuses the grace period with the free look period.",
       "B": "February 28 is only 27 days, which does not satisfy the 31-day grace period requirement.",
       "C": "March 3 is 30 days after the due date. The life insurance grace period is 31 days, not 30."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B01-Q007",
@@ -224,7 +230,8 @@ const QUESTION_BANK = [
       "A": "Variable life has fixed scheduled premiums and invests cash value in separate accounts chosen by the policyowner. The investment risk falls on the policyowner, and there is no guaranteed minimum interest rate.",
       "B": "Variable universal life combines flexible premiums with separate-account investment options. Because the policyowner directs investments, cash value can fluctuate below a guaranteed floor, unlike the scenario described.",
       "D": "Indexed universal life credits interest based on the performance of an external index (such as the S&P 500), not a rate declared by the insurer. While it may have a floor, the crediting mechanism differs from a declared current rate."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B01-Q008",
@@ -256,7 +263,8 @@ const QUESTION_BANK = [
       "A": "Offering a $200 gift card as an inducement to purchase an annuity is a textbook rebating violation. The gift card is valuable consideration not stated in the contract.",
       "B": "Returning commission to the insured as a premium discount not reflected in the policy is an illegal rebate. Only dividends and discounts stated in the contract are permitted.",
       "D": "Paying for a client's vacation as a reward for renewing a policy is an inducement of significant value outside the contract, which constitutes rebating."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B01-Q009",
@@ -288,7 +296,8 @@ const QUESTION_BANK = [
       "A": "Conversion under group policies is to an individual whole life (permanent) policy, not a term policy. This is a key distinction tested on the exam.",
       "C": "The conversion privilege exists specifically so that the employee does not have to provide evidence of insurability. Medical underwriting is not required, and the window is 31 days, not 60.",
       "D": "Group policies include a conversion privilege as a standard provision. Coverage does not simply vanish upon termination. The employee has 31 days to exercise the conversion right."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B01-Q010",
@@ -320,7 +329,8 @@ const QUESTION_BANK = [
       "A": "Medicare Supplement policies do not use provider networks or require referrals. That describes Medicare Advantage (Part C) plans, which may use HMO or PPO network structures.",
       "C": "Medicare Supplement policies do not replace Original Medicare. They supplement it by covering some of the out-of-pocket costs (deductibles, copayments, coinsurance) that Original Medicare does not pay.",
       "D": "While the benefits of each plan letter are standardized, premiums are set by each insurer individually and can vary significantly. CMS does not set Medigap premiums."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q011",
@@ -352,7 +362,8 @@ const QUESTION_BANK = [
       "A": "Misrepresentation does not always void a policy. After the incontestability period expires, the insurer loses the right to contest coverage based on application misstatements.",
       "B": "The timing of discovery alone is not the controlling factor. What matters is whether the incontestability period has expired. Once two years have passed with the policy in force during the insured's lifetime, the insurer's right to contest is extinguished.",
       "D": "There is no 12-month discovery rule for misrepresentation. The standard incontestability period in life insurance is two years, not one."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B01-Q012",
@@ -384,7 +395,8 @@ const QUESTION_BANK = [
       "A": "While HMOs generally restrict coverage to network providers, emergency services are the exception. Denying a genuine emergency claim based solely on network status would violate regulatory requirements.",
       "C": "Emergency services in a true emergency are not subject to out-of-network cost penalties in the same way elective services are. The plan must cover the emergency at its normal benefit level.",
       "D": "There is no blanket 24-hour transfer requirement. Once stabilized, follow-up care may need to return to the network, but the initial emergency treatment is covered regardless."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q013",
@@ -416,7 +428,8 @@ const QUESTION_BANK = [
       "A": "Insurable interest extends beyond family relationships. Business partners, key employees, creditors, and others with a financial stake in the insured's continued life qualify.",
       "B": "The beneficiary and the insured do not need to be the same person. Third-party ownership is common in business insurance arrangements as long as insurable interest exists at application.",
       "D": "While the face amount should bear a reasonable relationship to the financial interest, there is no rigid statutory requirement that the death benefit match the exact business value. The key requirement is that insurable interest exists at inception."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B01-Q014",
@@ -448,7 +461,8 @@ const QUESTION_BANK = [
       "B": "Reduced paid-up insurance is an available nonforfeiture option but it is not the automatic default. The policyholder must affirmatively elect it.",
       "C": "Cash surrender terminates the policy and pays out the cash value. This is an elective option, not the automatic default when no choice is made.",
       "D": "An automatic premium loan is a separate policy provision that uses cash value to pay the overdue premium. It is distinct from the nonforfeiture default and must be elected or included in the policy as a rider."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B01-Q015",
@@ -480,7 +494,8 @@ const QUESTION_BANK = [
       "A": "Rebating involves providing an inducement of value not stated in the policy to encourage the purchase of insurance. No inducement is being offered here.",
       "B": "Misrepresentation involves making false or misleading statements about a policy or insurer. The agent is not making false statements; he is improperly handling client funds.",
       "D": "Defamation involves making false statements that damage the reputation of another insurer or agent. Fund handling is not a defamation issue."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B01-Q016",
@@ -512,7 +527,8 @@ const QUESTION_BANK = [
       "A": "LTC policies may offer various elimination period options (30, 60, 90 days, etc.), but a 90-day period is not universally mandated. The elimination period is typically selected by the policyholder.",
       "B": "LTC policies cover a range of care levels including custodial care, assisted living, home health care, and adult day care, not just skilled nursing.",
       "D": "Unlimited benefit duration is an optional feature, not a regulatory requirement. Many LTC policies have a maximum benefit period (e.g., 3 or 5 years)."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q017",
@@ -544,7 +560,8 @@ const QUESTION_BANK = [
       "A": "The agent's informal knowledge of existing coverage does not, by itself, trigger the replacement notice duty. The statutory mechanism is the signed statement submitted with or as part of the application. If the client is only exploring options and no application is being taken, the replacement notice requirement has not yet been triggered.",
       "C": "By the time the application is submitted to the insurer, the replacement notice should already have been presented and read to the applicant. The statute requires the notice no later than the time of taking the application, not at submission to the insurer.",
       "D": "Waiting until delivery and surrender would be far too late. The notice must be provided no later than the time the application is taken, well before the new policy is issued or the old policy is surrendered."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B01-Q018",
@@ -576,7 +593,8 @@ const QUESTION_BANK = [
       "A": "This describes HMO behavior. PPOs do not require a PCP referral to see a specialist.",
       "C": "PPO plans do cover out-of-network visits, though at a higher cost to the member. Unlike HMOs, PPOs do not restrict coverage exclusively to network providers.",
       "D": "While some procedures may require pre-authorization under any plan type, there is no standard 14-day pre-authorization requirement for routine specialist visits under a PPO."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q019",
@@ -608,7 +626,8 @@ const QUESTION_BANK = [
       "A": "HIPAA restricts disclosure of PHI. Sharing an enrollee's medical information with an employer without proper authorization would be a HIPAA violation, not a requirement.",
       "C": "HIPAA does not require destruction of records within 30 days. Privacy policies, procedures, and related documentation must be retained for at least six years under HIPAA's record retention requirements.",
       "D": "HIPAA permits certain disclosures to government agencies for public health, law enforcement, and regulatory oversight without individual consent. The enrollee's written consent is not required in all government disclosure scenarios."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B01-Q020",
@@ -640,7 +659,8 @@ const QUESTION_BANK = [
       "A": "Providing a death benefit is the primary purpose of life insurance, not annuities. While some annuities include death benefit features, the core purpose is income distribution.",
       "C": "Protection against disability income loss is the purpose of disability income insurance, not an annuity.",
       "D": "Education savings are typically addressed through 529 plans or Coverdell accounts. Annuities are not designed as education savings vehicles and carry tax penalties for early withdrawal."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B01-Q021",
@@ -672,7 +692,8 @@ const QUESTION_BANK = [
       "A": "During the Medigap open enrollment period, insurers cannot deny an applicant based on health history. Guaranteed issue applies: any Medigap plan sold in the state must be offered regardless of medical condition.",
       "C": "The maximum pre-existing condition waiting period under federal law is 6 months, not 12 months. Additionally, the waiting period is reduced by prior creditable coverage. With 10 years of continuous employer coverage, this applicant would face no waiting period at all.",
       "D": "During the open enrollment period, insurers cannot use health status to increase premiums. The applicant is entitled to the same rate offered to other enrollees of the same age and profile, without a health-based surcharge."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B01-Q022",
@@ -704,7 +725,8 @@ const QUESTION_BANK = [
       "A": "The death benefit goes to the estate only if there are no surviving beneficiaries (primary or contingent). Here, both contingent beneficiaries are alive.",
       "C": "A deceased primary beneficiary's estate does not automatically inherit the death benefit. The proceeds pass to the contingent beneficiaries, not the estate of the predeceased primary.",
       "D": "The insurer does not retain the funds. The policy's beneficiary designation governs distribution. Contingent beneficiaries receive the proceeds when the primary beneficiary is deceased."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B01-Q023",
@@ -736,7 +758,8 @@ const QUESTION_BANK = [
       "A": "Twisting involves using misrepresentation specifically to induce a policyholder to replace an existing policy. This scenario involves a new prospect, not a replacement situation.",
       "C": "Rebating involves offering valuable consideration not in the contract as an inducement. The agent is not offering any gift or discount; he is making a false statement about the product.",
       "D": "Controlled business refers to an agent selling primarily to himself, family, or close associates to earn commissions. It has nothing to do with false statements about policy features."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B01-Q024",
@@ -768,7 +791,8 @@ const QUESTION_BANK = [
       "A": "The life income option pays installments for the beneficiary's lifetime, not for a set number of years. Payment duration depends on how long the beneficiary lives, not a fixed period.",
       "C": "The interest only option leaves the principal with the insurer and pays only the interest earned. The principal is not distributed in installments under this option.",
       "D": "The lump sum option pays the entire death benefit at once, not as monthly installments over a period of years."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B01-Q025",
@@ -800,7 +824,8 @@ const QUESTION_BANK = [
       "A": "A description of covered services is a fundamental required element of the evidence of coverage document.",
       "B": "Procedures for obtaining services, including referral and authorization processes, must be disclosed so members understand how to access care within the HMO structure.",
       "D": "Complaint and appeals procedures are a required component of the evidence of coverage, ensuring enrollees know how to challenge adverse decisions."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B02-Q001",
@@ -832,7 +857,8 @@ const QUESTION_BANK = [
       "A": "Coverage for a specified number of years describes term life insurance, not whole life. Whole life is designed to provide coverage for the insured's entire lifetime as long as premiums are paid.",
       "C": "Whole life premiums are significantly higher than term life premiums for the same face amount because whole life includes a savings (cash value) component and provides permanent coverage.",
       "D": "Whole life requires premium payments for the duration specified in the contract (to age 100, for example, or for a limited-pay period such as 20 years). Only a paid-up policy requires no further premiums."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q002",
@@ -864,7 +890,8 @@ const QUESTION_BANK = [
       "A": "Employees do not receive copies of the master contract. The master contract is held by the employer and contains all of the plan's terms. Employees receive a certificate summarizing their individual coverage.",
       "C": "Group life insurance does not result in individual policies for each employee. Coverage is provided under the single master contract, and the certificate of insurance is the employee's evidence of participation.",
       "D": "A binder is temporary proof of coverage used during the underwriting process for individual policies. Group certificates are not binders and do not expire in 30 days."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q003",
@@ -896,7 +923,8 @@ const QUESTION_BANK = [
       "A": "Meeting the deductible does not eliminate all out-of-pocket costs. After the deductible, the insured typically continues to share costs through coinsurance (for example, 80/20) until the out-of-pocket maximum is reached.",
       "C": "A cap on the total amount the insurer will pay describes a benefit maximum or policy limit, not a deductible. These are separate policy provisions.",
       "D": "Deductibles apply to health insurance cost-sharing and have nothing to do with reducing a death benefit. Death benefits are a feature of life insurance, not health insurance deductibles."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q004",
@@ -928,7 +956,8 @@ const QUESTION_BANK = [
       "A": "Texas does not require a four-year college degree to obtain this license. The core resident-agent steps are passing the exam, completing fingerprints, and applying through the state-approved licensing system.",
       "C": "Claims adjusting is a separate function with its own licensing requirements. Prior experience as a claims adjuster is not a prerequisite for an agent license.",
       "D": "The NAIC is a voluntary organization of state insurance regulators. Agents are licensed by their state department of insurance, not by the NAIC."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B02-Q005",
@@ -960,7 +989,8 @@ const QUESTION_BANK = [
       "A": "This describes a revocable beneficiary, not an irrevocable one. The defining feature of an irrevocable designation is that it cannot be changed without the beneficiary's consent.",
       "C": "An irrevocable designation does not automatically terminate upon divorce in most jurisdictions. The policyowner would generally need the irrevocable beneficiary's consent or a court order to change the designation. State law may vary on this point.",
       "D": "The beneficiary designation (revocable or irrevocable) does not affect the amount of the death benefit. The face amount is determined by the policy, not by the type of beneficiary designation."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B02-Q006",
@@ -992,7 +1022,8 @@ const QUESTION_BANK = [
       "A": "The waiver of premium rider does not provide disability income. It waives premium payments only. Disability income benefits require a separate disability income insurance policy or rider.",
       "C": "The policy does not convert to term upon disability. Under the waiver of premium rider, the whole life policy continues as a whole life policy with full benefits and cash value accumulation.",
       "D": "Using cash value to pay premiums describes the automatic premium loan provision, not the waiver of premium rider. Under a waiver of premium, the insurer absorbs the premium cost rather than drawing from cash value."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q007",
@@ -1024,7 +1055,8 @@ const QUESTION_BANK = [
       "A": "The insurer does not pay the full face amount. The accelerated benefit is a partial advance, not a full payout. A portion of the death benefit is retained for the beneficiaries.",
       "C": "The accelerated death benefit does not double the death benefit. It advances a portion of the existing benefit to the insured during life, reducing what remains for the beneficiary.",
       "D": "The life insurance policy does not convert into a long-term care policy. The accelerated benefit is a cash advance from the existing death benefit, not a product conversion."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q008",
@@ -1056,7 +1088,8 @@ const QUESTION_BANK = [
       "A": "COBRA does not require the employer to pay the premium. The cost shifts to the former employee, who pays up to 102% of the group rate. The employer's obligation is to offer the continuation, not to fund it.",
       "C": "COBRA continuation keeps the individual on the existing group plan; it does not create a new individual policy. The coverage terms remain the same as the group plan, not a separately issued individual contract.",
       "D": "COBRA applies to employers with 20 or more employees, not fewer than 20. Smaller employers may be subject to state mini-COBRA laws but are not covered by the federal COBRA statute."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q009",
@@ -1088,7 +1121,8 @@ const QUESTION_BANK = [
       "A": "Benefits do not begin on the date of disability. The elimination period must elapse first. This is analogous to a deductible expressed in time rather than dollars.",
       "B": "Thirty days is shorter than the stated 90-day elimination period. A 30-day elimination period would apply only if the policy specifically provided one.",
       "D": "One hundred eighty days is twice the stated elimination period. While 180-day elimination periods exist in some policies, this policy specifies 90 days."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q010",
@@ -1120,7 +1154,8 @@ const QUESTION_BANK = [
       "A": "The free-look period (typically 10 to 30 days after delivery) allows the purchaser to return the annuity for a full refund. It does not eliminate surrender charges after the free-look period has expired.",
       "C": "Surrender charges are a standard feature of deferred annuities, not just life insurance. They protect the insurer against early withdrawals that disrupt the investment strategy supporting guaranteed rates.",
       "D": "Most deferred annuities allow partial withdrawals or full surrender before the annuity start date, subject to surrender charges and potential tax penalties. The contract does not lock funds completely."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q011",
@@ -1152,7 +1187,8 @@ const QUESTION_BANK = [
       "A": "The insurer does not write off policy loans at death. The loan is an advance against the policy's value, and the death benefit is the primary collateral. The outstanding balance reduces the payout.",
       "C": "The beneficiary is not required to make installment payments to repay the loan. The insurer settles the loan by deducting it from the death proceeds at the time of claim payment.",
       "D": "Policy loans are not forgiven at death. They remain a charge against the policy and are deducted from the death benefit. The only way to avoid this reduction is to repay the loan while the insured is living."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B02-Q012",
@@ -1184,7 +1220,8 @@ const QUESTION_BANK = [
       "A": "A guaranteed renewable policy cannot be canceled by the insurer as long as premiums are paid on time. The insurer may raise premiums by class, but cancellation is not permitted.",
       "C": "The renewability designation does not determine whether the policy covers accidents, sickness, or both. Both guaranteed renewable and noncancelable policies can cover accident and sickness.",
       "D": "The two terms are distinct. Guaranteed renewable allows class-wide premium increases; noncancelable locks in the premium. This is a significant difference for policyholders and a common exam distinction."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q013",
@@ -1216,7 +1253,8 @@ const QUESTION_BANK = [
       "A": "The premium amount does not determine primary vs. secondary status. The standard COB rule looks at the nature of the coverage relationship: coverage as employee is primary over coverage as dependent.",
       "C": "Coordination of benefits does not split bills equally. The primary plan pays according to its terms first, and the secondary plan covers allowable remaining costs. The goal is to avoid paying more than 100% of the covered expense.",
       "D": "The insured does not get to choose which plan is primary. COB rules establish a standard order of determination that applies automatically."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q014",
@@ -1248,7 +1286,8 @@ const QUESTION_BANK = [
       "A": "A collateral assignment gives the bank a priority claim on the death benefit up to the loan balance. The beneficiary's interest is subordinate to the assignment to the extent of the outstanding debt.",
       "C": "In a collateral assignment, the bank receives only the amount of its interest (the loan balance), not the full death benefit. An absolute assignment would transfer all rights, but the question describes collateral assignment for a loan.",
       "D": "The death benefit is not held in escrow. The insurer settles the assignment by paying the bank its interest and distributing the remainder to the beneficiary in the normal claim process."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B02-Q015",
@@ -1280,7 +1319,8 @@ const QUESTION_BANK = [
       "A": "The misstatement of age provision does not void the policy. It is an equitable adjustment provision: the benefit is recalculated, but the contract remains in force.",
       "C": "The incontestability clause does not prevent a misstatement of age adjustment. Misstatement of age is treated as a benefit adjustment, not a contestability issue, and applies even after the incontestability period.",
       "D": "The misstatement of age provision exists specifically to avoid a full denial. The insurer adjusts the benefit to what the premium would have purchased at the correct age. Outright denial would not be appropriate under this provision."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B02-Q016",
@@ -1312,7 +1352,8 @@ const QUESTION_BANK = [
       "A": "The entire contract includes the policy AND any attached application and riders or endorsements. Excluding these would be incomplete and contrary to the clause's purpose.",
       "C": "Verbal promises made by the agent are not part of the entire contract. The clause exists precisely to prevent reliance on representations outside the written policy. This protects both the insurer and the policyowner.",
       "D": "The insurer's internal underwriting file is not part of the contract between the insurer and the policyowner. Only the policy, the attached application, and any riders or endorsements are included."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B02-Q017",
@@ -1344,7 +1385,8 @@ const QUESTION_BANK = [
       "A": "Twelve hours is below the Texas requirement. The required total is 24 hours during each two-year renewal period.",
       "C": "Fifty hours exceeds the Texas requirement. The standard LAH requirement is 24 hours, including 3 hours of ethics, every two years.",
       "D": "Texas does require continuing education for insurance agents. Failure to complete the required hours can lead to fines and renewal problems."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B02-Q018",
@@ -1376,7 +1418,8 @@ const QUESTION_BANK = [
       "A": "Insurers do not deny all applicants with medical history. Underwriting evaluates risk and may result in standard, substandard (rated), or declined decisions. Adverse selection describes applicant behavior, not insurer behavior.",
       "C": "Selling expensive policies to maximize commissions describes a potential ethical violation (churning or unsuitable sales), not adverse selection. Adverse selection is about who seeks coverage, not how agents sell.",
       "D": "Rate filing rejection by regulators is a regulatory action unrelated to adverse selection. Adverse selection is a market phenomenon driven by information asymmetry between applicants and insurers."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B02-Q019",
@@ -1408,7 +1451,8 @@ const QUESTION_BANK = [
       "A": "$200,000 would be the death benefit without the accidental death rider. Since the death was accidental and the rider is in force, the additional benefit applies.",
       "C": "$600,000 would represent triple the face amount. The standard accidental death benefit rider pays double (the face amount plus an equal additional amount), not triple.",
       "D": "$100,000 is half the base face amount and does not reflect the accidental death benefit calculation. There is no provision that reduces the death benefit upon accidental death."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q020",
@@ -1440,7 +1484,8 @@ const QUESTION_BANK = [
       "A": "Key-person insurance is purchased by a business on the life of a key employee or executive whose death would cause financial loss to the business. The business has a legitimate insurable interest. This scenario involves a stranger with no such connection.",
       "C": "A viatical settlement involves selling an existing life insurance policy by a terminally or chronically ill policyowner to a third party. STOLI differs because the policy is originated from the start as an investment vehicle for a stranger, not sold by a sick policyowner after issue.",
       "D": "Legitimate third-party ownership requires that insurable interest exist at the time the policy is issued. A stranger with no financial or personal relationship to the insured does not have insurable interest, making this arrangement illegitimate."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B02-Q021",
@@ -1472,7 +1517,8 @@ const QUESTION_BANK = [
       "A": "Taxing the entire payment as ordinary income would double-tax the original premium, which was already paid with after-tax money. The exclusion ratio ensures the cost basis is returned tax-free.",
       "B": "While the original premiums were paid with after-tax dollars, the earnings on those premiums have never been taxed. The earnings portion of each payment is taxable as ordinary income upon distribution.",
       "D": "Annuity distributions are taxed as ordinary income, not capital gains. The tax code treats the earnings component of annuity payments as ordinary income regardless of how the insurer invested the funds."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B02-Q022",
@@ -1504,7 +1550,8 @@ const QUESTION_BANK = [
       "A": "The partnership program does not exempt the insured from all Medicaid eligibility requirements. The insured must still meet Medicaid income and other eligibility criteria. The benefit is asset protection, not a blanket exemption.",
       "C": "Medicare Part A eligibility is determined by age (65+) or disability status and Social Security work credits. It is not related to LTC partnership qualification or Medicaid eligibility.",
       "D": "The partnership program does not provide a premium refund. The benefit is the ability to shelter assets from Medicaid spend-down equal to the benefits the LTC policy paid."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q023",
@@ -1536,7 +1583,8 @@ const QUESTION_BANK = [
       "B": "The conversion privilege provides access to an individual policy, not re-enrollment in the former employer's group plan. The individual's relationship with the group plan has ended.",
       "C": "The conversion privilege is offered by the same insurer that provided the group coverage, not by a different insurer. There is no automatic issuance from a new carrier.",
       "D": "Electing COBRA does not eliminate a conversion right. If the group plan includes a conversion privilege, COBRA law preserves the ability to exercise it at the end of the maximum COBRA period."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B02-Q024",
@@ -1568,7 +1616,8 @@ const QUESTION_BANK = [
       "A": "Charging different premiums based solely on race is prohibited unfair discrimination. Race is not an actuarially valid underwriting criterion, and its use violates Texas insurance law.",
       "B": "Refusing to issue a policy solely because of national origin is a prohibited form of unfair discrimination under both Texas and federal law.",
       "D": "Refusing to pay a legitimate claim based solely on the claimant's religion is prohibited unfair discrimination. Claims decisions must be based on policy terms and the merits of the claim, not on a protected characteristic such as religion."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B02-Q025",
@@ -1600,7 +1649,8 @@ const QUESTION_BANK = [
       "A": "The NAIC is a voluntary association of state regulators and does not directly investigate individual consumer complaints. Complaints should be filed with the state department of insurance, which is TDI in Texas.",
       "C": "Health insurance is primarily regulated at the state level, not exclusively at the federal level. Filing a lawsuit in federal court is not the first regulatory step. The consumer's regulatory recourse is through TDI.",
       "D": "An independent sales agent does not have authority to override claim denials. Claim decisions are made by the insurer's claims department. The agent's role is in sales and service, not claims adjudication."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B03-Q001",
@@ -1632,7 +1682,8 @@ const QUESTION_BANK = [
       "A": "Suicide is not always covered. During the exclusion period (typically the first two years), the insurer's obligation is limited to returning premiums paid. Coverage for suicide applies only after the exclusion period has elapsed.",
       "B": "The suicide clause does not void the policy entirely or deny all payment. It limits the insurer's liability to a return of premiums paid during the exclusion period. The beneficiary still receives the premium refund.",
       "D": "There is no half-benefit compromise provision in the suicide clause. The insurer returns the premiums paid, not a fraction of the face amount."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B03-Q002",
@@ -1664,7 +1715,8 @@ const QUESTION_BANK = [
       "A": "Reinstatement restores the original policy rather than requiring a completely new policy to be issued at current age. The insurer may require evidence of current insurability, but the contract being revived is the original policy.",
       "C": "Payment of one current premium alone is insufficient. The insurer generally requires all overdue premiums with interest and satisfactory evidence of insurability before reinstating a lapsed life policy.",
       "D": "Texas life policies subject to the standard reinstatement provision allow reinstatement well beyond 30 days. The standard period is three years after default, assuming the other statutory conditions are met."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B03-Q003",
@@ -1696,7 +1748,8 @@ const QUESTION_BANK = [
       "A": "Using dividends to purchase one-year term insurance is known as the fifth dividend option or the one-year term option, not the paid-up additions option. The description in this answer mislabels the option name. The paid-up additions option purchases permanent whole life coverage, not one-year term.",
       "B": "Dividends cannot be used to change the guaranteed interest rate stated in the policy. The guaranteed rate is a contractual provision set at issue and is not adjustable by dividend election.",
       "C": "Dividends are intended to benefit the policyowner, not reduce the death benefit. No standard dividend option results in a lower death benefit."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B03-Q004",
@@ -1728,7 +1781,8 @@ const QUESTION_BANK = [
       "A": "Express authority is authority specifically granted by the insurer to the agent, typically through the agency contract. Since the insurer never authorized this particular promise, express authority does not apply here.",
       "B": "Implied authority covers acts that are reasonably necessary to carry out expressly granted duties (such as collecting premiums when authorized to deliver policies). Making coverage promises that contradict the policy goes beyond implied authority.",
       "D": "Insurers can be bound by unauthorized agent statements when apparent authority exists. The law of agency protects third parties who reasonably rely on the agent's perceived authority, even when the insurer did not authorize the specific act."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B03-Q005",
@@ -1760,7 +1814,8 @@ const QUESTION_BANK = [
       "A": "Under a conditional receipt, coverage does not wait for policy delivery. The retroactive effective date is the key advantage of the conditional receipt over simply waiting for delivery.",
       "B": "The policy issue date is not the controlling date under a conditional receipt. Coverage relates back to the application or medical exam date, not the administrative issuance date.",
       "D": "The conditional receipt does not provide automatic coverage after 30 days regardless of insurability. The condition is that the applicant must be found insurable as applied for. If not, no coverage existed."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B03-Q006",
@@ -1792,7 +1847,8 @@ const QUESTION_BANK = [
       "A": "A claims examiner without medical training may perform initial administrative screening, but cannot make the final medical necessity determination. That decision requires physician-level clinical judgment under Texas law.",
       "C": "The enrollee's employer has no role in utilization review or medical necessity determinations. Those decisions are made within the HMO's clinical review process.",
       "D": "The TDI commissioner oversees regulatory compliance but does not personally make individual medical necessity determinations for HMO enrollees. That is the function of the HMO's physician reviewers."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q007",
@@ -1824,7 +1880,8 @@ const QUESTION_BANK = [
       "A": "Twisting involves using misrepresentation to induce a policyholder to replace an existing policy. This scenario does not involve replacing an existing policy; it involves disparaging a competing insurer to a prospective new client.",
       "C": "Rebating involves offering inducements of value not stated in the policy to encourage a purchase. No monetary or material inducement is offered in this scenario.",
       "D": "Controlled business refers to an agent writing insurance primarily on his or her own life, family members, or close associates. That concept is unrelated to false statements about a competitor."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B03-Q008",
@@ -1856,7 +1913,8 @@ const QUESTION_BANK = [
       "A": "Group health plans may impose probationary periods for new employees, subject to applicable limits. Under the ACA, the maximum waiting period for group health plans is 90 days. The employer's 90-day period falls within this limit.",
       "C": "There is no provision for triple-premium coverage during a probationary period. The employee is simply not eligible for group benefits until the probationary period is satisfied.",
       "D": "The group plan does not provide partial or emergency-only coverage during the probationary period. The employee is not yet a covered member of the plan."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q009",
@@ -1888,7 +1946,8 @@ const QUESTION_BANK = [
       "A": "Life insurance proceeds held by the insurer under a spendthrift provision are not subject to garnishment by the beneficiary's creditors. The spendthrift clause exists specifically to provide this protection.",
       "C": "There is no standard 50/50 split provision. The spendthrift clause protects the full amount while it is held by the insurer. The protection is complete while in effect, not partial.",
       "D": "The spendthrift clause does not provide permanent, lifetime protection against all creditors after payment. Once proceeds are distributed to the beneficiary and commingled with personal assets, the protection under the clause generally ends."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B03-Q010",
@@ -1920,7 +1979,8 @@ const QUESTION_BANK = [
       "A": "The Guaranty Association does not prevent insolvency. It responds after insolvency occurs by protecting policyholders up to statutory limits. Solvency regulation and financial oversight are separate functions performed by TDI.",
       "C": "The Association does not refund all premiums ever paid. Its role is to continue coverage or pay covered claims up to the statutory per-person limits, not to make policyholders whole for every premium dollar.",
       "D": "The Association has no role in guaranteeing insurer profitability. Its sole function is to protect policyholders when a member insurer becomes insolvent."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B03-Q011",
@@ -1952,7 +2012,8 @@ const QUESTION_BANK = [
       "B": "The health insurer's subrogation right is limited to the amount it actually paid ($30,000), not the full amount of the insured's recovery. The insured retains the remainder.",
       "C": "Many health insurance policies include subrogation provisions that explicitly give the insurer the right to recover claim payments from third-party recoveries. This is a standard contractual provision.",
       "D": "The existence of a liable third party does not give the insurer grounds to retroactively cancel the policy. Subrogation allows recovery of paid claims, not cancellation of coverage."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q012",
@@ -1984,7 +2045,8 @@ const QUESTION_BANK = [
       "A": "Distributions from a MEC are not tax-free. The LIFO treatment means accumulated earnings are taxed first as ordinary income. Only non-MEC policies enjoy first-in, first-out (FIFO) treatment where basis comes out first.",
       "C": "MEC status does not eliminate the death benefit. The policy remains a life insurance contract with a death benefit. The change is in how loans and withdrawals are taxed during the policyowner's lifetime.",
       "D": "MEC status has a significant effect on taxation. Non-MEC policies allow loans and withdrawals on a FIFO basis (basis out first, generally tax-free up to basis). MECs use LIFO, making distributions taxable and potentially penalized."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B03-Q013",
@@ -2016,7 +2078,8 @@ const QUESTION_BANK = [
       "A": "Insurers do not have an unlimited window to deny claims based on application misrepresentation. The time limit on certain defenses restricts this right after the policy has been in force for the stated period.",
       "B": "Fraud may be treated differently from a material but non-fraudulent misrepresentation. This question expressly says the misrepresentation was non-fraudulent, so the time-limit provision bars the insurer from using it after the stated period has passed.",
       "D": "Misrepresentation is a valid ground for denying claims during the period before the time limit on certain defenses expires. It is not that misrepresentation is never relevant; rather, the insurer's window to use it is limited."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B03-Q014",
@@ -2048,7 +2111,8 @@ const QUESTION_BANK = [
       "A": "Failing to acknowledge and act promptly on claims communications is a prohibited unfair claims practice. Texas law requires insurers to respond to claims in a timely manner.",
       "C": "Conditioning payment on the insured accepting a reduced amount is a prohibited practice sometimes called lowballing. The insurer must pay what is owed under the policy terms.",
       "D": "Denying claims without a reasonable investigation is prohibited. The insurer must investigate claims before making a coverage determination."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B03-Q015",
@@ -2080,7 +2144,8 @@ const QUESTION_BANK = [
       "A": "More frequent payments do not reduce cost. They increase total annual cost because of the insurer's additional administrative expenses and the lost investment income from not receiving the full annual premium upfront.",
       "C": "The total annual cost does not remain the same. The frequency loading means the policyowner pays more in aggregate when choosing monthly over annual. Only the per-payment amount is smaller.",
       "D": "The insurer does not refund a portion of the premium for switching to monthly mode. If anything, the aggregate cost increases due to the loading factor."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B03-Q016",
@@ -2112,7 +2177,8 @@ const QUESTION_BANK = [
       "A": "During Texas Medicare supplement open enrollment, guaranteed issuance applies, but a waiting period of up to six months for preexisting conditions may still be imposed in some cases. Open enrollment does not automatically eliminate every waiting period.",
       "C": "A 12-month preexisting-condition exclusion is not the rule for Texas Medicare supplement open enrollment. The maximum waiting period is up to six months, not 12 months.",
       "D": "Preexisting conditions may not be permanently excluded in this context. The issue is a temporary waiting period, not a permanent denial of coverage."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q017",
@@ -2144,7 +2210,8 @@ const QUESTION_BANK = [
       "A": "The common disaster clause prevents this result. Because the husband did not survive the insured by 30 days, he is treated as having predeceased the insured. The proceeds do not go to the husband's estate.",
       "C": "The insurer does not retain death benefits. The proceeds must be paid according to the policy's beneficiary hierarchy. The common disaster clause simply redirects the payment away from a beneficiary who did not survive the required period.",
       "D": "There is no standard provision that splits proceeds between estates in a common disaster. The survivorship clause directs the full proceeds to the next beneficiary in the hierarchy."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B03-Q018",
@@ -2176,7 +2243,8 @@ const QUESTION_BANK = [
       "A": "A domestic insurer is one incorporated in the state where it is being classified. Since this insurer is incorporated in Ohio, it is not a domestic Texas insurer.",
       "C": "An alien insurer is one incorporated in a country other than the United States. An Ohio-incorporated company is a U.S. company and therefore foreign, not alien, from Texas's perspective.",
       "D": "A surplus lines insurer is one that writes coverage for risks that admitted (authorized) insurers are unwilling to cover. Classification as foreign, domestic, or alien is based on domicile, not on surplus lines status."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B03-Q019",
@@ -2208,7 +2276,8 @@ const QUESTION_BANK = [
       "B": "Indemnity insurance and Workers' Compensation are fundamentally different products and are not managed care models. A POS plan does not combine these.",
       "C": "Medicare Advantage and Medigap are Medicare-related products, not the building blocks of a POS plan. While Medicare Advantage may use managed care structures, the POS concept is defined by its HMO/PPO hybrid nature.",
       "D": "COBRA is a continuation coverage law, and long-term care insurance is a separate product line. Neither is a managed care model that contributes to the POS design."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q020",
@@ -2240,7 +2309,8 @@ const QUESTION_BANK = [
       "A": "Equal negotiation describes an arms-length commercial contract, not a contract of adhesion. Insurance contracts are not individually negotiated between the insurer and each applicant.",
       "C": "The term 'adhesion' does not refer to physical attachment. It refers to the legal concept that one party adheres (agrees) to terms drafted entirely by the other party.",
       "D": "Adhesion has nothing to do with multi-state applicability. Insurance contracts are governed by the law of the state where the contract is issued or delivered, not every state."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B03-Q021",
@@ -2272,7 +2342,8 @@ const QUESTION_BANK = [
       "A": "Filing a lawsuit is generally not the first step. The enrollee should exhaust the HMO's internal appeal process first. Texas law provides for internal appeals followed by independent external review before litigation.",
       "B": "The Federal Trade Commission does not handle individual HMO medical necessity disputes. Insurance regulation in Texas falls under the Texas Department of Insurance, and the internal HMO appeal is the initial step.",
       "D": "Canceling enrollment does not resolve the coverage dispute. The enrollee has the right to challenge the denial through the HMO's internal process and, if necessary, through external review."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q022",
@@ -2304,7 +2375,8 @@ const QUESTION_BANK = [
       "A": "Ten days is the typical notice of claim requirement (notice that a loss has occurred), not the proof of loss deadline. Proof of loss (the detailed documentation) is due within 90 days.",
       "B": "Twenty days is the standard period within which the insurer must furnish proof of loss forms after receiving notice of claim. The insured's deadline for submitting completed proof is 90 days from the loss.",
       "D": "There is a time limit. The standard is 90 days, with a maximum extension of one year except in cases of legal incapacity. Open-ended filing is not permitted under the standard provision."
-    }
+    },
+    "unit_id": "N5"
   },
   {
     "question_id": "B03-Q023",
@@ -2336,7 +2408,8 @@ const QUESTION_BANK = [
       "A": "Backdating is not prohibited. It is a recognized industry practice that benefits applicants by preserving a younger issue age. The practice is regulated, not forbidden.",
       "C": "A 3-year backdating window would be excessive and is not standard. The typical regulatory limit is 6 months. Longer backdating would create an unreasonable gap between the policy date and the actual issue date.",
       "D": "Backdating is not limited to term policies. It may be applied to any type of life insurance policy where a younger issue age results in a lower premium, including whole life."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B03-Q024",
@@ -2368,7 +2441,8 @@ const QUESTION_BANK = [
       "A": "Conservation is the opposite of this conduct. Conservation means encouraging a policyholder to keep an existing policy rather than replacing it. This agent is actively inducing replacements.",
       "C": "Rebating involves offering inducements of value not specified in the policy to encourage purchase. The misconduct here is repeated unnecessary replacement for commissions, not offering prohibited inducements.",
       "D": "Repeatedly surrendering and repurchasing whole life policies from the same insurer with new sales charges and surrender periods does not constitute legitimate financial planning. It benefits the agent at the policyowner's expense."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B03-Q025",
@@ -2400,7 +2474,8 @@ const QUESTION_BANK = [
       "A": "Texas law provides external review as a further recourse after the internal appeal is exhausted. The enrollee is not left without options after the HMO's internal process.",
       "C": "Restarting the internal appeal with the same HMO would not constitute meaningful review. Texas law provides for external, independent review by an organization that has no affiliation with the HMO.",
       "D": "There is no $10,000 threshold for requesting independent review. The right to external review applies to covered persons who have exhausted internal appeals, regardless of the dollar amount of the denied procedure."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q001",
@@ -2432,7 +2507,8 @@ const QUESTION_BANK = [
       "A": "Even when a service category is covered, an HMO may still require referral or authorization procedures for non-emergency specialty care.",
       "B": "That is more typical of a PPO. An HMO does not generally pay a reduced out-of-network share for unauthorized non-emergency specialty care.",
       "D": "Texas HMO rules do not generally require retroactive referrals to salvage unauthorized non-emergency care after the service has already been provided."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q002",
@@ -2464,7 +2540,8 @@ const QUESTION_BANK = [
       "A": "That would be true only if the employee had paid 100% of the premium with after-tax dollars.",
       "B": "$2,000 is the portion attributable to the employee's after-tax premium contribution, which is generally received tax-free.",
       "D": "That would be true only if the employer had paid 100% of the premium."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B04-Q003",
@@ -2496,7 +2573,8 @@ const QUESTION_BANK = [
       "A": "Twisting involves misrepresentation used to induce a policy replacement or lapse, not gifts or tickets as inducements.",
       "B": "Coercion involves pressure or intimidation, not offering a gift.",
       "D": "Calling the item a 'value-added service' does not make it lawful when it functions as an inducement not stated in the contract."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q004",
@@ -2528,7 +2606,8 @@ const QUESTION_BANK = [
       "B": "The first payout does not have to start exactly one year later; the defining line is within 12 months.",
       "C": "Waiting until age 65 would make the product function like a deferred annuity, not an immediate annuity.",
       "D": "Immediate annuities do not allow an unrestricted open-ended delay in payout start."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B04-Q005",
@@ -2560,7 +2639,8 @@ const QUESTION_BANK = [
       "A": "Providing a disclosure does not authorize the agent to use guaranty-association protection as a sales inducement.",
       "B": "The fact that a statute exists does not make it lawful to use it as a sales inducement where the statute forbids that use.",
       "C": "The problem is not lack of coverage; the problem is prohibited sales use of the association's existence."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q006",
@@ -2592,7 +2672,8 @@ const QUESTION_BANK = [
       "A": "A zero-month waiting period would apply only if the applicant had at least 6 months of qualifying prior creditable coverage for this purpose.",
       "C": "Four months is the amount of creditable coverage, not the remaining waiting period.",
       "D": "Six months is the unreduced maximum for an applicant with no qualifying creditable coverage."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q007",
@@ -2624,7 +2705,8 @@ const QUESTION_BANK = [
       "A": "A conditional receipt exists precisely to create possible interim coverage before formal policy issue, subject to its conditions.",
       "C": "The death benefit is not prorated simply because death occurred during underwriting.",
       "D": "A conditional receipt is not limited to accidental death or nonaccidental death. If the receipt conditions are satisfied and the applicant is found insurable, full coverage can take effect before formal policy issue."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B04-Q008",
@@ -2656,7 +2738,8 @@ const QUESTION_BANK = [
       "A": "15 days is associated with the insurer's duty to furnish claim forms after receiving notice, not the insured's notice deadline.",
       "C": "60 days is associated with suit / legal-action timing concepts, not the initial notice-of-claim deadline.",
       "D": "90 days is associated with proof of loss, not notice of claim."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B04-Q009",
@@ -2688,7 +2771,8 @@ const QUESTION_BANK = [
       "A": "30 days is too short. Texas sets the temporary-license term at 180 days.",
       "B": "90 days is a common guess, but Texas law currently allows a 180-day term.",
       "D": "One year exceeds the statutory temporary-license term."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q010",
@@ -2720,7 +2804,8 @@ const QUESTION_BANK = [
       "A": "The employee is not usually the owner or premium payor in a key-person arrangement.",
       "C": "If the family were the beneficiary, the structure would not be the usual key-person setup.",
       "D": "The business, not the employee, generally owns the policy in a key-person arrangement."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B04-Q011",
@@ -2752,7 +2837,8 @@ const QUESTION_BANK = [
       "A": "Six months is too short for standard Texas state continuation when COBRA does not apply.",
       "C": "18 months is the standard federal COBRA period for many qualifying events, not Texas mini-COBRA for a small employer plan not subject to COBRA.",
       "D": "36 months applies to certain federal COBRA qualifying events, not standard Texas state continuation for this scenario."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q012",
@@ -2784,7 +2870,8 @@ const QUESTION_BANK = [
       "A": "After the life-policy incontestability period expires, the insurer generally cannot deny the claim based on the application misrepresentation.",
       "B": "Retaining premiums while denying the claim is inconsistent with the usual effect of the expired incontestability period.",
       "D": "That adjustment is associated with misstatement of age or sex, not the ordinary treatment of a barred contest based on health misrepresentation after the incontestability period."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B04-Q013",
@@ -2817,7 +2904,8 @@ const QUESTION_BANK = [
       "B": "$5,000 is the aggregate cap for all violations, not the per-violation amount.",
       "C": "$10,000 is not the Chapter 541 per-violation administrative cap for violating a deceptive-trade-practices cease and desist order.",
       "D": "$25,000 overstates the administrative penalty available under Section 541.110 for this type of cease and desist violation."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q014",
@@ -2849,7 +2937,8 @@ const QUESTION_BANK = [
       "A": "The relationship is inverse, not direct. A longer elimination period lowers premium.",
       "C": "The elimination period is a major pricing factor; it does not affect only benefit duration.",
       "D": "A shorter elimination period generally increases, not lowers, premium because the insurer may have to start paying sooner."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B04-Q015",
@@ -2881,7 +2970,8 @@ const QUESTION_BANK = [
       "A": "Age 55 is relevant to a specific separation-from-service exception, not the general rule.",
       "C": "Age 62 is associated with Social Security, not the general qualified-plan penalty threshold.",
       "D": "Age 65 is a common retirement marker, but it is not the general tax-penalty threshold."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B04-Q016",
@@ -2913,7 +3003,8 @@ const QUESTION_BANK = [
       "A": "False advertising usually concerns misleading statements about one's own product or policy; this scenario centers on false derogatory statements about a competitor's financial condition.",
       "C": "Twisting involves misrepresentations used to induce a policyholder to replace existing coverage, not general public disparagement of an insurer.",
       "D": "Boycott, coercion, and intimidation involve concerted pressure or threats, not the publication of false pamphlets about an insurer's financial condition."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q017",
@@ -2945,7 +3036,8 @@ const QUESTION_BANK = [
       "A": "Cash surrender terminates the policy in exchange for the cash value, so no death benefit is maintained.",
       "B": "Reduced paid-up keeps coverage in force permanently but with a reduced face amount.",
       "D": "A one-year term dividend option is a dividend choice, not the standard nonforfeiture option used when the owner stops paying premiums."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B04-Q018",
@@ -2977,7 +3069,8 @@ const QUESTION_BANK = [
       "A": "That describes a lifetime maximum or plan-payment cap, not the insured's out-of-pocket cap.",
       "C": "The stop-loss provision does not block further claims; it improves coverage after the threshold is reached.",
       "D": "The deductible is one piece of cost sharing, but the stop-loss limit is the overall cap on the insured's covered out-of-pocket obligation."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B04-Q019",
@@ -3009,7 +3102,8 @@ const QUESTION_BANK = [
       "A": "Age 21 is too low under the ACA dependent-coverage rule.",
       "B": "Age 23 is not the ACA dependent-coverage cutoff.",
       "C": "Age 25 is close but still incorrect; the general cutoff is age 26."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q020",
@@ -3041,7 +3135,8 @@ const QUESTION_BANK = [
       "A": "10 days is associated with other reporting duties, not the regular address-change reporting expectation for agents.",
       "B": "20 days is a common insurance-timing distractor but not the current Texas address-change reporting window.",
       "D": "60 days is longer than the monthly / 30-day reporting expectation reflected in current Texas guidance."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q021",
@@ -3073,7 +3168,8 @@ const QUESTION_BANK = [
       "A": "Prior authorization is not required for true emergency care.",
       "C": "HMOs do not get to deny a true emergency claim solely because the patient used an out-of-network emergency facility.",
       "D": "Coverage does not depend on the provider accepting an in-network fee schedule; Texas law imposes emergency-care payment obligations even for non-network emergency care."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q022",
@@ -3105,7 +3201,8 @@ const QUESTION_BANK = [
       "A": "If the premiums are deducted, the benefits are not generally received tax-free.",
       "B": "That answer gets both sides wrong for the usual BOE tax treatment.",
       "D": "The standard exam treatment for BOE is deductible premiums with taxable benefits, not nondeductible premiums."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B04-Q023",
@@ -3137,7 +3234,8 @@ const QUESTION_BANK = [
       "A": "10 days is a common free-look period in other contexts, but not for Texas Medigap policies.",
       "B": "15 days is too short for the Texas Medigap free-look requirement.",
       "C": "20 days is not the Texas Medigap free-look period."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B04-Q024",
@@ -3169,7 +3267,8 @@ const QUESTION_BANK = [
       "A": "Annuitization is the payout phase, not the premium-building phase.",
       "C": "Liquidation is used for the payout / depletion side, not the accumulation side.",
       "D": "Grace period refers to late-premium timing on a policy, not the growth phase of an annuity."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B04-Q025",
@@ -3201,7 +3300,8 @@ const QUESTION_BANK = [
       "A": "Rebating involves unauthorized inducements to buy insurance, not mishandling client premium funds.",
       "C": "Twisting involves misrepresentation used to induce a replacement of existing coverage.",
       "D": "Redlining involves discriminatory refusal or restriction of coverage based on geography or similar forbidden underwriting patterns."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q001",
@@ -3233,7 +3333,8 @@ const QUESTION_BANK = [
       "A": "A zero-month waiting period only applies if the applicant had 6 or more months of continuous creditable coverage.",
       "C": "6 months is the standard maximum waiting period for an individual with no prior creditable coverage. It must be reduced by her prior coverage.",
       "D": "9 months exceeds the maximum allowable pre-existing condition waiting period for Medicare Supplements."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q002",
@@ -3265,7 +3366,8 @@ const QUESTION_BANK = [
       "A": "15 days is the timeframe the insurer has to provide claim forms to the insured after receiving a Notice of Claim.",
       "B": "20 days is the timeframe the insured has to provide the initial 'Notice of Claim' to the insurer, not the final Proof of Loss.",
       "C": "60 days is the waiting period an insured must observe after filing Proof of Loss before they can initiate a lawsuit against the insurer."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B05-Q003",
@@ -3297,7 +3399,8 @@ const QUESTION_BANK = [
       "A": "Paying the premium is only one condition; completing required medical exams is the other. Coverage does not begin until all requirements are met.",
       "B": "Insurers do not pay claims with deductions for missed underwriting requirements. If the requirements aren't met, there is no coverage.",
       "D": "Conditional receipts do cover accidental death, provided the applicant has met all conditions (including the medical exam) and is deemed insurable."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B05-Q004",
@@ -3329,7 +3432,8 @@ const QUESTION_BANK = [
       "A": "The corporation cannot legally take out a life insurance policy on an employee without the employee's written consent and signature.",
       "B": "The executive must sign as the insured, but the corporation must also sign as the applicant and owner of the policy.",
       "D": "While the agent signs the application, the critical missing signature in this option is the proposed insured's consent."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B05-Q005",
@@ -3361,7 +3465,8 @@ const QUESTION_BANK = [
       "A": "This describes the tax treatment of group disability income insurance where the employer pays the premiums.",
       "C": "The IRS does not allow an individual to both deduct the premiums and receive the benefits tax-free.",
       "D": "Since the premiums were paid with after-tax dollars, the benefits are not taxed again."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B05-Q006",
@@ -3393,7 +3498,8 @@ const QUESTION_BANK = [
       "A": "1 month of coverage is insufficient to trigger state continuation rights in Texas.",
       "C": "6 months is not the requirement; the law requires only 3 consecutive months.",
       "D": "While employees often have a waiting period to join a plan, the specific continuous coverage requirement to qualify for Texas continuation is 3 months, not a full year."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q007",
@@ -3425,7 +3531,8 @@ const QUESTION_BANK = [
       "A": "$100,000 is the limit for life insurance net cash surrender and net cash withdrawal values, not the death benefit.",
       "C": "$500,000 is the limit for basic hospital, medical, and surgical insurance or major medical expense plan benefits.",
       "D": "The Guaranty Association acts as a safety net with strict statutory limits; it does not guarantee unlimited face values."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q008",
@@ -3457,7 +3564,8 @@ const QUESTION_BANK = [
       "A": "Texas law does not single out commuters or nonresidents here; the restriction is based on family, employment, or business relationships.",
       "C": "Small businesses may be sold insurance by a temporary license holder if the sale does not fall within the prohibited family, employment, or business-relationship commission restrictions.",
       "D": "Prior declinations are underwriting matters, not the specific commission restriction imposed on temporary license holders."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q009",
@@ -3489,7 +3597,8 @@ const QUESTION_BANK = [
       "A": "Utilities and property taxes are standard fixed overhead expenses covered by a BOE policy.",
       "B": "Employee salaries (excluding the disabled owner) are critical ongoing expenses covered by BOE.",
       "D": "Rent for the business property is a classic example of an overhead expense covered by a BOE policy."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B05-Q010",
@@ -3521,7 +3630,8 @@ const QUESTION_BANK = [
       "B": "In an Entity Purchase (or Stock Redemption) plan, the business itself buys the policies on the owners, pays the premiums, and buys the deceased owner's share.",
       "C": "An Executive Bonus Plan is a fringe benefit where an employer pays the premium on a personal life insurance policy owned by an employee.",
       "D": "Key Person Insurance is used to protect the business against the financial loss of a critical employee's death, not to facilitate the transfer of business ownership."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B05-Q011",
@@ -3553,7 +3663,8 @@ const QUESTION_BANK = [
       "A": "If a person turns 65 but delays enrolling in Part B (because they are still working and have group coverage), their Medigap open enrollment period does not begin until they actually enroll in Part B.",
       "C": "October 15 to December 7 is the Annual Election Period for Medicare Advantage and Part D plans, which is entirely different from the one-time Medigap open enrollment period.",
       "D": "While retiring and losing coverage may trigger a Special Enrollment Period for Part B, the Medigap open enrollment rule is specifically tied to Part B effective date at age 65 or older."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q012",
@@ -3585,7 +3696,8 @@ const QUESTION_BANK = [
       "A": "Rebating involves offering something of value not stated in the policy as an inducement to buy.",
       "B": "Defamation involves making maliciously critical or derogatory statements about an insurer's financial condition.",
       "D": "Commingling is the illegal act of mixing collected premiums with the agent's personal or business funds."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q013",
@@ -3617,7 +3729,8 @@ const QUESTION_BANK = [
       "A": "15 days is the timeline for an insurer to acknowledge a claim under prompt payment laws.",
       "B": "30 days is a common timeline (such as for address change notifications), but the EOC must be delivered within 60 days.",
       "D": "90 days is too long and violates the 60-day statutory maximum for EOC delivery."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q014",
@@ -3649,7 +3762,8 @@ const QUESTION_BANK = [
       "A": "1 year is the limit for taking legal action against an insurer after submitting proof of loss (in some instances), but the contestability period is 2 years.",
       "C": "3 years is the time limit for defending claims in some older life insurance policies from other eras, but the standard uniform health provision is strictly 2 years.",
       "D": "While fraudulent misstatements can often be contested at any time in health insurance, non-fraudulent misstatements are protected after 2 years."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B05-Q015",
@@ -3681,7 +3795,8 @@ const QUESTION_BANK = [
       "B": "10 days is the required grace period if premiums are paid on a monthly basis.",
       "C": "30 days is a common timeline in insurance, but grace periods for health policies are 7, 10, or 31 days.",
       "D": "31 days is the grace period for policies where premiums are paid quarterly, semi-annually, or annually, as well as for life insurance policies."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B05-Q016",
@@ -3713,7 +3828,8 @@ const QUESTION_BANK = [
       "A": "10 days is the standard free look period, not the claim acknowledgment timeframe.",
       "C": "20 days is the time the insured has to initially notify the insurer of a claim (Notice of Claim), not the insurer's response time.",
       "D": "30 days is the timeframe the insurer has to pay the claim after receiving all requested items (proof of loss)."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q017",
@@ -3745,7 +3861,8 @@ const QUESTION_BANK = [
       "A": "10 days is the standard free-look period for life insurance.",
       "B": "20 days is the standard notice of claim requirement in health insurance, and the free-look period for replacement life policies.",
       "D": "60 days is the conversion window for some health insurance policies, but group life conversion is strictly 31 days."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B05-Q018",
@@ -3777,7 +3894,8 @@ const QUESTION_BANK = [
       "A": "10 days is the standard free-look period for non-replacement life insurance transactions.",
       "C": "30 days is the free-look period required for Medicare Supplement and Long-Term Care policies.",
       "D": "31 days is the standard grace period for life insurance, not the free-look period."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q019",
@@ -3809,7 +3927,8 @@ const QUESTION_BANK = [
       "A": "This describes non-qualified compensation. Qualified plan contributions are deferred and not taxed in the year they are made.",
       "B": "Qualified plans enjoy tax-deferred growth. Earnings are not taxed annually.",
       "D": "Distributions from traditional qualified plans are fully taxable as ordinary income. Only Roth accounts (which are funded with after-tax dollars) offer tax-free distributions."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B05-Q020",
@@ -3841,7 +3960,8 @@ const QUESTION_BANK = [
       "A": "Texas newborn-coverage statutes do not use 10 days for this notice-and-premium requirement.",
       "B": "20 days is not the newborn-notice deadline under the small-employer newborn-coverage rule.",
       "D": "60 days is too late; the statute requires notice and any additional premium by the 31st day after birth."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q021",
@@ -3873,7 +3993,8 @@ const QUESTION_BANK = [
       "A": "The denial of coverage is an administrative/contractual decision by the HMO, not a medical malpractice issue by the physician who proposed the treatment.",
       "C": "Open enrollment periods are for changing health plans, not for appealing clinical denials of specific medical treatments.",
       "D": "The NAIC is a standard-setting body, not a regulatory agency that reviews individual consumer medical appeals."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B05-Q022",
@@ -3905,7 +4026,8 @@ const QUESTION_BANK = [
       "B": "Medicare Part B is medical insurance, which primarily covers doctors' services, outpatient care, medical supplies, and preventive services.",
       "C": "Medicare Part C (Medicare Advantage) is a private plan option that bundles Part A, Part B, and usually Part D into a single plan.",
       "D": "Medicare Part D is the prescription drug coverage program."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B05-Q023",
@@ -3937,7 +4059,8 @@ const QUESTION_BANK = [
       "A": "If an HSA withdrawal is used for NON-qualified expenses before age 65, it is taxed as ordinary income AND is subject to a 20% penalty.",
       "B": "HSA funds are never taxed as capital gains; they are either tax-free (for medical) or taxed as ordinary income (for non-medical).",
       "D": "Tax-free withdrawals are not limited by the deductible; they apply to all qualified medical expenses, including copays, coinsurance, and vision/dental care."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B05-Q024",
@@ -3969,7 +4092,8 @@ const QUESTION_BANK = [
       "A": "Sales illustrations are marketing materials and are explicitly not part of the legal contract.",
       "B": "The MIB report is an underwriting tool used by the insurer, but it is not attached to or part of the legal contract.",
       "D": "Physician statements are underwriting evidence, but unless they are incorporated into the application itself, they are not part of the entire contract."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B05-Q025",
@@ -4001,7 +4125,8 @@ const QUESTION_BANK = [
       "A": "Age and gender are standard, legally permitted actuarial factors used to determine premiums for life and health insurance.",
       "B": "Tobacco usage carries known morbidity and mortality risks and is a standard, permitted rating factor.",
       "D": "Severe heart disease represents a distinct actuarial risk, and insurers are legally permitted to underwrite, rate, or deny coverage based on such adverse health history."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q001",
@@ -4033,7 +4158,8 @@ const QUESTION_BANK = [
       "A": "Federal COBRA does not apply because the employer has fewer than 20 employees.",
       "C": "Texas State Continuation provides up to 9 months of coverage, not 18 months.",
       "D": "Employees of small firms are protected by Texas State Continuation laws."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q002",
@@ -4065,7 +4191,8 @@ const QUESTION_BANK = [
       "A": "In life insurance, even intentional fraud cannot be used to void the policy after the 2-year incontestability period.",
       "B": "The insurer cannot deny the claim after 2 years.",
       "D": "This describes the Misstatement of Age or Sex provision, not the remedy for general medical concealment."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B06-Q003",
@@ -4098,7 +4225,8 @@ const QUESTION_BANK = [
       "B": "$5,000 is the cap for all violations, not the per-violation cap.",
       "C": "$10,000 exceeds the administrative-penalty cap in §541.110.",
       "D": "$25,000 is not the Chapter 541 per-violation administrative-penalty cap."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q004",
@@ -4130,7 +4258,8 @@ const QUESTION_BANK = [
       "A": "This is an inverse relationship. A longer wait makes the policy cheaper, not more expensive.",
       "C": "The elimination period directly impacts the premium cost.",
       "D": "A shorter elimination period increases the premium because the insurer must begin paying benefits sooner."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q005",
@@ -4162,7 +4291,8 @@ const QUESTION_BANK = [
       "A": "Age 55 is tied to a specific exception for 401(k) plans upon separation from service, not the general rule.",
       "C": "Age 62 is the earliest age to draw standard Social Security retirement benefits.",
       "D": "Age 65 is the Medicare eligibility age, but retirement funds can be accessed without the 10% penalty starting at 59 1/2."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B06-Q006",
@@ -4194,7 +4324,8 @@ const QUESTION_BANK = [
       "A": "This describes a PPO (Preferred Provider Organization), which allows out-of-network care at a reduced benefit level without a referral.",
       "B": "HMOs require referrals for specialty care; they do not pay out-of-network non-emergency claims without them.",
       "D": "HMOs typically do not allow retroactive referrals for services already rendered."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q007",
@@ -4226,7 +4357,8 @@ const QUESTION_BANK = [
       "A": "The 'any occupation' definition is more restrictive, paying benefits only if the insured is unable to perform the duties of any occupation for which they are reasonably suited by education, training, or experience.",
       "C": "Presumptive disability specifies certain conditions (like loss of two limbs or blindness) that automatically qualify for full benefits, but it is a provision rather than the core definition of general total disability.",
       "D": "Partial disability pays a reduced benefit when the insured can still work part-time or perform some, but not all, duties."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q008",
@@ -4258,7 +4390,8 @@ const QUESTION_BANK = [
       "A": "Life income with period certain guarantees payments for life, but if the annuitant dies early the remaining certain-period payments go only through the end of that period, not necessarily until a second person dies.",
       "C": "A fixed amount option pays a stated dollar amount until the funds are exhausted, regardless of whether either spouse is still alive.",
       "D": "A cash refund life option provides a refund if total payments before death are less than the premium paid, but it is not designed to continue income for a surviving spouse for life."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q009",
@@ -4290,7 +4423,8 @@ const QUESTION_BANK = [
       "A": "Withdrawals from a MEC are not tax-free until all earnings have been withdrawn and taxed.",
       "B": "FIFO is the favorable tax treatment for standard, non-MEC life insurance policies.",
       "D": "Earnings withdrawn from a MEC are taxed as ordinary income, not capital gains."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B06-Q010",
@@ -4322,7 +4456,8 @@ const QUESTION_BANK = [
       "A": "Age is a primary, legally permitted actuarial factor used to determine life and health premiums.",
       "B": "Tobacco usage carries known morbidity and mortality risks and is a legally permitted rating factor.",
       "D": "Severe heart disease represents a distinct actuarial risk, and insurers are legally permitted to underwrite, rate, or deny coverage based on such adverse health history."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B06-Q011",
@@ -4354,7 +4489,8 @@ const QUESTION_BANK = [
       "A": "Extended term is a nonforfeiture option used when a policyowner stops paying premiums while there is still cash value, not when a loan exceeds the cash value.",
       "B": "Policy loans are essentially advances on the policy's own funds; there is no legal obligation to repay them, so an insurer cannot garnish wages.",
       "D": "The policy cannot remain in force if there is no cash value left to support it against the loan."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q012",
@@ -4386,7 +4522,8 @@ const QUESTION_BANK = [
       "A": "That describes a standard Medigap policy more closely than a Medicare SELECT policy, which adds network restrictions.",
       "C": "Medicare SELECT is still a form of Medigap, which supplements Original Medicare rather than replacing it with Medicare Advantage.",
       "D": "Emergency services are the key exception. Network restrictions generally apply to non-emergency care, not true emergencies."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q013",
@@ -4418,7 +4555,8 @@ const QUESTION_BANK = [
       "A": "This describes the Waiver of Premium rider.",
       "C": "Premiums for whole life policies are already guaranteed level. The rider itself does not guarantee the cost of the *additional* coverage; the new coverage is priced at the insured's attained age.",
       "D": "This describes the Accidental Death Benefit (Double Indemnity) rider."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B06-Q014",
@@ -4450,7 +4588,8 @@ const QUESTION_BANK = [
       "A": "Only HSA distributions used for qualified medical expenses are tax-free.",
       "C": "The 20% additional tax applies to non-qualified HSA distributions before age 65, not after age 65.",
       "D": "HSA non-qualified distributions are not taxed as capital gains."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B06-Q015",
@@ -4482,7 +4621,8 @@ const QUESTION_BANK = [
       "A": "That describes an accidental death or other special benefit, not a payor benefit rider.",
       "C": "That describes a guaranteed insurability concept, not the payor benefit rider.",
       "D": "That describes a return-of-premium style feature, not the payor benefit rider."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B06-Q016",
@@ -4514,7 +4654,8 @@ const QUESTION_BANK = [
       "A": "Age 21 was a common cutoff prior to the ACA.",
       "B": "Age 24 was a common cutoff for full-time students prior to the ACA.",
       "D": "Age 30 is incorrect; the federal mandate ends at age 26."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q017",
@@ -4546,7 +4687,8 @@ const QUESTION_BANK = [
       "A": "The standard provision exists specifically because occupation changes can affect accident and health benefits.",
       "C": "The Change of Occupation provision provides an adjustment method rather than automatically voiding the contract.",
       "D": "The standard result is benefit adjustment, not automatic premium refund and claim denial."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B06-Q018",
@@ -4578,7 +4720,8 @@ const QUESTION_BANK = [
       "A": "Rebating involves offering something of value as an inducement to buy insurance, not coordinated market pressure.",
       "B": "Defamation involves false derogatory statements about an insurer's financial condition or business reputation, not collective refusal to deal.",
       "D": "Twisting involves misleading policy comparisons to induce replacement of an existing policy."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q019",
@@ -4610,7 +4753,8 @@ const QUESTION_BANK = [
       "A": "Level term maintains the same death benefit throughout the term; it does not track a declining debt balance.",
       "C": "Variable whole life is an investment-driven permanent policy, not specifically designed to mirror a declining debt.",
       "D": "Single premium whole life requires a large upfront lump sum and provides level permanent coverage."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q020",
@@ -4642,7 +4786,8 @@ const QUESTION_BANK = [
       "A": "This describes the Premium Reduction dividend option.",
       "C": "This describes the One-Year Term dividend option.",
       "D": "While dividends can sometimes be applied to loan balances, that is not the definition of Paid-Up Additions."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B06-Q021",
@@ -4674,7 +4819,8 @@ const QUESTION_BANK = [
       "A": "A conditional receipt is given when the premium IS collected at the time of application, not at delivery.",
       "C": "A new medical exam is not required unless the Statement of Good Health reveals a change in condition.",
       "D": "Inspection reports are ordered by the underwriter during the application process, not collected as a fee at delivery."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B06-Q022",
@@ -4706,7 +4852,8 @@ const QUESTION_BANK = [
       "A": "That describes the ordinary deductible under a basic policy, not the corridor deductible.",
       "C": "That describes a stop-loss or maximum out-of-pocket feature, not a corridor deductible.",
       "D": "That describes a network-benefit design feature, not a supplemental major medical deductible concept."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B06-Q023",
@@ -4738,7 +4885,8 @@ const QUESTION_BANK = [
       "A": "Death benefits are not subject to capital gains tax.",
       "B": "Only the interest earned on death benefits left with the insurer under a settlement option is taxed as ordinary income; the principal death benefit is tax-free.",
       "D": "There is no statutory cap on the amount of death benefit that can be received income tax-free."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B06-Q024",
@@ -4770,7 +4918,8 @@ const QUESTION_BANK = [
       "A": "The HMO cannot deny the claim based solely on the final diagnosis if the initial symptoms reasonably indicated an emergency.",
       "C": "In a true emergency (based on symptoms), enrollees do not have time to get a referral, and the law prohibits HMOs from requiring one.",
       "D": "Emergencies are the universal exception to HMO network restrictions. Out-of-network facilities must be covered if the prudent layperson standard is met."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B06-Q025",
@@ -4802,7 +4951,8 @@ const QUESTION_BANK = [
       "A": "The premiums are not waived immediately; the insured must satisfy the waiting period first.",
       "C": "Premiums are not deducted from the death benefit under this rider; they are refunded.",
       "D": "The waiver is retroactive to the beginning of the disability once the waiting period is met, meaning those initial premiums are refunded."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q001",
@@ -4834,7 +4984,8 @@ const QUESTION_BANK = [
       "A": "15 days is too short and does not align with the uniform reinstatement provision.",
       "B": "30 days is a common timeline in insurance (e.g., grace periods), but the automatic reinstatement provision is specifically 45 days.",
       "D": "The uniform provision is designed to protect the insured from unreasonable insurer delays by enforcing automatic reinstatement if no denial is issued within 45 days."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q002",
@@ -4866,7 +5017,8 @@ const QUESTION_BANK = [
       "A": "The premiums are considered additional salary/compensation, so they cannot be received tax-free by the executive.",
       "C": "The corporation is permitted to deduct the premiums because they are classified as employee compensation.",
       "D": "The premiums are tax-deductible to the business, and the resulting death benefit paid to the executive's beneficiaries will generally be income tax-free."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B07-Q003",
@@ -4898,7 +5050,8 @@ const QUESTION_BANK = [
       "A": "Misstatement of age does not void the policy; it merely triggers an equitable adjustment of benefits.",
       "B": "The incontestability clause explicitly does not apply to misstatements of age or sex. The insurer is always allowed to adjust the benefit for age discrepancies.",
       "D": "The insurer is obligated to pay the adjusted death benefit, not merely refund the premiums."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q004",
@@ -4930,7 +5083,8 @@ const QUESTION_BANK = [
       "A": "Exchanging life insurance for an annuity is permitted under Section 1035.",
       "C": "Exchanging one annuity for another annuity is a standard, permitted 1035 exchange.",
       "D": "Exchanging life insurance for an endowment is permitted under Section 1035."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B07-Q005",
@@ -4962,7 +5116,8 @@ const QUESTION_BANK = [
       "A": "30 days is the standard notice period for premium nonpayment cancellations, not continuity of care.",
       "B": "60 days is the timeframe for delivering an Evidence of Coverage document.",
       "D": "180 days exceeds the statutory mandate; the protection is limited to 90 days to allow safe transition to a new physician."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q006",
@@ -4994,7 +5149,8 @@ const QUESTION_BANK = [
       "A": "10 days is not the statutory deadline for reporting an additional appointment.",
       "B": "15 days is not the statutory deadline for reporting an additional appointment.",
       "D": "Texas permits multiple appointments, but additional appointments must still be reported to the department within the required 30-day period."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q007",
@@ -5026,7 +5182,8 @@ const QUESTION_BANK = [
       "A": "Traditional whole life has a fixed premium and fixed death benefit that cannot be flexibly adjusted.",
       "B": "Variable whole life has a fixed premium, though the cash value fluctuates with market performance.",
       "D": "Decreasing term life is a temporary policy with a declining face amount and no cash value component."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B07-Q008",
@@ -5058,7 +5215,8 @@ const QUESTION_BANK = [
       "A": "A change of occupation does not void the policy; it merely triggers a benefit or premium adjustment.",
       "B": "The insurer does not issue retroactive bills; they adjust the payable benefit amount to match the existing premium.",
       "D": "If the policy contains this specific provision, the insurer is legally entitled to reduce the benefits to reflect the increased risk."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q009",
@@ -5090,7 +5248,8 @@ const QUESTION_BANK = [
       "A": "Standard deductibles and coinsurance still apply to the newborn's care; they are not waived.",
       "C": "The automatic coverage only lasts for an initial period (typically 31 days). The parents must notify the insurer and pay any required premium to continue coverage beyond that point.",
       "D": "Coverage is comprehensive and includes injury and illness (including congenital defects), not just routine nursery care."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q010",
@@ -5122,7 +5281,8 @@ const QUESTION_BANK = [
       "A": "This describes the Elimination Period, which is triggered after a covered loss occurs.",
       "C": "This describes the Free-Look period, a consumer protection feature.",
       "D": "This describes the Time Limit on Certain Defenses (or Incontestability) provision, which is typically 2 years."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q011",
@@ -5154,7 +5314,8 @@ const QUESTION_BANK = [
       "A": "The MIB does not have access to complete hospital records; it relies on codes reported by member insurers based on previous applications.",
       "B": "The MIB does not issue credit scores. Financial data is typically obtained through a consumer reporting agency.",
       "D": "The MIB does not conduct physical exams. Exams are performed by paramedical professionals hired directly by the insurer."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B07-Q012",
@@ -5186,7 +5347,8 @@ const QUESTION_BANK = [
       "A": "Life Income with Period Certain guarantees payments for life, but also promises that if the beneficiary dies early, payments will continue to a secondary beneficiary for the remainder of the 'certain' period.",
       "B": "The Fixed Amount option exhausts the principal by paying a set dollar amount until the money runs out; it is not based on a life contingency.",
       "D": "The Interest-Only option holds the principal intact while paying out only the interest earned."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q013",
@@ -5218,7 +5380,8 @@ const QUESTION_BANK = [
       "A": "There is no automatic 6-month blackout after a worker's death; eligible dependents begin receiving benefits almost immediately.",
       "C": "Age 50 is relevant only if the surviving spouse is disabled, but it does not define the standard blackout window.",
       "D": "The cutoff for the parent's benefit is when the child turns 16, not 18 (though the child's own benefit continues to 18), and the spouse's benefits can resume at 60, not 65."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B07-Q014",
@@ -5250,7 +5413,8 @@ const QUESTION_BANK = [
       "A": "Rebating is offering a financial inducement or gift not specified in the contract to persuade someone to buy a policy.",
       "B": "Defamation is publishing false, maliciously critical information about an insurer's financial condition.",
       "D": "Twisting is making misrepresentations to induce a policyholder to lapse a current policy and buy a new one."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q015",
@@ -5283,7 +5447,8 @@ const QUESTION_BANK = [
       "B": "Two years is not the statutory minimum frequency in §401.052.",
       "C": "Three years is more frequent than the statutory minimum; the code sets a five-year outer limit.",
       "D": "Five years is the minimum examination frequency stated in §401.052, subject to exceptions."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q016",
@@ -5315,7 +5480,8 @@ const QUESTION_BANK = [
       "A": "The age of the parent (birth year) is completely irrelevant under the Birthday Rule.",
       "C": "Length of employment does not determine primary coverage for dependents.",
       "D": "Benefit richness (like deductibles) does not dictate which plan is primary; the rule is strictly chronological by month and day."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q017",
@@ -5347,7 +5513,8 @@ const QUESTION_BANK = [
       "A": "While some companies choose to pay level commissions (100%), the legal maximum limit for the first year is higher.",
       "B": "150% is incorrect; the statute specifically sets the cap at 200%.",
       "D": "300% exceeds the legal limit designed to curb aggressive sales tactics and 'churning' of senior policies."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q018",
@@ -5379,7 +5546,8 @@ const QUESTION_BANK = [
       "A": "EIAs do not invest directly in mutual funds; that is a feature of Variable Annuities.",
       "C": "EIAs do not actively trade or shift funds between bonds and stocks based on monthly performance.",
       "D": "Allowing the annuitant to pick individual stocks or subaccounts is a feature of Variable Annuities, not EIAs."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B07-Q019",
@@ -5411,7 +5579,8 @@ const QUESTION_BANK = [
       "A": "A flat deductible is a set dollar amount applied at the beginning of a claim, typical of comprehensive major medical plans.",
       "C": "An integrated deductible means the amount paid by the basic plan goes toward satisfying the major medical deductible.",
       "D": "Maximum out-of-pocket refers to the stop-loss limit, not the bridge deductible between basic and supplemental plans."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B07-Q020",
@@ -5443,7 +5612,8 @@ const QUESTION_BANK = [
       "A": "If the policy includes an automatic premium loan provision and has sufficient cash value, the policy does not immediately lapse at the end of the grace period.",
       "C": "Reduced paid-up is a nonforfeiture option selected by the policyowner; it is not what the automatic premium loan provision does.",
       "D": "The cash value is not automatically paid out under an automatic premium loan provision; instead, it supports a policy loan to keep the policy active."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B07-Q021",
@@ -5475,7 +5645,8 @@ const QUESTION_BANK = [
       "A": "5 policies would be required under an Entity Purchase plan, where the business itself buys one policy on each partner.",
       "B": "10 is an arbitrary number and does not fit the Cross-Purchase formula.",
       "D": "25 would be N x N, which includes each partner buying a policy on themselves, which defeats the purpose of the agreement."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B07-Q022",
@@ -5507,7 +5678,8 @@ const QUESTION_BANK = [
       "A": "3 months is insufficient; short-term medical policies or Medicare recovery benefits might cover short durations, but true LTC must cover at least 12 months.",
       "B": "6 months is incorrect; the statutory minimum is 12 months.",
       "D": "While some policies provide 36 months of coverage, the minimum required threshold by Texas law to be called an LTC policy is 12 months."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B07-Q023",
@@ -5539,7 +5711,8 @@ const QUESTION_BANK = [
       "A": "Only the death benefit principal is generally income tax-free; interest earned after death is taxable.",
       "C": "The interest is not taxed as capital gain; it is generally taxed as ordinary income.",
       "D": "The principal death benefit does not become taxable merely because the beneficiary chooses an interest option; only the interest portion is taxed."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B07-Q024",
@@ -5571,7 +5744,8 @@ const QUESTION_BANK = [
       "A": "The insurer does not provide the copy of the report; the consumer must request the copy directly from the reporting agency.",
       "C": "Insurers must retain records to demonstrate compliance and justify underwriting decisions; they do not destroy them.",
       "D": "The FCRA governs privacy and disclosure, not underwriting decisions. Insurers are not required to offer alternative policies."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B07-Q025",
@@ -5603,7 +5777,8 @@ const QUESTION_BANK = [
       "A": "1 year is incorrect; this applies to certain other administrative penalties, not revocation wait periods.",
       "B": "2 years is the standard renewal term for a valid license, not the penalty period.",
       "C": "3 years is incorrect; the specific statutory penalty waiting period is 5 years."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q001",
@@ -5635,7 +5810,8 @@ const QUESTION_BANK = [
       "A": "This describes a decreasing term policy with a level premium, often used for mortgage protection.",
       "B": "The death benefit does not automatically increase in a standard ART policy.",
       "D": "Premiums increase as the insured ages, reflecting the increased statistical risk of death; they do not decrease."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B08-Q002",
@@ -5667,7 +5843,8 @@ const QUESTION_BANK = [
       "A": "The policy insures the child, not the parent. The parent's death does not trigger the death benefit.",
       "C": "This rider waives premiums; it does not increase the face amount.",
       "D": "While ownership transfers might happen legally, the specific financial function of the Payor Benefit rider is premium waiver, not ownership administration."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q003",
@@ -5699,7 +5876,8 @@ const QUESTION_BANK = [
       "A": "15 days is the timeline for an insurer to acknowledge receipt of a claim, commence investigation, and request forms.",
       "C": "45 days is the deadline for paying a clean claim submitted in a non-electronic (paper) format.",
       "D": "60 days is the timeframe for issuing an Evidence of Coverage after enrollment, not the prompt pay deadline for claims."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q004",
@@ -5731,7 +5909,8 @@ const QUESTION_BANK = [
       "A": "The exemption is strictly capped at $50,000 of coverage. Amounts above that trigger taxable income.",
       "B": "Only the value of the coverage exceeding $50,000 generates taxable income, not the entire premium.",
       "D": "Death benefits from employer-sponsored group term life are generally received income tax-free by the beneficiary, just like individual life insurance."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B08-Q005",
@@ -5763,7 +5942,8 @@ const QUESTION_BANK = [
       "A": "Correction fluid (white-out) should never be used on an application, as it implies tampering or concealment of information.",
       "C": "Leaving an known error on the application form itself creates a legal liability, even with an attached note.",
       "D": "Agents may not independently alter an applicant's answers. The applicant must authorize and initial any changes."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B08-Q006",
@@ -5795,7 +5975,8 @@ const QUESTION_BANK = [
       "A": "There is no \"free\" grace period for an expired license; a penalty applies immediately upon expiration.",
       "C": "Retaking the state licensing exam is required only if the license has been expired for more than one year.",
       "D": "Waiting a year is not required. The agent can renew immediately with a penalty if within 90 days, or reapply with a new application and fee (without a test) between 91 and 365 days."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q007",
@@ -5827,7 +6008,8 @@ const QUESTION_BANK = [
       "A": "A verbal description is insufficient; the claimant must submit written proof.",
       "B": "The insured is not protected if they simply wait; they must still submit written proof within the original proof of loss timeframe (typically 90 days).",
       "D": "The insurer's failure to send forms does not guarantee automatic payment; the insured still has a legal burden to provide written evidence of the loss."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q008",
@@ -5859,7 +6041,8 @@ const QUESTION_BANK = [
       "A": "The policyowner retains the right and obligation to pay premiums.",
       "C": "Dividend options are generally selected by the owner unless they affect the guaranteed cash value or death benefit in a way that harms the irrevocable beneficiary's interest.",
       "D": "The policyowner can still let the policy lapse by stopping premium payments; the beneficiary cannot force the owner to pay."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q009",
@@ -5891,7 +6074,8 @@ const QUESTION_BANK = [
       "A": "The debtor is the insured, but not the owner or beneficiary. The coverage exists to protect the creditor.",
       "B": "The creditor must be the beneficiary to ensure the loan is paid off. Only if the death benefit briefly exceeds the declining debt balance would any excess be paid to the estate.",
       "D": "The spouse is not the beneficiary; the creditor is. Standard personal life insurance would be needed to protect the spouse directly."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q010",
@@ -5923,7 +6107,8 @@ const QUESTION_BANK = [
       "A": "The gift tax exclusion limit applies to living gifts (like paying premiums for someone else), not the inclusion of death benefits in an estate.",
       "C": "MEC status alters the taxation of living benefits (loans/withdrawals), but does not cause death benefits to be subject to estate taxes.",
       "D": "Lump-sum death benefits are generally income tax-free. The settlement option does not determine estate tax inclusion; ownership does."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B08-Q011",
@@ -5955,7 +6140,8 @@ const QUESTION_BANK = [
       "B": "8 is mathematically incorrect for both plan types.",
       "C": "12 policies would be required under a Cross-Purchase plan, where every partner buys a policy on every other partner using the formula N x (N - 1).",
       "D": "16 is mathematically incorrect and would represent N x N, which includes partners buying policies on themselves."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B08-Q012",
@@ -5987,7 +6173,8 @@ const QUESTION_BANK = [
       "A": "The president of the insurance company is an executive officer and typically has the legal authority to approve changes.",
       "B": "Executive officers are specifically authorized to sign off on contractual amendments.",
       "D": "While a beneficiary cannot change the contract, the provision exists specifically to clarify the limits of the agent's authority in binding the insurer."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q013",
@@ -6019,7 +6206,8 @@ const QUESTION_BANK = [
       "A": "The time the insured must wait before benefits begin is known as the elimination period or waiting period.",
       "C": "This relates to renewability provisions (like guaranteed renewable or noncancelable), not the benefit period.",
       "D": "The time to file proof of loss is a standard claims provision (typically 90 days), not the benefit period."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B08-Q014",
@@ -6051,7 +6239,8 @@ const QUESTION_BANK = [
       "A": "Ten days is common for many ordinary policies, but Texas long-term care guidance gives buyers at least 30 days.",
       "B": "Fifteen days is not the Texas long-term care free-look standard.",
       "C": "Twenty days is not the Texas long-term care free-look standard."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q015",
@@ -6083,7 +6272,8 @@ const QUESTION_BANK = [
       "A": "This describes the Extended Term nonforfeiture option.",
       "C": "This describes the Automatic Premium Loan (APL) provision, not a nonforfeiture option.",
       "D": "This describes the Cash Surrender nonforfeiture option."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q016",
@@ -6115,7 +6305,8 @@ const QUESTION_BANK = [
       "A": "Executive capacity implies management over corporate strategy, not the specific legal duty of handling client funds.",
       "C": "Administrative capacity refers to clerical duties, not the high legal standard of trust required for funds.",
       "D": "Indemnification refers to making an insured financially whole after a loss, not an agent's duty regarding premiums."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q017",
@@ -6147,7 +6338,8 @@ const QUESTION_BANK = [
       "A": "Thirty days is not the standard waiting period before suit under the legal actions provision.",
       "B": "Forty-five days is associated with certain clean-claim timelines, not the legal-actions waiting period.",
       "D": "Ninety days is commonly associated with proof-of-loss submission, not the waiting period before filing suit."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q018",
@@ -6179,7 +6371,8 @@ const QUESTION_BANK = [
       "A": "The COBRA conversion-option rule is about making the option available; it is not framed as a new evidence-of-insurability requirement in the COBRA statute.",
       "C": "Standard COBRA does not automatically extend another 18 months after ordinary exhaustion absent a separate statutory basis such as disability or a second qualifying event.",
       "D": "Medigap rights are separate Medicare-related rights and are not the standard COBRA exhaustion remedy."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B08-Q019",
@@ -6211,7 +6404,8 @@ const QUESTION_BANK = [
       "A": "Length of time a policy has been in force does not determine primary status between an employee plan and a dependent plan.",
       "B": "Head of household is an obsolete concept and does not dictate insurance coordination.",
       "D": "Insurance companies coordinate to ensure up to 100% of the claim is paid, but they do not automatically split bills 50/50; the primary pays its limits first."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q020",
@@ -6243,7 +6437,8 @@ const QUESTION_BANK = [
       "A": "A Scheduled plan pays benefits based on a specific, fixed dollar amount listed in a schedule for each procedure, regardless of the actual UCR cost.",
       "C": "A DHMO provides prepaid care through a network of dentists, typically using copayments rather than UCR fees, deductibles, and coinsurance.",
       "D": "Basic Medical Expense plans are first-dollar health coverages with low limits, not a classification for dental plans."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B08-Q021",
@@ -6275,7 +6470,8 @@ const QUESTION_BANK = [
       "A": "A warranty is a statement that is guaranteed to be absolutely true. Breach of a warranty can automatically void a contract.",
       "C": "Concealment is the intentional withholding of material facts that would affect an underwriting decision.",
       "D": "A waiver is the voluntary relinquishment of a known legal right."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B08-Q022",
@@ -6307,7 +6503,8 @@ const QUESTION_BANK = [
       "A": "Having an HDHP is required, but it is not the only rule. The presence of Medicare coverage disqualifies them.",
       "B": "There is no partial contribution rule based on age 65+; Medicare enrollment halts contributions entirely.",
       "D": "Individuals over 65 can absolutely continue to work and maintain employer benefits, but they cannot contribute to an HSA if they are enrolled in Medicare."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B08-Q023",
@@ -6339,7 +6536,8 @@ const QUESTION_BANK = [
       "A": "The policy is not voided; the benefit is simply adjusted to make the contract fair.",
       "C": "The incontestability (Time Limit on Certain Defenses) clause explicitly does not protect misstatements of age. The insurer can adjust for age at any time.",
       "D": "The insurer adjusts the benefit amount outward; they do not issue retroactive bills for back premiums."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B08-Q024",
@@ -6371,7 +6569,8 @@ const QUESTION_BANK = [
       "A": "The print vendor is not the required responsible-party identification.",
       "B": "The rule concerns identifying the responsible advertiser, not the regulator.",
       "D": "A policy form number may appear in some contexts, but it is not the core identification requirement of the advertising rule."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B08-Q025",
@@ -6403,7 +6602,8 @@ const QUESTION_BANK = [
       "A": "Sickness claims are excluded during the first 10 days after reinstatement.",
       "B": "Accidental injuries are covered immediately upon reinstatement, not delayed by a probationary period.",
       "C": "This is the exact opposite of the rule; injuries are covered immediately, while sickness requires a 10-day wait."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q001",
@@ -6435,7 +6635,8 @@ const QUESTION_BANK = [
       "A": "Absolute assignment is the complete and permanent transfer of all ownership rights to another party.",
       "C": "Irrevocable usually applies to beneficiary designations, not the standard terminology for temporary loan assignments.",
       "D": "A viatical assignment involves selling a policy to a third party when the insured is terminally ill, which is a form of absolute assignment."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q002",
@@ -6467,7 +6668,8 @@ const QUESTION_BANK = [
       "A": "The Common Disaster clause addresses the order of death when the insured and beneficiary die in the same event.",
       "C": "A Spendthrift clause protects proceeds from a beneficiary's creditors; it does not authorize payment to someone who paid expenses for the insured.",
       "D": "The Incontestability clause limits the insurer's ability to void a policy after it has been in force for the required period."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q003",
@@ -6499,7 +6701,8 @@ const QUESTION_BANK = [
       "A": "Joint Life pays the death benefit upon the death of the FIRST insured, not the last.",
       "C": "A Family Income policy combines whole life with decreasing term to provide monthly income if the breadwinner dies.",
       "D": "Variable Universal Life is a permanent policy with investment subaccounts, but it typically insures only one life unless a specific rider is attached."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B09-Q004",
@@ -6531,7 +6734,8 @@ const QUESTION_BANK = [
       "B": "15 days is the timeline for the insurer to initially acknowledge receipt of the claim and request necessary forms, not the timeline to issue the check after approval.",
       "C": "30 days is the timeframe an insurer has to accept or reject a claim after receiving all requested items (or the timeline for HMO electronic clean claims).",
       "D": "60 days is generally irrelevant to the prompt payment of a clean, approved claim in Texas."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q005",
@@ -6563,7 +6767,8 @@ const QUESTION_BANK = [
       "A": "1 year is too short and does not cover even one full license renewal cycle.",
       "B": "2 years is the length of the license renewal period itself, but the CE records must be kept for two full cycles (4 years) for auditing purposes.",
       "D": "The law does not require indefinite record-keeping; 4 years is the statutory mandate."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q006",
@@ -6595,7 +6800,8 @@ const QUESTION_BANK = [
       "A": "Loss of sight in one eye is a covered dismemberment event that triggers the capital sum benefit.",
       "C": "The full principal sum ($100,000) is reserved for death or double dismemberment (loss of two limbs/eyes).",
       "D": "AD&D benefits are typically paid as a lump sum, not installments, and the amount for a single eye would be $50,000."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B09-Q007",
@@ -6627,7 +6833,8 @@ const QUESTION_BANK = [
       "A": "HSA funds roll over from year to year indefinitely and belong to the employee permanently.",
       "C": "HRAs are funded exclusively by the employer, not the employee, and the employer decides if funds roll over.",
       "D": "MSAs were the predecessors to HSAs (designed for small businesses/self-employed) and did not have a strict use-it-or-lose-it rule."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B09-Q008",
@@ -6659,7 +6866,8 @@ const QUESTION_BANK = [
       "A": "Domestic describes an insurer organized under Texas law; it does not answer whether the company is licensed.",
       "B": "Foreign describes an insurer organized under the laws of another U.S. state; a foreign insurer can still be authorized if it has a Texas certificate.",
       "C": "Alien describes an insurer organized under the laws of another country; an alien insurer can also be either authorized or unauthorized."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q009",
@@ -6691,7 +6899,8 @@ const QUESTION_BANK = [
       "A": "10 days is the standard free-look period, not the fraud reporting timeline.",
       "B": "15 days is the prompt pay requirement for acknowledging a claim.",
       "D": "60 days exceeds the statutory mandate for reporting suspected insurance fraud."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q010",
@@ -6723,7 +6932,8 @@ const QUESTION_BANK = [
       "B": "A lump-sum payment ends the settlement arrangement; there would be no principal left with the insurer to generate continuing interest-only payments.",
       "C": "This describes a fixed-amount settlement option, not interest-only.",
       "D": "This describes a life-income settlement option, not interest-only."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q011",
@@ -6755,7 +6965,8 @@ const QUESTION_BANK = [
       "B": "Reduced out-of-network benefits are characteristic of PPO and POS plans, not a typical EPO structure.",
       "C": "Referrals are more closely associated with HMO-style gatekeeper models and do not create out-of-network coverage in a standard EPO.",
       "D": "An EPO does not generally pay routine out-of-network care at the in-network rate."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B09-Q012",
@@ -6787,7 +6998,8 @@ const QUESTION_BANK = [
       "A": "The Commissioner is appointed, not elected by the public.",
       "C": "The appointment is made by the Governor, not the legislature, and the term is 2 years, not 4.",
       "D": "The NAIC is an advisory and standard-setting body; it does not hire state regulators."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q013",
@@ -6819,7 +7031,8 @@ const QUESTION_BANK = [
       "A": "That result would be more consistent with having no contingent treatment for the deceased beneficiary's line, not a per stirpes designation.",
       "B": "A per stirpes designation passes the share down the deceased beneficiary's line rather than paying it to the deceased beneficiary's estate by default.",
       "D": "Equal sharing among all descendants regardless of branch would be a per capita concept, not per stirpes."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q014",
@@ -6851,7 +7064,8 @@ const QUESTION_BANK = [
       "A": "A viatical settlement is the sale of an existing policy by a terminally ill insured to a third party.",
       "C": "Collateral assignment is using a policy as collateral for a loan.",
       "D": "Fiduciary interest refers to the financial trust responsibility of an agent handling money, not the ownership structure of a policy."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B09-Q015",
@@ -6883,7 +7097,8 @@ const QUESTION_BANK = [
       "A": "Medicare pays 100% of the cost for the first 20 days; there is no copayment initially.",
       "C": "60 days refers to the fully covered duration for inpatient hospital stays under Part A, not SNF care.",
       "D": "100 days is the maximum duration of SNF coverage per benefit period, but only the first 20 are paid in full without a copayment."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B09-Q016",
@@ -6915,7 +7130,8 @@ const QUESTION_BANK = [
       "A": "FIFO taxation (principal out first) applies to standard life insurance withdrawals, but annuities use LIFO.",
       "C": "The exclusion ratio only applies to fixed annuitization payments (monthly income stream), not to random lump-sum withdrawals during the accumulation phase.",
       "D": "Annuity gains are always taxed as ordinary income, never as capital gains."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B09-Q017",
@@ -6947,7 +7163,8 @@ const QUESTION_BANK = [
       "B": "A letter of good standing is a generic business term, not the specific regulatory license required for insurers.",
       "C": "A binder is a temporary contract of insurance issued by an agent to an insured, not a license to operate.",
       "D": "An appointment is the document authorizing an individual agent to sell for a specific company."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q018",
@@ -6979,7 +7196,8 @@ const QUESTION_BANK = [
       "A": "Rebating is offering something of value not in the contract to induce a sale.",
       "B": "Defamation involves publishing false statements about an insurer's financial condition.",
       "D": "Twisting is making misrepresentations to induce a policyholder to lapse a policy and buy a new one."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q019",
@@ -7012,7 +7230,8 @@ const QUESTION_BANK = [
       "B": "15 days is the timeline for prompt claim acknowledgement, not appointment termination notices.",
       "D": "90 days is too long and violates the 30-day statutory limit.",
       "C": "Thirty days is the reporting deadline for certain appointment and additional-appointment notices, but terminations for cause must be filed immediately."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q020",
@@ -7044,7 +7263,8 @@ const QUESTION_BANK = [
       "A": "The interest portion is subject to taxation.",
       "B": "The base dividend itself is not taxable.",
       "D": "Dividends are tax-free, and interest is ordinary income (not capital gains)."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q021",
@@ -7076,7 +7296,8 @@ const QUESTION_BANK = [
       "B": "This is backwards; sickness is excluded, accidents are covered.",
       "C": "Accidents are covered immediately because they cannot be anticipated (unlike an illness someone might feel coming on).",
       "D": "The right to return the policy for a refund is the Free Look period, not the probationary period."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B09-Q022",
@@ -7108,7 +7329,8 @@ const QUESTION_BANK = [
       "A": "If premiums were deductible, the death benefit would be taxable. The IRS does not allow both a deduction and tax-free receipt.",
       "C": "The business cannot deduct the premiums.",
       "D": "The developer does not own the policy and receives no direct benefit, so the premiums are not taxable income to the developer (unlike an Executive Bonus plan)."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B09-Q023",
@@ -7140,7 +7362,8 @@ const QUESTION_BANK = [
       "B": "There is no statutory requirement to have 100,000 pre-enrolled subscribers before authorization.",
       "C": "HMOs fundamentally rely on primary care gatekeepers; eliminating them is a feature of PPOs, not a requirement for an HMO license.",
       "D": "HMOs typically use capitation (a set fee per member per month) rather than fee-for-service to compensate primary care physicians."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q024",
@@ -7172,7 +7395,8 @@ const QUESTION_BANK = [
       "A": "Gross misconduct voids the right to standard COBRA continuation.",
       "C": "COBRA is not reduced to 9 months; it is denied completely. (9 months is the standard Texas State Continuation limit).",
       "D": "The premium maximum is 102% (or 150% during a disability extension), but in a gross misconduct case, the coverage isn't offered at all."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B09-Q025",
@@ -7204,7 +7428,8 @@ const QUESTION_BANK = [
       "A": "A Life Settlement is similar but involves an insured who is generally healthy (usually a senior citizen) who simply no longer wants or needs the policy.",
       "C": "An Accelerated Death Benefit is a rider that allows the insured to access a portion of their own death benefit directly from the insurance company, without selling the policy to a third party.",
       "D": "A 1035 Exchange is a tax-free transfer of funds from one insurance/annuity contract to another, not a sale."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q001",
@@ -7236,7 +7461,8 @@ const QUESTION_BANK = [
       "A": "Modified Whole Life features premiums that start low and increase after a few years, but the death benefit remains level.",
       "C": "Guaranteed Insurability is a rider that allows the purchase of additional coverage at future dates at standard rates, but it requires the payment of additional premiums for each increase.",
       "D": "Return of Premium is a term life feature that refunds premiums if the insured outlives the term; it does not multiply the death benefit."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q002",
@@ -7268,7 +7494,8 @@ const QUESTION_BANK = [
       "A": "Office setup changes are not among the statutory items that must be reported to the department.",
       "C": "Underwriting-guideline changes belong to the insurer's product administration, not the individual agent's monthly notice duties.",
       "D": "Premium-rate changes are filed by insurers with regulators; they are not monthly-report items for an individual agent."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q003",
@@ -7300,7 +7527,8 @@ const QUESTION_BANK = [
       "A": "While the rollover of the main cash value is tax-free, the extinguished loan is considered an economic benefit received by the owner, violating the pure tax-free status.",
       "C": "It does trigger immediate tax consequences because the debt was wiped out.",
       "D": "Gains in life insurance are taxed as ordinary income, never as capital gains."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B10-Q004",
@@ -7332,7 +7560,8 @@ const QUESTION_BANK = [
       "A": "Fraternal benefit insurance is sold by fraternal societies to their dues-paying members, not by institutions covering transient groups.",
       "B": "Standard employer group health insurance issues individual certificates of coverage to each enrolled employee.",
       "D": "An HMO provides comprehensive health care to enrolled subscribers in a specific geographic area, not specialized, certificate-free injury coverage for transient groups."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q005",
@@ -7364,7 +7593,8 @@ const QUESTION_BANK = [
       "A": "$10 is below the statutory limit but is not the maximum allowable amount.",
       "C": "$50 exceeds the maximum amount allowed for this promotional-item exception.",
       "D": "$100 is far above the permitted limit and would risk becoming an unlawful inducement."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q006",
@@ -7396,7 +7626,8 @@ const QUESTION_BANK = [
       "A": "Texas law allows the HMO to permit up to four changes, not just two.",
       "C": "Six changes would exceed the statutory maximum the HMO may impose.",
       "D": "The statute does not require unlimited monthly changes; it specifically permits a four-change annual limit."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q007",
@@ -7428,7 +7659,8 @@ const QUESTION_BANK = [
       "A": "A viatical settlement involves the sale of an existing policy by a terminally ill insured.",
       "C": "A life settlement is the sale of an existing policy that was originally procured for a legitimate reason.",
       "D": "That is not the recognized insurance-law term for this scheme."
-    }
+    },
+    "unit_id": "N3"
   },
   {
     "question_id": "B10-Q008",
@@ -7460,7 +7692,8 @@ const QUESTION_BANK = [
       "A": "Medicare would be primary only in smaller-employer or retired-employee situations.",
       "C": "Primary/secondary coordination is used, not an automatic 50/50 split.",
       "D": "Federal law does not cancel employer coverage at age 65."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q009",
@@ -7492,7 +7725,8 @@ const QUESTION_BANK = [
       "A": "A revocable beneficiary does not control the policy and cannot veto a change by the insured.",
       "C": "The insurer administers the contract but does not choose beneficiaries for the policyowner.",
       "D": "Paying a premium does not itself create policy-control rights unless the person is the insured or owner with those rights reserved."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q010",
@@ -7524,7 +7758,8 @@ const QUESTION_BANK = [
       "A": "30 days is far shorter than the statutory maximum temporary-license term.",
       "B": "90 days is not the general term in §4001.155 for this temporary license.",
       "D": "A temporary agent's license does not remain valid for a full year."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q011",
@@ -7556,7 +7791,8 @@ const QUESTION_BANK = [
       "B": "The rider is designed to increase benefits with inflation, not to reduce premiums if inflation eases.",
       "C": "That describes a different purchase-option style rider, not a COL rider.",
       "D": "That is not the function of a COL rider."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q012",
@@ -7588,7 +7824,8 @@ const QUESTION_BANK = [
       "A": "Major medical pays covered expenses rather than a fixed diagnostic lump sum.",
       "C": "Hospital indemnity generally pays a fixed daily or per-confinement amount rather than a disease-triggered lump sum like this.",
       "D": "Short-term medical is temporary broad health coverage, not a diagnosis-triggered lump-sum product."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q013",
@@ -7620,7 +7857,8 @@ const QUESTION_BANK = [
       "A": "They are not deductible from the first dollar.",
       "B": "Qualified LTC premiums can qualify as medical expenses under federal law.",
       "D": "The deduction turns on paying qualified premiums, not on receiving benefits that year."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B10-Q014",
@@ -7652,7 +7890,8 @@ const QUESTION_BANK = [
       "A": "The broker does not represent the provider.",
       "B": "The broker owes no fiduciary duty to the issuing insurer in this transaction.",
       "D": "The broker's duty runs to the current owner who is selling the policy, not to the beneficiary."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q015",
@@ -7684,7 +7923,8 @@ const QUESTION_BANK = [
       "A": "Aging out is a qualifying event under COBRA.",
       "B": "18 months is the standard period for termination or reduction in hours, not loss of dependent status.",
       "C": "29 months applies to certain disability extensions."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q016",
@@ -7716,7 +7956,8 @@ const QUESTION_BANK = [
       "A": "The policy must be retested, but it does not become a MEC automatically.",
       "C": "Passing the original test does not prevent a later material change from reopening MEC testing.",
       "D": "Capital gains treatment is not the governing rule here."
-    }
+    },
+    "unit_id": "N4"
   },
   {
     "question_id": "B10-Q017",
@@ -7748,7 +7989,8 @@ const QUESTION_BANK = [
       "B": "The commissioner is a regulator, not a criminal arresting authority.",
       "C": "There is no license to revoke if the person is unlicensed.",
       "D": "The commissioner cannot impose criminal penalties without due process."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q018",
@@ -7780,7 +8022,8 @@ const QUESTION_BANK = [
       "A": "That result would be more like a surviving-beneficiary absorption outcome, not per stirpes.",
       "C": "Per stirpes follows the family branch rather than equal headcount among all survivors.",
       "D": "The per stirpes designation directs the deceased beneficiary's share to descendants, not back to the insured's estate."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q019",
@@ -7812,7 +8055,8 @@ const QUESTION_BANK = [
       "A": "Part B is not 100% coverage after the deductible.",
       "B": "10% is lower than the standard patient coinsurance.",
       "D": "30% is higher than the standard Part B coinsurance."
-    }
+    },
+    "unit_id": "N1"
   },
   {
     "question_id": "B10-Q020",
@@ -7844,7 +8088,8 @@ const QUESTION_BANK = [
       "A": "31 days is not the waiting period in the Legal Actions provision.",
       "B": "45 days is not the statutory waiting period for suit under the required provision.",
       "D": "The required waiting period is 61 days, not 91 days."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q021",
@@ -7876,7 +8121,8 @@ const QUESTION_BANK = [
       "A": "Waiver of Premium is the traditional rider used for fixed-premium policies.",
       "C": "A disability income rider pays cash benefits rather than merely protecting policy deductions.",
       "D": "A Payor Benefit rider is associated with juvenile-policy premium protection."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q022",
@@ -7908,7 +8154,8 @@ const QUESTION_BANK = [
       "A": "Adult dental and vision are not among the federal EHB categories.",
       "C": "Long-term custodial care is not an EHB.",
       "D": "Cosmetic and elective procedures are not mandated EHBs."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q023",
@@ -7940,7 +8187,8 @@ const QUESTION_BANK = [
       "A": "Conditioning credit on buying insurance from a specific source is specifically prohibited, not merely aggressive marketing.",
       "C": "Illustration rules concern policy disclosures, not coercive loan-conditioning practices.",
       "D": "The problem here is coercive conditioning of credit, not the offering of an unauthorized inducement to buy."
-    }
+    },
+    "unit_id": "TX1"
   },
   {
     "question_id": "B10-Q024",
@@ -7972,7 +8220,8 @@ const QUESTION_BANK = [
       "A": "That describes a per stirpes result, where descendants inherit the deceased beneficiary's branch share.",
       "C": "Per capita does not automatically include grandchildren when the named class was the insured's children and two named children survived.",
       "D": "The share of the deceased beneficiary does not go to the estate when surviving named beneficiaries remain in the class."
-    }
+    },
+    "unit_id": "N2"
   },
   {
     "question_id": "B10-Q025",
@@ -8004,6 +8253,7 @@ const QUESTION_BANK = [
       "A": "10 days is too short and does not reflect the ACA's special grace-period rule for APTC recipients.",
       "B": "31 days is the standard commercial grace-period concept, not the ACA's APTC grace-period rule.",
       "D": "180 days exceeds the federal grace period."
-    }
+    },
+    "unit_id": "TX1"
   }
 ];

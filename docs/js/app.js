@@ -15,6 +15,11 @@
     en: {
       subtitle: "Life, Accident, Health & HMO",
       openDashboard: "Open Phase III/IV Delivery Dashboard",
+      user: "User:",
+      addUser: "Add User",
+      deleteUser: "Delete User",
+      language: "Language:",
+      theme: "Theme:",
       howMany: "How many questions?",
       start: "Start Practice Session",
       noMatch: "No questions match your filters.",
@@ -25,6 +30,11 @@
     es: {
       subtitle: "Vida, Accidentes, Salud y HMO",
       openDashboard: "Abrir panel de entrega Fase III/IV",
+      user: "Usuario:",
+      addUser: "Agregar usuario",
+      deleteUser: "Eliminar usuario",
+      language: "Idioma:",
+      theme: "Tema:",
       howMany: "¿Cuántas preguntas?",
       start: "Comenzar sesión de práctica",
       noMatch: "No hay preguntas que coincidan con tus filtros.",
@@ -61,12 +71,11 @@
   }
 
   function initPreferencesPanel() {
-    const profileSelect = document.getElementById("profile-select");
-    const profiles = ExamStorage.getProfiles();
-    profileSelect.innerHTML = profiles.map(p => `<option value="${p}">${p}</option>`).join("");
-    profileSelect.value = ExamStorage.getActiveProfile();
-    profileSelect.addEventListener("change", () => {
-      ExamStorage.setActiveProfile(profileSelect.value);
+    refreshProfileOptions();
+
+    document.getElementById("profile-select").addEventListener("change", (e) => {
+      ExamStorage.setActiveProfile(e.target.value);
+      refreshProfileOptions();
       applyPreferences();
       renderDashboardStats();
       updateCountHint();
@@ -77,7 +86,7 @@
       const result = ExamStorage.createProfile(name);
       if (!result.ok) return alert(result.error);
       document.getElementById("profile-input").value = "";
-      initPreferencesPanel();
+      refreshProfileOptions();
       applyPreferences();
       renderDashboardStats();
       updateCountHint();
@@ -87,15 +96,11 @@
       const active = ExamStorage.getActiveProfile();
       const result = ExamStorage.deleteProfile(active);
       if (!result.ok) return alert(result.error);
-      initPreferencesPanel();
+      refreshProfileOptions();
       applyPreferences();
       renderDashboardStats();
       updateCountHint();
     });
-
-    const prefs = ExamStorage.getPreferences();
-    document.getElementById("language-select").value = prefs.language || "en";
-    document.getElementById("theme-select").value = prefs.theme || "light";
 
     document.getElementById("language-select").addEventListener("change", (e) => {
       ExamStorage.setPreferences({ language: e.target.value });
@@ -109,13 +114,28 @@
     });
   }
 
+  function refreshProfileOptions() {
+    const profileSelect = document.getElementById("profile-select");
+    const profiles = ExamStorage.getProfiles();
+    profileSelect.innerHTML = profiles.map(p => `<option value="${p}">${p}</option>`).join("");
+    profileSelect.value = ExamStorage.getActiveProfile();
+    const prefs = ExamStorage.getPreferences();
+    document.getElementById("language-select").value = prefs.language || "en";
+    document.getElementById("theme-select").value = prefs.theme || "light";
+  }
+
   function applyPreferences() {
     const prefs = ExamStorage.getPreferences();
     currentLang = prefs.language || "en";
     const t = I18N[currentLang];
     document.documentElement.setAttribute("data-theme", prefs.theme || "light");
     document.querySelector(".subtitle").textContent = t.subtitle;
-    document.querySelector(".utility-links .btn-secondary").textContent = t.openDashboard;
+    document.getElementById("label-open-dashboard").textContent = t.openDashboard;
+    document.getElementById("label-user").textContent = t.user;
+    document.getElementById("label-add-user").textContent = t.addUser;
+    document.getElementById("label-delete-user").textContent = t.deleteUser;
+    document.getElementById("label-language").textContent = t.language;
+    document.getElementById("label-theme").textContent = t.theme;
     document.querySelector("label[for='question-count']").textContent = t.howMany;
     document.getElementById("btn-start").textContent = t.start;
     document.getElementById("filter-warning").textContent = t.noMatch;

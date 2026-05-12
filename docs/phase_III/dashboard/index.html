@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase III/IV Execution Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Texas LA&H Prep — Delivery Dashboard</h1>
+      <p>Operational tracking for Phase III production and Phase IV rollout.</p>
+    </div>
+    <div class="topbar-actions">
+      <button id="exportBtn">Export Status JSON</button>
+      <label class="import-label">
+        Import JSON
+        <input id="importInput" type="file" accept="application/json" />
+      </label>
+      <button id="resetBtn" class="danger">Reset</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Overall Progress</h2>
+      <div class="progress-row">
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        <strong id="progressText">0%</strong>
+      </div>
+      <p id="metaText" class="muted"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Workstreams</h2>
+      <div id="workstreams" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Operational Gates (G1–G5)</h2>
+      <div id="gates" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Immediate Next Tasks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Task</th>
+            <th>Owner</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody id="tasksTable"></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Deployment Plan Summary</h2>
+      <ol>
+        <li>Publish this folder on GitHub Pages.</li>
+        <li>Share the hosted URL with curriculum, assessment, QBank, and QA owners.</li>
+        <li>Update status weekly and export snapshots for reporting.</li>
+      </ol>
+      <p class="muted">Detailed plan: <code>docs/phase_III/deployment_plan.md</code></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

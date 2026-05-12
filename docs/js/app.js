@@ -9,6 +9,40 @@
   let session = null;
   let currentQuestion = null;
   let deferredMode = false;
+  let currentLang = "en";
+
+  const I18N = {
+    en: {
+      subtitle: "Life, Accident, Health & HMO",
+      openDashboard: "Open Phase III/IV Delivery Dashboard",
+      user: "User:",
+      addUser: "Add User",
+      deleteUser: "Delete User",
+      language: "Language:",
+      theme: "Theme:",
+      howMany: "How many questions?",
+      start: "Start Practice Session",
+      noMatch: "No questions match your filters.",
+      clearHistory: "Clear history",
+      correctBanner: (a) => `Correct! The answer is ${a}.`,
+      wrongBanner: (s, a) => `Incorrect. You chose ${s}; the correct answer is ${a}.`,
+    },
+    es: {
+      subtitle: "Vida, Accidentes, Salud y HMO",
+      openDashboard: "Abrir panel de entrega Fase III/IV",
+      user: "Usuario:",
+      addUser: "Agregar usuario",
+      deleteUser: "Eliminar usuario",
+      language: "Idioma:",
+      theme: "Tema:",
+      howMany: "¿Cuántas preguntas?",
+      start: "Comenzar sesión de práctica",
+      noMatch: "No hay preguntas que coincidan con tus filtros.",
+      clearHistory: "Borrar historial",
+      correctBanner: (a) => `¡Correcto! La respuesta es ${a}.`,
+      wrongBanner: (s, a) => `Incorrecto. Elegiste ${s}; la respuesta correcta es ${a}.`,
+    },
+  };
 
   // --- DOM refs ---
   const views = {
@@ -29,9 +63,82 @@
   // =========================================================
 
   function initWelcome() {
+    initPreferencesPanel();
+    applyPreferences();
     renderDashboardStats();
     populateDomainCheckboxes();
     updateCountHint();
+  }
+
+  function initPreferencesPanel() {
+    refreshProfileOptions();
+
+    document.getElementById("profile-select").addEventListener("change", (e) => {
+      ExamStorage.setActiveProfile(e.target.value);
+      refreshProfileOptions();
+      applyPreferences();
+      renderDashboardStats();
+      updateCountHint();
+    });
+
+    document.getElementById("btn-add-profile").addEventListener("click", () => {
+      const name = document.getElementById("profile-input").value;
+      const result = ExamStorage.createProfile(name);
+      if (!result.ok) return alert(result.error);
+      document.getElementById("profile-input").value = "";
+      refreshProfileOptions();
+      applyPreferences();
+      renderDashboardStats();
+      updateCountHint();
+    });
+
+    document.getElementById("btn-delete-profile").addEventListener("click", () => {
+      const active = ExamStorage.getActiveProfile();
+      const result = ExamStorage.deleteProfile(active);
+      if (!result.ok) return alert(result.error);
+      refreshProfileOptions();
+      applyPreferences();
+      renderDashboardStats();
+      updateCountHint();
+    });
+
+    document.getElementById("language-select").addEventListener("change", (e) => {
+      ExamStorage.setPreferences({ language: e.target.value });
+      applyPreferences();
+      renderDashboardStats();
+      updateCountHint();
+    });
+    document.getElementById("theme-select").addEventListener("change", (e) => {
+      ExamStorage.setPreferences({ theme: e.target.value });
+      applyPreferences();
+    });
+  }
+
+  function refreshProfileOptions() {
+    const profileSelect = document.getElementById("profile-select");
+    const profiles = ExamStorage.getProfiles();
+    profileSelect.innerHTML = profiles.map(p => `<option value="${p}">${p}</option>`).join("");
+    profileSelect.value = ExamStorage.getActiveProfile();
+    const prefs = ExamStorage.getPreferences();
+    document.getElementById("language-select").value = prefs.language || "en";
+    document.getElementById("theme-select").value = prefs.theme || "light";
+  }
+
+  function applyPreferences() {
+    const prefs = ExamStorage.getPreferences();
+    currentLang = prefs.language || "en";
+    const t = I18N[currentLang];
+    document.documentElement.setAttribute("data-theme", prefs.theme || "light");
+    document.querySelector(".subtitle").textContent = t.subtitle;
+    document.getElementById("label-open-dashboard").textContent = t.openDashboard;
+    document.getElementById("label-user").textContent = t.user;
+    document.getElementById("label-add-user").textContent = t.addUser;
+    document.getElementById("label-delete-user").textContent = t.deleteUser;
+    document.getElementById("label-language").textContent = t.language;
+    document.getElementById("label-theme").textContent = t.theme;
+    document.querySelector("label[for='question-count']").textContent = t.howMany;
+    document.getElementById("btn-start").textContent = t.start;
+    document.getElementById("filter-warning").textContent = t.noMatch;
   }
 
   function renderDashboardStats() {
@@ -97,7 +204,7 @@
     html += `</div>`;
 
     // Clear history button
-    html += `<div class="dash-clear"><button class="link-btn" id="btn-clear-history">Clear history</button></div>`;
+    html += `<div class="dash-clear"><button class="link-btn" id="btn-clear-history">${I18N[currentLang].clearHistory}</button></div>`;
 
     statsBox.innerHTML = html;
 
@@ -243,11 +350,10 @@
     const banner = document.getElementById("fb-banner");
     if (result.isCorrect) {
       banner.className = "feedback-banner correct";
-      banner.textContent = `Correct! The answer is ${result.correctAnswer}.`;
+      banner.textContent = I18N[currentLang].correctBanner(result.correctAnswer);
     } else {
       banner.className = "feedback-banner wrong";
-      banner.textContent =
-        `Incorrect. You chose ${result.selected}; the correct answer is ${result.correctAnswer}.`;
+      banner.textContent = I18N[currentLang].wrongBanner(result.selected, result.correctAnswer);
     }
 
     // Correct explanation

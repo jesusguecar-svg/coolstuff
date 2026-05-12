@@ -12,6 +12,13 @@ Deploy `docs/phase_III/dashboard/` as a usable team dashboard with a stable URL.
 6. Access dashboard at:
    - `https://<org-or-user>.github.io/<repo>/phase_III/dashboard/`
 
+### If you already have a web app at the root URL
+- Keep the existing app at:
+  - `https://<org-or-user>.github.io/<repo>/`
+- Publish the dashboard as a subpath:
+  - `https://<org-or-user>.github.io/<repo>/phase_III/dashboard/`
+- Optional UX improvement: add a link/button in `docs/index.html` to the dashboard path.
+
 ### Why Option A
 - Zero backend required.
 - Works with current static HTML/CSS/JS.

@@ -13,6 +13,34 @@
     <section id="view-welcome" class="view active">
       <h1>Texas General Lines<br>Practice Exam</h1>
       <p class="subtitle">Life, Accident, Health &amp; HMO</p>
+      <div class="prefs-panel">
+        <label>
+          <span id="label-user">User:</span>
+          <select id="profile-select"></select>
+        </label>
+        <input id="profile-input" type="text" placeholder="New user name" />
+        <button class="btn btn-secondary" id="btn-add-profile" type="button"><span id="label-add-user">Add User</span></button>
+        <button class="btn btn-secondary" id="btn-delete-profile" type="button"><span id="label-delete-user">Delete User</span></button>
+        <label>
+          <span id="label-language">Language:</span>
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
+        <label>
+          <span id="label-theme">Theme:</span>
+          <select id="theme-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
+      </div>
+      <div class="utility-links">
+        <a class="btn btn-secondary" href="./phase_III/dashboard/" target="_blank" rel="noopener noreferrer">
+          <span id="label-open-dashboard">Open Phase III/IV Delivery Dashboard</span>
+        </a>
+      </div>
 
       <div class="stats-box" id="stats-box">
         <!-- Populated by app.js -->

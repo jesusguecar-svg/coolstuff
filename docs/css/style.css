@@ -17,6 +17,21 @@
   --shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
+[data-theme="dark"] {
+  --color-bg: #0b1220;
+  --color-surface: #111827;
+  --color-primary: #60a5fa;
+  --color-primary-hover: #3b82f6;
+  --color-correct: #34d399;
+  --color-correct-bg: #052e24;
+  --color-wrong: #f87171;
+  --color-wrong-bg: #3a1111;
+  --color-text: #e5e7eb;
+  --color-text-light: #94a3b8;
+  --color-border: #334155;
+  --color-badge-bg: #1f2937;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -59,6 +74,30 @@ body {
   color: var(--color-text-light);
   font-size: 1rem;
   margin-bottom: 32px;
+}
+
+.utility-links {
+  margin: -10px 0 20px;
+}
+.prefs-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.prefs-panel label,
+.prefs-panel input,
+.prefs-panel select {
+  font-size: 0.85rem;
+}
+.prefs-panel input,
+.prefs-panel select {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 /* === Dashboard Stats === */
@@ -221,6 +260,23 @@ body {
 .dash-clear {
   text-align: center;
   margin-top: 12px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #eef4ff;
 }
 
 /* === Filter Panel === */

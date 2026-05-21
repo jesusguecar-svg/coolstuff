@@ -36,9 +36,11 @@
 
   function renderDashboardStats() {
     const statsBox = document.getElementById("stats-box");
-    const history = ExamStorage.getStats();
-    const totalBank = QUESTION_BANK.length;
-    const domains = new Set(QUESTION_BANK.map(q => q.domain));
+
+    try {
+      const history = ExamStorage.getStats();
+      const totalBank = QUESTION_BANK.length;
+      const domains = new Set(QUESTION_BANK.map(q => q.domain));
 
     if (history.totalAnswered === 0) {
       // Fresh user — simple stats
@@ -106,6 +108,12 @@
       renderDashboardStats();
       updateCountHint();
     });
+    } catch (e) {
+      const totalBank = Array.isArray(QUESTION_BANK) ? QUESTION_BANK.length : 0;
+      statsBox.innerHTML =
+        `<div class="stat"><span class="stat-num">${totalBank}</span> questions</div>` +
+        `<div class="stat"><span class="stat-num">0</span> domains</div>`;
+    }
   }
 
   function populateDomainCheckboxes() {

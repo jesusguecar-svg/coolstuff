@@ -19,6 +19,7 @@ const ExamStorage = (function () {
 
   function _getAppState() {
     const base = _safeJsonParse(localStorage.getItem(APP_KEY), {
+    return _safeJsonParse(localStorage.getItem(APP_KEY), {
       activeProfile: "default",
       profiles: ["default"],
       preferencesByProfile: {
@@ -47,6 +48,24 @@ const ExamStorage = (function () {
     });
 
     return { activeProfile, profiles, preferencesByProfile: prefsByProfile };
+  }
+
+  function _saveAppState(state) {
+    try {
+      localStorage.setItem(APP_KEY, JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function _historyKey(profile) {
+    return HISTORY_PREFIX + profile;
+  }
+
+  function _load(profileName) {
+    return _safeJsonParse(localStorage.getItem(_historyKey(profileName)), {});
+  }
+
+  function _save(profileName, data) {
+    try {
   }
 
   function _saveAppState(state) {

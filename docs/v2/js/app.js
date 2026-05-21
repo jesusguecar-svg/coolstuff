@@ -11,6 +11,14 @@
   let deferredMode = false;
   let currentLang = "en";
 
+  const APP_VERSION = "v2.0.0";
+
+  function byId(id) { return document.getElementById(id); }
+
+  function safeSetText(id, text) { const el = byId(id); if (el) el.textContent = text; }
+
+  function safeBind(id, event, handler) { const el = byId(id); if (el) el.addEventListener(event, handler); return el; }
+
   const I18N = {
     en: {
       subtitle: "Life, Accident, Health & HMO",
@@ -53,7 +61,8 @@
   };
 
   function showView(name) {
-    Object.values(views).forEach(v => v.classList.remove("active"));
+    Object.values(views).filter(Boolean).forEach(v => v.classList.remove("active"));
+    if (!views[name]) return;
     views[name].classList.add("active");
     window.scrollTo(0, 0);
   }
@@ -63,6 +72,7 @@
   // =========================================================
 
   function initWelcome() {
+    safeSetText("build-version", APP_VERSION);
     initPreferencesPanel();
     applyPreferences();
     renderDashboardStats();
@@ -71,21 +81,9 @@
   }
 
   function initPreferencesPanel() {
-    const profileSelectEl = document.getElementById("profile-select");
-    const addProfileBtn = document.getElementById("btn-add-profile");
-    const deleteProfileBtn = document.getElementById("btn-delete-profile");
-    const languageSelectEl = document.getElementById("language-select");
-    const themeSelectEl = document.getElementById("theme-select");
-
-    // Backward compatibility: if deployed HTML is older and missing preferences UI,
-    // skip profile/preferences wiring so the core exam app still works.
-    if (!profileSelectEl || !addProfileBtn || !deleteProfileBtn || !languageSelectEl || !themeSelectEl) {
-      return;
-    }
-
     refreshProfileOptions();
 
-    profileSelectEl.addEventListener("change", (e) => {
+    document.getElementById("profile-select").addEventListener("change", (e) => {
       ExamStorage.setActiveProfile(e.target.value);
       refreshProfileOptions();
       applyPreferences();
@@ -93,7 +91,7 @@
       updateCountHint();
     });
 
-    addProfileBtn.addEventListener("click", () => {
+    document.getElementById("btn-add-profile").addEventListener("click", () => {
       const name = document.getElementById("profile-input").value;
       const result = ExamStorage.createProfile(name);
       if (!result.ok) return alert(result.error);
@@ -104,7 +102,7 @@
       updateCountHint();
     });
 
-    deleteProfileBtn.addEventListener("click", () => {
+    document.getElementById("btn-delete-profile").addEventListener("click", () => {
       const active = ExamStorage.getActiveProfile();
       const result = ExamStorage.deleteProfile(active);
       if (!result.ok) return alert(result.error);
@@ -114,13 +112,12 @@
       updateCountHint();
     });
 
-    languageSelectEl.addEventListener("change", (e) => {
+    document.getElementById("language-select").addEventListener("change", (e) => {
       ExamStorage.setPreferences({ language: e.target.value });
       applyPreferences();
       renderDashboardStats();
       updateCountHint();
     });
-    themeSelectEl.addEventListener("change", (e) => {
     document.getElementById("theme-select").addEventListener("change", (e) => {
       ExamStorage.setPreferences({ theme: e.target.value });
       applyPreferences();
@@ -129,15 +126,10 @@
 
   function refreshProfileOptions() {
     const profileSelect = document.getElementById("profile-select");
-    if (!profileSelect) return;
     const profiles = ExamStorage.getProfiles();
     profileSelect.innerHTML = profiles.map(p => `<option value="${p}">${p}</option>`).join("");
     profileSelect.value = ExamStorage.getActiveProfile();
     const prefs = ExamStorage.getPreferences();
-    const languageSelect = document.getElementById("language-select");
-    const themeSelect = document.getElementById("theme-select");
-    if (languageSelect) languageSelect.value = prefs.language || "en";
-    if (themeSelect) themeSelect.value = prefs.theme || "light";
     document.getElementById("language-select").value = prefs.language || "en";
     document.getElementById("theme-select").value = prefs.theme || "light";
   }
@@ -147,49 +139,31 @@
     currentLang = prefs.language || "en";
     const t = I18N[currentLang];
     document.documentElement.setAttribute("data-theme", prefs.theme || "light");
-    const subtitle = document.querySelector(".subtitle");
-    if (subtitle) subtitle.textContent = t.subtitle;
-    const openDash = document.getElementById("label-open-dashboard");
-    if (openDash) openDash.textContent = t.openDashboard;
-    const labelUser = document.getElementById("label-user");
-    if (labelUser) labelUser.textContent = t.user;
-    const addUser = document.getElementById("label-add-user");
-    if (addUser) addUser.textContent = t.addUser;
-    const delUser = document.getElementById("label-delete-user");
-    if (delUser) delUser.textContent = t.deleteUser;
-    const labelLang = document.getElementById("label-language");
-    if (labelLang) labelLang.textContent = t.language;
-    const labelTheme = document.getElementById("label-theme");
-    if (labelTheme) labelTheme.textContent = t.theme;
-    const questionCountLabel = document.querySelector("label[for='question-count']");
-    if (questionCountLabel) questionCountLabel.textContent = t.howMany;
-    const startBtn = document.getElementById("btn-start");
-    if (startBtn) startBtn.textContent = t.start;
-    const filterWarning = document.getElementById("filter-warning");
-    if (filterWarning) filterWarning.textContent = t.noMatch;
-    document.querySelector(".subtitle").textContent = t.subtitle;
-    document.getElementById("label-open-dashboard").textContent = t.openDashboard;
-    document.getElementById("label-user").textContent = t.user;
-    document.getElementById("label-add-user").textContent = t.addUser;
-    document.getElementById("label-delete-user").textContent = t.deleteUser;
-    document.getElementById("label-language").textContent = t.language;
-    document.getElementById("label-theme").textContent = t.theme;
-    document.querySelector("label[for='question-count']").textContent = t.howMany;
-    document.getElementById("btn-start").textContent = t.start;
-    document.getElementById("filter-warning").textContent = t.noMatch;
+    const subtitle = document.querySelector(".subtitle"); if (subtitle) subtitle.textContent = t.subtitle;
+    safeSetText("label-open-dashboard", t.openDashboard);
+    safeSetText("label-user", t.user);
+    safeSetText("label-add-user", t.addUser);
+    safeSetText("label-delete-user", t.deleteUser);
+    safeSetText("label-language", t.language);
+    safeSetText("label-theme", t.theme);
+    const countLabel = document.querySelector("label[for='question-count']"); if (countLabel) countLabel.textContent = t.howMany;
+    safeSetText("btn-start", t.start);
+    safeSetText("filter-warning", t.noMatch);
+    safeSetText("build-version", APP_VERSION);
   }
 
   function renderDashboardStats() {
     const statsBox = document.getElementById("stats-box");
     const history = ExamStorage.getStats();
-    const totalBank = QUESTION_BANK.length;
-    const domains = new Set(QUESTION_BANK.map(q => q.domain));
+    const bank = Array.isArray(window.QUESTION_BANK) ? window.QUESTION_BANK : [];
+    const totalBank = bank.length;
+    const domains = new Set(bank.map(q => q.domain));
 
     if (history.totalAnswered === 0) {
       // Fresh user — simple stats
-      const easy = QUESTION_BANK.filter(q => q.difficulty === "easy").length;
-      const medium = QUESTION_BANK.filter(q => q.difficulty === "medium").length;
-      const hard = QUESTION_BANK.filter(q => q.difficulty === "hard").length;
+      const easy = bank.filter(q => q.difficulty === "easy").length;
+      const medium = bank.filter(q => q.difficulty === "medium").length;
+      const hard = bank.filter(q => q.difficulty === "hard").length;
       statsBox.innerHTML =
         `<div class="stat"><span class="stat-num">${totalBank}</span> questions</div>` +
         `<div class="stat"><span class="stat-num">${domains.size}</span> domains</div>` +
@@ -230,7 +204,7 @@
       const ds = history.byDomain[domain];
       const answered = ds ? ds.answered : 0;
       const correct = ds ? ds.correct : 0;
-      const domainTotal = QUESTION_BANK.filter(q => q.domain === domain).length;
+      const domainTotal = bank.filter(q => q.domain === domain).length || 1;
       const dpct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
       const coveragePct = Math.round((answered / domainTotal) * 100);
       html += `<div class="dash-domain-row">` +
@@ -255,7 +229,8 @@
 
   function populateDomainCheckboxes() {
     const container = document.getElementById("domain-checkboxes");
-    const domains = [...new Set(QUESTION_BANK.map(q => q.domain))].sort();
+    const bank = Array.isArray(window.QUESTION_BANK) ? window.QUESTION_BANK : [];
+    const domains = [...new Set(bank.map(q => q.domain))].sort();
     container.innerHTML = domains.map(d =>
       `<label class="domain-check-label">` +
         `<input type="checkbox" value="${d}" checked>` +
@@ -285,7 +260,8 @@
     // Deferred feedback
     const deferFeedback = document.getElementById("opt-deferred-feedback").checked;
 
-    let pool = QUESTION_BANK.filter(q =>
+    const bank = Array.isArray(window.QUESTION_BANK) ? window.QUESTION_BANK : [];
+    let pool = bank.filter(q =>
       activeDiffs.has(q.difficulty) &&
       activeDomains.has(q.domain) &&
       (!skipAnswered || !answeredIds.has(q.question_id))

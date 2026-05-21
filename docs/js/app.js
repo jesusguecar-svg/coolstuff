@@ -69,7 +69,7 @@
     // Difficulty breakdown
     html += `<div class="dash-section"><h4>By Difficulty</h4><div class="dash-row">`;
     ["easy", "medium", "hard"].forEach(d => {
-      const s = history.byDifficulty[d];
+      const s = (history.byDifficulty && history.byDifficulty[d]) ? history.byDifficulty[d] : { answered: 0, correct: 0 };
       const dpct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
       html += `<div class="dash-diff-item">` +
         `<div class="diff-label ${d}">${d}</div>` +

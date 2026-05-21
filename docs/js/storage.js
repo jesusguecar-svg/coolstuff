@@ -11,7 +11,8 @@ const ExamStorage = (function () {
   function _load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : {};
+      const parsed = raw ? JSON.parse(raw) : {};
+      return (parsed && typeof parsed === "object" && !Array.isArray(parsed)) ? parsed : {};
     } catch (e) {
       return {};
     }
@@ -59,7 +60,7 @@ const ExamStorage = (function () {
      */
     getStats() {
       const data = _load();
-      const entries = Object.values(data);
+      const entries = Object.values(data).filter(e => e && typeof e === "object");
       const totalAnswered = entries.length;
       const totalCorrect = entries.filter(e => e.correct).length;
 

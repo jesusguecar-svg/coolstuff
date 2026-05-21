@@ -18,6 +18,7 @@ const ExamStorage = (function () {
   }
 
   function _getAppState() {
+    const base = _safeJsonParse(localStorage.getItem(APP_KEY), {
     return _safeJsonParse(localStorage.getItem(APP_KEY), {
       activeProfile: "default",
       profiles: ["default"],
@@ -25,6 +26,46 @@ const ExamStorage = (function () {
         default: { language: "en", theme: "light" },
       },
     });
+
+    const profiles = Array.isArray(base.profiles) && base.profiles.length
+      ? [...new Set(base.profiles.map(p => String(p).trim()).filter(Boolean))]
+      : ["default"];
+
+    if (!profiles.includes("default")) profiles.unshift("default");
+
+    const activeProfile = profiles.includes(base.activeProfile) ? base.activeProfile : "default";
+
+    const prefsByProfile = (base.preferencesByProfile && typeof base.preferencesByProfile === "object")
+      ? { ...base.preferencesByProfile }
+      : {};
+
+    profiles.forEach(p => {
+      const pref = prefsByProfile[p] || {};
+      prefsByProfile[p] = {
+        language: pref.language === "es" ? "es" : "en",
+        theme: pref.theme === "dark" ? "dark" : "light",
+      };
+    });
+
+    return { activeProfile, profiles, preferencesByProfile: prefsByProfile };
+  }
+
+  function _saveAppState(state) {
+    try {
+      localStorage.setItem(APP_KEY, JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function _historyKey(profile) {
+    return HISTORY_PREFIX + profile;
+  }
+
+  function _load(profileName) {
+    return _safeJsonParse(localStorage.getItem(_historyKey(profileName)), {});
+  }
+
+  function _save(profileName, data) {
+    try {
   }
 
   function _saveAppState(state) {

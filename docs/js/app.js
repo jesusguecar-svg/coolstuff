@@ -71,9 +71,21 @@
   }
 
   function initPreferencesPanel() {
+    const profileSelectEl = document.getElementById("profile-select");
+    const addProfileBtn = document.getElementById("btn-add-profile");
+    const deleteProfileBtn = document.getElementById("btn-delete-profile");
+    const languageSelectEl = document.getElementById("language-select");
+    const themeSelectEl = document.getElementById("theme-select");
+
+    // Backward compatibility: if deployed HTML is older and missing preferences UI,
+    // skip profile/preferences wiring so the core exam app still works.
+    if (!profileSelectEl || !addProfileBtn || !deleteProfileBtn || !languageSelectEl || !themeSelectEl) {
+      return;
+    }
+
     refreshProfileOptions();
 
-    document.getElementById("profile-select").addEventListener("change", (e) => {
+    profileSelectEl.addEventListener("change", (e) => {
       ExamStorage.setActiveProfile(e.target.value);
       refreshProfileOptions();
       applyPreferences();
@@ -81,7 +93,7 @@
       updateCountHint();
     });
 
-    document.getElementById("btn-add-profile").addEventListener("click", () => {
+    addProfileBtn.addEventListener("click", () => {
       const name = document.getElementById("profile-input").value;
       const result = ExamStorage.createProfile(name);
       if (!result.ok) return alert(result.error);
@@ -92,7 +104,7 @@
       updateCountHint();
     });
 
-    document.getElementById("btn-delete-profile").addEventListener("click", () => {
+    deleteProfileBtn.addEventListener("click", () => {
       const active = ExamStorage.getActiveProfile();
       const result = ExamStorage.deleteProfile(active);
       if (!result.ok) return alert(result.error);
@@ -102,12 +114,13 @@
       updateCountHint();
     });
 
-    document.getElementById("language-select").addEventListener("change", (e) => {
+    languageSelectEl.addEventListener("change", (e) => {
       ExamStorage.setPreferences({ language: e.target.value });
       applyPreferences();
       renderDashboardStats();
       updateCountHint();
     });
+    themeSelectEl.addEventListener("change", (e) => {
     document.getElementById("theme-select").addEventListener("change", (e) => {
       ExamStorage.setPreferences({ theme: e.target.value });
       applyPreferences();
@@ -116,10 +129,15 @@
 
   function refreshProfileOptions() {
     const profileSelect = document.getElementById("profile-select");
+    if (!profileSelect) return;
     const profiles = ExamStorage.getProfiles();
     profileSelect.innerHTML = profiles.map(p => `<option value="${p}">${p}</option>`).join("");
     profileSelect.value = ExamStorage.getActiveProfile();
     const prefs = ExamStorage.getPreferences();
+    const languageSelect = document.getElementById("language-select");
+    const themeSelect = document.getElementById("theme-select");
+    if (languageSelect) languageSelect.value = prefs.language || "en";
+    if (themeSelect) themeSelect.value = prefs.theme || "light";
     document.getElementById("language-select").value = prefs.language || "en";
     document.getElementById("theme-select").value = prefs.theme || "light";
   }
@@ -129,6 +147,26 @@
     currentLang = prefs.language || "en";
     const t = I18N[currentLang];
     document.documentElement.setAttribute("data-theme", prefs.theme || "light");
+    const subtitle = document.querySelector(".subtitle");
+    if (subtitle) subtitle.textContent = t.subtitle;
+    const openDash = document.getElementById("label-open-dashboard");
+    if (openDash) openDash.textContent = t.openDashboard;
+    const labelUser = document.getElementById("label-user");
+    if (labelUser) labelUser.textContent = t.user;
+    const addUser = document.getElementById("label-add-user");
+    if (addUser) addUser.textContent = t.addUser;
+    const delUser = document.getElementById("label-delete-user");
+    if (delUser) delUser.textContent = t.deleteUser;
+    const labelLang = document.getElementById("label-language");
+    if (labelLang) labelLang.textContent = t.language;
+    const labelTheme = document.getElementById("label-theme");
+    if (labelTheme) labelTheme.textContent = t.theme;
+    const questionCountLabel = document.querySelector("label[for='question-count']");
+    if (questionCountLabel) questionCountLabel.textContent = t.howMany;
+    const startBtn = document.getElementById("btn-start");
+    if (startBtn) startBtn.textContent = t.start;
+    const filterWarning = document.getElementById("filter-warning");
+    if (filterWarning) filterWarning.textContent = t.noMatch;
     document.querySelector(".subtitle").textContent = t.subtitle;
     document.getElementById("label-open-dashboard").textContent = t.openDashboard;
     document.getElementById("label-user").textContent = t.user;

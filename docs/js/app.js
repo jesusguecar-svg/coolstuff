@@ -36,6 +36,7 @@
 
   function renderDashboardStats() {
     const statsBox = document.getElementById("stats-box");
+    if (!statsBox) return;
 
     try {
       const history = ExamStorage.getStats();
@@ -55,6 +56,7 @@
           `<span class="diff medium">${medium} medium</span>` +
           `<span class="diff hard">${hard} hard</span>` +
         `</div>`;
+      statsBox.classList.remove("is-hidden");
       return;
     }
 
@@ -102,6 +104,7 @@
     html += `<div class="dash-clear"><button class="link-btn" id="btn-clear-history">Clear history</button></div>`;
 
     statsBox.innerHTML = html;
+    statsBox.classList.remove("is-hidden");
 
     document.getElementById("btn-clear-history").addEventListener("click", () => {
       ExamStorage.clearHistory();
@@ -109,10 +112,8 @@
       updateCountHint();
     });
     } catch (e) {
-      const totalBank = Array.isArray(QUESTION_BANK) ? QUESTION_BANK.length : 0;
-      statsBox.innerHTML =
-        `<div class="stat"><span class="stat-num">${totalBank}</span> questions</div>` +
-        `<div class="stat"><span class="stat-num">0</span> domains</div>`;
+      statsBox.innerHTML = "";
+      statsBox.classList.add("is-hidden");
     }
   }
 

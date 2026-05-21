@@ -62,7 +62,7 @@ body {
 }
 
 /* === Dashboard Stats === */
-.stats-box:empty {
+.stats-box.is-hidden {
   display: none;
 }
 

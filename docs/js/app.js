@@ -36,9 +36,12 @@
 
   function renderDashboardStats() {
     const statsBox = document.getElementById("stats-box");
-    const history = ExamStorage.getStats();
-    const totalBank = QUESTION_BANK.length;
-    const domains = new Set(QUESTION_BANK.map(q => q.domain));
+    if (!statsBox) return;
+
+    try {
+      const history = ExamStorage.getStats();
+      const totalBank = QUESTION_BANK.length;
+      const domains = new Set(QUESTION_BANK.map(q => q.domain));
 
     if (history.totalAnswered === 0) {
       // Fresh user — simple stats
@@ -53,6 +56,7 @@
           `<span class="diff medium">${medium} medium</span>` +
           `<span class="diff hard">${hard} hard</span>` +
         `</div>`;
+      statsBox.classList.remove("is-hidden");
       return;
     }
 
@@ -69,7 +73,7 @@
     // Difficulty breakdown
     html += `<div class="dash-section"><h4>By Difficulty</h4><div class="dash-row">`;
     ["easy", "medium", "hard"].forEach(d => {
-      const s = history.byDifficulty[d];
+      const s = (history.byDifficulty && history.byDifficulty[d]) ? history.byDifficulty[d] : { answered: 0, correct: 0 };
       const dpct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
       html += `<div class="dash-diff-item">` +
         `<div class="diff-label ${d}">${d}</div>` +
@@ -100,12 +104,17 @@
     html += `<div class="dash-clear"><button class="link-btn" id="btn-clear-history">Clear history</button></div>`;
 
     statsBox.innerHTML = html;
+    statsBox.classList.remove("is-hidden");
 
     document.getElementById("btn-clear-history").addEventListener("click", () => {
       ExamStorage.clearHistory();
       renderDashboardStats();
       updateCountHint();
     });
+    } catch (e) {
+      statsBox.innerHTML = "";
+      statsBox.classList.add("is-hidden");
+    }
   }
 
   function populateDomainCheckboxes() {
